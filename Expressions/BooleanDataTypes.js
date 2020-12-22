@@ -44,4 +44,7 @@ console.log('cat' < 'apple'); // false
 
 // === "strict" equality
 // == "loose" equality
-console.log()
+console.log(42 === 42); // true
+console.log(42 == 42); // true
+console.log(42 === '42'); // false
+console.log(42 == '42'); // true
