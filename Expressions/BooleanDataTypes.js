@@ -18,6 +18,12 @@ console.log(true || true); // true
 console.log(true && !false); // true
 console.log(true || !false); // true
 
-// && takes precedent over ||
+// && operation takes precedent over || operation
 console.log(false && false || true); // true
 console.log(false && (false || true)); // false
+
+// check for equality (===)
+// not equal to (!==)
+console.log(42 === 42); // true
+console.log(43 === 42); // false
+console.log(43 !== 42) // true
