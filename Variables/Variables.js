@@ -36,3 +36,7 @@ let y;
 console.log(y); // undefined
 
 // undefined is the default value in Javascript
+// don't reuse "let" when reassigning a value
+
+let name = "LeeRoy";
+console.log(nam); // will get reference error because "nam" isn't even defined. Not part of the code.
