@@ -7,11 +7,11 @@ console.log("Cat" + "Dog");
 console.log("cat".toUpperCase());
 console.log("DOG".toLowerCase());
 
-console.log('apple' === 'apple') // true
-console.log('apple' === 'Apple') // false
+console.log('apple' === 'apple'); // true
+console.log('apple' === 'Apple'); // false
 
 // > or < in Strings measure the order of characters in alphabetical order
-console.log('cat' < 'dog') // true
-console.log('cat' < 'cats') // true
-console.log('cat' < 'apple') // false
+console.log('cat' < 'dog'); // true
+console.log('cat' < 'cats'); // true
+console.log('cat' < 'apple'); // false
 console.log()
