@@ -27,5 +27,11 @@ console.log(false && (false || true)); // false
 console.log(42 === 42); // true
 console.log(43 === 42); // false
 console.log(43 !== 42) // true
-console.log(43 > 42) // true
-console.log(43 < 42) // false
+console.log(43 > 42); // true
+console.log(43 < 42); // false
+console.log(43 >= 42); // true
+console.log(43 <= 42); // false
+console.log(43 >= 43); // true
+console.log(43 <= 43); // true
+
+console.log('apple' === 'apple') // true
