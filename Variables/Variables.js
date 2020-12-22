@@ -39,4 +39,9 @@ console.log(y); // undefined
 // don't reuse "let" when reassigning a value
 
 let name = "LeeRoy";
-console.log(nam); // will get reference error because "nam" isn't even defined. Not part of the code.
+// console.log(nam); // reference error because "nam" isn't even defined. Not part of the code.
+
+let isEven = 50 % 2 === 0;
+console.log(isEven); // true
+isEven = 51 % 2 === 0;
+console.log(isEven); // false
