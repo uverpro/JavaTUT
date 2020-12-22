@@ -39,6 +39,6 @@ console.log('apple' === 'Apple') // false
 
 // > or < in Strings measure the order of first char in alphabetical order
 console.log('cat' < 'dog') // true
-console.log('cat' < 'caterpillar') // true
+console.log('cat' < 'cats') // true
 console.log('cat' < 'apple') // false
 console.log()
