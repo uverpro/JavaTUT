@@ -32,18 +32,33 @@ console.log(String[String.length]); // undefined
 
 
 
-let stri = 'cats';
-console.log(stri.indexOf('a')); // 1
-console.log(stri.indexOf('t')); // 2
+let furryStr = 'cats';
+console.log(furryStr.indexOf('a')); // 1
+console.log(furryStr.indexOf('t')); // 2
 
-console.log(stri.indexOf('Q')); // -1
+console.log(furryStr.indexOf('Q')); // -1
 // any char referenced that is not in the string will return "-1" because Java.
 
-console.log(stri.indexOf('at')); // 1
-// will return the index of the first char
-console.log(stri.indexOf('atsr')); // -1
+console.log(furryStr.indexOf('at')); // 1
+// will return the index of the first char in the substring
+
+console.log(furryStr.indexOf('atsr')); // -1
 // the chars in the substring within ".indexOf" has to match the string exactly or return -1
+
+
 
 let sentence = "Hey everyone, how are you doing?";
 console.log(sentence.indexOf("every")); // 4
 console.log(sentence.indexOf("every") > -1); // true
+
+console.log(sentence.indexOf("how")); // 14
+console.log(sentence.indexOf("how") > -1); // true
+
+console.log(sentence.indexOf("door") > -1); // false
+console.log(sentence.indexOf("door") >= -1); // true
+console.log(sentence.indexOf("door") == -1); // true
+console.log(sentence.indexOf("door") === -1); // true
+
+
+
+let myString = "qrstuv";
