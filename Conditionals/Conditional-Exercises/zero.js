@@ -58,3 +58,18 @@ if (sentence.length <= 4) {
 } else {
     console.log("long"); // sentence ("roger that") is greater than 4 so WILL print
 }
+
+
+
+//Snippet 1-0
+let qty = 38;
+
+if (qty > 30 && qty % 5 === 4) { // AND GATE, so BOTH conditions must be met to return true
+    console.log("swish"); // first condition met, second condition would be met if "qty = 39"
+} else {
+    console.log("swoosh"); // WILL print. qty is > 30, but the % 5 of qty is "3", not "4"
+}
+
+if (qty > 0) { // new statement
+    console.log("pos"); // WILL print
+}
