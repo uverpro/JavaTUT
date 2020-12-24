@@ -47,7 +47,7 @@ if (word[0] === "d") {
 //Snippet 0-5
 let sentence = "roger that";
 
-if (sentence[sentence.length - 1] === "t") { // personal note: using if (sentence.length - 1) would return [ 9 ]
+if (sentence[sentence.length - 1] === "t") { // side note: using if (sentence.length - 1) would return [ 9 ]
     console.log("ends in t"); // variable[variable.length - 1] will return the last CHAR in a string, which in "sentence" ("roger that") is "t", thus WILL print
 } else {
     console.log("does not end in t");
@@ -72,4 +72,18 @@ if (qty > 30 && qty % 5 === 4) { // AND GATE, so BOTH conditions must be met to 
 
 if (qty > 0) { // new statement
     console.log("pos"); // WILL print
+}
+
+
+
+//Snippet 1-1
+let a = "celery";
+let b = "SQUASH";
+
+if (a === a.toUpperCase()) { // side note: always put () after this Java String Method
+    console.log("alpha"); // a ("celery") is not uppercase. WILL NOT print
+}
+
+if (b === b.toUpperCase()) {
+    console.log("beta"); // b ("SQUASH") is all uppercase, this WILL print
 }
