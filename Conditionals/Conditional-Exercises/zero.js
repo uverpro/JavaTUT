@@ -21,3 +21,40 @@ if (true || false) {
 
 
 //Snippet 0-3
+let num = 40;
+
+if (num > 0) {
+    console.log("zip"); // 40 > 0, thus WILL print "zip"
+}
+
+if (num % 2 === 0) {
+    console.log("zoop"); // 40 is even, thus WILL print "zoop"
+}
+
+
+
+//Snippet 0-4
+let word = "jeep";
+
+if (word[0] === "d") {
+    console.log("yer"); // the first index of "jeep" is "j", so false, thus WILL NOT print "yer"
+} else {
+    console.log("nah"); // WILL print "nah"
+}
+
+
+
+//Snippet 0-5
+let sentence = "roger that";
+
+if (sentence[sentence.length - 1] === "t") { // personal note: using if (sentence.length - 1) would return [ 9 ]
+    console.log("ends in t"); // variable[variable.length - 1] will return the last CHAR in a string, which in "sentence" ("roger that") is "t", thus WILL print
+} else {
+    console.log("does not end in t");
+}
+
+if (sentence.length <= 4) {
+    console.log("short");
+} else {
+    console.log("long"); // sentence ("roger that") is greater than 4 so WILL print
+}
