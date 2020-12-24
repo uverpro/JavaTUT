@@ -73,17 +73,3 @@ if (qty > 30 && qty % 5 === 4) { // AND GATE, so BOTH conditions must be met to 
 if (qty > 0) { // new statement
     console.log("pos"); // WILL print
 }
-
-
-
-//Snippet 1-1
-let a = "celery";
-let b = "SQUASH";
-
-if (a === a.toUpperCase()) { // side note: always put () after this Java String Method
-    console.log("alpha"); // a ("celery") is not uppercase. WILL NOT print
-}
-
-if (b === b.toUpperCase()) {
-    console.log("beta"); // b ("SQUASH") is all uppercase, this WILL print
-}
