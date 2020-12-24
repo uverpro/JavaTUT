@@ -37,7 +37,7 @@ if (num % 2 === 0) {
 let word = "jeep";
 
 if (word[0] === "d") {
-    console.log("yer"); // the first index of "jeep" is "j", so false, thus WILL NOT print "yer"
+    console.log("yer"); // the first index of "jeep" is "j", so false, thus WONT print
 } else {
     console.log("nah"); // WILL print "nah"
 }
@@ -67,7 +67,7 @@ let qty = 38;
 if (qty > 30 && qty % 5 === 4) { // AND GATE, so BOTH conditions must be met to return true
     console.log("swish"); // first condition met, second condition would be met if "qty = 39"
 } else {
-    console.log("swoosh"); // WILL print. qty is > 30, but the % 5 of qty is "3", not "4"
+    console.log("swoosh"); // WILL print. qty is > 30, but the % 5 of qty === "3", not "4"
 }
 
 if (qty > 0) { // new statement
