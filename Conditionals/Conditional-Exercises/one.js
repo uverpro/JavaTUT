@@ -3,11 +3,11 @@ let a = "celery";
 let b = "SQUASH";
 
 if (a === a.toUpperCase()) { // side note: always put () after this Java String Method
-    console.log("alpha"); // a ("celery") is not uppercase. WILL NOT print
+    console.log("alpha"); // a ("celery") is not uppercase. WONT print
 }
 
 if (b === b.toUpperCase()) {
-    console.log("beta"); // b ("SQUASH") is all uppercase, this WILL print
+    console.log("beta"); // b ("SQUASH") is all uppercase, thus WILL print
 }
 
 
@@ -18,7 +18,7 @@ let number = 9;
 if (number > 4) {
     console.log("ding"); // WILL print
 } else if (number % 3 === 0) {
-    console.log("dong"); // true but statement stops running on line 97, thus WILL NOT print
+    console.log("dong"); // true but statement stops running on line 97, thus WONT print
 }
 
 
