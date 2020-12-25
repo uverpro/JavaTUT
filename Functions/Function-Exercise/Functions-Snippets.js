@@ -76,7 +76,6 @@ console.log (average(n, 18)); // 20
 
 
 
-
 //Snippet 0-4
 let exclaim = function (str) {
     let capitalized = str.toUpperCase();
