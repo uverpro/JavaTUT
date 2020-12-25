@@ -70,6 +70,21 @@ console.log (average(n, 18)); // 20
 // 23              | Second Call (Line 58)
 // Calculating...  |
 // 77              | Third Call (Line 59)
-// Calculating...  | Called from the "n" argument
+// Calculating...  | Called from the "n" argument (Line 64)
 // Calculating...  |
 // 20              | "Fourth" Call (Line 64)
+
+
+
+
+//Snippet 0-4
+let exclaim = function (str) {
+    let capitalized = str.toUpperCase();
+    return capitalized + "!!!";
+};
+
+let result = exclaim("potato");
+console.log(result); // POTATO!!!
+console.log(result.length); // 9
+console.log(result[0]); // P
+console.log(result[result.length - 1]); // !
