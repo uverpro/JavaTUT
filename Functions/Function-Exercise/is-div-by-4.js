@@ -9,6 +9,10 @@ let isDivBy4 = function(num) { // the "if" & "else" Statements are in the first 
     }
 };
 
+// let isDivBy4 = function (num) { // more efficient use a simple Boolean when possible
+//     return num % 4 === 0;
+// };
+
 console.log(isDivBy4(8)); // true
 console.log(isDivBy4(12)); // true
 console.log(isDivBy4(24)); // true
