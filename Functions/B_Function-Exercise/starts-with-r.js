@@ -2,7 +2,7 @@
 // whether or not the string starts with 'r' or 'R'.
 
 let startsWithR = function (str) {
-// return str[0] === ("r" || "R"); // CLOSE (original try)
+// return str[0] === ("r" || "R"); // CLOSE (original try). Will return "true" || R
     return str[0] === "r" || str[0] === "R"; // most effecient
 
     // if (str[0] === "r") { // second try, just ineffecient but works
