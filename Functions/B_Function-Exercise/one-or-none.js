@@ -11,6 +11,14 @@ let oneOrNone = function (arg1, arg2) {
     }
 };
 
+// More efficient
+// let oneOrMore = function (val1, val2) {
+// if ((val1 || val2) && !(val1 && val2)) { // <---- THIS WILL BE A COMMON BOOLEAN OF ONLY RETURNING 1
+//      return true;
+//  } else {
+//    return false;
+//  }
+// };
 
 console.log(oneOrNone(false, false)); // false
 console.log(oneOrNone(true, false)); // true
