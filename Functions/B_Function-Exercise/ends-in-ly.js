@@ -5,6 +5,8 @@ let endsInLy = function (str) {
     return (str[str.length - 1] === "y" && (str[str.length - 2] === "l"));
 };
 
+// Built in: "return str.endsWith("ly");
+
 // let endsInLy = function (str) {
 //     if (str[str.length - 1] === "y" && str[str.length - 2] === "l") {
 //         return true;
