@@ -1,12 +1,17 @@
 // Write a function `endsWithT` that accepts a string as an argument. The function should return a
 // boolean indicating whether or not the string ends with the character 't'.
 
-let endsWithT = function (str) {
-    if (str[str.length - 1] = "t") {
-        return true;
-    } else {
-        return false;
-    }
+// let endsWithT = function (str) {
+//     if (str[str.length - 1] === "t") {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// };
+
+let endsWithT = function (str) { // this is more effecient
+    let lastChar = str[str.length - 1];
+    return lastChar === "t";
 };
 
 console.log(endsWithT("smart")); // true
