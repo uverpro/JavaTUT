@@ -2,7 +2,7 @@
 // boolean indicating whether or not the string ends with the character 't'.
 
 // let endsWithT = function (str) {
-//     if (str[str.length - 1] === "t") {
+//     if (str[str.length - 1] === "t") { // remember to use "===" which is a 'hard true', NOT "=" which assigns a new value.
 //         return true;
 //     } else {
 //         return false;
