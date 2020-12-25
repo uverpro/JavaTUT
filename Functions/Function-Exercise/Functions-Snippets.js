@@ -37,9 +37,9 @@ const theAnswer = howMany();
 console.log(theAnswer); // 42
 
 let howMuch = function() {
-    5;
+    5; // There is no Return Function
 };
-console.log(howMuch()); // undefined because there's no assigned value within the code of the function
+console.log(howMuch()); // undefined because there's no Return Function within the code of the function
 
 // [Function: howMany]
 // 42
