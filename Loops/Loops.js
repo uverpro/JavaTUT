@@ -116,3 +116,14 @@ for (let num = 1; num <= 10; num++) {
         console.log("It is odd!")
     }
 };
+
+
+
+let total = 0;
+for (let i = 1; i < 5; i++) {
+    total += i; // bc of this: 1, 3, 6, 10. Runs 4 times. (0 + 1), (1 + 2), (3 + 3), (6 + 4)
+    console.log(total);
+}
+
+console.log("grand total; " + total)
+// 1, 3, 6, 10 grand total; 10
