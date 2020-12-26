@@ -5,7 +5,6 @@
 let wackyWord = function (str1, str2) {
     return str1.slice(0, 3) + str2.slice(-2);
     // return str1.slice(0, 3) + (str2[str2.length - 2] + str2[str2.length - 1]); // first lol
-
 };
 
 console.log(wackyWord("very", "kindly")); // verly
