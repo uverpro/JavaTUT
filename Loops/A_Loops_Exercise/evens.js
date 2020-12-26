@@ -11,3 +11,15 @@ evens(11);
 // 2, 4, 6, 8, 10
 evens(8);
 // 2, 4, 6
+
+
+
+// Alvin's Solution
+
+// let evens = function (max) {
+//     for (let i = 1; i < max; i++) {
+//         if (i % 2 === 0) {
+//             console.log(i);
+//         }
+//     }
+// };
