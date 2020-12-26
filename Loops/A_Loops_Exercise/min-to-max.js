@@ -13,3 +13,6 @@ minToMax(5, 9);
 minToMax(11, 13);
 // 11, 12, 13
 minToMax(20, 11);
+// WONT PRINT
+// Min is 20, is 20 <= 11? NO, FALSE. WONT RUN.
+// Even the first iteration of a FOR LOOP has to meet the condition ("i <= max")
