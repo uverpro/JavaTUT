@@ -4,7 +4,7 @@
 
 
 // let noOhs = function (str) {
-//     for (let i = 0; i <= str.length -1; i++) {
+//     for (let i = 0; i <= str.length -1; i++) { // Why did I put "i <= str.length -1" instead of "i < str.length"
 //         console.log(str[i]);
 //     }
 // };
@@ -14,7 +14,7 @@
 
 
 let noOhs = function (str) {
-    for (let i = 0; i <= str.length -1; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (str[i] !== "o") {
         console.log(str[i]);
         }
@@ -22,3 +22,18 @@ let noOhs = function (str) {
 };
 
 noOhs("code");
+// c, d, e
+noOhs("school");
+// s, c, h, l
+
+
+
+// Alvin's Solution:
+// let noOhs = function (str) {
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
+//         if (char !== "o") {
+//             console.log(char);
+//         }
+//     }
+// };
