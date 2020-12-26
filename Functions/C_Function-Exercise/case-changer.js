@@ -3,7 +3,8 @@
 // lowercase version of the string if the boolean is false.
 
 let caseChange = function (str, boo) {
-    if (boo === true) {
+    if (boo) { // more efficient. An argument is by default true or false. So "boo" = "boo" === true = "true === true"
+    // if (boo === true) { <--- How I did, valid
         return str.toUpperCase();
     } else {
         return str.toLowerCase();
