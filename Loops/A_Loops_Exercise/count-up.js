@@ -2,14 +2,15 @@
 // all numbers from 1 up to and including the max. The function doesn't need to return any value. It
 // should just print to the terminal.
 
-let countUp = function (maxnum) {
-    for (let i = 1; i <= maxnum; i++) {
+let countUp = function (max) {
+    for (let i = 1; i <= max; i++) {
         console.log(i);
     }
 };
 
-console.log(countUp(5));
-
-console.log(countUp(20));
-
-console.log(countUp(3));
+countUp(5);
+// 1, 2, 3, 4, 5
+countUp(20);
+// 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+countUp(3);
+// 1, 2, 3
