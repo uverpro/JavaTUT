@@ -53,4 +53,4 @@ for (let i = 0; i < array.length; i++) {
     }
 }
 
-console.log(longWords);
+console.log(longWords); // [ 'banana', 'crayon' ]
