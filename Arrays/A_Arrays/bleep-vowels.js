@@ -26,6 +26,7 @@ function bleepVowels (str) {
     let vowels = ['a', 'e', 'i', 'o', 'u'];
     let bleepd = '';
     for (let i = 0; i < str.length; i++) {
+        // can use a variable here. char = str[i] (vowels.indexOf(char), "bleepd += char")
         if (vowels.indexOf(str[i]) > 0) { // Will return a proper index element (in this case 0, 1, 2, 3, 4). If the element is not present, will return a "-1"
             bleepd += "*"
         } else {
