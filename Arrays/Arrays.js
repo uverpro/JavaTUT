@@ -32,3 +32,6 @@ let alphabet = ["a", "b", "c", "d", "e"]
 console.log(alphabet.indexOf("d")); // 3
 console.log(alphabet.indexOf("a")); // 0
 console.log(alphabet.indexOf("z")); // -1
+// Unlinke a string.indexOf(), an array will not return the first character
+// let alphabet = ["a", "b", "c", "dog", "e"]
+// console.log(alphabet.indexOf("d")); // -1
