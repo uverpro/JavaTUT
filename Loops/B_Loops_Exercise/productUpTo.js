@@ -3,3 +3,13 @@
 // number obtained from multiplying numbers together.
 //
 // For example, productUpTo(4) should return 24 because 1 * 2 * 3 * 4 = 24
+
+let productUpTo = function (max) {
+    let pro = 1;
+    for (let i = 1; i <= max; i++) {
+        pro *= i;
+    }
+    return pro;
+};
+
+console.log(productUpTo(4)); // 24
