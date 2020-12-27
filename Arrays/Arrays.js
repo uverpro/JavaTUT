@@ -17,3 +17,18 @@ let pushstuff = [false, 85, "tooty"]
 console.log(pushstuff); // 3
 pushstuff.push("fruity");
 console.log(pushstuff);
+pushstuff.push("on rooty");
+console.log(pushstuff);
+console.log(pushstuff.length);
+// ADDS ELEMENT TO THE END OF AN ARRAY
+
+
+
+// DOC THE OTHER METHODS
+
+
+
+let alphabet = ["a", "b", "c", "d", "e"]
+console.log(alphabet.indexOf("d")); // 3
+console.log(alphabet.indexOf("a")); // 0
+console.log(alphabet.indexOf("z")); // -1
