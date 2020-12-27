@@ -6,7 +6,7 @@ function total (nums) {
     for (let i = 0; i < nums.length; i++) {
     sum += nums[i];
     }
-    return sum // returning the sum AFTER the For Loop to get the sum after all iterations
+    return sum; // returning the sum AFTER the For Loop to get the sum after all iterations
 };
 
 console.log(total([3, 2, 8])) // 13
