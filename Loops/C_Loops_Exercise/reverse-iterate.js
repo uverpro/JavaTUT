@@ -4,11 +4,12 @@
 // It should just print to the terminal.
 
 let reverseIterate = function (str) {
-    let stringy = ""
     for (let i = str.length - 1; i >= 0; i--) {
-        stringy += i;
         console.log(str[i]);
     }
 };
 
 reverseIterate("carrot");
+// t, o, r, r, a, c
+reverseIterate("box");
+// x, o, b
