@@ -41,5 +41,16 @@ console.log(alphabet.slice(1, 3)); // b, c
 
 
 let array = ["art", "banana", "crayon", "dog"];
-let i = 2;
-console.log(array[i]); // crayon
+// let i = 2;
+// console.log(array[i]); // crayon
+let longWords = []; // An empty string has a valid value, "0"
+for (let i = 0; i < array.length; i++) {
+    // console.log(i); 0, 1, 2, 3
+    // console.log(array[i]); art, banana, crayon, dog
+    let word = array[i];
+    if (word.length >= 4) {
+        longWords.push(word);
+    }
+}
+
+console.log(longWords);
