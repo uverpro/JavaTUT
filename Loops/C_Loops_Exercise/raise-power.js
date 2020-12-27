@@ -16,3 +16,14 @@ console.log(raisePower(2, 5));
 console.log(raisePower(4, 3));
 console.log(raisePower(10, 4));
 console.log(raisePower(7, 2));
+
+// Line 16 (raisePower(4, 3))
+// product = 1
+// run loop, 1 <= 3, TRUE, return product * base (1 * 4)
+// product = 4
+// run loop, 2 <= 3, TRUE, return product * base (4 * 4)
+// product = 16
+// run loop, 3 <= 3, TRUE, return product * base (16 * 4)
+// product = 64
+// run loop, 4 <= 3, FALSE. Stop loop.
+// run return operation on line 12
