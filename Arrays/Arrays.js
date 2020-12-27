@@ -10,3 +10,6 @@ console.log(fruits[0]); // WILL print "apple" because ELEMENTS in array begin at
 
 let stuff = [true, 42, "dog"]; // Can put anything into an Array. Booleans, numbers, strings.
 console.log(stuff);
+
+
+//THE PUSH METHOD
