@@ -13,3 +13,5 @@ let productUpTo = function (max) {
 };
 
 console.log(productUpTo(4)); // 24
+console.log(productUpTo(5)); // 120
+console.log(productUpTo(7)); // 5040
