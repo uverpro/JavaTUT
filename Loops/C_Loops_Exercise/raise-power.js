@@ -3,3 +3,9 @@
 //
 // For example, raisePower(2, 5) should return 32 because 2 * 2 * 2 * 2 * 2 = 32
 // For example, raisePower(4, 3) should return 64 because 4 * 4 * 4 = 64
+
+
+console.log(raisePower(2, 5));
+console.log(raisePower(4, 3));
+console.log(raisePower(10, 4));
+console.log(raisePower(7, 2));
