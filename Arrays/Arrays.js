@@ -13,3 +13,4 @@ console.log(stuff);
 
 
 //THE PUSH METHOD
+let pushstuff = [false, 85, "honker"]
