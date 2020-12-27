@@ -13,4 +13,7 @@ console.log(stuff);
 
 
 //THE PUSH METHOD
-let pushstuff = [false, 85, "honker"]
+let pushstuff = [false, 85, "tooty"]
+console.log(pushstuff); // 3
+pushstuff.push("fruity");
+console.log(pushstuff);
