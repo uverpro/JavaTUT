@@ -3,11 +3,17 @@
 // Vowels are the letters a, e, i, o, u.
 
 function bleepVowels (str) {
-    let bleep = 0;
+    let bleep = '';
     for (i = 0; i < str.length; i++) {
-         // console.log(str[i])
+        let chars = str[i]; // console.log(str[i])
+        if (chars === "a" || "e" || "i" || "o" || "u") {
+            bleep += "*"
+        } else {
+            bleep += chars;
+        }
     }
-}
+    return bleep
+};
 
 console.log(bleepVowels("skateboard")); // 'sk*t*b**rd'
 console.log(bleepVowels("slipper")); // 'sl*pp*r'
