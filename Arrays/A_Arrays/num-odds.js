@@ -10,7 +10,7 @@ function numOdds (numbers) {
         total += 1;
         }
     }
-    return total
+    return total;
 };
 
 console.log(numOdds([4, 7, 2, 5, 9])); // 3
