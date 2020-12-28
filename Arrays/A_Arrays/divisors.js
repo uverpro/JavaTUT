@@ -3,9 +3,14 @@
 
 function divisors (number) {
     let divarray = [];
-    for (i = 0; i < number; i++) {
-
+    for (i = 1; i <= number; i++) {
+        // console.log(i) 1 - number (use for number count!)
+        // console.log(number) number Xnumber of times
+        if (number % i === 0) {
+            divarray.push(i);
+        }
     }
+    return divarray;
 };
 
 console.log(divisors(15)); // [1, 3, 5, 15]
