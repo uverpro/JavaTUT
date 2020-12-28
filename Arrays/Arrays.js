@@ -109,11 +109,15 @@ function smallestNum (arraynums) {
     for (let i = 0; i < arraynums.length; i++) { // change i to default value of "1" so as to not compare index 0 (5) against itself.
         // console.log(arraynums[i]); // 5, 6, 4, 3, 7 // console.log(i); (0, 1, 3, 4,)
         let num = arraynums[i];
+        if (num < smallest) { // If the next iteration of arraynums[i] (num) is smaller than arraynums[0] (smallest) "5"
+            smallest = num; // Then replace the arraynums[] (smallest)
+        }
     }
+    return smallest;
 };
 
-smallestNum([5, 6, 4, 3, 7]); // 3
-// smallestNum([17, 20]);
-// smallestNum([]); // null
+console.log(smallestNum([5, 6, 4, 3, 7])); // 3
+console.log(smallestNum([17, 20]));
+console.log(smallestNum([])); // null
 // null is a special value in JS used to represent emptiness/nothingness
 // null is distinct from undefined because it is deliberate nothingness
