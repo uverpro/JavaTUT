@@ -3,6 +3,10 @@
 // If the array is empty it will return null
 
 function smallestNum (arraynums) {
+    // to get null add an "if" statement
+    if (arraynums.length === 0){
+        return null;
+    }
     let smallest = arraynums[0]; // Create a new variable. The default value is the first index in the array.
     for (let i = 0; i < arraynums.length; i++) { // change i to default value of "1" so as to not compare index 0 (5) against itself.
         // console.log(arraynums[i]); // 5, 6, 4, 3, 7 // console.log(i); (0, 1, 3, 4,)
@@ -14,7 +18,6 @@ function smallestNum (arraynums) {
     return smallest;
 };
 
-console.log(smallestNum([5, 6, 4, 3, 7])); // 3
 console.log(smallestNum([5, 6, 4, 3, 7])); // 3
 console.log(smallestNum([17, 20]));
 console.log(smallestNum([])); // null
