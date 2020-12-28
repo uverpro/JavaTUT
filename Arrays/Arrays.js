@@ -84,3 +84,8 @@ for (let i = 0; i < words.length; i++) {
 console.log(sentence.split("o")); // [ 'I cann', 't wait f', 'r dinner' ]
 console.log(sentence.split("ait")); // [ 'I cannot w', ' for dinner' ]
 // SPLIT LETS YOU TAKE FROM A STRING AND CREATE A NEW ARRAY
+
+
+
+//
+let cops = ["Josh", "Frank", "Bologna", "Weinerson", "Mike"]
