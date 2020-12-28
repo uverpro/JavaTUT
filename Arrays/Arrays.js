@@ -56,11 +56,29 @@ for (let i = 0; i < array.length; i++) {
 console.log(longWords); // [ 'banana', 'crayon' ]
 
 
-
-let people = ["Leon", "Darren", "Maja Rusa", "Philip"];
 // HOW TO CHECK IF AN ELEMENT IS INSIDE OF AN ARRAY:
+let people = ["Leon", "Darren", "Maja Rusa", "Philip"];
 console.log(people.indexOf("Leon") > -1); // true
 console.log(people.indexOf("Svetlana") > -1); // false
-//USE "INCLUDES"
+//USE "INCLUDES":
 console.log(people.includes("Tatyana")); // false
 console.log(people.includes("Philip")); // true
+// REMEMBER element chars have to match exactly
+
+
+
+// HOW TO GRAB INDIVIDUAL WORDS FROM STRINGS (STRING ARE IMMUTABLE. ARRAYS ARE MUTABLE)
+let sentence = "I cannot wait for dinner";
+// SPLIT METHOD
+// to use split you must pass on an argument
+// the argument should be the character you want to cut your string from
+console.log(sentence.split(" ")); // returns a new array. Doesn't change "sentence".
+
+let words = sentence.split(" ");
+console.log(words);
+
+for (let i = 0; i < words.length; i++) {
+    console.log(words[i]);
+}
+
+console.log(sentence.split("o"));
