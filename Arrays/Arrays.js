@@ -59,5 +59,8 @@ console.log(longWords); // [ 'banana', 'crayon' ]
 
 let people = ["Leon", "Darren", "Maja Rusa", "Philip"];
 // HOW TO CHECK IF AN ELEMENT IS INSIDE OF AN ARRAY:
-console.log(people.indexOf("Leon") > -1) // true
-console.log(people.indexOf("Svetlana") > -1) // false
+console.log(people.indexOf("Leon") > -1); // true
+console.log(people.indexOf("Svetlana") > -1); // false
+//USE "INCLUDES"
+console.log(people.includes("Tatyana")); // false
+console.log(people.includes("Philip")); // true
