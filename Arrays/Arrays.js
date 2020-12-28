@@ -105,7 +105,7 @@ console.log(superfans);
 // If the array is empty it will return null
 
 function smallestNum (arraynums) {
-    for (let i = 0; i < arraynums.length, i++) {
+    for (let i = 0; i < arraynums.length; i++) {
         console.log(i)
     }
 };
