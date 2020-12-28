@@ -87,5 +87,7 @@ console.log(sentence.split("ait")); // [ 'I cannot w', ' for dinner' ]
 
 
 
-//
+// JOIN METHOD
+// The "join()" method creates and returns a new string
+// by concatenating all of the elements in an array
 let cops = ["Josh", "Frank", "Bologna", "Weinerson", "Mike"]
