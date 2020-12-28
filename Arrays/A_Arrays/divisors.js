@@ -4,8 +4,8 @@
 function divisors (number) {
     let divarray = [];
     for (i = 1; i <= number; i++) {
-        // console.log(i) 1 - number (use for number count!)
-        // console.log(number) number Xnumber of times
+        // console.log(i) will print 1 - 15 (use for number count!)
+        // console.log(number) will print "15", 15 times
         if (number % i === 0) {
             divarray.push(i);
         }
