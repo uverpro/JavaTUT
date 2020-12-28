@@ -92,5 +92,6 @@ console.log(sentence.split("ait")); // [ 'I cannot w', ' for dinner' ]
 // by concatenating all of the elements in an array
 let cops = ["Josh", "Frank", "Bologna", "Weinerson", "Mike"]
 console.log(cops.join("-"));
-let daguys = console.log(cops.join("-"));
+let daguys = cops.join("-");
 console.log(daguys);
+console.log(cops);
