@@ -54,3 +54,10 @@ for (let i = 0; i < array.length; i++) {
 }
 
 console.log(longWords); // [ 'banana', 'crayon' ]
+
+
+
+let people = ["Leon", "Darren", "Maja Rusa", "Philip"];
+// HOW TO CHECK IF AN ELEMENT IS INSIDE OF AN ARRAY:
+console.log(people.indexOf("Leon") > -1) // true
+console.log(people.indexOf("Svetlana") > -1) // false
