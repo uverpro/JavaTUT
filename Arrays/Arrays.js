@@ -95,3 +95,11 @@ console.log(cops.join("-"));
 let daguys = cops.join("-");
 console.log(daguys);
 console.log(cops);
+let superfans = cops.join("DABEARS");
+console.log(superfans);
+
+
+
+// Write a function that accepts an array of number as an argument and
+// reuturns the smaller number in the array
+// If the array is empty it will return null
