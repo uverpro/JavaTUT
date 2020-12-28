@@ -106,12 +106,12 @@ console.log(superfans);
 
 function smallestNum (arraynums) {
     for (let i = 0; i < arraynums.length; i++) {
-        console.log(i)
+        console.log(arraynums[i]); // 5, 6, 4, 3, 7 // console.log(i); (0, 1, 3, 4,)
     }
 };
 
 smallestNum([5, 6, 4, 3, 7]); // 3
-smallestNum([17, 20]);
-smallestNum([]); // null
+// smallestNum([17, 20]);
+// smallestNum([]); // null
 // null is a special value in JS used to represent emptiness/nothingness
 // null is distinct from undefined because it is deliberate nothingness
