@@ -81,4 +81,4 @@ for (let i = 0; i < words.length; i++) {
     console.log(words[i]);
 }
 
-console.log(sentence.split("o"));
+console.log(sentence.split("o")); // [ 'I cann', 't wait f', 'r dinner' ]
