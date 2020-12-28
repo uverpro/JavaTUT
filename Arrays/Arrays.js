@@ -103,3 +103,11 @@ console.log(superfans);
 // Write a function that accepts an array of number as an argument and
 // reuturns the smaller number in the array
 // If the array is empty it will return null
+
+function smallestNum (arraynums) {
+
+};
+
+smallestNum([5, 6, 4, 3, 7]); // 3
+smallestNum([17, 20]);
+smallestNum([]); // null
