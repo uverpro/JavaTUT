@@ -8,6 +8,8 @@ console.log(word.indexOf("z") > -1); // false
 let str = "foggy";
 console.log(str[2 + 1]); // g
 console.log(str[str.length - 1]); // y
+console.log(str.charAt(str.length - 1)); // y
+
 str = " day";
 console.log(str); //  day
 console.log(str.length) // 4
