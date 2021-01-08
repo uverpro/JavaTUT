@@ -1,9 +1,6 @@
-// snippet 2
-console.log("hi");
-
-for (let i = 3; i <= 7; i++) {
-  console.log("program");
-  console.log(i);
+function stringIterate (str) {
+    for (let i = 0; i < str.length; i++)
+    console.log(str[i]);
 }
 
-console.log("bye");
+stringIterate("celery");
