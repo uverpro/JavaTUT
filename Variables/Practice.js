@@ -1,6 +1,5 @@
-function stringIterate (str) {
-    for (let i = 0; i < str.length; i++)
-    console.log(str[i]);
-}
-
-stringIterate("celery");
+function fiveMultiplesOf (num) {
+    for (let i = num; num <= num * 5; num += num * 5)
+    console.log(num);
+};
+ fiveMultiplesOf(7);
