@@ -14,8 +14,6 @@ function stringIterate (str) {
 };
 
 stringIterate("celery");
-
-stringIterate("celery");
 // c, e, l, e, r, y
 stringIterate("hat");
 // h, a, t
