@@ -1,5 +1,9 @@
-function fiveMultiplesOf (num) {
-    for (let i = num; num <= num * 5; num += num * 5)
-    console.log(num);
+function sumUpTo (max) {
+    let total = 0;
+    for (let i = 1; i <= max; i++) {
+    total += i
+    }
+        return total;
 };
- fiveMultiplesOf(7);
+
+console.log(sumUpTo(4));
