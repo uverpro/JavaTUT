@@ -12,10 +12,10 @@ let raisePower = function (base, exponent) {
     return product
 };
 
-console.log(raisePower(2, 5));
-console.log(raisePower(4, 3));
-console.log(raisePower(10, 4));
-console.log(raisePower(7, 2));
+console.log(raisePower(2, 5)); // 32
+console.log(raisePower(4, 3)); // 64
+console.log(raisePower(10, 4)); // 10000
+console.log(raisePower(7, 2)); // 49
 
 // Line 16 (raisePower(4, 3))
 // product = 1
