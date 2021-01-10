@@ -13,3 +13,11 @@ divisibleRange(17, 40, 9);
 // 18, 27, 36
 divisibleRange(10, 24, 4);
 // 12, 16, 20
+
+// REVISE
+// function divisibleRange (min, max, num) {
+//     for (i = num; i < max; i += num)
+//     if (i > min) {
+//     console.log(i)
+//     }
+// };
