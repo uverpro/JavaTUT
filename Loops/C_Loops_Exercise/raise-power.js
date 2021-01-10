@@ -7,7 +7,7 @@
 let raisePower = function (base, exponent) {
     let product = 1;
     for (i = 1; i <= exponent; i++) {
-        product *= base
+        product *= base;
         }
     return product
 };
