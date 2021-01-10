@@ -54,24 +54,24 @@
 
 // Modified while loop from AA
 function bleepWords (str) {
-	let vowelCounter=""; //0
-	let index=0;
-while (index < word.length){
-  let letter = word[index]; // 1
+	let censored = ""; //0
+	let index = 0;
+while (index < str.length){
+  let letter = str[index]; // 1
 
   if (letter === "a" || // 2
       letter === "e" ||
       letter === "i" ||
       letter === "o" ||
       letter === "u") {
-    vowelCounter += "*"; // 3
+    censored += "*"; // 3
   	} else {
-          vowelCounter += letter;
+          censored += letter;
       }
   index++;
   }
-  return vowelCounter;
+  return censored;
 }
 
-console.log(countVowels("bootcamp")); // => 3
-console.log(countVowels("apple")); // => 2
+console.log(bleepWords("bootcamp")); // => 3
+console.log(bleepWords("apple")); // => 2
