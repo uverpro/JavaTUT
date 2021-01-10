@@ -1,12 +1,13 @@
-function raisePower (base, exponent) {
-    let power = 1;
-    for (i = 1; i <= exponent; i++) {
-        power *= base;
+function censorE (str) {
+    let nustr = "";
+    for (i = 0; i < str.length; i++) {
+        if (str[i] === "e") {
+            nustr += "*";
+        } else {
+    nustr += str[i]
     }
-    return power
+}
+    return nustr;
 };
 
-console.log(raisePower(2, 5));
-console.log(raisePower(4, 3));
-console.log(raisePower(10, 4));
-console.log(raisePower(7, 2));
+console.log(censorE("speedy"));
