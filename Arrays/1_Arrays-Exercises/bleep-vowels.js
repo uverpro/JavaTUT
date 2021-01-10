@@ -22,49 +22,56 @@
 // console.log(bleepVowels("slipper")); // 'sl*pp*r'
 // console.log(bleepVowels("range")); // 'r*ng*'
 // console.log(bleepVowels("brisk morning")); // 'br*sk m*rn*ng'
+// console.log(bleepVowels("apple")); // 'appl*
+
+
+
+// My Solution w/o Array
+// function bleepVowels (str) {
+//     let censored = "";
+//     for (i = 0; i < str.length; i++) {
+//         let letter = str[i];
+//         if (letter === "a" ||
+//             letter === "e" ||
+//             letter === "i" ||
+//             letter === "o" ||
+//             letter === "u") {
+//             censored += "*";
+//         } else {
+//             censored += letter;
+//         }
+//     }
+//     return censored
+// };
+
+// console.log(bleepVowels("skateboard")); // 'sk*t*b**rd'
+// console.log(bleepVowels("slipper")); // 'sl*pp*r'
+// console.log(bleepVowels("range")); // 'r*ng*'
+// console.log(bleepVowels("brisk morning")); // 'br*sk m*rn*ng'
 // console.log(bleepVowels("apple"));
 
-function bleepVowels (str) {
-    let censored = "";
-    for (i = 0; i < str.length; i++) {
-        let letter = str[i];
-        if (letter === "a" ||
-            letter === "e" ||
-            letter === "i" ||
-            letter === "o" ||
-            letter === "u") {
-            nustr += "*";
-        } else {
-            nustr += letter;
-    }
-    return censored
-};
 
-console.log(bleepVowels("skateboard")); // 'sk*t*b**rd'
-console.log(bleepVowels("slipper")); // 'sl*pp*r'
-console.log(bleepVowels("range")); // 'r*ng*'
-console.log(bleepVowels("brisk morning")); // 'br*sk m*rn*ng'
-console.log(bleepVowels("apple"));
 
-// function countVowels(word) {
-// 	let vowelCounter=""; //0
-// 	let index=0;
-// while (index < word.length){
-//   let letter = word[index]; // 1
+// Modified while loop from AA
+function bleepWords (str) {
+	let vowelCounter=""; //0
+	let index=0;
+while (index < word.length){
+  let letter = word[index]; // 1
 
-//   if (letter === "a" || // 2
-//       letter === "e" ||
-//       letter === "i" ||
-//       letter === "o" ||
-//       letter === "u") {
-//     vowelCounter += "*"; // 3
-//   	} else {
-//           vowelCounter += letter;
-//       }
-//   index++;
-//   }
-//   return vowelCounter;
-// }
+  if (letter === "a" || // 2
+      letter === "e" ||
+      letter === "i" ||
+      letter === "o" ||
+      letter === "u") {
+    vowelCounter += "*"; // 3
+  	} else {
+          vowelCounter += letter;
+      }
+  index++;
+  }
+  return vowelCounter;
+}
 
-// console.log(countVowels("bootcamp")); // => 3
-// console.log(countVowels("apple")); // => 2
+console.log(countVowels("bootcamp")); // => 3
+console.log(countVowels("apple")); // => 2
