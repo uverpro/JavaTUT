@@ -4,7 +4,7 @@
 function stayPositive (num) {
     let newarray = [];
     for (let i = 0; i < num.length; i++) {
-        if (num[i] > 0) //console.log(num[i]);
+        if (num[i] > 0) //console.log(num[i]); // 10, 3, 6
         newarray.push(num[i]);
     }
     return newarray
