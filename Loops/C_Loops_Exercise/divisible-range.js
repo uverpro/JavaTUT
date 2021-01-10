@@ -4,7 +4,7 @@
 let divisibleRange = function (min, max, num) {
     for (let i = min; i < max; i++) {
         if (i % num === 0) {
-            console.log(i)
+            console.log(i);
         }
     }
 };
