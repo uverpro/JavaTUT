@@ -1,13 +1,16 @@
-function stayPositive (num) {
-    let positivenums = [];
-    for (i = 0; i < num.length; i++) {
-        if (num[i] > 0) {
-            positivenums.push(num[i])
-        }
+function bleepVowels (str) {
+    let nustr = "";
+    for (i = 0; i < str.length; i++) {
+        if (str[i] === "a" || "e" || "i" || "o" || "u")
+        nustr += "*";
+    } else {
+        nustr += str[i];
     }
-    return positivenums
+    }
+    return nustr;
 };
 
-console.log(stayPositive([10, -4, 3, 6])); // [10, 3, 6]
-console.log(stayPositive([-5, 11, -40, 30.3, -2])); // [11, 30.3]
-console.log(stayPositive([-11, -30])); // []
+console.log(bleepVowels("skateboard")); // 'sk*t*b**rd'
+console.log(bleepVowels("slipper")); // 'sl*pp*r'
+console.log(bleepVowels("range")); // 'r*ng*'
+console.log(bleepVowels("brisk morning")); // 'br*sk m*rn*ng'
