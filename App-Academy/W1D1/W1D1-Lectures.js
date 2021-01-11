@@ -69,3 +69,5 @@
 // Comparison Operators
 // >, <, >=, <=, ===, !==
 // will return a Boolean
+
+// "===" vs "=="
