@@ -31,3 +31,24 @@
 // By default variable values are undefined
 // console.log(food + 4) // NaN
 // Any illegal math will return "NaN" AKA NOT A NUMBER
+
+
+
+// BOOLEAN TYPE
+// Boolean is a true or false value
+// Syntax:
+// console.log(true); // true
+// console.log(false); // false
+
+// Not Operator (!)
+// - reverses a Boolean Value
+// console.log(!true); // false
+// console.log(!false); // true
+
+// And Operator (&&)
+// returns true only when both sides are true
+// returns false when at least one side is false
+
+// Or Operator (||)
+// returns false only when both sides are false
+// returns true when at least one side is true
