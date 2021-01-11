@@ -52,9 +52,14 @@
 // returns false when at least one side is false
 // console.log(true && true); // true
 // console.log(true && false); // false
+// console.log(false && false); // false
 
 // Or Operator (||)
 // returns false only when both sides are false
 // returns true when at least one side is true
 // console.log(false || false); // false
 // console.log(true || false); // true
+// console.log(true || true); // true
+
+// console.log(!(true && false)); // (false || true) // true
+// console.log(!(false || false)); // (true && true) // true
