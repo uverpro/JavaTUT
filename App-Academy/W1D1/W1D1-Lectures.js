@@ -1,9 +1,9 @@
-// Data Types
-// Numbers
-// Booleans
-// Strings
-// Arrays
-// Objects
+// Data Types in JS
+// Numbers - (0, 1, 2, 3...)
+// Booleans - True/False
+// Strings - "Hello World!"
+// Arrays - [0, 1, 2, 3...]
+// Objects - (POGOs) {key1:"value1",key2:"value2"}
 
 // "()" are grouping operators
 // "++" is the "increment operator"
@@ -26,7 +26,7 @@
 // count++
 // console.log(count) // 1
 
-// let food; (declared by nut assighned a value)
+// let food; (declared by not assighned a value)
 // console.log(food) // Undefined
 // By default variable values are undefined
 // console.log(food + 4) // NaN
