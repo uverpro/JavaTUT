@@ -25,3 +25,9 @@
 // let count = 0;
 // count++
 // console.log(count) // 1
+
+// let food; (declared by nut assighned a value)
+// console.log(food) // Undefined
+// By default variable values are undefined
+// console.log(food + 4) // NaN
+// Any illegal math will return "NaN" AKA NOT A NUMBER
