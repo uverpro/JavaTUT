@@ -70,4 +70,16 @@
 // >, <, >=, <=, ===, !==
 // will return a Boolean
 
+// console.log("a" < "b"); // true
+// console.log("z" > "b"); // true
+// JS will evaluate them in alphabetical order
+// console.log("cat" < "zoo"); // true
+// console.log("cat" > "banana"); // true
+// console.log("app" < "apple"); // true
+
 // "===" vs "=="
+// A tale of two Equality Operators
+// console.log(5 === "5"); // false
+// console.log(5 == "5"); // true (types are coerced by JS)
+// console.log([] == 0); // true (unpredictable)
+// avoid "=="
