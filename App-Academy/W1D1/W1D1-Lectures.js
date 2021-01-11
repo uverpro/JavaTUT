@@ -63,3 +63,9 @@
 
 // console.log(!(true && false)); // (false || true) // true
 // console.log(!(false || false)); // (true && true) // true
+
+
+
+// Comparison Operators
+// >, <, >=, <=, ===, !==
+// will return a Boolean
