@@ -1,3 +1,7 @@
+// let i; // Variable Decleration
+// i = 0; // Variable Assignment
+// let i = 0; // Variable Initialization
+
 // Data Types in JS
 // Numbers - (0, 1, 2, 3...)
 // Booleans - True/False
