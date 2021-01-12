@@ -34,6 +34,20 @@
 // };
 // function invocation: thisIsMyName("argument1", "argument2");
 
+
+
+// Array Lecture
+// Things to know
+// 1. Used to store multiple values within a list-like structure
+// -Values are stored in order
+// -Values are seperated by commas
+// 2. Arrays are dynamic, with no set length
+// - You can add and remove items
+// 3. Arrays are Global Objects
+// - You can make a new array anywhere!
+
+
+
 // // ====== String Type ======:
 
 // 1. Initialize a variable with a value of 'Hello World'
