@@ -55,6 +55,8 @@
 // console.log(third); // => [1, 2, 3, 5, 5, 5]
 // console.log(first); // => [1, 2, 3]
 
+
+
 // // ====== String Type ======:
 
 // 1. Initialize a variable with a value of 'Hello World'
