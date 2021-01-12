@@ -72,13 +72,14 @@
 
 
 // // ====== Conditionals ===:
-let myBoolean = false;
+// let myBoolean = false;
 
-if (myBoolean) {
-    console.log("hi");
-} else {
-    console.log("hello");
-}
+// if (myBoolean) {
+//     console.log("hi");
+// } else {
+//     console.log("hello");
+// }
+// hello
 
 // myBoolean = 5;
 // if (myBoolean < 6) {
