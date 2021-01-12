@@ -3,6 +3,7 @@
 // console.log(str.indexOf("g")); // 2
 // console.log(str[2]); // g
 // console.log(str[str.length -1]); // will always return the last character! // "s"
+// console.log(str.length -1); // 3
 
 // str.indexOf(searchValue [, fromIndex]) // "[]" signifies an option parameter
 // let str = "I am a very good man!"
