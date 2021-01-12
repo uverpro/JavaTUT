@@ -3,6 +3,11 @@
 // console.log(str.indexOf("g")); // 2
 // console.log(str[2]); // g
 
+// str.indexOf(searchValue [, fromIndex]) // "[]" signifies an option parameter
+// let str = "I am a very good man!"
+// console.log(str.indexOf("a")) // 2
+// console.log(str.indexOf("a", 2)) // 2 (from index is exlusive!)
+// console.log(str.indexOf("a", 3)) // 5
 
 
 // // ====== String Type ======:
