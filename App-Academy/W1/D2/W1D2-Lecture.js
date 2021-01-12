@@ -4,6 +4,7 @@
 // console.log(str[2]); // g
 
 
+
 // // ====== String Type ======:
 
 // 1. Initialize a variable with a value of 'Hello World'
