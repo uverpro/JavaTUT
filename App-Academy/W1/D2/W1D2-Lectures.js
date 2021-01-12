@@ -96,7 +96,7 @@
 // if (hungerLevel < 1) {
 //     console.log('not hungry yet');
 // } else if (hungerLevel <= 5) {
-//     console.log('snack time!');
+//     console.log('snack time!'); // WILL print
 // } else if (hungerLevel <= 9) {
 //     console.log('Time for a meal!');
 // } else if (hungerLevel <= 10) {
@@ -105,6 +105,8 @@
 //     console.log('almost HANGRY!');
 // }
 // snack time!
+
+
 
 // let hungerLevel = 5;
 
