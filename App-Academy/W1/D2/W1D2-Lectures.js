@@ -156,15 +156,18 @@
 
 // let ticker = 3;
 
+// WHILE LOOP
 // while (ticker > 0 ) {
 //     console.log("I ran a lap!");
 //     ticker--;
 // }
+// will print "I ran a lap!" 3x
 
+// FOR LOOP
 // for (let i = 0; i < 3; i++) {
 //     console.log("I ran a lap!")
 // }
-
+// will print "I ran a lap!" 3x
 
 
 
