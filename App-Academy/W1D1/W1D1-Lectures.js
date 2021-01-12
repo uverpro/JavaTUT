@@ -79,7 +79,13 @@
 
 // "===" vs "=="
 // A tale of two Equality Operators
+
+// "===" will not match value across types
+// "==" will coerce types to match as closely as possible
+
 // console.log(5 === "5"); // false
 // console.log(5 == "5"); // true (types are coerced by JS)
 // console.log([] == 0); // true (unpredictable)
 // avoid "=="
+
+// console.log(3 % 12); // will return "3"
