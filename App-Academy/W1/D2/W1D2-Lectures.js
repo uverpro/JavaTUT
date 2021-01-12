@@ -13,6 +13,27 @@
 
 
 
+// Function Lecture
+// Basic Concept: Write a function once (function decleration)
+// "use" it as many times as we please (function calls)
+
+// Function Definition Break Down
+// 1. The name of the function
+// let functionName = function ()
+// 2. A list of PARAMETERS to the function, enclosed in parentheses, "()"
+// let functionName = function (num)
+// 3. The code to be run when this function is run, enclosed in braces (curly brackets), "{}"
+// let functionName = function (num) {
+// return num + 5;
+// };
+// console.log(functionName(5)); // 10
+
+// Function Definition Example
+// function decleration: function thisIsMyName (parameter1, parameter2) {
+    // the code to be ran
+// };
+// function invocation: thisIsMyName("argument1", "argument2");
+
 // // ====== String Type ======:
 
 // 1. Initialize a variable with a value of 'Hello World'
