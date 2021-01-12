@@ -127,3 +127,14 @@ for (let i = 1; i < 5; i++) {
 
 console.log("grand total; " + total)
 // 1, 3, 6, 10 grand total; 10
+
+
+
+// WHILE LOOPS
+let ticker = 3;
+
+while (ticker > 0 ) {
+    console.log("I ran a lap!");
+    ticker--;
+};
+// will print "I ran a lap!" 3x
