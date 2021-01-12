@@ -172,18 +172,17 @@
 
 
 // // ======= Amazing Arrays === :
-let array = [];
+// let array = [];
 
-array.push(4);
-console.log(array); // [ 4 ]
-array.push(5);
-console.log(array); // [ 4, 5 ]
-array.push("sup");
-
-// console.log(array); // => ?
-// console.log(array[0]); // => ?
-// console.log(array[array.length - 1]); // => ?
-// console.log(array.length); // => ?
+// array.push(4);
+// console.log(array); // [ 4 ]
+// array.push(5);
+// console.log(array); // [ 4, 5 ]
+// array.push("sup");
+// console.log(array); // [ 4, 5, 'sup' ]
+// console.log(array[0]); // => 4
+// console.log(array[array.length - 1]); // 'sup'
+// console.log(array.length); // => 3
 
 
 
