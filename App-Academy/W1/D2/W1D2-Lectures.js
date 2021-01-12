@@ -89,20 +89,20 @@
 //     console.log("this is a falsey value");
 // }
 
-// // 'else' is mutually exclusive:
-// let hungerLevel = 5;
+// 'else' is mutually exclusive:
+// let hungerLevel = 5; // let hungerLevel = 15; // "almost HANGRY!"
 // if (hungerLevel < 1) {
 //     console.log('not hungry yet');
 // } else if (hungerLevel <= 5) {
 //     console.log('snack time!');
 // } else if (hungerLevel <= 9) {
 //     console.log('Time for a meal!');
-// } else {
+// } else if (hungerLever <= 10) {
 //     console.log('HANGRY!');
-// } else if (hungerLevel <= 9) {
+// } else {
 //     console.log('almost HANGRY!');
 // }
-
+// snack time!
 
 
 
