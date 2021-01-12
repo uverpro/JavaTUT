@@ -46,7 +46,14 @@
 // 3. Arrays are Global Objects
 // - You can make a new array anywhere!
 
-
+// Combining Arrays
+// The Concat Method (see other methods at end of this lecture)
+// Returns a combination of two arrays WITHOUT modifying either one
+// let first = [1, 2, 3];
+// let second = [5, 5, 5];
+// let third = first.concat(second);
+// console.log(third); // => [1, 2, 3, 5, 5, 5]
+// console.log(first); // => [1, 2, 3]
 
 // // ====== String Type ======:
 
