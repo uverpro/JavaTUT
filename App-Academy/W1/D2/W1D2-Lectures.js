@@ -172,11 +172,13 @@
 
 
 // // ======= Amazing Arrays === :
-// let array = [];
+let array = [];
 
-// array.push(4);
-// array.push(5);
-// array.push("sup");
+array.push(4);
+console.log(array); // [ 4 ]
+array.push(5);
+console.log(array); // [ 4, 5 ]
+array.push("sup");
 
 // console.log(array); // => ?
 // console.log(array[0]); // => ?
