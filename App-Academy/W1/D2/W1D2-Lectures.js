@@ -61,6 +61,12 @@
 // averageOfFour(1, 20, 500, 11); // 133
 // averageOfFour(10, 20, 30, 40); //25
 
+// function averageOfFour(arg1, arg2, arg3, arg4) {
+//    return (arg1 + arg2 + arg3 + arg4) / 4;
+// }
+
+// console.log(averageOfFour(1, 2, 3, 4)); // 2.5
+
 
 
 
