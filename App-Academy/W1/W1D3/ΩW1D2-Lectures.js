@@ -323,6 +323,12 @@ console.log(str === anotherStr); // true
 
 
 
+let str = 'abc';
+let upperCase = str.toUpperCase();
+console.log(str);
+console.log(upperCase);
+console.log(str === upperCase);
+
 
 
 
@@ -343,14 +349,3 @@ console.log(arr === anotherArr); // false
 let dupArr = arr.slice() // duplicate of the array
 console.log(dupArr); // ['a', 'b', c']
 console.log(arr === dupArr); // false
-
-
-
-
-let str = 'abc';
-
-let upperCase = str.toUpperCase();
-
-console.log(str);
-console.log(upperCase);
-console.log(str === upperCase);
