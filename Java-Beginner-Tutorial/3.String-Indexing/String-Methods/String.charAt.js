@@ -1,4 +1,4 @@
-// String.charAt() method
+// String.charAt() method => Same as String[]
 // .charAt() method returns a character unit located at specific index
 const sentence = "The happy little boy."
 console.log(sentence[4]); // h
