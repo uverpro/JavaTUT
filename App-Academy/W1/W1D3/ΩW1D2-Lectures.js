@@ -312,20 +312,12 @@ console.log(uniquePairs(cats));
 // arr[1] = "x";
 // console.log(arr);
 
-
-
-
-
 // We can reassign a variable to another string
-beforeStr = str;
-
-str += 'def' // str = str + 'def'
-
+// beforeStr = str;
+// str += 'def' // str = str + 'def'
 // console.log(str) // 'abcdef'
-
 // console.log(str === beforeStr); // false
-
-const anotherStr = 'abcdef';
+// const anotherStr = 'abcdef';
 // console.log(str === anotherStr); // true
 
 
