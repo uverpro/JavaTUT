@@ -1,3 +1,4 @@
+// String.prototypse.toLowerCase()
 // The toLowerCase() method returns the calling string value converted to lower case.
 
 
