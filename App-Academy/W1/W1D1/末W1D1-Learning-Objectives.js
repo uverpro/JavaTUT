@@ -59,9 +59,15 @@ console.log(5 <= 5); // true
 // !A && !B = !(A || B)
 
 // 7. Given an expression that utilizes operator precedence, compute its value
-console.log((5 + 5) / 5); // 5
+console.log(5 + 5 % 5); // 5
 
 // 8. Given an expression, use the grouping operator to change it’s evaluation
-Given expressions using == and ===, compute their values
-Given a code snippet using postfix ++, postfix --, +=, -=, /=, *=, predict the value of labeled lines
-Create and assign a variable using let to a string, integer, and a boolean. Read its value and print to the console.
+console.log((5 * 5) / 5); // 5
+
+// 9. Given expressions using == and ===, compute their values
+console.log(5 == "5"); // true
+console.log(5 === "5"); // false
+
+// 10. Given a code snippet using postfix ++, postfix --, +=, -=, /=, *=, predict the value of labeled lines
+
+// 11. Create and assign a variable using let to a string, integer, and a boolean. Read its value and print to the console.
