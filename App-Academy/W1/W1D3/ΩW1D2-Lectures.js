@@ -170,17 +170,7 @@ cats.unshift('Sennacy');
 //   }
 
 
-let array = ["a", "b", "c", "d"]
-// OUTER LOOP:
-for (i = 0; i < array.length; i++) {
-    let outer = array[i];
 
-    // INNER LOOP
-    for (j = 0; j < array.length; j++) {
-        let inner = array[j];
-        console.log("pair: " + outer + " " + inner)
-    }
-}
 
 
 
