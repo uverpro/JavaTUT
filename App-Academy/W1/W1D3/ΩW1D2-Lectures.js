@@ -101,17 +101,21 @@ cats.unshift('Sennacy');
 
 
 
-function arrayToUpperCase(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
+// Given an Array of Strings, turn each element (aka ITERATION) uppercased
+
+function arrayToUpperCase (array) {
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
     if (typeof element === 'string') {
-      element = element.toUpperCase();
+      let upperCased = element.toUpperCase();
+      array.splice(i, 1, upperCased);
     }
   }
-  return arr;
-}
+  return array;
+};
 
-
+const foods = ['banana', 'taco', 'cookie'];
+console.log(arrayToUpperCase(foods));
 
 // function declaration syntax
 // function name is built into the declaration of the function
