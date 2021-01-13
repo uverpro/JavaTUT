@@ -42,7 +42,7 @@ console.log(5 % 5) // 0
 
 // 4. Given an expression, predict if its value is NaN
 // Construct the truth tables for &&, ||, !
-//  X       Y     !X     !Y   ( X && Y )  ( X || Y )
+//  X       Y     !X     !Y    ( X && Y )  ( X || Y )
 // false	false	 true 	true     false	     false
 // false	true	 true 	false    false	     true
 // true	  false	 false  true	   false	     true
@@ -57,8 +57,11 @@ console.log(5 <= 5); // true
 
 // 6. Apply De Morgan’s law to a boolean expression
 // !A && !B = !(A || B)
+
 // 7. Given an expression that utilizes operator precedence, compute its value
-Given an expression, use the grouping operator to change it’s evaluation
+console.log((5 + 5) / 5); // 5
+
+// 8. Given an expression, use the grouping operator to change it’s evaluation
 Given expressions using == and ===, compute their values
 Given a code snippet using postfix ++, postfix --, +=, -=, /=, *=, predict the value of labeled lines
 Create and assign a variable using let to a string, integer, and a boolean. Read its value and print to the console.
