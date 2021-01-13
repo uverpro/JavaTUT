@@ -41,33 +41,56 @@ console.log(5 / 5) // 1
 console.log(5 % 5) // 0
 
 // 4. Given an expression, predict if its value is NaN
-// Construct the truth tables for &&, ||, !
+console.log(5 / "a"); // NaN. Any impossible math will return NaN
+
+//5. Construct the truth tables for &&, ||, !
 //  X       Y     !X     !Y    ( X && Y )  ( X || Y )
 // false	false	 true 	true     false	     false
 // false	true	 true 	false    false	     true
 // true	  false	 false  true	   false	     true
 // true	  true	 false 	false    true	       true
 
-// 5. Given an expression consisting of >, >=, ===, <, <=, compute it’s value
+// 6. Given an expression consisting of >, >=, ===, <, <=, compute it’s value
 console.log(5 > 5); // false
 console.log(5 >= 5); // true
 console.log(5 === 5); // true
 console.log(5 < 5); // false
 console.log(5 <= 5); // true
 
-// 6. Apply De Morgan’s law to a boolean expression
+// 7. Apply De Morgan’s law to a boolean expression
 // !A && !B = !(A || B)
 
-// 7. Given an expression that utilizes operator precedence, compute its value
+// 8. Given an expression that utilizes operator precedence, compute its value
 console.log(5 + 5 % 5); // 5
 
-// 8. Given an expression, use the grouping operator to change it’s evaluation
+// 9. Given an expression, use the grouping operator to change it’s evaluation
 console.log((5 * 5) / 5); // 5
 
-// 9. Given expressions using == and ===, compute their values
+// 10. Given expressions using == and ===, compute their values
 console.log(5 == "5"); // true
 console.log(5 === "5"); // false
 
-// 10. Given a code snippet using postfix ++, postfix --, +=, -=, /=, *=, predict the value of labeled lines
+// 11. Given a code snippet using postfix ++, postfix --, +=, -=, /=, *=,
+// predict the value of labeled lines
+let x = 5;
+console.log(x++); // 5
+console.log(x); // 6
+console.log(x--); // 6
+console.log(x); // 5
+console.log(--x); // 4
+console.log(x); // 4
+console.log(x += 5); // 9
+console.log(x -= 5); // 4
+console.log(x /= 2); // 2
+console.log(x *= 5); // 10
 
-// 11. Create and assign a variable using let to a string, integer, and a boolean. Read its value and print to the console.
+// 12. Create and assign a variable using let to a string, integer, and a boolean.
+// Read its value and print to the console.
+
+let x = "String.";
+let i = 0;
+let y = (5 === 5);
+
+console.log(x); // String.
+console.log(i); // 0
+console.log(y);  // true
