@@ -1,24 +1,28 @@
 // String Data Type
-// const str = "dogs";
-// console.log(str.indexOf("g")); // 2
-// console.log(str[2]); // g
-// console.log(str[str.length -1]); // will always return the last character! // "s"
-// console.log(str.length -1); // 3
+const str = "dogs";
+console.log(str.indexOf("g")); // 2
+console.log(str[2]); // g
+console.log(str[str.length -1]); // will always return the last character! // "s"
+console.log(str.length -1); // 3
 
 // str.indexOf(searchValue [, fromIndex]) // "[]" signifies an option parameter
-// let str = "I am a very good man!"
-// console.log(str.indexOf("a")) // 2
-// console.log(str.indexOf("a", 2)) // 2 (from index is exlusive!)
-// console.log(str.indexOf("a", 3)) // 5
+let str = "I am a very good man!"
+console.log(str.indexOf("a")) // 2
+console.log(str.indexOf("a", 2)) // 2 (from index is exlusive!)
+console.log(str.indexOf("a", 3)) // 5
 
 
 
-// Function Note:
-// function addThreeNumbers(num1, num2, num3) {
-//     return num1 + num2 + num3;
-//   }
-//   addThreeNumbers(1, 2); // => NaN
-//   addThreeNumbers(1, 2, 3, 4); // => 6
+// Function Notes:
+// Functions can only be wrote once but can be evoked as many times as you want
+//
+
+function addThreeNumbers(num1, num2, num3) {
+    return num1 + num2 + num3;
+  }
+  addThreeNumbers(1, 2); // => NaN
+  addThreeNumbers(1, 2, 3, 4); // => 6
+
 
 
 
@@ -32,10 +36,10 @@
 // 2. A list of PARAMETERS to the function, enclosed in parentheses, "()"
 // let functionName = function (num)
 // 3. The code to be run when this function is run, enclosed in braces (curly brackets), "{}"
-// let functionName = function (num) {
-// return num + 5;
-// };
-// console.log(functionName(5)); // 10
+let functionName = function (num) {
+return num + 5;
+};
+console.log(functionName(5)); // 10
 
 // Function Definition Example
 // function decleration: function thisIsMyName (parameter1, parameter2) {
