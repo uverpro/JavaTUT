@@ -14,3 +14,6 @@ console.log(typeof undeclaredVariable);
 
 console.log(typeof [1, 2]);
 // expected output: "object"
+
+console.log(typeof NaN);
+// expected output: "number"
