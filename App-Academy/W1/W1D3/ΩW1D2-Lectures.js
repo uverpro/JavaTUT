@@ -30,33 +30,33 @@
 
 
 // === Array.prototype.push
-let people = ['Miah'];
-let firstPeople = people;
+// let people = ['Miah'];
+// let firstPeople = people;
 
-people.push('Adrian');
-people.push('Tom');
-people.push('Justin');
-people.push('Emily');
+// people.push('Adrian');
+// people.push('Tom');
+// people.push('Justin');
+// people.push('Emily');
 
-console.log(people); // [ 'Miah', 'Adrian', 'Tom', 'Justin', 'Emily' ]
-console.log(firstPeople === people); // true
+// console.log(people); // [ 'Miah', 'Adrian', 'Tom', 'Justin', 'Emily' ]
+// console.log(firstPeople === people); // true
 
 
 
 // === Array.prototype.pop
 // Permanently removes and returns the last element in an array
-let dogs = ['Fido', 'Digby', 'Fluffy'];
-let beforePop = dogs;
+// let dogs = ['Fido', 'Digby', 'Fluffy'];
+// let beforePop = dogs;
 
-const lastDog = dogs.pop();
+// const lastDog = dogs.pop();
 
 // console.log(lastDog); // 'Fluffy'
 // console.log(dogs); // ['Fido', 'Digby']
-// console.log(beforePop === dogs);
+// console.log(beforePop === dogs); // true
 
 
 
-// Array.prototype.shift
+// === Array.prototype.shift
 // let cats = ['Paprika', 'Whiskers', 'Garfield'];
 // let beforeShift = cats;
 
@@ -86,6 +86,8 @@ cats.unshift('Sennacy');
 
 
 // Array.prototype.splice
+// The splice() method changes the contents of an array by removing or replacing existing elements
+// and/or adding new elements in place.
 let drinks = ['coffee', 'oj', 'pumpkin juice'];
 drinks.splice(1, 2, 'milk');
 
