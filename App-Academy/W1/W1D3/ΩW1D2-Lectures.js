@@ -345,6 +345,7 @@ console.log(arr === beforeArr) // true
 
 let anotherArr = ['a', 'b', 'c']; // same contents, but different array
 console.log(arr === anotherArr); // false
+console.log(arr[0] === anotherArr[0]); // true
 
 let dupArr = arr.slice() // duplicate of the array
 console.log(dupArr); // ['a', 'b', c']
