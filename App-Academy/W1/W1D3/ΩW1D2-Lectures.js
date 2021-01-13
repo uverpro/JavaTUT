@@ -88,10 +88,10 @@ cats.unshift('Sennacy');
 // Array.prototype.splice
 // The splice() method changes the contents of an array by removing or replacing existing elements
 // and/or adding new elements in place.
-let drinks = ['coffee', 'oj', 'pumpkin juice'];
-drinks.splice(1, 2, 'milk');
+// let drinks = ['coffee', 'oj', 'pumpkin juice'];
+// drinks.splice(1, 2, 'milk');
 
-console.log(drinks); // [ 'coffee', 'milk' ]
+// console.log(drinks); // [ 'coffee', 'milk' ]
 
 
 
