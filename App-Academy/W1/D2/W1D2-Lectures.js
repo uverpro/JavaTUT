@@ -18,10 +18,6 @@
 //     return num1 + num2 + num3;
 //   }
 //   addThreeNumbers(1, 2); // => NaN
-
-// function addThreeNumbers(num1, num2, num3) {
-//     return num1 + num2 + num3;
-//   }
 //   addThreeNumbers(1, 2, 3, 4); // => 6
 
 
