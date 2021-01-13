@@ -1,4 +1,5 @@
 // console.log in work applications is used for debugging purposes only
+// Syntax is the arrangement of symbols, characters, and keywords within JS
 
 let i; // Variable Decleration
 i = 0; // Variable Assignment
