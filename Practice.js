@@ -1,3 +1,5 @@
-let str = "This is a string"
-console.log(str.slice(str.indexOf("a")));
-console.log(str.slice(8));
+function addThreeNumbers(num1, num2, num3) {
+    return num1 + num2 + num3;
+  }
+
+  console.log(addThreeNumbers(1, 2, 3, 4)); // => ???
