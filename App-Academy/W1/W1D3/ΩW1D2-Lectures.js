@@ -78,13 +78,6 @@ cats.unshift('Sennacy');
 
 
 
-
-
-
-
-
-
-
 // Array.prototype.splice
 // The splice() method changes the contents of an array by removing or replacing existing elements
 // and/or adding new elements in place.
@@ -95,6 +88,16 @@ cats.unshift('Sennacy');
 
 
 
+// ARRAY FUNCTIONS
+
+// Iteration tracking:
+// let foods = ['banana', 'taco', 'cookie'];
+//     for (i = 0; i < 3; i++) {    // "i < foods.length; will go through all elements"
+//         let currentFood = foods[i];
+//         console.log(currentFood); // banana, taco, cookie
+// };
+
+// console.log(foods); // [ bananna, taco, cookie ]
 
 
 
@@ -107,3 +110,45 @@ function arrayToUpperCase(arr) {
   }
   return arr;
 }
+
+
+
+// function declaration syntax
+// function name is built into the declaration of the function
+function sayHello1() {
+    console.log('Function Declaration Syntax');
+  }
+  sayHello1();
+
+
+  console.log('--------');
+
+
+  // function expression syntax
+  // setting a variable to an anonymous function
+  let sayHello2 = function() {
+    console.log('Function Expression Syntax');
+  };
+  sayHello2();
+
+  console.log('--------');
+
+  // first class objects - something you can store in a variable
+  let name = 'Alvin'
+  let age = 1000;
+  let getAvg = function(num1, num2) {
+    return (num1 + num2)/2
+  };
+
+
+
+  // console.log(getAvg); // will log the function
+  // console.log(getAvg(3, 4)) // will log the return of the function
+
+
+
+
+
+  // can pass functions around to other variables
+  let anotherVar = getAvg;
+  console.log(anotherVar(5, 6));
