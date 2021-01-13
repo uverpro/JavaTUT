@@ -304,9 +304,13 @@ console.log(uniquePairs(cats));
 // Immutable vs Mutable
 
 // Strings are IMMUTABLE
-let str = 'abc';
-str[1] = 'x'
+// let str = 'abc';
+// str[1] = 'x'
 // console.log(str); // => 'abc'
+// Arrays are MUTABLE
+// let arr = ["a", "b", "c"];
+// arr[1] = "x";
+// console.log(arr);
 
 
 
