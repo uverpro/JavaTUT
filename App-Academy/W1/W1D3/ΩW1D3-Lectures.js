@@ -11,7 +11,11 @@
 // you want to connect the label to.
 // Alternatively, you can put the input element inside of the label element.
 
-
+// === Functions are First Class Objects / First Class Citizens
+//    First Class Objects in JS
+// - can be stored as a variable
+// - can be return from a function
+// - can be passed as an argument
 
 // FUNCTION DECLERATION SYNTAX
 function sayHello () {
