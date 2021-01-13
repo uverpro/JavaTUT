@@ -1,3 +1,5 @@
+// console.log in work applications is used for debugging purposes only
+
 let i; // Variable Decleration
 i = 0; // Variable Assignment
 let i = 0; // Variable Initialization
