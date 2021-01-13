@@ -29,6 +29,8 @@ let sayHello = function () {
      console.log('bye');
 };
 
+// For now these are the same
+// With Scope and Hoisting they are quite different
 
 
 
