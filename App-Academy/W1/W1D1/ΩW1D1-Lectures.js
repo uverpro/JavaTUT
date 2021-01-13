@@ -1,6 +1,6 @@
-// let i; // Variable Decleration
-// i = 0; // Variable Assignment
-// let i = 0; // Variable Initialization
+let i; // Variable Decleration
+i = 0; // Variable Assignment
+let i = 0; // Variable Initialization
 
 // Data Types in JS
 // Numbers - (0, 1, 2, 3...)
@@ -21,52 +21,52 @@
 
 // Variable Assignment - assigns value to the variable
 
-// let age = 0;
-// age = 5;
-// age += 5;
-// console.log(age); // 10
+let age = 0;
+age = 5;
+age += 5;
+console.log(age); // 10
 
-// let count = 0;
-// count++
-// console.log(count) // 1
+let count = 0;
+count++
+console.log(count) // 1
 
-// let food; (declared by not assighned a value)
-// console.log(food) // Undefined
+let food; // (declared by not assighned a value)
+console.log(food) // Undefined
 // By default variable values are undefined
-// console.log(food + 4) // NaN
+console.log(food + 4) // NaN
 // Any illegal math will return "NaN" AKA NOT A NUMBER
 
 
 
 // BOOLEAN TYPE
-// Boolean is a true or false value
+//Boolean is a true or false value
 // Syntax:
-// console.log(true); // true
-// console.log(false); // false
+console.log(true); // true
+console.log(false); // false
 
 // Not Operator (!)
 // - reverses a Boolean Value
-// console.log(!true); // false
-// console.log(!false); // true
-// console.log(!!true); // true
-// console.log(!!false); // false
+console.log(!true); // false
+console.log(!false); // true
+console.log(!!true); // true
+console.log(!!false); // false
 
 // And Operator (&&)
 // returns true only when both sides are true
 // returns false when at least one side is false
-// console.log(true && true); // true
-// console.log(true && false); // false
-// console.log(false && false); // false
+console.log(true && true); // true
+console.log(true && false); // false
+console.log(false && false); // false
 
 // Or Operator (||)
 // returns false only when both sides are false
 // returns true when at least one side is true
-// console.log(false || false); // false
-// console.log(true || false); // true
-// console.log(true || true); // true
+console.log(false || false); // false
+console.log(true || false); // true
+console.log(true || true); // true
 
-// console.log(!(true && false)); // (false || true) // true
-// console.log(!(false || false)); // (true && true) // true
+console.log(!(true && false)); // (false || true) // true
+console.log(!(false || false)); // (true && true) // true
 
 
 
@@ -74,12 +74,12 @@
 // >, <, >=, <=, ===, !==
 // will return a Boolean
 
-// console.log("a" < "b"); // true
-// console.log("z" > "b"); // true
+console.log("a" < "b"); // true
+console.log("z" > "b"); // true
 // JS will evaluate them in alphabetical order
-// console.log("cat" < "zoo"); // true
-// console.log("cat" > "banana"); // true
-// console.log("app" < "apple"); // true
+console.log("cat" < "zoo"); // true
+console.log("cat" > "banana"); // true
+console.log("app" < "apple"); // true
 
 // "===" vs "=="
 // A tale of two Equality Operators
@@ -87,9 +87,9 @@
 // "===" will not match value across types
 // "==" will coerce types to match as closely as possible
 
-// console.log(5 === "5"); // false
-// console.log(5 == "5"); // true (types are coerced by JS)
-// console.log([] == 0); // true (unpredictable)
+console.log(5 === "5"); // false
+console.log(5 == "5"); // true (types are coerced by JS)
+console.log([] == 0); // true (unpredictable)
 // avoid "=="
 
-// console.log(3 % 12); // will return "3"
+console.log(3 % 12); // will return "3"
