@@ -1,3 +1,5 @@
+// Write a method averageOfTwo(num1, num2) that returns the average of two numbers.
+
 function averageOfTwo (num1, num2) {
     return (num1 + num2) / 2;
   }
