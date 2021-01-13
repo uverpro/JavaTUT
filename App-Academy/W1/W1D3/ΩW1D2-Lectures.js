@@ -160,14 +160,14 @@ cats.unshift('Sennacy');
 
 
 // === NESTED LOOPS
-// for (let i = 1; i <= 3; i++) {
-//     // console.log(i);
-//     for (let j = 1; j <= 5; j++) {
-//     //   console.log('    ', j);
+for (let i = 1; i <= 3; i++) {
+    // console.log(i);
+    for (let j = 1; j <= 5; j++) {
+    //   console.log('    ', j);
 
-//       console.log(i, j); // will iterate 15 times (3(i) * 5(j))
-//     }
-//   }
+      console.log(i, j); // will iterate 15 times (3(i) * 5(j))
+    }
+  }
 
 
 
@@ -177,19 +177,21 @@ cats.unshift('Sennacy');
 // === PAIRS IN ARRAYS
 
 // Class Example:
-// let array = ["a", "b", "c", "d"]
-// //OUTER LOOP:
-// for (i = 0; i < array.length; i++) {
-//     let outer = array[i];
+let array = ["a", "b", "c", "d"]
+//OUTER LOOP:
+for (i = 0; i < array.length; i++) {
+    let outer = array[i];
 
-//     // INNER LOOP
-//     for (j = 0; j < array.length; j++) {
-//         let inner = array[j];
-//         console.log("pair: " + outer + " " + inner)
-//     }
-// };
+    // INNER LOOP
+    for (j = 0; j < array.length; j++) {
+        let inner = array[j];
+        console.log("pair: " + outer + " " + inner)
+    }
+};
 // Modify J Index to "i + 1" to get UNIQUE PAIRS IN ARRAY
-// for (j = i + 1; j < array.length; j++)
+for (j = i + 1; j < array.length; j++)
+
+
 
 
 let dogs = ['Fido', 'Digby', 'Fluffy'];
@@ -304,21 +306,20 @@ console.log(uniquePairs(cats));
 // Immutable vs Mutable
 
 // Strings are IMMUTABLE
-// let str = 'abc';
-// str[1] = 'x'
-// console.log(str); // => 'abc'
+let str = 'abc';
+str[1] = 'x'
+console.log(str); // => 'abc'
 // Arrays are MUTABLE
-// let arr = ["a", "b", "c"];
-// arr[1] = "x";
-// console.log(arr);
-
+let arr = ["a", "b", "c"];
+arr[1] = "x";
+console.log(arr);
 // We can reassign a variable to another string
-// beforeStr = str;
-// str += 'def' // str = str + 'def'
-// console.log(str) // 'abcdef'
-// console.log(str === beforeStr); // false
-// const anotherStr = 'abcdef';
-// console.log(str === anotherStr); // true
+beforeStr = str;
+str += 'def' // str = str + 'def'
+console.log(str) // 'abcdef'
+console.log(str === beforeStr); // false
+const anotherStr = 'abcdef';
+console.log(str === anotherStr); // true
 
 
 
