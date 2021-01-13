@@ -103,56 +103,70 @@ cats.unshift('Sennacy');
 
 // Given an Array of Strings, turn each element (aka ITERATION) uppercased
 
-function arrayToUpperCase (array) {
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    if (typeof element === 'string') {
-      let upperCased = element.toUpperCase();
-      array.splice(i, 1, upperCased);
-    }
-  }
-  return array;
-};
+// function arrayToUpperCase (array) {
+//   for (let i = 0; i < array.length; i++) {
+//     const element = array[i];
+//     if (typeof element === 'string') {
+//       let upperCased = element.toUpperCase();
+//       array.splice(i, 1, upperCased);
+//     }
+//   }
+//   return array;
+// };
 
-const foods = ['banana', 'taco', 'cookie'];
-console.log(arrayToUpperCase(foods));
+// const foods = ['banana', 'taco', 'cookie'];
+// console.log(arrayToUpperCase(foods));
+
+
 
 // function declaration syntax
 // function name is built into the declaration of the function
-function sayHello1() {
-    console.log('Function Declaration Syntax');
+// function sayHello1() {
+//     console.log('Function Declaration Syntax');
+//   }
+//   sayHello1();
+
+
+//   console.log('--------');
+
+
+//   // function expression syntax
+//   // setting a variable to an anonymous function
+//   let sayHello2 = function() {
+//     console.log('Function Expression Syntax');
+//   };
+//   sayHello2();
+
+//   console.log('--------');
+
+
+
+// first class objects - something you can store in a variable
+// let name = 'Alvin'
+// let age = 1000;
+// let getAvg = function (num1, num2) {
+//    return (num1 + num2) / 2;
+// };
+
+// console.log(getAvg); // will log the function
+// console.log(getAvg(3, 4)) // will log the return of the function
+// console.log(getAvg(age, 500)) // 750
+
+// // can pass functions around to other variables
+// let anotherVar = getAvg;
+// console.log(anotherVar(5, 6));
+
+
+
+
+
+
+// === Nested Loops
+for (let i = 1; i <= 3; i++) {
+    // console.log(i);
+    for (let j = 1; j <= 5; j++) {
+    //   console.log('    ', j);
+
+      console.log(i, j); // will iterate 15 times (3(i) * 5(j))
+    }
   }
-  sayHello1();
-
-
-  console.log('--------');
-
-
-  // function expression syntax
-  // setting a variable to an anonymous function
-  let sayHello2 = function() {
-    console.log('Function Expression Syntax');
-  };
-  sayHello2();
-
-  console.log('--------');
-
-  // first class objects - something you can store in a variable
-  let name = 'Alvin'
-  let age = 1000;
-  let getAvg = function(num1, num2) {
-    return (num1 + num2)/2
-  };
-
-
-
-  // console.log(getAvg); // will log the function
-  // console.log(getAvg(3, 4)) // will log the return of the function
-
-
-
-
-
-  // can pass functions around to other variables
-  let anotherVar = getAvg;
-  console.log(anotherVar(5, 6));
