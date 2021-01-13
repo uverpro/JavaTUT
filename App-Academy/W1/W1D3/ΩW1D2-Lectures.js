@@ -103,19 +103,19 @@ cats.unshift('Sennacy');
 
 // Given an Array of Strings, turn each element (aka ITERATION) uppercased
 
-// function arrayToUpperCase (array) {
-//   for (let i = 0; i < array.length; i++) {
-//     const element = array[i];
-//     if (typeof element === 'string') {
-//       let upperCased = element.toUpperCase();
-//       array.splice(i, 1, upperCased);
-//     }
-//   }
-//   return array;
-// };
+function arrayToUpperCase (array) {
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if (typeof element === 'string') {
+      let upperCased = element.toUpperCase();
+      array.splice(i, 1, upperCased);
+    }
+  }
+  return array;
+};
 
-// const foods = ['banana', 'taco', 'cookie'];
-// console.log(arrayToUpperCase(foods));
+const foods = ['banana', 'taco', 'cookie'];
+console.log(arrayToUpperCase(foods));
 
 
 
