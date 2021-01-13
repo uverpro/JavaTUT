@@ -13,6 +13,19 @@
 
 
 
+// Function Note:
+// function addThreeNumbers(num1, num2, num3) {
+//     return num1 + num2 + num3;
+//   }
+//   addThreeNumbers(1, 2); // => NaN
+
+// function addThreeNumbers(num1, num2, num3) {
+//     return num1 + num2 + num3;
+//   }
+//   addThreeNumbers(1, 2, 3, 4); // => 6
+
+
+
 // Function Lecture
 // Basic Concept: Write a function once (function decleration)
 // "use" it as many times as we please (function calls)
