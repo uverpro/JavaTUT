@@ -188,7 +188,7 @@ for (i = 0; i < array.length; i++) {
 
 // Class Example:
 // let array = ["a", "b", "c", "d"]
-// OUTER LOOP:
+// //OUTER LOOP:
 // for (i = 0; i < array.length; i++) {
 //     let outer = array[i];
 
@@ -198,7 +198,8 @@ for (i = 0; i < array.length; i++) {
 //         console.log("pair: " + outer + " " + inner)
 //     }
 // };
-
+// Modify J Index to "i + 1" to get UNIQUE PAIRS IN ARRAY
+// for (j = i + 1; j < array.length; j++)
 
 
 let dogs = ['Fido', 'Digby', 'Fluffy'];
