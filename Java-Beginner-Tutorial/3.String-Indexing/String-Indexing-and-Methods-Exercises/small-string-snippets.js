@@ -11,3 +11,4 @@ console.log("treasure".indexOf("e")); // 2
 console.log("web"[5]); // undefined
 console.log("red".indexOf("x")); // -1
 console.log("red".indexOf("R")); // -1
+console.log("wheel"["wheel".length - 1])
