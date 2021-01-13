@@ -19,3 +19,5 @@ function arrayToUpperCase (array) {
   console.log(arrayToUpperCase(foods));
 
 // TYPEOF
+
+// When is it appropriate for the typeof operator to be used?
