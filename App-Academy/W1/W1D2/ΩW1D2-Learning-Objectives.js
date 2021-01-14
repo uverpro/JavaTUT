@@ -89,5 +89,9 @@ iterations("Now iterate");
 // and returns a boolean indicating whether the string is located inside of the array.
 // The function must use Array's indexOf() method.
 
+
 // 7. Define that an array literal is an ordered list of values defined by using bracket
 //  and individual values are read by indexing.
+let array = ["soup", "eraser", "head", 6, 7];
+for (i = 0; i < array.length; i++)
+console.log(array[i]);
