@@ -82,7 +82,33 @@ iterations("Now iterate");
 
 // 5. Given a description of pig latin, write a function that takes in a string argument
 // and utilizes String's slice() method to translate the string into pig latin.
-
+function toLatin(sentence) {
+	let vowels = 'aeiou';
+	let words = sentence.split(' ');
+	let result = [];
+	for (let i = 0; i < words.length; i++) {
+		let word = words[i];
+		if (vowels.includes(word.toLowerCase()[0])) {
+			// if the word begins with a vowel
+			result.push(word + 'yay');
+		} else {
+			// find first vowel
+			let firstVowel = 0;
+			for(let j = 1; j < word.length; j++) {
+				if (vowels.includes(word.toLowerCase()[j])) {
+					firstVowel = j;
+					break;
+				}
+			}
+			// build result <post_vowel><pre_vowel>ay
+			result.push(word.slice(firstVowel) + word.slice(0, firstVowel) + 'ay');
+		}
+	}
+	return result.join(' ');
+};
+console.log(toLatin("Heyall"));
+console.log(toLatin("There's"));
+console.log(toLatin("apple"));
 
 
 // 6. Write a function that takes in an array of words and a string as arguments
