@@ -265,7 +265,8 @@ console.log(containsNumber('1'));
 console.log(containsNumber('aab12'));
 ```
 
-// 5. Given a description of pig latin, write a function that takes in a string argument and utilizes String#slice to translate the string into pig latin.
+// 5. Given a description of pig latin, write a function that takes in a string argument
+// and utilizes String#slice to translate the string into pig latin.
 
 
 ```js
