@@ -13,10 +13,7 @@ console.log(str.indexOf("a", 3)) // 5
 
 
 
-// Function Notes:
-// Functions can only be wrote once but can be evoked as many times as you want
-//
-
+// Function Note:
 function addThreeNumbers(num1, num2, num3) {
     return num1 + num2 + num3;
   }
@@ -43,7 +40,7 @@ console.log(functionName(5)); // 10
 
 // Function Definition Example
 // function decleration: function thisIsMyName (parameter1, parameter2) {
-    // the code to be ran
+//     the code to be ran
 // };
 // function invocation: thisIsMyName("argument1", "argument2");
 
@@ -62,36 +59,36 @@ console.log(functionName(5)); // 10
 // Combining Arrays
 // The Concat Method (see other methods at end of this lecture)
 // Returns a combination of two arrays WITHOUT modifying either one
-// let first = [1, 2, 3];
-// let second = [5, 5, 5];
-// let third = first.concat(second);
-// console.log(third); // => [1, 2, 3, 5, 5, 5]
-// console.log(first); // => [1, 2, 3]
+let first = [1, 2, 3];
+let second = [5, 5, 5];
+let third = first.concat(second);
+console.log(third); // => [1, 2, 3, 5, 5, 5]
+console.log(first); // => [1, 2, 3]
 
 
 
 // // ====== String Type ======:
 
 // 1. Initialize a variable with a value of 'Hello World'
-//  let str = 'Hello World';
+ let str = 'Hello World';
 
 // 2. How long is this string?
-// console.log(str.length); // 11
+console.log(str.length); // 11
 
 // 3. What letter aka character is at position 4?
-// console.log(str[4]); // "o"
+console.log(str[4]); // "o"
 
 // 4. What position is character 'H' at?
-// console.log(str.indexOf("H")); // "0"
+console.log(str.indexOf("H")); // "0"
 
 
 
 // // ====== Functions ======:
 
-// function addTwo(num1, num2) {
-//     return num1 + num2;
-// }
-// console.log(addtwo(1, 2)); // 3
+function addTwo(num1, num2) {
+    return num1 + num2;
+}
+console.log(addtwo(1, 2)); // 3
 
 // # `String Type`
 // - Single quotes or Double quotes
@@ -111,114 +108,116 @@ console.log(functionName(5)); // 10
 
 
 // // ====== Functions ======:
-// function averageOfFour(arg1, arg2, arg3, arg4) {
-//    console.log((arg1 + arg2 + arg3 + arg4) / 4);
-// }
+function averageOfFour(arg1, arg2, arg3, arg4) {
+   console.log((arg1 + arg2 + arg3 + arg4) / 4);
+};
 
-// averageOfFour(1, 20, 500, 11); // 133
-// averageOfFour(10, 20, 30, 40); //25
+averageOfFour(1, 20, 500, 11); // 133
+averageOfFour(10, 20, 30, 40); //25
 
-// function averageOfFour(arg1, arg2, arg3, arg4) {
-//    return (arg1 + arg2 + arg3 + arg4) / 4;
-// }
+function averageOfFour(arg1, arg2, arg3, arg4) {
+   return (arg1 + arg2 + arg3 + arg4) / 4;
+};
 
-// console.log(averageOfFour(1, 2, 3, 4)); // 2.5
+console.log(averageOfFour(1, 2, 3, 4)); // 2.5
 
 
 
 
 
 // // ====== Conditionals ===:
-// let myBoolean = false;
+let myBoolean = false;
 
-// if (myBoolean) {
-//     console.log("hi");
-// } else {
-//     console.log("hello");
-// }
+if (myBoolean) {
+    console.log("hi");
+} else {
+    console.log("hello");
+};
 // hello
 
-// myBoolean = 5;
-// if (myBoolean < 6) {
-//     console.log("this is a truthy value");
-// }
-// if (myBoolean < 10 ) {
-//     console.log("this is a falsey value");
-// }
+myBoolean = 5;
+if (myBoolean < 6) {
+    console.log("this is a truthy value");
+};
+if (myBoolean < 10 ) {
+    console.log("this is a falsey value");
+};
+// this is a truthy value
+// this is a falsey value
 
 
 
 // 'else' is mutually exclusive:
-// let hungerLevel = 5; // let hungerLevel = 15; // "almost HANGRY!"
-// if (hungerLevel < 1) {
-//     console.log('not hungry yet');
-// } else if (hungerLevel <= 5) {
-//     console.log('snack time!'); // WILL print
-// } else if (hungerLevel <= 9) {
-//     console.log('Time for a meal!');
-// } else if (hungerLevel <= 10) {
-//     console.log('HANGRY!');
-// } else {
-//     console.log('almost HANGRY!');
-// }
+let hungerLevel = 5; // let hungerLevel = 15; // "almost HANGRY!"
+if (hungerLevel < 1) {
+    console.log('not hungry yet');
+} else if (hungerLevel <= 5) {
+    console.log('snack time!'); // WILL print
+} else if (hungerLevel <= 9) {
+    console.log('Time for a meal!');
+} else if (hungerLevel <= 10) {
+    console.log('HANGRY!');
+} else {
+    console.log('almost HANGRY!');
+};
 // snack time!
 
 
 
-// let hungerLevel = 5;
+let hungerLevel = 5;
 
-// if (hungerLevel < 1) {
-//     console.log('not hungry yet'); // WONT print
-// }
+if (hungerLevel < 1) {
+    console.log('not hungry yet'); // WONT print
+}
 
-// if (hungerLevel <= 5) {
-//     console.log('snack time!'); // WILL print
-// }
+if (hungerLevel <= 5) {
+    console.log('snack time!'); // WILL print
+}
 
-// if (hungerLevel <= 9) {
-//     console.log('Time for a meal!'); // WILL print
-// }
+if (hungerLevel <= 9) {
+    console.log('Time for a meal!'); // WILL print
+}
 
-// if (hungerLevel <= 10) {
-//     console.log('HANGRY!'); // WILL print
+if (hungerLevel <= 10) {
+    console.log('HANGRY!'); // WILL print
 
-// } else {
-//     console.log('almost HANGRY!'); // WONT print
-// }
+} else {
+    console.log('almost HANGRY!'); // WONT print
+};
 
 
 
 // // ====== Loops ===:
 
-// let ticker = 3;
+let ticker = 3;
 
 // WHILE LOOP
-// while (ticker > 0 ) {
-//     console.log("I ran a lap!");
-//     ticker--;
-// }
+while (ticker > 0 ) {
+    console.log("I ran a lap!");
+    ticker--;
+}
 // will print "I ran a lap!" 3x
 
 // FOR LOOP
-// for (let i = 0; i < 3; i++) {
-//     console.log("I ran a lap!")
-// }
+for (let i = 0; i < 3; i++) {
+    console.log("I ran a lap!")
+}
 // will print "I ran a lap!" 3x
 
 
 
 // // ======= Amazing Arrays === :
-// let array = [];
+let array = [];
 
-// array.push(4);
-// console.log(array); // [ 4 ]
-// array.push(5);
-// console.log(array); // [ 4, 5 ]
-// array.push("sup");
-// console.log(array); // [ 4, 5, 'sup' ]
-// console.log(array[0]); // => 4
-// console.log(array[array.length - 1]); // 'sup'
-// console.log(array.length); // => 3
+array.push(4);
+console.log(array); // [ 4 ]
+array.push(5);
+console.log(array); // [ 4, 5 ]
+array.push("sup");
+console.log(array); // [ 4, 5, 'sup' ]
+console.log(array[0]); // => 4
+console.log(array[array.length - 1]); // 'sup'
+console.log(array.length); // => 3
 
 
 
