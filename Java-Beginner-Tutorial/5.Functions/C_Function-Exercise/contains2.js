@@ -1,3 +1,6 @@
+// 1. Define a function that accepts a sentence string and two words as args.
+// The function should return a boolean indicating if the sentence includes either word.
+
 function containsEither (word, str1, str2) {
     // str1.indexOf(str2) // if str2 is in the index of str1 it will be greater than "-1" because "-1" IS NOT A VALID INDEX
     // return str1.indexOf(str2) > -1; // will return all correct except line 13 b/c capitalization
