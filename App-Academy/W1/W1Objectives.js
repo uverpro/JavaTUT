@@ -296,7 +296,9 @@ function toLatin(sentence) {
 ```
 
 
-// 6. Write a function that takes in an array of words and a string as arguments and returns a boolean indicating whether the string is located inside of the array. The function must use Array#indexOf.
+// 6. Write a function that takes in an array of words and a string as arguments
+// and returns a boolean indicating whether the string is located inside of the array.
+// The function must use Array#indexOf.
 
 ```js
 function containsString(arr, str) {
@@ -308,7 +310,8 @@ function containsString(arr, str) {
 }
 ```
 
-// 7. Define that an array literal is an ordered list of values defined by using bracket and individual values are read by indexing.
+// 7. Define that an array literal is an ordered list of values defined by using bracket
+// and individual values are read by indexing.
 
 ```js
 let numbers = ['one', 'two', 'three', 'four', 'five', ];
