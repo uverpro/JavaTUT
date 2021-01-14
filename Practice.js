@@ -1,5 +1,5 @@
-function addThreeNumbers(num1, num2, num3) {
-    return num1 + num2 + num3;
-  }
+function sayNumber(number) {
+  console.log(number);
+}
 
-  console.log(addThreeNumbers(1, 2, 3, 4)); // => ???
+sayNumber(1);  // Prints 1 and returns undefined
