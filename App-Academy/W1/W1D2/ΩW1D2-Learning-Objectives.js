@@ -88,10 +88,24 @@ iterations("Now iterate");
 // 6. Write a function that takes in an array of words and a string as arguments
 // and returns a boolean indicating whether the string is located inside of the array.
 // The function must use Array's indexOf() method.
+function inArray (array, string) {
+    if (array.indexOf(string) > - 1) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  console.log(inArray(["hi", "bye", 8], 8)); // true
+  console.log(inArray(["hi", "bye", 8], "hi")); // true
+  console.log(inArray([10, 11, 8], 911)); // false
+  console.log(inArray([10, 11, 8], 100)); // false
+  console.log(inArray(["ya", "yo", "no"], "false")); // false
 
 
 // 7. Define that an array literal is an ordered list of values defined by using bracket
 //  and individual values are read by indexing.
 let array = ["soup", "eraser", "head", 6, 7];
 for (i = 0; i < array.length; i++)
-console.log(array[i]);
+console.log(array[i]); // soup, eraser, head, 6, 7
+console.log(array[2]); // head
