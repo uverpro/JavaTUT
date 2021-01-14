@@ -1,3 +1,13 @@
+// a "CONDITION" is an expression that evaluates into a Boolean
+// Conditions utilize control flow
+// "CONTROL FLOW" is the order in which instructions are executed within a program
+// Control flow is modified by using "CONTROL STRUCTURES"
+// Control Structures are expressions which alter the control flow based on given parameters
+// Control Structures in JS allow program flow to change within a unit of code or within a function
+// "CONDITIONAL STATEMENTS" is one of two main control structures
+
+
+
 // String Data Type
 const str = "dogs";
 console.log(str.indexOf("g")); // 2
