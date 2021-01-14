@@ -1,27 +1,16 @@
-// function eitherWord (str, word1, word2) {
-//   for (i = 0; i < str.length; i++) {
-//     console.log(str[i])
-//     let word = str[i]
-//   } if (typeof word === word1 || word2) {
-//       return true
-//     }
-//   };
-// eitherWord("I like the cheese", "I", "cheese")
-// // console.log(eitherWord("I like the cheese", "I", "cheese"))
-
-function contains (word, str1, str2) {
-  // str1.indexOf(str2) // if str2 is in the index of str1 it will be greater than "-1" because "-1" IS NOT A VALID INDEX
-  // return str1.indexOf(str2) > -1; // will return all correct except line 13 b/c capitalization
-  let lowerCaseWord = word.toLowerCase();
-  let lowerCaseStr1 = str1.toLowerCase();
-  let lowerCaseStr2 = str2.toLowerCase();
-  if (lowerCaseWord.indexOf(lowerCaseStr1) > -1 || lowerCaseWord.indexOf(lowerCaseStr2) > -1) {
-  return true;
-  } else return false;
+// 6. Write a function that takes in an array of words and a string as arguments
+// and returns a boolean indicating whether the string is located inside of the array.
+// The function must use Array's indexOf() method.
+function inArray (array, string) {
+  if (array.indexOf(string) > - 1) {
+    return true;
+  } else {
+    return false;
   }
+};
 
-console.log(contains("caterpillar", "pill", "ar")); // true
-console.log(contains("lion's share", "on", "io")); // true
-console.log(contains("SORRY", "or", "so")); // true
-console.log(contains("tangent", "gan", "tan")); // true
-console.log(contains("clock", "ok", "co")); // false
+console.log(inArray(["hi", "bye", 8], 8)); // true
+console.log(inArray(["hi", "bye", 8], "hi")); // true
+console.log(inArray([10, 11, 8], 911)); // false
+console.log(inArray([10, 11, 8], 100)); // false
+console.log(inArray(["ya", "yo", "no"], "false")); // false
