@@ -73,8 +73,17 @@ let str = "I am a String!"
 }
 
 // 4. Write a function that iterates through a provided string argument.
+function iterations (str) {
+    for (i = 0; i < str.length; i++)
+    console.log(str[i]);
+};
 
-// 5. Given a description of pig latin, write a function that takes in a string argument and utilizes String's slice() method to translate the string into pig latin.
+iterations("Now iterate");
+
+// 5. Given a description of pig latin, write a function that takes in a string argument
+// and utilizes String's slice() method to translate the string into pig latin.
+
+
 
 // 6. Write a function that takes in an array of words and a string as arguments
 // and returns a boolean indicating whether the string is located inside of the array.
