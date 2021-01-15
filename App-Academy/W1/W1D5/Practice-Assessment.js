@@ -12,3 +12,10 @@
 // A && B === !A || !B    // NOT TRUE
 // !A && !B === !(A || B)
 // !(A && B) === !A || !B
+
+
+// What is the best description of the string slice() function?
+// Divides a string sentence into an array containing each word
+// Divides a string into two
+// Removes the first character from a string
+// Extracts a section of a string and returns a new string ==> TRUE
