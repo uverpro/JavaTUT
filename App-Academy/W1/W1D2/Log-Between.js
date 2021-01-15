@@ -3,6 +3,7 @@
 
 // This function only needs to print using console.log it does not need to return.
 
+// For loop
 function logBetween (lowNum, highNum) {
     for (i = lowNum; i <= highNum; i++)
     console.log(i) // console.log(i) not console.log([i])
@@ -14,6 +15,7 @@ logBetween(14, 6); // => prints nothing
 
 logBetween(4, 6); // prints out: 4, 5, 6
 
+// While loop
 function logBetween (lowNum, highNum) {
     let i = lowNum;
     while (i <= highNum) {
