@@ -59,9 +59,16 @@ function costOfGroceries(nums) {
     return total
   };
 
-function mostExpensiveGroceries(numsList) {
-    // Your code here
-}
+  function mostExpensiveGroceries(numsList) {
+    let highestCost = 0;
+    for (i = 0; i < numsList.length; i++) {
+        costOfGroceries() {
+          if (nums > highestCost)
+            highestCost += nums
+        }
+      }
+      return highestCost
+  }
 
 
 // TESTS
