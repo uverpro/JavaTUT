@@ -1,4 +1,8 @@
-// SLICE method
+// String.slice()
+
+// The slice() method extracts a section of a string and returns it as a new string,
+// without modifying the original string.
+
 let myString = "qrstuv";
 console.log(myString[1]); // r
 console.log(myString.slice(1)); // rstuv
