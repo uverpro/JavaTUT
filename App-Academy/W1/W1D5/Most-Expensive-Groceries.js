@@ -16,13 +16,6 @@ function costOfGroceries(groceries) {
     return total
   };
 
-const groceriesA = ['cheese', 'butter', 'eggs'];
-const groceriesB = ['eggs', 'milk', 'bread', 'bread'];
-const groceriesC = ['cheese', 'bread'];
-const groceriesD = ['eggs', 'butter'];
-
-console.log(costOfGroceries(groceriesA));
-
 
   function mostExpensiveGroceries(numsList) {
     let highestCost = 0;
