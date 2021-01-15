@@ -1,7 +1,7 @@
-function costOfGroceries(nums) {
+function costOfGroceries(groceries) {
     let total = 0;
-    for (let i = 0; i < nums.length; i++) {
-        let item = nums[i];
+    for (let i = 0; i < groceries.length; i++) {
+        let item = groceries[i];
         if (item === "butter")
           total += 1;
         if (item === "eggs")
@@ -15,6 +15,14 @@ function costOfGroceries(nums) {
     }
     return total
   };
+
+const groceriesA = ['cheese', 'butter', 'eggs'];
+const groceriesB = ['eggs', 'milk', 'bread', 'bread'];
+const groceriesC = ['cheese', 'bread'];
+const groceriesD = ['eggs', 'butter'];
+
+console.log(costOfGroceries(groceriesA));
+
 
   function mostExpensiveGroceries(numsList) {
     let highestCost = 0;
