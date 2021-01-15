@@ -8,3 +8,8 @@ console.log(str.substr(1, 2)); // gives the next two chars from str[1]
 
 console.log(str.substr(2)); // works same as slice without an optional argument
 // expected output: "zilla"
+
+console.log(str.slice(1, 5)); // slice method is exclusive
+// ozil
+console.log(str.substr(1, 5)); // substr method is inclusive
+// ozill
