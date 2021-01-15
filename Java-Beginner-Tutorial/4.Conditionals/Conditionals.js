@@ -5,6 +5,10 @@
 // Control Structures are expressions which alter the control flow based on given parameters
 // Control Structures in JS allow program flow to change within a unit of code or within a function
 // "CONDITIONAL STATEMENTS" is one of two main control structures
+// Conditional statements allows control of what actions should be taken based on a boolean expression
+// In a chain of then expressions (if...else if...else), only one of the then expressions will be executed.
+// Conditional statements can have only one if and one else statement.
+// Conditional statements can be nested.
 
 
 
