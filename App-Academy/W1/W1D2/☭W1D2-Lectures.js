@@ -11,6 +11,17 @@
 // Conditional statements can be nested.
 
 
+// ARRAY notes:
+console.log([4, 7, 9].length); // => 3
+console.log([4, 7, 9][3]); // => undefined
+console.log([4, 7, 9][2]); // => 9
+// In other words, although the length of [4, 7, 9] is 3, the index of the last value (9) is 2.
+//A good rule of thumb of accessing the last index of an array is to find the length and then subtract one:
+let testArray = [4, 7, 9];
+let finalIndex = testArray.length - 1; // => (3 - 1) = 2
+console.log(testArray[finalIndex]); // => 9
+
+
 // String Data Type
 const str = "dogs";
 console.log(str.indexOf("g")); // 2
