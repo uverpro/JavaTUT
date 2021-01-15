@@ -4,8 +4,12 @@ function stringChanger(word, operation) {
         nuWord += word[0].toUpperCase() + word.slice(1);
     if (operation === "uppercase")
         nuWord += word.toUpperCase();
+    if (operation === "double")
+        nuWord += word + word;
     if (operation === "reverse")
-        nuWord += word.split("").reverse().join("")
+        nuWord += word.split("").reverse().join("");
+    if (operation === "unknown")
+        nuWord += word;
     return nuWord;
 }
 
@@ -13,6 +17,8 @@ console.log(stringChanger("foo", "capitalize")); // Foo
 console.log(stringChanger("foo", "uppercase")); // FOO
 console.log(stringChanger("foo", "double")); // foofoo
 console.log(stringChanger("foo", "reverse")); // oof
+console.log(stringChanger("foo", "unknown")); // foo
+
 // TESTS
 // DO NOT MODIFY ANYTHING BELOW THIS LINE
 
