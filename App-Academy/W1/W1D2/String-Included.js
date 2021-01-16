@@ -6,7 +6,10 @@
 // Hint: the String.includes method will return true or false if a given string is included in another string.
 
 function eitherStringIncluded(sentence, word1, word2) {
-
+    if (sentence.includes(word1) || (sentence.includes(word2))) {
+        return true
+    }
+    return false
 };
 
 console.log(eitherStringIncluded("how now brown cow?", "panther", "cow")); //=> true
