@@ -15,6 +15,8 @@ console.log(pets.includes('cat'));
 console.log(pets.includes('false'));
 // expected output: false
 
+
+
 const sentence = 'The quick brown fox jumps over the lazy dog.';
 
 const word = 'fox';
