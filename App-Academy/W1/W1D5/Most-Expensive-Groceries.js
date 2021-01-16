@@ -20,7 +20,7 @@ function costOfGroceries(groceries) {
   function mostExpensiveGroceries(groceriesList) {
     let highestCost = 0;
     let maxIndex = 0;
-    for (i = 0; i < groceriesList.length; i++) {
+    for (let i = 0; i < groceriesList.length; i++) {
       let currElement = groceriesList[i];
       let currCost = costOfGroceries(currElement); // 8 {
           if (currCost > highestCost) {
@@ -31,6 +31,11 @@ function costOfGroceries(groceries) {
       return maxIndex
   };
 
+// const groceriesA = ['cheese', 'butter', 'eggs']; // 8
+// const groceriesB = ['eggs', 'milk', 'bread', 'bread']; // 13
+// const groceriesC = ['cheese', 'bread']; // 9
+// const groceriesD = ['eggs', 'butter']; // 3
+// console.log(mostExpensiveGroceries([groceriesA, groceriesB, groceriesC, groceriesD]));
 
 // TESTS
 // DO NOT MODIFY ANYTHING BELOW THIS LINE
