@@ -5,7 +5,7 @@
 // Your job is to translate the following function to use a while loop instead of a for loop!
 // If you forget the syntax for a while loop go back and check out the reading.
 
-function eCounter(word) {
+function eCounter (word) {
 //     let count = 0;
 
 //     for (let index = 0; index < word.length; index++) {
