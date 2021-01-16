@@ -70,6 +70,19 @@ function costOfGroceries(nums) {
       return highestCost
   }
 
+  function mostExpensiveGroceries(groceriesList) {
+    let highestCost = 0;
+    let maxIndex = 0; // create an index to reference the position of highest cost
+    for (i = 0; i < groceriesList.length; i++) {
+      let currElement = groceriesList[i];
+      let currCost = costOfGroceries(currElement); // 8 {
+          if (currCost > highestCost) {
+                highestCost = currCost;
+                maxIndex = i;
+        }
+      }
+      return maxIndex
+  };
 
 // TESTS
 // DO NOT MODIFY ANYTHING BELOW THIS LINE
@@ -99,7 +112,9 @@ if (mostExpensiveGroceries([groceriesA, groceriesD, groceriesC]) === 2) score++;
 
 console.log("You have scored " + score + "/7 points.");
 
-//====
+
+
+//==== STRING CHANGER
 
 function stringChanger(word, operation) {
   let nuWord = "";
