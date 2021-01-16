@@ -20,8 +20,12 @@ function aCounter (word) {
 //   };
     let count = 0;
     for (let i = 0; i < word.length; i++) {
-
+        let char = word[i];
+        if (char === "e" || char === "E") {
+            count += 1;
+        }
     }
+    return count
 };
 
   console.log(aCounter("apple")); // => 1
