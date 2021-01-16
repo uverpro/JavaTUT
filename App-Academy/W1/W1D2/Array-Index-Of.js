@@ -32,3 +32,10 @@ console.log(
 console.log(wordWithinArray(
   ["dog", "cat", "camel", "bird"], "panther")
 ); //=> false
+
+
+
+
+// .includes() vs .indexOf():
+// includes() ONLY returns a Boolean
+// .indexOf() returns a number. (Which can be used as a Boolean)
