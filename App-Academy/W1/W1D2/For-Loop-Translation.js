@@ -6,18 +6,23 @@
 // instead of the while loop it is currently using.
 // If you forget the syntax for a for loop go back and check out the reading.
 
-function aCounter(word) {
-    let index = 0;
+function aCounter (word) {
+//     let index = 0;
+//     let count = 0;
+//     while (index < word.length) {
+//       let char = word[index];
+//       if (char === "a" || char === "A") {
+//         count += 1;
+//       }
+//       index++;
+//     }
+//     return count;
+//   };
     let count = 0;
-    while (index < word.length) {
-      let char = word[index];
-      if (char === "a" || char === "A") {
-        count += 1;
-      }
-      index++;
+    for (let i = 0; i < word.length; i++) {
+
     }
-    return count;
-  };
+};
 
   console.log(aCounter("apple")); // => 1
   console.log(aCounter("appleapple")); // => 2
