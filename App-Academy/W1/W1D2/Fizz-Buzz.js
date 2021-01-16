@@ -21,7 +21,7 @@ function fizzBuzz(max) {
         console.log(i);
       }
     }
-  }
+  };
 
   function fizzBuzzWhile(max) {
     let i = 0;
@@ -33,7 +33,7 @@ function fizzBuzz(max) {
       }
       i++;
     }
-  }
+  };
 
   function fizzBuzzNested(max) {
     for (let i = 0; i < max; i += 1) {
@@ -45,4 +45,4 @@ function fizzBuzz(max) {
         console.log(i);
       }
     }
-  }
+  };
