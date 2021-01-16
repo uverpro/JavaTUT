@@ -12,7 +12,10 @@ const pets = "cat, dog, bat";
 console.log(pets.includes('cat'));
 // expected output: true
 
-console.log(pets.includes('false'));
+console.log(pets.includes('at'));
+// expected output: true
+
+console.log(pets.includes('gorilla'));
 // expected output: false
 
 
@@ -20,9 +23,14 @@ console.log(pets.includes('false'));
 const sentence = 'The quick brown fox jumps over the lazy dog.';
 
 const word = 'fox';
+// const partword = "oz"
 
 console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
 // expected output: "The word "fox" is in the sentence"
+console.log(sentence.includes(word)); // true
+console.log(sentence.includes('ox')); // true
+console.log(sentence.includes('Fox')); // false
+
 
 
 
