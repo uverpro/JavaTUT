@@ -19,14 +19,17 @@ function costOfGroceries(groceries) {
 
   function mostExpensiveGroceries(groceriesList) {
     let highestCost = 0;
+    let maxIndex = 0;
     for (i = 0; i < groceriesList.length; i++) {
-        costOfGroceries() {
-          if (nums > highestCost)
-            highestCost += nums
+      let currElement = groceriesList[i];
+      let currCost = costOfGroceries(currElement); // 8 {
+          if (currCost > highestCost) {
+                highestCost = currCost;
+                maxIndex = i;
         }
       }
-      return highestCost
-  }
+      return maxIndex
+  };
 
 
 // TESTS
