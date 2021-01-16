@@ -12,3 +12,10 @@ console.log("The index of the first " + searchTerm + " from the beginning is " +
 
 console.log("The index of the 2nd " + searchTerm + " is " + paragraph.indexOf(searchTerm, (indexOfFirst + 1)));
 // => "The index of the 2nd "dog" is 52"
+
+
+
+
+// .includes() vs .indexOf():
+// includes() ONLY returns a Boolean
+// .indexOf() returns a number. (Which can be used as a Boolean)
