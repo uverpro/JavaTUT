@@ -13,11 +13,11 @@ function stringChanger(word, operation) {
     return nuWord;
 }
 
-console.log(stringChanger("foo", "capitalize")); // Foo
-console.log(stringChanger("foo", "uppercase")); // FOO
-console.log(stringChanger("foo", "double")); // foofoo
-console.log(stringChanger("foo", "reverse")); // oof
-console.log(stringChanger("foo", "unknown")); // foo
+// console.log(stringChanger("foo", "capitalize")); // Foo
+// console.log(stringChanger("foo", "uppercase")); // FOO
+// console.log(stringChanger("foo", "double")); // foofoo
+// console.log(stringChanger("foo", "reverse")); // oof
+// console.log(stringChanger("foo", "unknown")); // foo
 
 // TESTS
 // DO NOT MODIFY ANYTHING BELOW THIS LINE
