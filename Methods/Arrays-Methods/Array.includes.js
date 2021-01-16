@@ -15,3 +15,8 @@ console.log(pets.includes('cat'));
 
 console.log(pets.includes('at'));
 // expected output: false
+
+
+// .includes() vs .indexOf():
+// includes() ONLY returns a Boolean
+// .indexOf() returns a number. (Which can be used as a Boolean)
