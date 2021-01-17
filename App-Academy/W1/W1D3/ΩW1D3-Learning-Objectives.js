@@ -8,9 +8,26 @@
 // 2. Define a function using both function declaration and function expression syntax
 // let score = function (num); function score (num)
 
-// 1. Utilize Array.push, .pop, .shift, .unshift to mutate an array
+// 3. Utilize Array.push, .pop, .shift, .unshift to mutate an array
+let array1 = ["shift", "pop"];
+array1.shift()
+console.log(array1); // [ 'pop' ]
+array1.unshift("unshift");
+console.log(array1); // [ 'unshift', 'pop' ]
+array1.pop();
+console.log(array1); // [ 'unshift' ]
+array1.push("push");
+console.log(array1); // [ 'unshift', 'push' ]
 
-// List the arguments that can be used with Array.splice
+
+// 4. List the arguments that can be used with Array.splice
+let array2 = ["True", "Blue", "Vogue", "Borderline"];
+array2.splice(2, 0, "Lucky Star")
+console.log(array2); // ["True", "Blue", "Lucky Star", "Vogue", "Borderline"]
+array2.splice(2, 3);
+console.log(array2); // [ 'True', 'Blue' ]
+array2.splice(2, 0, "Wrap", "You", "Up");
+console.log(array2); // [ 'True', 'Blue', 'Wrap', 'You', 'Up' ]
 // Write a function that sums up elements of an array, given an array of numbers as an argument
 // Define a function that takes in an array of numbers and returns a new array containing only the primes
 // Define a function that takes in a 2D array of numbers and returns the total sum of all elements in the array
