@@ -15,3 +15,15 @@ plants.pop();
 
 console.log(plants);
 // expected output: Array ["broccoli", "cauliflower", "cabbage"]
+
+
+
+let array1 = ["shift", "pop"];
+array1.shift()
+console.log(array1); // [ 'pop' ]
+array1.unshift("unshift");
+console.log(array1); // [ 'unshift', 'pop' ]
+array1.pop();
+console.log(array1); // [ 'unshift' ]
+array1.push("push");
+console.log(array1); // [ 'unshift', 'push' ]
