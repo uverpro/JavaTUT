@@ -28,6 +28,10 @@ array2.splice(2, 3);
 console.log(array2); // [ 'True', 'Blue' ]
 array2.splice(2, 0, "Wrap", "You", "Up");
 console.log(array2); // [ 'True', 'Blue', 'Wrap', 'You', 'Up' ]
+array2.splice(5, 0, "Borderline")
+console.log(array2); // [ 'True', 'Blue', 'Wrap', 'You', 'Up', 'Borderline' ]
+array2.splice(2, 3, "Holiday");
+console.log(array2); // [ 'True', 'Blue', 'Holiday', 'Borderline' ]
 // Write a function that sums up elements of an array, given an array of numbers as an argument
 // Define a function that takes in an array of numbers and returns a new array containing only the primes
 // Define a function that takes in a 2D array of numbers and returns the total sum of all elements in the array
