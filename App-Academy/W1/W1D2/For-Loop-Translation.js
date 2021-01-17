@@ -21,7 +21,7 @@ function aCounter (word) {
     let count = 0;
     for (let i = 0; i < word.length; i++) {
         let char = word[i];
-        if (char === "e" || char === "E") {
+        if (char === "a" || char === "A") {
             count += 1;
         }
     }
