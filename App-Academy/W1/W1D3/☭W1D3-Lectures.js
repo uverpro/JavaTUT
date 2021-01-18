@@ -171,7 +171,7 @@ for (let i = 1; i <= 3; i++) {
     for (let j = 1; j <= 5; j++) {
       // console.log('    ', j);
 
-      console.log(i, j); // will iterate 15 times (3(i) * 5(j))
+      // console.log(i, j); // will iterate 15 times (3(i) * 5(j))
     }
   }
 
@@ -195,7 +195,7 @@ for (i = 0; i < array.length; i++) {
     }
 };
 // Modify J Index to "i + 1" to get UNIQUE PAIRS IN ARRAY
-for (j = i + 1; j < array.length; j++)
+// for (j = i + 1; j < array.length; j++)
 
 
 
@@ -239,6 +239,7 @@ into
 
 // const DOG_BREEDS = [''];
 
+let dogs = ['Fido', 'Digby', 'Fluffy'];
 function dogPairs(dogs) {
   const pairs = [];
   for (let i = 0; i < dogs.length; i++) {
@@ -246,7 +247,7 @@ function dogPairs(dogs) {
     for (let j = 0; j < dogs.length; j++) {
       const dog2 = dogs[j];
       console.log(dog1, dog2);
-      if (j >= i + 1) {
+      if (j > i) { // if (j >= i + 1) returns the same
         const pair = [dog1, dog2];
         pairs.push(pair);
       }
