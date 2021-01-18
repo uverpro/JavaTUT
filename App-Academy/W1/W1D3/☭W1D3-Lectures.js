@@ -247,7 +247,7 @@ function dogPairs(dogs) {
     for (let j = 0; j < dogs.length; j++) {
       const dog2 = dogs[j];
       console.log(dog1, dog2);
-      if (j > i) { // if (j >= i + 1) returns the same
+      if (i < j) { // if (j > i),(j >= i + 1) returns the same
         const pair = [dog1, dog2];
         pairs.push(pair);
       }
