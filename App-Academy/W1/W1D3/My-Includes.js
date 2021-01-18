@@ -3,7 +3,14 @@
 // The function should return a boolean indicating whether the target is found in the array.
 // Solve this without Array.includes or Array.indexOf.
 
-
+let myIncludes = function (arr, target) {
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i] === target) {
+        return true;
+        }
+    }
+    return false;
+};
 
 console.log(myIncludes(['a', 'b', 'c', 'e'], 'c')); // true
 console.log(myIncludes(['a', 'b', 'c', 'e'], 'a')); // true
