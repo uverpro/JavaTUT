@@ -5,8 +5,10 @@
 
 // 1. Identify that strings are immutable and arrays are mutable
 
+
 // 2. Define a function using both function declaration and function expression syntax
 // let score = function (num); function score (num)
+
 
 // 3. Utilize Array.push, .pop, .shift, .unshift to mutate an array
 let array1 = ["shift", "pop"];
@@ -32,8 +34,42 @@ array2.splice(5, 0, "Borderline")
 console.log(array2); // [ 'True', 'Blue', 'Wrap', 'You', 'Up', 'Borderline' ]
 array2.splice(2, 3, "Holiday");
 console.log(array2); // [ 'True', 'Blue', 'Holiday', 'Borderline' ]
-// Write a function that sums up elements of an array, given an array of numbers as an argument
-// Define a function that takes in an array of numbers and returns a new array containing only the primes
+
+
+// 5. Write a function that sums up elements of an array, given an array of numbers as an argument
+let array = [1, 2, 3, 4, 5];
+
+function sumsOfArray (nums) {
+    let sum = 0;
+    for (let i = 0; i < nums.length; i++) {
+        sum += nums[i];
+    }
+    return sum;
+};
+
+console.log(sumsOfArray(array));
+
+// 6. Define a function that takes in an array of numbers
+// and returns a new array containing only the primes
+function isPrime(num) {
+	for(let i = 0; i < num/2; i++) {
+		if (num % i === 0) {
+			return false;
+		}
+	}
+	return true;
+}
+
+function onlyPrimes(arr) {
+	let primes = [];
+	for(let i = 0; i < arr.length; i++) {
+		if (isPrime(arr[i])) {
+			primes.push(arr[i]);
+		}
+	}
+	return primes;
+}
+
 // Define a function that takes in a 2D array of numbers and returns the total sum of all elements in the array
 // Define a function that takes in an array of elements and returns a 2d array where the subarrays represent unique pairs of elements
 // Define a function that takes in an array of numbers as an argument and returns the smallest value in the array; if the array is empty return null
