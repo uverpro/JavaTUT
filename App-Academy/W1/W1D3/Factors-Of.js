@@ -6,7 +6,13 @@
 // Define this function using function expression syntax.
 
 let factorsOf = function (num) {
-
+    let nuArray = [];
+    for (i = 1; i <= num; i++) {
+        if (num % i === 0) {
+            nuArray.push(i);
+        }
+    }
+    return nuArray;
 };
 
 console.log(factorsOf(5)); // [ 1, 5 ]
