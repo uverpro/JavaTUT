@@ -16,3 +16,16 @@ let pitPat = function (max) {
 
 console.log(pitPat(18)); // [ 4, 6, 8, 16, 18 ]
 console.log(pitPat(30)); // [ 4, 6, 8, 16, 18, 20, 28, 30 ]
+
+// AA:
+// let pitPat = function(max) {
+//     let nums = [];
+
+//     for (let i = 1; i <= max; i++) {
+//         if ((i % 4 === 0 || i % 6 === 0) && i % 12 !== 0) {
+//             nums.push(i);
+//         }
+//     }
+
+//     return nums;
+// };
