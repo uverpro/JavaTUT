@@ -51,14 +51,18 @@ console.log(sumsOfArray(array));
 
 // 6. Define a function that takes in an array of numbers
 // and returns a new array containing only the primes
-function isPrime(num) {
-	for(let i = 0; i < num/2; i++) {
-		if (num % i === 0) {
-			return false;
-		}
-	}
-	return true;
-}
+function isPrime (number) {
+    if (number < 2) {
+        return false;
+    }
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0)
+        return false;
+    }
+    return true;
+};
+
+console.log(isPrime(11));
 
 function onlyPrimes(arr) {
 	let primes = [];
@@ -68,8 +72,15 @@ function onlyPrimes(arr) {
 		}
 	}
 	return primes;
-}
+};
 
-// Define a function that takes in a 2D array of numbers and returns the total sum of all elements in the array
-// Define a function that takes in an array of elements and returns a 2d array where the subarrays represent unique pairs of elements
-// Define a function that takes in an array of numbers as an argument and returns the smallest value in the array; if the array is empty return null
+// 7. Define a function that takes in a 2D array of numbers
+// and returns the total sum of all elements in the array
+
+
+// 8. Define a function that takes in an array of elements
+// and returns a 2d array where the subarrays represent unique pairs of elements
+
+
+// 9. Define a function that takes in an array of numbers as an argument
+// and returns the smallest value in the array; if the array is empty return null
