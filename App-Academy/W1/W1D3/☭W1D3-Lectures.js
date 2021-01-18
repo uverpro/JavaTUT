@@ -169,7 +169,7 @@ console.log(arrayToUpperCase(foods));
 for (let i = 1; i <= 3; i++) {
     // console.log(i);
     for (let j = 1; j <= 5; j++) {
-    //   console.log('    ', j);
+      // console.log('    ', j);
 
       console.log(i, j); // will iterate 15 times (3(i) * 5(j))
     }
