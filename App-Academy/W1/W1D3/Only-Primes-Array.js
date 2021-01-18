@@ -1,7 +1,7 @@
 // Define a function that takes in an array of numbers
 // and returns a new array containing only the primes
 
-function isPrime (number) {
+function isPrime (number) {                           // <== HELPER FUNCTION
     if (number < 2) {
         return false;
     }
@@ -15,7 +15,7 @@ function isPrime (number) {
 function onlyPrimes(arr) {
 	let primes = [];
 	for(let i = 0; i < arr.length; i++) {
-		if (isPrime(arr[i])) {
+		if (isPrime(arr[i])) {                       // <=== CALLING THE HELPER FUNCTION
 			primes.push(arr[i]);
 		}
 	}
