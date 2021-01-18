@@ -10,7 +10,7 @@ let fizzBuzz = function (max) {
         let num = i
         if ((num % 3 === 0 || num % 5 === 0)
         && !(num % 3 === 0 && num % 5 === 0)) {
-            nuArray.push(i);
+            nuArray.push(num);
         }
     }
     return nuArray;
