@@ -25,7 +25,7 @@ function highestAverage(numsList) {
         let currentElement = numsList[i];
         let currentAverage = getAverage(currentElement);
             if (currentAverage > highestAvg) {
-                highestAvg = currentAverage; // just "+", because we're replacing value
+                highestAvg = currentAverage; // just "=", because we're reassigning value
                 maxIndex = i;
             }
     }
