@@ -22,11 +22,8 @@ function calculator(num1, operator, num2) {
     }
     if (operator === "/") {
        return num1 / num2;
-    } else {
-        return null;
     }
-
-}
+};
 
 // TESTS
 // DO NOT MODIFY ANYTHING BELOW THIS LINE
