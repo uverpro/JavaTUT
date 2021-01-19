@@ -54,3 +54,10 @@ console.log(result);
 
 
 // ARRAY#filter
+
+
+
+
+
+// REDUCE
+// Reduces the array into a single char/num using the accumulator
