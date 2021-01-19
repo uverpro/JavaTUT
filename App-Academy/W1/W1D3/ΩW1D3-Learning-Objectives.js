@@ -87,7 +87,15 @@ let sumArray = function (array) {
 };
 
 let totalSumArrays = function (arrays) {
-
+    let sum = 0;
+    let maxIndex = 0;
+    for (i = 0; i < arrays.length; i++) {
+        let currentElement = arrays[i];
+        let sumArr = sumArray(currentElement);
+        sum += sumArr;
+        maxIndex = i;
+    }
+    return maxIndex;
 };
 
 
@@ -96,9 +104,8 @@ const arr2 = [100, 2, 1, 8, 10]; // 121
 const arr3 = [4, 4, 4, 4, 4]; // 20
 const arr4 = [1, 1, 9, 0, 19]; // 30
 const array2D = [arr1, arr2, arr3, arr4]; // 214
-
-
 // console.log(sumArray(arr1)); // 43
+console.log(totalSumArrays(array2D));
 
 // 8. Define a function that takes in an array of elements
 // and returns a 2d array where the subarrays represent unique pairs of elements
