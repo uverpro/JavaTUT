@@ -30,12 +30,27 @@ parks.forEach(function(ele, i) {
 // There's a third argument you can input
 // The Array itself!
 
-// The names of the arguments do not matter
-// Under the hood JS will run the element first, then the index, then the arry. Always.
+parks.forEach(function(ele, i, array) {
+    console.log(ele);
+    console.log(i);
+    console.log(array);
+    console.log('---');
+});
 
+/* The names of the arguments do not matter
+Under the hood JS will run the element first, then the index, then the array. Always.
+to get to index, you have to pass an argument into element first.
+to get to array, you have to pass an arguement for element and index first. */
 
+// Use forEach method to concat a new string of all the elements in the array
+let str = '';
+parks.forEach(function(ele) {
+    str += ele;
+});
+console.log(str); // ZionYellowstoneAcadiaYosemite
 
-
+/* Summary:
+forEach WILL ONLY iterate through an array in order and hit every single element. */
 
 // Map is like forEach but it results in a new array
 // the return value of the function that's ran is mapped to a respective place in the new array
