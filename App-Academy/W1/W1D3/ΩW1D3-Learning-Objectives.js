@@ -80,8 +80,27 @@ function onlyPrimes(arr) {
 
 let sumArrays = function (arrays) {
     let sum = 0;
+    for (let i = 0; i < arrays.length; i++) {
+        let subArray = arrays[i];
+        for (let j = 0; j < subArray.length; j++) {
+            sum += subArray[j];
+        }
+    }
+    return sum;
 };
+let arra = [5];
+let arrb = [5, 5, 5]
+let arrc = [0]
+let arrd = [[arra], [arrb], [arrc]]
+console.log(sumArrays(arrd));
+let arr1 = [
+            [2, 3],
+            [1, 1, 1, 1, 1],
+            [5],
+            [10, -5]
+];
 
+console.log(sumArrays(arr1)); // 20
 
 // 8. Define a function that takes in an array of elements
 // and returns a 2d array where the subarrays represent unique pairs of elements
