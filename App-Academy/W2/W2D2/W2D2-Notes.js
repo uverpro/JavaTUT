@@ -32,3 +32,10 @@ let parks = ['Zion', 'Yellowstone', 'Acadia', 'Yosemite'];
 
 // The names of the arguments do not matter
 // Under the hood JS will run the element first, then the index, then the arry. Always.
+
+
+
+
+
+// Map is like forEach but it results in a new array
+// the return value of the function that's ran is mapped to a respective place in the new array
