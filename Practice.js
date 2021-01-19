@@ -1,20 +1,33 @@
-// Vowel Counter Recall
-// Write a function, countVowels(word), that takes in a string word
-// and returns the number of vowels in the word.
-// Vowels are the letters "a", "e", "i", "o", "u".
+// function getAverage(nums) {
+//   let total = 0;
+//   for (let i = 0; i < nums.length; i++) {
+//     // console.log(nums[i])
+//     let num = nums[i];
+//       total += num
+//   }
+//   return total / nums.length;
+// }
 
-let countVowels = function (word) {
-  let vowels = ["a", "e", "i", "o", "u"];
-  vowelCount = 0;
-  for (let i = 0; i < word.length; i++) {
-    let letter = word[i];
-    if (vowels.includes(letter)) {
-        vowelCount++
-      }
-    }
-    return vowelCount;
-};
+// const arrayA = [1, 2, 3, 4, 5];
+// // const arrayB = [10000, -9998];
+// // const arrayC = [2, 100, 55, 19];
+// // const arrayD = [4, 8, 12];
 
-console.log(countVowels("bootcamp")); // => 3
-console.log(countVowels("apple")); // => 2
-console.log(countVowels("pizza")); // => 2
+// // getAverage(arrayA);
+
+// console.log(getAverage(arrayA));
+
+function highestAverage(numsList) {
+  let highest = 0;
+  for (let j = 0; j < numsList.length - 1; j++) {
+      let currentElement = numsList[j];
+    console.log(currentElement)
+  }
+}
+
+const arrayA = [1, 2, 3, 4, 5];
+const arrayB = [10000, -9998];
+const arrayC = [2, 100, 55, 19];
+const arrayD = [4, 8, 12];
+
+highestAverage([arrayA, arrayB, arrayC, arrayD])
