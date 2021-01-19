@@ -23,3 +23,5 @@ console.log(5 < null); // 3. false (!!)
 
 // 4. With an OR statement, only one has to be true. Since the first part is ALWAYS true
 // it automatically reassigns min from null to nums[i]! Which solves the probelm on line 22! (3.)
+
+// REMEMBER NULL!
