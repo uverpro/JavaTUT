@@ -16,9 +16,17 @@ for (const property in object) {
 // "c: 3"
 
 let monsters = {'Canada': 'Sasquatch', 'Nepal': 'Yeti', 'Scotland': 'Loch Ness Monster'};
+let pets = ["Crom", "Ren", "Toby", "Ivan"];
 
 console.log(monsters);
 for (let prop in monsters) {
     console.log(prop);
     console.log(monsters[prop]);
+    console.log("In", prop, "we have the", monsters[prop]);
+};
+
+for (let property in pets) {
+    console.log(`At ${property} we have ${pets}`);
+    console.log(`At ${property} we have ${pets[property]}`);
+
 };
