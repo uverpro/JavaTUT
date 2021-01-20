@@ -1,33 +1,29 @@
-// function getAverage(nums) {
-//   let total = 0;
-//   for (let i = 0; i < nums.length; i++) {
-//     // console.log(nums[i])
-//     let num = nums[i];
-//       total += num
-//   }
-//   return total / nums.length;
-// }
 
-// const arrayA = [1, 2, 3, 4, 5];
-// // const arrayB = [10000, -9998];
-// // const arrayC = [2, 100, 55, 19];
-// // const arrayD = [4, 8, 12];
 
-// // getAverage(arrayA);
-
-// console.log(getAverage(arrayA));
-
-function highestAverage(numsList) {
-  let highest = 0;
-  for (let j = 0; j < numsList.length - 1; j++) {
-      let currentElement = numsList[j];
-    console.log(currentElement)
+let noE = function (words) {
+  let val = words.indexOf("e");
+  // let val2 = word.indexOf("E");
+  if (val === -1) { // && val2 === -1)
+  return true;
+} else {
+  return false;
   }
-}
+};
 
-const arrayA = [1, 2, 3, 4, 5];
-const arrayB = [10000, -9998];
-const arrayC = [2, 100, 55, 19];
-const arrayD = [4, 8, 12];
+let removeEWords = function (sentence) {
+  let words = sentence.split(" ");
+//   let result = "";
+//   for (let i = 0; i < words.length; i++) {
+//     if (hasE(word) {
+//       // do nothing
+//   } else {
+//     result += word;
+//   }
+//   return result;
+};
 
-highestAverage([arrayA, arrayB, arrayC, arrayD])
+let result = words.filter(noE);
+console.log(result('What time is it everyone?'));
+
+console.log(removeEWords('What time is it everyone?')); // 'What is it'
+console.log(removeEWords('Enter the building')); // 'building'
