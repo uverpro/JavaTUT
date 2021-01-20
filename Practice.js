@@ -11,7 +11,7 @@ let noE = function (words) {
 };
 
 let removeEWords = function (sentence) {
-  let words = sentence.split(" ");
+  const word = sentence.split(" ");
 //   let result = "";
 //   for (let i = 0; i < words.length; i++) {
 //     if (hasE(word) {
