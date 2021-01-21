@@ -72,3 +72,99 @@ myForEach (peeps, function (el, i, array) { // This behaves the same as forEach 
 // the cb is evoked in the myForEach method
 // can return any of the three, like element & index (in example). Array is ignored
 // but under the hood the cb function is returning all three
+
+// =============================================================== DEMO 5
+
+// let newPeeps = peeps.map(function(el){
+//     return el.toUpperCase() + "!!!!";
+// });
+
+// console.log(newPeeps); // [ 'KAFA!!!!', 'CINDY!!!!', 'JON!!!!', 'PALOMA!!!!' ]
+
+let myMap = function (array, cb) {
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        let res = cb(el, i, array);
+        newArray.push(res);
+    }
+    return newArray;
+};
+
+let newPeeps = myMap(peeps, function(el){
+    return el.toUpperCase() + "!!!!";
+});
+
+console.log(newPeeps); // [ 'KAFA!!!!', 'CINDY!!!!', 'JON!!!!', 'PALOMA!!!!' ]
+
+// Will work the same way as forEach, but returns a new array
+
+
+
+// ================================================================== DENO 6
+
+// Filter
+
+let veggies = ['lettuce', 'celery', 'cabbage', 'watercress'];
+
+// let result = veggies.filter(function(element){
+//     return element.includes("a");
+// });
+
+// console.log(veggies);
+// console.log(result);
+
+let myFilter = function (array, cb) {
+    let selectedItems = [];
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        let res = cb(el,i,array);
+        if (res === true) {
+            selectedItems.push(el);
+        }
+    }
+    return selectedItems;
+};
+
+let func = function (ele) {
+    return ele.includes("a");
+};
+
+console.log(myFilter(veggies, func)); // evoking myFilter function
+                                    // function (array, cb)
+                                    // myfilter (veggies, func)
+                                    // my filter is the evoked function
+                                    // veggies = array
+                                    // "func" is the callback "cb", defined on line 129
+// myFilter(veggies.func)
+
+
+
+// ======================================================== DEMO 7
+
+// Every
+
+let veggies = ['lettuce', 'celery', 'cabbage', 'watercress'];
+
+// does every element in veggies array have an "e"?
+// let result = veggies.every (function (ele){
+//     return ele.includes("e");
+// });
+
+// console.log(result); // true
+
+function myEvery (array, cb) {
+    for (let i = 0; i < array.length; i++) {
+        let res = cb(array[i]);
+        if (res === false) {
+            return false;
+        }
+    }
+    return true;
+};
+
+let thiscb = myEvery(veggies, function(el, i, array){
+    return el.includes("e");
+})
+
+console.log(myEvery(veggies, thiscb));
