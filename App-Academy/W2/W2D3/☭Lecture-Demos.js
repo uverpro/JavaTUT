@@ -163,8 +163,8 @@ function myEvery (array, cb) {
     return true;
 };
 
-let thiscb = myEvery(veggies, function(el, i, array){
+let result = myEvery(veggies, function(el, i, array){
     return el.includes("e");
 })
 
-console.log(myEvery(veggies, thiscb));
+console.log(result);
