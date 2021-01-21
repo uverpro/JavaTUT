@@ -40,4 +40,7 @@ let res = nuMap([4, 9, 81, 25], function (n) {
     return 2 * n;
 });
 
+let squared = nuMap([4, 9, 81, 25], Math.sqrt);
+
 console.log(res);
+console.log(squared);
