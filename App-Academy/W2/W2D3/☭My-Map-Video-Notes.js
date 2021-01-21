@@ -23,3 +23,21 @@ let newPeeps = myMap(peeps, function(el){
 });
 
 console.log(newPeeps);
+
+
+
+let nuMap = function (array, cb) {
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        let res = cb(el, i, array);
+        newArray.push(res);
+    }
+    return newArray;
+};
+
+let res = nuMap([4, 9, 81, 25], function (n) {
+    return 2 * n;
+});
+
+console.log(res);
