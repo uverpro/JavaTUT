@@ -58,4 +58,3 @@ const plusOne = function (digits) {
 plusOne([1, 2, 3]);
 plusOne([0]);
 plusOne([99]);
-// don't forget to check in!
