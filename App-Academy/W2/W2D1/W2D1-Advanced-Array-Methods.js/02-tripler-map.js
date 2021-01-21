@@ -4,11 +4,6 @@ should return a new array containing three times every number of the original
 array.
 
 Solve this using Array's `map()` method.
-
-Examples:
-
-console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
-console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
 */
 
 function tripler(array) {
@@ -16,12 +11,7 @@ function tripler(array) {
     return num * 3
   });
   return tripled;
-}
+};
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-  module.exports = tripler;
-} catch (e) {
-  module.exports = null;
-}
+console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
+console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
