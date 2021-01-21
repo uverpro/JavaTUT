@@ -6,11 +6,6 @@ than 5 characters.
 
 Solve this using Array's `filter()` method.
 
-Examples:
-
-console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
-console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
-
 */
 
 let longWords = function(words) {
@@ -20,10 +15,5 @@ let longWords = function(words) {
   return newArray;
 };
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-  module.exports = longWords;
-} catch (e) {
-  module.exports = null;
-}
+console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
+console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
