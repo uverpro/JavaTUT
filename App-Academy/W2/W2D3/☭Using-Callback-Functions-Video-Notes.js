@@ -24,5 +24,10 @@ let negate = function (n) {
     return -1 * n;
 };
 
+let res = superAdd(3, 2, function (n) {
+    return 2 * n;
+});
+
 console.log(superAdd(3, 2, doubler));
 console.log(superAdd(3, 2, negate));
+console.log(res);
