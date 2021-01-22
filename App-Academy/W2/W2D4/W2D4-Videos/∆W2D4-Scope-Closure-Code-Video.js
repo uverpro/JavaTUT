@@ -12,3 +12,18 @@ function pizzaMaker(food) {
 };
 
 console.log(pizzaMaker("cheese")); // ==> "I'd like a pizza with cheese"
+
+
+
+function groceryList(list) {
+    let groceries = list;
+
+    function addItem() {
+        groceries.push("and ice cream!")
+    }
+
+    addItem();
+    return groceries;
+}
+
+console.log(groceryList(["milk", "eggs"]));
