@@ -45,7 +45,7 @@ treeFunc('Pine'); // ==> ["Pine"]
 
 
 // Closures allow us to create Private State
-function  createCount() {
+function  createCounter() {
     let count = 0;
 
     return function() {
@@ -57,3 +57,8 @@ function  createCount() {
 let counter1 = createCounter();
 console.log(counter1()); // ==> 1
 console.log(counter1()); // ==> 2
+
+let counter2 = createCounter();
+console.log(counter2()); // ==> 1
+// counter2 has a seperate value. Has created a private state
+// this is how a closer allows us to access a function after it's been returned
