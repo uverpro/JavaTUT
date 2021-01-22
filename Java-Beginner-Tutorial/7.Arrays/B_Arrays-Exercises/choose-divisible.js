@@ -4,7 +4,8 @@
 // The function should return an array containing elements of the original
 // array that are divisible by the target.
 
-let chooseDivisibles = function (numbers, targer) {
+let chooseDivisibles = function (numbers, target) {
+    let nuArray = [];
 
 };
 
