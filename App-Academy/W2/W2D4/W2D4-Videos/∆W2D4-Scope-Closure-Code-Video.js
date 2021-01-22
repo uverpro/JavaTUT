@@ -45,3 +45,14 @@ function elephantCollector() {
         return elephants;
     };
 }
+
+console.log(elephantCollector()); // [Function]
+const elephantParade = elephantCollector()
+// console.log(elephantParade); // [Function]
+// console.log(elephantParade()); // [ 'dumbo', undefined ]
+// console.log(elephantParade("Sandy")); // [ 'dumbo', undefined, 'Sandy' ]
+console.log(elephantParade("Sandy")); // [ 'dumbo', 'Sandy' ]
+// by calling the innter function (line 43) via line 54, we gain access to
+// the variable "elephants"
+elephantParade("Augi");
+console.log(elephantParade("Rayna")); // [ 'dumbo', 'Sandy', 'Augi', 'Rayna' ]
