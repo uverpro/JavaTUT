@@ -60,4 +60,30 @@ console.log(bearMaker("Miley"));
 
 
 
+What will be printed when the below garden function is invoked?
+function garden() {
+    let flower = "lily";
+
+    function flowerBed() {
+        console.log(flower);
+    }
+    flowerBed();
+}
+
+garden(); // ==> "lily"
+
+It will return "lily" because of "scope chaining".
+
+function garden() {
+    let flower = "lily";
+
+    function flowerBed() {
+    let flower = "Not a Lilly!"
+        console.log(flower);
+    }
+    flowerBed();
+}
+
+garden(); // ==> "Not a Lilly!"
+
 */
