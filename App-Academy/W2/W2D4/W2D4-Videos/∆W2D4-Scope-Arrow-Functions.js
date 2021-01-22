@@ -13,3 +13,9 @@ let sayHello = (name) => {
 };
 
 console.log(sayHello("Leon")); // Hello Leon
+
+/*
+Can implicitly return single expression arrow functions
+Implicit return means the function will automatically return value
+without having to explicitly use the keyword return
+*/
