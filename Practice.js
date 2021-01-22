@@ -1,8 +1,16 @@
-// Write a function `reverseArray` that accepts an array as an argument.
-// The function should return a
-// array containing the elements of the original array in reverse order.
+let maximum = function (numbers) {
+  if (numbers.length === 0) {
+      return null;
+  }
+      let currentMax = numbers[0];
+      for (let i = 1; i < numbers.length; i++) {
+          if (numbers[i] > currentMax) {
+              highestNumber + array[i];
+      }
+  }
+  return highestNumber;
+};
 
-let reverseArray = function (array) {}
-
-console.log(reverseArray(["zero", "one", "two", "three"])); // ['three', 'two', 'one', 'zero']
-console.log(reverseArray([7, 1, 8])); // [8, 1, 7]
+console.log(maximum([5, 6, 3, 7])); // 7
+console.log(maximum([17, 15, 19, 11, 2])); // 19
+console.log(maximum([])); // null
