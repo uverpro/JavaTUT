@@ -62,3 +62,6 @@ let counter2 = createCounter();
 console.log(counter2()); // ==> 1
 // counter2 has a seperate value. Has created a private state
 // this is how a closer allows us to access a function after it's been returned
+
+
+// A CLOSER is when an inner function uses, or changes, variable in an outer function!
