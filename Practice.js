@@ -1,18 +1,18 @@
-// Write a function `stringsToLengths` that accepts an array of strings as an argument.
-// The function
-// should return a new array containing the lengths of the elements of the original array.
+// Write a function `divisors` that accepts a number as an argument.
+// The function should return an
+// array containing all positive numbers that can divide into the argument.
 
-let stringsToLengths = function (array) {
+let divisors = function (number) {
   let nuArray = [];
-  for (let i = 0; i < array.length; i++) {
-    let words = array[i];
-    nuArray.push(words.length);
+  for (let i = 1; i <= number; i++) {
+    let num = i;
+    if (number % num === 0) {
+      nuArray.push(num);
+    }
   }
   return nuArray;
 };
 
-console.log(stringsToLengths(["belly", "echo", "irony", "pickled"]));
-// [5, 4, 5, 7]
-
-console.log(stringsToLengths(["on", "off", "handmade"]));
-// [2, 3, 8]
+console.log(divisors(15)); // [1, 3, 5, 15]
+console.log(divisors(7)); // [1, 7]
+console.log(divisors(24)); // [1, 2, 3, 4, 6, 8, 12, 24]
