@@ -1,5 +1,5 @@
 // Write a function that accepts an array of number as an argument and
-// reuturns the smaller number in the array
+// returns the smaller number in the array
 // If the array is empty it will return null
 
 function smallestNum (arraynums) {
