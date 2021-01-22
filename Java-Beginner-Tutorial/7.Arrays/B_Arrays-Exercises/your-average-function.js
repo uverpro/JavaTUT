@@ -3,7 +3,7 @@
 // If the input array is empty, then the function should return null.
 
 let yourAverageFunction = function (array) {
-    if (array.lenght === 0) {
+    if (array.length === 0) {
         return null;
     }
     let sum = 0;
