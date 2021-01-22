@@ -6,7 +6,11 @@
 
 let chooseDivisibles = function (numbers, target) {
     let nuArray = [];
-
+    for (let i = 0; i < numbers.length; i++)
+        if (numbers[i] % target === 0) {
+            nuArray.push(numbers[i]);
+    }
+    return nuArray;
 };
 
 console.log(chooseDivisibles([40, 7, 22, 20, 24], 4)); // [40, 20, 24]
