@@ -38,7 +38,7 @@ function treeMaker() {
         return trees;
     }
     return addTree;
-}
+};
 
-const treeFunc = treeMaker(); // ==> returns a func [Function]
+const treeFunc = treeMaker(); // ==> returns a func [Function: addTree]
 treeFunc('Pine'); // ==> ["Pine"]
