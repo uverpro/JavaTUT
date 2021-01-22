@@ -6,8 +6,9 @@ function divisors (number) {
     for (i = 1; i <= number; i++) {
         // console.log(i) will print 1 - 15 (use for number count!)
         // console.log(number) will print "15", 15 times
-        if (number % i === 0) {
-            divarray.push(i);
+        let num = i;
+        if (number % num === 0) {
+            divarray.push(num);
         }
     }
     return divarray;
