@@ -14,7 +14,7 @@ function pizzaMaker(food) { // 2. Ran
 console.log(pizzaMaker("cheese")); // 1. Evoked
 // ==> "I'd like a pizza with cheese"
 
-
+/******************************************************************* */
 
 function groceryList(list) { // 1. Evoked.
     let groceries = list; // isn't necessary, WILL WORK with "list"
@@ -34,3 +34,14 @@ console.log(groceryList(["milk", "eggs"]));
 // Line 25 evokes function "addItem()" on line 21
 // Line 21 function "addItem()" pushes arguement into "list"
 // Line 26 returns groceries (aka list) which was modified by function "addItem"
+
+/************************************************************************************** */
+
+function elephantCollector() {
+    const elephants = ["dumbo"];
+
+    return function (name) {
+        elephants.push(name);
+        return elephants;
+    };
+}
