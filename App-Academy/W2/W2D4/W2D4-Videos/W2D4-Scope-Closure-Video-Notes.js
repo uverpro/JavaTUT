@@ -28,3 +28,17 @@ function appleTree() {
     return tree;
 };
 console.log(appleTree()); // ==> { type: 'apple', grown: true }
+
+
+// Closures can even close over variable of a returned function!
+function treeMaker() {
+    let trees = [];
+    function addTree(tree) {
+        trees.push(tree);
+        return trees;
+    }
+    return addTree;
+}
+
+const treeFunc = treeMaker(); // ==> returns a func [Function]
+treeFunc('Pine'); // ==> ["Pine"]
