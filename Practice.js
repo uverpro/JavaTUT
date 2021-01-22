@@ -1,17 +1,18 @@
-// Write a function `numOdds` that accepts an array of numbers as an argument.
-// The function should return a number representing the count of odd elements in the array.
+// Write a function `stringsToLengths` that accepts an array of strings as an argument.
+// The function
+// should return a new array containing the lengths of the elements of the original array.
 
-let numOdds = function (array) {
-  sum = 0;
+let stringsToLengths = function (array) {
+  let nuArray = [];
   for (let i = 0; i < array.length; i++) {
-    let num = array[i];
-    if (num % 2 !== 0) {
-      sum++;
-    }
+    let words = array[i];
+    nuArray.push(words.length);
   }
-  return sum;
+  return nuArray;
 };
 
-console.log(numOdds([4, 7, 2, 5, 9])); // 3
-console.log(numOdds([11, 31, 58, 99, 21, 60])); // 4
-console.log(numOdds([100, 40, 4])); // 0
+console.log(stringsToLengths(["belly", "echo", "irony", "pickled"]));
+// [5, 4, 5, 7]
+
+console.log(stringsToLengths(["on", "off", "handmade"]));
+// [2, 3, 8]
