@@ -62,12 +62,21 @@ This differs between let & const and var! */
 
 // Hoisting with Var
 function hoistVar () {
-    console.log(dog);
+    console.log(dog); // undefined
     var dog = "dog";
+    console.log(dog); // dog
 };
+
+hoistVar(); // ==> undefined
+// when you define a function with var (line 65),
+// it will hoist the variable name to the top of that scope
+// the value when hoisted will by default be set to "undefined"
+// the value is not assigned until line 67!
 
 // Hoisting with Let and Const
 function hoistLetandConst () {
-    console.log(cat);
+    console.log(cat); // ==> ERROR
     let cat = "cat";
 };
+
+hoistLetandConst(); // ==> ERROR: cat is not defined.
