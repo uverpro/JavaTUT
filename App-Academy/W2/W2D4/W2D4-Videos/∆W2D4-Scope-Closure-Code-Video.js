@@ -10,3 +10,5 @@ function pizzaMaker(food) {
     }
     return oven();
 };
+
+console.log(pizzaMaker("cheese")); // ==> "I'd like a pizza with cheese"
