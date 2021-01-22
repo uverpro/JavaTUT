@@ -3,15 +3,16 @@
 // 1. Closure: a closure is when an inner function uses, or changes,
 // variables in an outer function.
 
-function pizzaMaker(food) {
+function pizzaMaker(food) { // 2. Ran
     let order = "I'd like a pizza with ";
-    function oven() {
-        return order + food;
+    function oven() { // 4. Ran
+        return order + food; // 5. Returned
     }
-    return oven();
+    return oven(); // 3. Evoked. // 6. Returned
 };
 
-console.log(pizzaMaker("cheese")); // ==> "I'd like a pizza with cheese"
+console.log(pizzaMaker("cheese")); // 1. Evoked
+// ==> "I'd like a pizza with cheese"
 
 
 
