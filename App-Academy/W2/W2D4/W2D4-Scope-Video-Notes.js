@@ -17,4 +17,47 @@ Variables: includes arguments, local variables, previously declared variables
 Variables: denoted by the "{ }" includes previously declared variables.
 
 
+
+GLOBAL SCOPE EXAMPLE:
+const bear = { sound: "RAWR!" }
+
+LOCAL/FUNCTION SCOPE EXAMPLE:
+function bearMaker (name) {
+    return "I'm" + name + " the bear Rawr!"
+};
+console.log(bearMaker("Miley"));
+
+BLOCK SCOPE EXAMPLE:
+if (true) {
+    let candle = "fire!";
+    console.log(fire);
+};
+
+
+
+What variables are avaliable in each scope?
+
+
+What variables does the bearMaker function have access to?
+function bearMaker (name) {
+    return "I'm" + name + " the bear Rawr!"
+};
+console.log(bearMaker("Miley"));
+// 1. Incoming Args (name)
+// 2. Variables declared in the Function (bearString)
+
+
+What variables does the bearMaker function have access to?
+let newBear = "Lewis";
+function bearMaker (name) {
+    let bearString = "Here we got" + name " and " + newBear + " the bears!"
+    return bearString;
+};
+console.log(bearMaker("Miley"));
+// 1. Incoming Args (name)
+// 2. Variables declared in the Function (bearString)
+// 3. Previously declared variables (nuewBear)
+
+
+
 */
