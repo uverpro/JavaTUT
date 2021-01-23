@@ -1,11 +1,11 @@
 /***********************************************************************
 Write a function named: countDownTimer(n). This function will represent a count
-down of days till the New Year. The countDownTimer function will 
+down of days till the New Year. The countDownTimer function will
 take in a number argument (n) the first time it is called and if that
 number is greater than 0 the countDownTimer will return a function.
 
-The function returned by countDownTimer can then be invoked n times before it 
-returns a string of "Happy New Year!". Look closely at how this function is 
+The function returned by countDownTimer can then be invoked n times before it
+returns a string of "Happy New Year!". Look closely at how this function is
 invoked below:
 
 Example 1:
@@ -27,14 +27,34 @@ Example 4:
   console.log(threeDays()); // prints "Happy New Year!"
 
 ***********************************************************************/
+/*
+input: 1 number
+output: return a function OR a string
+strategy:
+n argument is related to when we return a function or string
+I want to return a function from countDownTimer
+Will need to make that function first
+I'll need to know when to return that function
+This function will need some information from the original function
+*/
+let variable = "string"
+function countDownTimer(n){
+  if (n > 0) {
+    return function outer () {
+      n--;
+      if (n <= 0) {
+      console.log("Happy New Year")
+      return "Happy New Year"
+      } else {
+        return console.log("HELP"); // suppose to be function
+      }
+    }
+  }
+  console.log("Happy New Year")
+  return "Happy New Year"
+};
 
-// your code here
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-  module.exports = countDownTimer;
-} catch (e) {
-  // catch the ref err
-  module.exports = null;
-}
+console.log(countDownTimer(0)); // prints "Happy New Year!"
+console.log(countDownTimer(1)); // returns a function
+console.log(countDownTimer(2)); // returns a function
+console.log(countDownTimer(3));
