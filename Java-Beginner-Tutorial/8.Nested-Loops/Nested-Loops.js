@@ -35,4 +35,7 @@ for (let i = 1; i <= 5; i++) {
 let array = ["red", "blue", "green", "orange"];
 for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
-}
+    for (let j = 0; j < array.length; j++) {
+        console.log(`   ${array[j]}`)
+    }
+};
