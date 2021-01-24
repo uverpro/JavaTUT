@@ -31,3 +31,8 @@ for (let i = 1; i <= 5; i++) {
 //         console.log(i, j); // will print 20 lines of code
 //     }
 // };
+
+let array = ["red", "blue", "green", "orange"];
+for (let i = 0; i < array.length; i++) {
+    console.log(array[i]);
+}
