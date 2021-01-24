@@ -19,9 +19,9 @@ for (let i = 1; i <= 5; i++) {
 
 for (let i = 1; i <= 5; i++) {
     console.log(i)
-    console.log("   beginning j")
+    console.log("   beginning inner loop")
     for (let j = 1; j <= 3; j++) {
         console.log(" ", j);
     }
-    console.log("   finishing j")
+    console.log("   finishing inner loop")
 };
