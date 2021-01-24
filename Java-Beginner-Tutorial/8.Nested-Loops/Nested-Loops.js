@@ -8,7 +8,7 @@ for (let i = 1; i <= 5; i++) {
 
 // for (let i = 1; i <= 5; i++) {
 //     for (let j = 1; j <= 3; j++) {
-//         console.log(i, j);
+//         console.log(i, j); // will print 15 lines of code
 //     1 1, 1 2, 1 3, // first iteration of i (outer loop)
 //     2 1, 2 2, 2 3, // second
 //     3 1, 3 2, 3 3, // third
@@ -25,3 +25,9 @@ for (let i = 1; i <= 5; i++) {
     }
     console.log("   finishing inner loop")
 };
+
+// for (let i = 1; i <= 5; i++) {
+//     for (let j = 1; j <= 4; j++) {
+//         console.log(i, j); // will print 20 lines of code
+//     }
+// };
