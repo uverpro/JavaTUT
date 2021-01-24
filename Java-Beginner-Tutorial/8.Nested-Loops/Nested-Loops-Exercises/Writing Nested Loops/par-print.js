@@ -3,6 +3,16 @@
 // The function doesn't need to return any value.
 // It should just print to the terminal.
 
+let pairPrint = function(array) {
+    for (let i = 0; i < array.length; i++) {
+        let a = array[i];
+        for (let j = i + 1; j < array.length; j++) {
+            let b = array[j];
+            console.log(a, b)
+        }
+    }
+};
+
 pairPrint(["artichoke", "broccoli", "carrot", "daikon"]);
 // prints
 //  artichoke - broccoli
