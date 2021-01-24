@@ -48,7 +48,7 @@ for (let i = 0; i < array.length; i++) {
 
 let array = ["red", "blue", "green", "orange"];
 for (let i = 0; i < array.length; i++) {
-    for (let j = 1; j < array.length; j++) {
-        console.log(array[i], array[j])
+    for (let j = i + 1; j < array.length; j++) { // simple set the value of j to "j = i + 1"
+        console.log(array[i], array[j]) // will now return only the unique elements
     }
 };
