@@ -30,7 +30,7 @@ let str = "";
 for (let i = 0; i < array.length; i++) {
 let subArray = array[i];
     for (let j = 0; j < subArray.length; j++) {
-        str += subarray[j]; // console.log(subArray[j]);
+        str += subArray[j]; // console.log(subArray[j]);
     }
 };
 
