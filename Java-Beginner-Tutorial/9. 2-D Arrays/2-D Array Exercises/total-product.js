@@ -2,7 +2,14 @@
 // The function should return the total product of all numbers in the array.
 
 let totalProduct = function(array) {
-
+    let sum = 1;
+    for (let i = 0; i < array.length; i++) {
+        let subArray = array[i];
+        for (let j = 0; j < subArray.length; j++) {
+            sum *= subArray[j];
+        }
+    }
+    return sum;
 };
 
 let array1 = [
