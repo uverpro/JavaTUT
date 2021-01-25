@@ -21,13 +21,17 @@
 
 let array = [
     ["a", "b"],
-    ["c", "d", "e"]
+    ["c", "d", "e"],
     ["f", "g", "h"]
 ];
 
+let str = "";
+
 for (let i = 0; i < array.length; i++) {
 let subArray = array[i];
-    for (let j = 0; j < subArray; j++) {
-        console.log(subArray[j]);
+    for (let j = 0; j < subArray.length; j++) {
+        str += subarray[j]; // console.log(subArray[j]);
     }
-}
+};
+
+console.log(str);
