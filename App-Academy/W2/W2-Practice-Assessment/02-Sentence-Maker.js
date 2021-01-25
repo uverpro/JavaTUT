@@ -27,7 +27,7 @@ const sentenceMaker = (...collection) => { // the rest operator "..." simply all
 		let word = collection[i];
 		if (i === collection.length - 1) {
 			result += `${word}!`
-			return result;
+			return result; // returning early
 		}
 		result += `${word} `
 	}
