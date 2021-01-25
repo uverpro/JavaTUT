@@ -6,9 +6,11 @@
 let twoSumPairs = function(numbers, target) {
     let pairs = [];
     for (let i = 0; i < numbers.length; i++) {
+        let num1 = numbers[i];
         for (let j = i + 1; j < numbers.length; j++) {
-            if (numbers[i] + numbers[j] === target) {
-                let pair = [ numbers[i], numbers[j] ];
+            let num2 = numbers[j]
+            if (num1 + num2 === target) {
+                let pair = [ num1, num2 ];
                 pairs.push(pair);
             }
         }
