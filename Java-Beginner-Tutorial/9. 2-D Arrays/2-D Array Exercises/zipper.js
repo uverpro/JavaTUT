@@ -3,7 +3,14 @@
 // You can assume that the arrays have the same length.
 
 let zipper = function (array1, array2) {
-
+    let result = [];
+    for (let i = 0; i < array1.length; i++) {
+        let el1 = array1[i];
+        let el2 = array2[i];
+        let pair = [ el1, el2 ];
+        result.push(pair);
+    }
+    return result;
 };
 
 let array1 = ["a", "b", "c", "d"];
