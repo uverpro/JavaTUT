@@ -33,7 +33,7 @@ if value is not already a value for a different key in object
 
             function keyAdderUniqueVal(object, key, value) {
                 // option 1, for in loop:
-                for (let key in object) {
+                for (let key in object) { // "key" can be anything
                     console.log(key); // name, color
                     if (object [key] === value) { // (object [key] is the value)
                         return object; // 1. returning early if value is found
