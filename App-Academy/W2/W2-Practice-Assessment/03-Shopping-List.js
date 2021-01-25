@@ -28,12 +28,11 @@ console.log(clothesList); // ['tshirt', 'pants']
 // STRATEGY
 
 function shoppingList(list) {
-
     return function (item) {
       list.push(item);
       return list;
     }
-  };
+};
 
   const clothesList = []
   const addToClothesList = shoppingList(clothesList);
