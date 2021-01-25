@@ -3,7 +3,13 @@
 // and width `n` that contains the `value` as every element.
 
 let makeMatrix = function(m, n, value) {
+    let array = [];
+    for (i = 0; i < m; i++) {
+    let subArray = m[i];
+        for (let j = 0; j < subArray.length; j++) {
 
+        }
+    }
 };
 
 console.log(makeMatrix(3, 5, null));
