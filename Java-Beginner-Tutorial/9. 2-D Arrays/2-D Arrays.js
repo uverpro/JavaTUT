@@ -26,8 +26,8 @@ let array = [
 ];
 
 for (let i = 0; i < array.length; i++) {
-    console.log(array[i]);
-    for (let j = 0; j < array[i].length; j++) {
-        console.log(array[i][j]);
+let subArray = array[i];
+    for (let j = 0; j < subArray; j++) {
+        console.log(subArray[j]);
     }
-};
+}
