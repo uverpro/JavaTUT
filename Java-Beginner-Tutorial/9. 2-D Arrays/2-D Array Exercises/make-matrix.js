@@ -5,11 +5,13 @@
 let makeMatrix = function(m, n, value) {
     let array = [];
     for (i = 0; i < m; i++) {
-    let subArray = m[i];
-        for (let j = 0; j < subArray.length; j++) {
-
+        let subArray = [];
+        for (let j = 0; j < n; j++) {
+            subArray.push(value)
         }
+        array.push(subArray);
     }
+    return array;
 };
 
 console.log(makeMatrix(3, 5, null));
