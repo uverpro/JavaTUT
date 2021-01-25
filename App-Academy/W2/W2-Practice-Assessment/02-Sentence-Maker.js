@@ -21,7 +21,7 @@ sentenceMaker('The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'd
 // if the word is the last word, add "!" to result string
 // return result
 
-const sentenceMaker = (...collection) => {
+const sentenceMaker = (...collection) => { // the rest operator "..." simply allows infinite args
 	let result = "";
 	for (let i = 0; i < collection.length; i++) {
 		let word = collection[i];
