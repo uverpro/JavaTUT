@@ -157,10 +157,10 @@
 // console.log(jesse); // 2
 // console.log(aa); // {something: "new"}
 
-/* 
+/*
 think about some stuffs:
-look at the following statements and 
-try to come up with code that 
+look at the following statements and
+try to come up with code that
 "demonstrates" or "proves" the following statements
 */
 
