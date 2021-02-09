@@ -1,4 +1,1 @@
-let company = {};
-company["name"] = "Pasta Parlor";
-
-console.log(company);
+console.log(1)
