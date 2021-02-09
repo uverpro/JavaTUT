@@ -13,10 +13,6 @@ console.log(sumArray([])); // 0
 
 
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-  module.exports = sumForEach;
-} catch (e) {
-  module.exports = null;
-}
+console.log(sumArray([4, 3, -1, 10])); // 16
+console.log(sumArray([6, 7, 2])); // 15
+console.log(sumArray([])); // 0
