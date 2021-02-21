@@ -9,7 +9,10 @@ Define this function using function expression syntax.
 HINT: you can use Array's slice() method to create a copy of an array*/
 
 let rotateRight = function (array, number) {
+    for (let i = 0; i < array.length; i++) {
 
+    }
+    return array;
 };
 
 
