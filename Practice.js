@@ -1,18 +1,17 @@
-// Write a function `parity` that accepts a number as an argument.
+// Write a function `longer` that accepts two strings as arguments.
 // The function should return the
-// string 'even' if the number is even. It should return the string 'odd' if the number is odd.
+// string that is longer. If the strings have the same length, then return the first string.
 
-let parity = function (num) {
-    if (num % 2 === 0) {
-        return "even"
+let longer = function (str1, str2) {
+    if (str1.length >= str2.length) {
+        return str1;
     } else {
-        return "odd"
+        return str2;
     }
 };
 
-console.log(parity(5)); // 'odd'
-console.log(parity(7)); // 'odd'
-console.log(parity(13)); // 'odd'
-console.log(parity(32)); // 'even'
-console.log(parity(10)); // 'even'
-console.log(parity(602348)); // 'even'
+console.log(longer("drum", "piranha")); // 'piranha'
+console.log(longer("basket", "fork")); // 'basket'
+console.log(longer("flannel", "sustainable")); // 'sustainable'
+console.log(longer("disrupt", "ability")); // 'disrupt'
+console.log(longer("bird", "shoe")); // 'bird'
