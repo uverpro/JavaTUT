@@ -4,7 +4,11 @@
 // The function should return double the number if it is odd.
 
 let numberChange = function (num) {
-
+    if (num % 2 === 0) {
+        return num/2;
+    } else {
+        return num*2;
+    }
 };
 
 console.log(numberChange(6)); // 3
