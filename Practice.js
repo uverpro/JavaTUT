@@ -2,7 +2,9 @@
 // The function should return the
 // larger number.
 
+let larger = function (num1, num2) {
 
+};
 
 console.log(larger(256, 400)); // 400
 console.log(larger(31, 4)); // 31
