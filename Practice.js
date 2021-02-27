@@ -5,7 +5,7 @@
 // ignore any differences in capitalization.
 
 let contains = function (str1, str2) {
-
+    return str1.toLowerCase().includes(str2.toLowerCase());
 };
 
 console.log(contains("caterpillar", "pill")); // true
