@@ -4,7 +4,9 @@
 // The function should
 // ignore any differences in capitalization.
 
+let contains = function (str1, str2) {
 
+};
 
 console.log(contains("caterpillar", "pill")); // true
 console.log(contains("lion's share", "on")); // true
