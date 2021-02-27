@@ -4,6 +4,16 @@
 // 'medium' if it is exactly 5 characters, and
 // 'large' if it is longer than 5 characters.
 
+let stringSize = function(str) {
+    if (str.length < 5) {
+        return "small";
+    } else if (str.length === 5) {
+        return "medium";
+    } else {
+        return "large";
+    }
+};
+
 console.log(stringSize("cat")); // 'small'
 console.log(stringSize("bell")); // 'small'
 console.log(stringSize("ready")); // 'medium'
