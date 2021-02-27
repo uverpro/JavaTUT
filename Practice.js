@@ -5,7 +5,9 @@
 // should just print to the terminal.
 
 let minToMax = function (min, max) {
-
+    for (let i = min; i <= max; i++) {
+        console.log(i);
+    }
 };
 
 minToMax(5, 9);
