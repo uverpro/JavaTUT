@@ -3,7 +3,7 @@
 // function should return the average of all four numbers.
 
 let averageOfFour = function (num1, num2, num3, num4) {
-
+    return (num1 + num2 + num3 + num4) / 4;
 };
 
 console.log(averageOfFour(10, 4, 12, 3)); // 7.25
