@@ -3,6 +3,10 @@
 // half the number if it is even.
 // The function should return double the number if it is odd.
 
+let numberChange = function (num) {
+
+};
+
 console.log(numberChange(6)); // 3
 console.log(numberChange(7)); // 14
 console.log(numberChange(16)); // 8
