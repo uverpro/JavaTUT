@@ -5,10 +5,11 @@
 // For example, raisePower(4, 3) should return 64 because 4 * 4 * 4 = 64
 
 let raisePower = function (base, exponent) {
-    let sum = base;
+    let sum = 1;
     for (let i = 1; i <= exponent; i++) {
-        sum *= i;
+        sum *= base;
     }
+    return sum;
 };
 
 console.log(raisePower(2, 5)); // 32
