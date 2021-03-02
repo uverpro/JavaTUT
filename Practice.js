@@ -4,7 +4,13 @@
 // The function doesn't need to return any value. It should just print to the terminal.
 
 let fizzBuzz = function (num) {
-
+    for (let i = 0; i <= num; i++) {
+        if (i % 3 === 0 ||
+            i % 5 === 0)
+        if (!(i % 3 === 0 &&
+        i % 5 === 0))
+            console.log(i);
+        }
 };
 
 fizzBuzz(18);
