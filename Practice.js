@@ -2,7 +2,9 @@
 // The function should return the a new
 // version of string where all characters that are 'e's are replaced with '*'s.
 
+let censorE = function (str) {
 
+};
 
 console.log(censorE("speedy")); // 'sp**dy'
 console.log(censorE("pending")); // 'p*nding'
