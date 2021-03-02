@@ -10,7 +10,9 @@ Define this function using function expression syntax.
 HINT: you can use Array's slice() method to create a copy of an array */
 
 let rotateRight = function (array, num) {
-
+    let nuArray = []
+    nuArray.push(array.slice(num))
+        return nuArray;
 };
 
 let arr = ['a', 'b', 'c', 'd', 'e'];
