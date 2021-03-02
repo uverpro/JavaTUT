@@ -3,7 +3,16 @@
 // version of string where all characters that are 'e's are replaced with '*'s.
 
 let censorE = function (str) {
-
+    nuStr = "";
+    for (let i = 0; i < str.length; i++) {
+        char = str[i];
+        if (char === "e") {
+            nuStr += "*";
+        } else {
+            nuStr += char;
+        }
+    }
+    return nuStr;
 };
 
 console.log(censorE("speedy")); // 'sp**dy'
