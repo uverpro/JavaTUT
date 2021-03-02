@@ -4,7 +4,9 @@
 // It should just print to the terminal.
 
 let reverseIterate = function (str) {
-    for (let i = str.length - 1; i < str; i--) {}
+    for (let i = str.length - 1; i >= 0; i--) {
+        console.log(str[i]);
+    }
 };
 
 reverseIterate("carrot");
