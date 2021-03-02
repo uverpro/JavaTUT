@@ -5,7 +5,13 @@
 // For example, oddSum(10) should return 25 because 1 + 3 + 5 + 7 + 9 = 25
 
 let oddSum = function(max) {
-
+    let sum = 0;
+    for (let i = 1; i <= max; i++) {
+        if (i % 2 !== 0) {
+            sum += i;
+        }
+    }
+    return sum;
 };
 
 console.log(oddSum(10)); // 25
