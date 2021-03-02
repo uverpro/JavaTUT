@@ -5,8 +5,8 @@
 // value. It should just print to the terminal.
 
 let fiveMultiplesOf = function(num) {
-    for (let i = 0; i <= 5; i+=num)
-    console.log(i);
+    for (let i = 1; i <= 5; i++)
+    console.log(i * num);
 };
 
 fiveMultiplesOf(7);
