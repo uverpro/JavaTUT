@@ -3,7 +3,9 @@
 // less than or equal to max that are divisible by either 3 or 5 but not both 3 and 5.
 // The function doesn't need to return any value. It should just print to the terminal.
 
+let fizzBuzz = function (num) {
 
+};
 
 fizzBuzz(18);
 // prints
