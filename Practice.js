@@ -1,6 +1,18 @@
-let printFives = function (num) {
-    for (let i = 0; i < num; i+=5)
-    console.log(i);
+let twoDimensionalSum = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++)
+    sum += arr[i];
 };
 
-printFives(20) // 0, 5, 10, 15
+let arr1 = [
+    [1, 3],
+    [-4, 7, 10],
+    [2]
+];
+console.log(twoDimensionalSum(arr1)); // 19
+
+let arr2 = [
+    [],
+    [3, 1, 2],
+];
+console.log(twoDimensionalSum(arr2)); // 6
