@@ -9,10 +9,16 @@ Define this function using function expression syntax.
 
 HINT: you can use Array's slice() method to create a copy of an array */
 
-let rotateRight = function (array, num) {
-    let nuArray = []
-    nuArray.push(array.slice(num))
-        return nuArray;
+let rotateRight = function(array, num) {
+    let copy = array.slice();
+console.log(copy);
+    for (let i = 0; i < num; i++) {
+        let el = copy.pop();
+        console.log(el);
+        copy.unshift(el);
+    }
+
+    return copy;
 };
 
 let arr = ['a', 'b', 'c', 'd', 'e'];
