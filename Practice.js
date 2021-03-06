@@ -1,8 +1,10 @@
 let twoDimensionalSum = function (arr) {
     let sum = 0;
     for (let i = 0; i < arr.length; i++) {
-        // for (let j = 1; j < arr.length; j++) {
-    sum += arr.push(arr[i]);
+        // let subArr = arr[i]
+            for (let j = 0; j < arr[i].length; j++) {
+            sum += arr[i][j];
+        }
     }
     return sum;
 };
