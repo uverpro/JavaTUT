@@ -3,7 +3,8 @@
 // containing only the strings that are less than 5 characters long.
 
 let filterLongWords = function (array) {
-
+    let nuArr = [];
+    for (let i = 0; i < array.length; i++)
 };
 
 console.log(filterLongWords(["kale", "cat", "retro", "axe", "heirloom"]));
