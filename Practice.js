@@ -2,7 +2,7 @@
 // The function should return an array containing only the positive numbers.
 
 let stayPositive = function (array) {
-
+    let posArr = [];
 };
 
 console.log(stayPositive([10, -4, 3, 6])); // [10, 3, 6]
