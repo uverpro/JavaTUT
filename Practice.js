@@ -2,7 +2,9 @@
 // The function should return a string
 // containing the first character of each word in the sentence.
 
+let makeAcronym = function (str) {
 
+};
 
 console.log(makeAcronym("New York")); // NY
 console.log(makeAcronym("same stuff different day")); // SSDD
