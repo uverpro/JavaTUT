@@ -3,9 +3,15 @@
 // If the input array is empty, then the function should return null.
 
 let yourAverageFunction = function (array) {
-    if (array.length === -1) {
+    if (array.length === 0) {
         return null;
     }
+    let average = 0;
+    for (let i = 0; i < array.length; i++) {
+        let num = array[i];
+        average += num;
+    }
+    return average / array.length
 };
 
 console.log(yourAverageFunction([5, 2, 7, 24])); // 9.5
