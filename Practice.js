@@ -3,6 +3,9 @@
 
 let stayPositive = function (array) {
     let posArr = [];
+    for (let i = 0; i < array.length; i++) {
+
+    }
 };
 
 console.log(stayPositive([10, -4, 3, 6])); // [10, 3, 6]
