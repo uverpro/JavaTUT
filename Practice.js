@@ -2,9 +2,11 @@
 // The function should return an array
 // containing all positive numbers that can divide into the argument.
 
-let divisors = function (array) {
+let divisors = function (number) {
     let nuArr = [];
+    for (let i = 0; i <= number; i++) {
 
+    }
 };
 
 console.log(divisors(15)); // [1, 3, 5, 15]
