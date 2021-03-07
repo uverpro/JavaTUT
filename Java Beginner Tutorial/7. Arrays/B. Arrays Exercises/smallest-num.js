@@ -4,7 +4,7 @@
 
 function smallestNum (arraynums) {
     // to get null add an "if" statement
-    if (arraynums.length === 0){
+    if (arraynums.length === 0) {
         return null;
     }
     let smallest = arraynums[0]; // Create a new variable. The default value is the first index in the array.
