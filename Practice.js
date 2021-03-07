@@ -3,7 +3,17 @@
 // containing the first character of each word in the sentence.
 
 let makeAcronym = function (str) {
-
+    let nuStr = "";
+    let nuArr = str.split(" ")
+    for (let i = 0; i < nuArr.length; i++) {
+        let word = nuArr[i];
+        nuStr += word[0].toUpperCase();
+        // console.log(word[0])
+        // for (let j = 0; j < word.length; j++) {
+        //     console.log(word[j])
+        // }
+    }
+    return nuStr;
 };
 
 console.log(makeAcronym("New York")); // NY
