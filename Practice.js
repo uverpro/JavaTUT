@@ -3,6 +3,7 @@
 // containing all positive numbers that can divide into the argument.
 
 let divisors = function (array) {
+    let nuArr = [];
 
 };
 
