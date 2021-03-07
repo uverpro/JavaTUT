@@ -2,7 +2,9 @@
 // The function should return an array
 // containing all positive numbers that can divide into the argument.
 
+let divisors = function (array) {
 
+};
 
 console.log(divisors(15)); // [1, 3, 5, 15]
 console.log(divisors(7)); // [1, 7]
