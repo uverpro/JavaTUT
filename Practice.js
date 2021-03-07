@@ -3,7 +3,9 @@
 // The function should return an array containing elements of the original
 // array that are divisible by the target.
 
+let chooseDivisibles = function (numbers, target) {
 
+};
 
 console.log(chooseDivisibles([40, 7, 22, 20, 24], 4)); // [40, 20, 24]
 console.log(chooseDivisibles([9, 33, 8, 17], 3)); // [9, 33]
