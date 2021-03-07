@@ -5,7 +5,10 @@ let numOdds = function (array) {
     let sum = 0;
     for (let i = 0; i < array.length; i++) {
         let num = array[i];
+        if (num % 2 !== 0)
+        sum += 1;
     }
+    return sum;
 };
 
 console.log(numOdds([4, 7, 2, 5, 9])); // 3
