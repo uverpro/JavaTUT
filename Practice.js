@@ -2,7 +2,10 @@
 // The function should return a number representing the count of odd elements in the array.
 
 let numOdds = function (array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
 
+    }
 };
 
 console.log(numOdds([4, 7, 2, 5, 9])); // 3
