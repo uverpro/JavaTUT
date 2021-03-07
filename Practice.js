@@ -4,8 +4,12 @@
 let stayPositive = function (array) {
     let posArr = [];
     for (let i = 0; i < array.length; i++) {
-        let num = array[i]
+        let num = array[i];
+        if (num > 0) {
+            posArr.push(num);
+        }
     }
+    return posArr;
 };
 
 console.log(stayPositive([10, -4, 3, 6])); // [10, 3, 6]
