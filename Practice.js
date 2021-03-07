@@ -2,7 +2,9 @@
 // The function should return a new string
 // where all vowels are replaced with `*`s. Vowels are the letters a, e, i, o, u.
 
+let bleepVowels = function (str) {
 
+};
 
 console.log(bleepVowels("skateboard")); // 'sk*t*b**rd'
 console.log(bleepVowels("slipper")); // 'sl*pp*r'
