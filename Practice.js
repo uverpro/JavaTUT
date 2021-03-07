@@ -6,8 +6,16 @@ let bleepVowels = function (str) {
     let nuStr = "";
     for (let i = 0; i < str.length; i++) {
         let char = str[i];
-        if ()
+        if (char === "a" ||
+            char === "e" ||
+            char === "i" ||
+            char === "o" ||
+            char === "u")   {
+                nuStr += "*";
+            } else
+                nuStr += char;
     }
+    return nuStr;
 };
 
 console.log(bleepVowels("skateboard")); // 'sk*t*b**rd'
