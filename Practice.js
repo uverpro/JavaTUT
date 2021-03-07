@@ -5,7 +5,7 @@
 let filterLongWords = function (array) {
     let nuArr = [];
     for (let i = 0; i < array.length; i++) {
-
+        let word = array[i];
     }
 };
 
