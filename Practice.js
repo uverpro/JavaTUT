@@ -4,7 +4,9 @@
 
 let filterLongWords = function (array) {
     let nuArr = [];
-    for (let i = 0; i < array.length; i++)
+    for (let i = 0; i < array.length; i++) {
+
+    }
 };
 
 console.log(filterLongWords(["kale", "cat", "retro", "axe", "heirloom"]));
