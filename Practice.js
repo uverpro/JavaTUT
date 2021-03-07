@@ -3,7 +3,12 @@
 // containing the lengths of the elements of the original array.
 
 let stringsToLengths = function (array) {
-
+    let nuArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let word = array[i];
+        nuArray.push(word.length);
+    }
+    return nuArray;
 };
 
 console.log(stringsToLengths(["belly", "echo", "irony", "pickled"]));
