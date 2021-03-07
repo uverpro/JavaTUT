@@ -4,7 +4,10 @@
 // array that are divisible by the target.
 
 let chooseDivisibles = function (numbers, target) {
-
+    let newArray = [];
+    for (let i = 0; i < numbers.length; i++) {
+        let num = numbers[i];
+    }
 };
 
 console.log(chooseDivisibles([40, 7, 22, 20, 24], 4)); // [40, 20, 24]
