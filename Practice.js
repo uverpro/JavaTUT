@@ -6,7 +6,11 @@ let filterLongWords = function (array) {
     let nuArr = [];
     for (let i = 0; i < array.length; i++) {
         let word = array[i];
+        if (word.length > 5) {
+            nuArr.push(word);
+        }
     }
+    return nuArr;
 };
 
 console.log(filterLongWords(["kale", "cat", "retro", "axe", "heirloom"]));
