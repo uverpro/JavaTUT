@@ -3,6 +3,7 @@
 // If there is a tie, return the word that appears later in the sentence.
 
 let lengthiestWord = function (str) {
+    let length = 0;
     let words = str.split(" ");
     for (let i = 0; i < words.length; i++) {
         let word = words[i];
