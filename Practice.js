@@ -6,6 +6,9 @@
 
 let commonElements = function (array1, array2) {
     let commonElements = [];
+    for (let i = 0; i < array1.length; i++) {
+
+    }
 };
 
 let arr1 = ["a", "c", "d", "b"];
