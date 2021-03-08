@@ -4,6 +4,9 @@
 
 let removeShortWords = function (str) {
     nuArray = [];
+    for (let i = 0; i < str.length; i++) {
+
+    }
 };
 
 console.log(removeShortWords("knock on the door will you")); // 'knock door will'
