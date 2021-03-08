@@ -6,7 +6,11 @@ let maximum = function (array) {
     if (array.length === 0) {
         return null;
     }
-
+        let largest = 0;
+        for (let i = 1; i < array.length; i++) {
+            let num = array[i];
+            if ()
+        }
 };
 
 console.log(maximum([5, 6, 3, 7])); // 7
