@@ -3,7 +3,9 @@
 // The function doesn't need to return any value.
 // It should just print to the terminal.
 
+let pairPrint = function (array) {
 
+};
 
 pairPrint(["artichoke", "broccoli", "carrot", "daikon"]);
 // prints
