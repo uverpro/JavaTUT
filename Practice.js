@@ -4,9 +4,14 @@
 
 let removeShortWords = function (str) {
     nuArray = [];
-    for (let i = 0; i < str.length; i++) {
-
+    let words = str.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        let word = words[i];
+        if (word.length > 4) {
+            nuArray.push(word);
+        }
     }
+    return nuArray.join(" ");
 };
 
 console.log(removeShortWords("knock on the door will you")); // 'knock door will'
