@@ -4,8 +4,8 @@
 
 let lengthiestWord = function (str) {
     let words = str.split(" ");
-    for (let i = 0; i < str.length; i++) {
-
+    for (let i = 0; i < words.length; i++) {
+        let word = words[i];
     }
 };
 
