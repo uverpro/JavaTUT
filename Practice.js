@@ -3,6 +3,9 @@
 // If the array is empty, then the function should return null.
 
 let maximum = function (array) {
+    if (array.length === 0) {
+        return null;
+    }
 
 };
 
