@@ -6,13 +6,15 @@ let alternatingCaps = function (str) {
     let sentence = str.split(" ");
     for (let i = 0; i < sentence.length; i++) {
         let word = sentence[i];
-        if (i === 0 || i % 3 === 0) {
-            finalSentence.push(word.toUpperCase());
-        } else {
+        if (i === 0)
+            finalSentence.push(word.toLowerCase()); {
+        } if (i % 2 === 0) {
             finalSentence.push(word.toLowerCase());
+        } else {
+            finalSentence.push(word.toUpperCase());
         }
     }
-    return finalSentence;
+    return finalSentence.join(" ");
 };
 
 console.log(alternatingCaps("take them to school")); // 'take THEM to SCHOOL'
