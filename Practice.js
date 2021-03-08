@@ -2,7 +2,9 @@
 // The function should return a new sentence
 // where all of the words shorter than 4 characters are removed.
 
+let removeShortWords = function (str) {
 
+};
 
 console.log(removeShortWords("knock on the door will you")); // 'knock door will'
 console.log(removeShortWords("a terrible plan")); // 'terrible plan'
