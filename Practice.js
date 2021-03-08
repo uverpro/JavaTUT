@@ -3,7 +3,10 @@
 // If there is a tie, return the word that appears later in the sentence.
 
 let lengthiestWord = function (str) {
+    let words = str.split(" ");
+    for (let i = 0; i < str.length; i++) {
 
+    }
 };
 
 console.log(lengthiestWord("I am pretty hungry")); // 'hungry'
