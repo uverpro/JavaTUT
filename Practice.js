@@ -4,7 +4,9 @@
 // The order of the elements in the output array doesn't matter
 // as long as the function returns the correct elements.
 
-
+let commonElements = function (array1, array2) {
+    let commonElements = [];
+};
 
 let arr1 = ["a", "c", "d", "b"];
 let arr2 = ["b", "a", "y"];
