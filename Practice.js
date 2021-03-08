@@ -3,7 +3,7 @@
 // where all of the words shorter than 4 characters are removed.
 
 let removeShortWords = function (str) {
-
+    nuArray = [];
 };
 
 console.log(removeShortWords("knock on the door will you")); // 'knock door will'
