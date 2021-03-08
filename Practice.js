@@ -4,7 +4,7 @@
 // of the sentence that are in `targetWords`.
 
 let wordCount = function (sentence, targetWords) {
-
+    let setenceArray = sentence.split(" ");
 };
 
 console.log(wordCount("open the window please", ["please", "open", "sorry"])); // 2
