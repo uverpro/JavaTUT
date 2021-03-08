@@ -3,7 +3,9 @@
 // The function should return a count of the number of words
 // of the sentence that are in `targetWords`.
 
+let wordCount = function (sentence, targetWords) {
 
+};
 
 console.log(wordCount("open the window please", ["please", "open", "sorry"])); // 2
 console.log(wordCount("drive to the cinema", ["the", "driver"])); // 1
