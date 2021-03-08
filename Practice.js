@@ -6,7 +6,7 @@ let maximum = function (array) {
     if (array.length === 0) {
         return null;
     }
-        let largestNum = 0;
+        let largestNum = array[0];
         for (let i = 1; i < array.length; i++) {
             let num = array[i];
             if (num > largestNum) {
@@ -16,6 +16,6 @@ let maximum = function (array) {
     return largestNum;
 };
 
-console.log(maximum([5, 6, 3, 7])); // 7
+console.log(maximum([8, 6, 3, 7])); // 7
 console.log(maximum([17, 15, 19, 11, 2])); // 19
 console.log(maximum([])); // null
