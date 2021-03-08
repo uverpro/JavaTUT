@@ -1,13 +1,6 @@
-function everyOtherLetter(str) {
-    let nuStr = '';
-    for (let i = 0; i < str.length; i++) {
-        let letter = str[i];
-        if (i % 2 === 0) {
-        nuStr += letter.toUpperCase();
-        } else {
-        nuStr += letter
-  }
-}
-    return nuStr;
+
+function reverseWord(str) {
+	for (let i = str.length - 1; i >= 0; i--)
+      console.log(str[i]);
 };
-console.log(everyOtherLetter("hello"));
+reverseWord("HAPPY");
