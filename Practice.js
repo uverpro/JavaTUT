@@ -8,4 +8,4 @@ for (let i = 0; i < colors.length; i++) {
     let char = colorStr[j];
     console.log(char);
   }
-}
+};
