@@ -116,7 +116,10 @@ console.log(sumArrays(arr1)); // 20
 let smallestValue = function (array) {
     let smallestNumber = 0;
     for (let i = 0; i < array.length; i++) {
-
+        let num = array[i];
+        if (num > smallestNumber) {
+            smallestNumber = num;
+        }
     }
 };
 
