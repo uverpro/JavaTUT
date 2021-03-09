@@ -1,14 +1,25 @@
-function pigLatinWord (word) {
-    const vowels = ["a", "e", "i", "o", "u"]
-    if (vowels.includes(word[0])) {
-        return `${word}yay`
+function isPrime (number) {
+    if (number < 2) {
+        return false;
     }
-    for (let i = 0; i < word.length; i++)
-    if (vowels.includes(word[i])) {
-        return `${word.slice(i)}${word.slice(0, i)}ay`
+    for (let i = 2; i < number; i++) {
+        if (number % i === 0)
+        return false;
     }
+    return true;
 };
-console.log(pigLatinWord("apple")); //=> "appleyay"
-console.log(pigLatinWord("eat")); //=> "eatyay"
-console.log(pigLatinWord("banana")); //=> "ananabay"
-console.log(pigLatinWord("trash")); //=> "ashtray"
+
+// console.log(isPrime(11));
+
+let onlyPrimes = function (array) {
+	let primes = [];
+	for(let i = 0; i < array.length; i++) {
+		let num = array[i];
+        if (isPrime(num)) {
+			primes.push(num);
+		}
+	}
+	return primes;
+};
+
+console.log(onlyPrimes[1, 4, 5, 10, 11, 21, 23, 31])
