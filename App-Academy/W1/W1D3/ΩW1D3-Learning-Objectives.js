@@ -62,7 +62,7 @@ function isPrime (number) {
     return true;
 };
 
-console.log(isPrime(11));
+// console.log(isPrime(11));
 
 function onlyPrimes(arr) {
 	let primes = [];
@@ -73,6 +73,8 @@ function onlyPrimes(arr) {
 	}
 	return primes;
 };
+
+console.log(onlyPrimes[1, 4, 5, 10, 11, 21, 23, 31])
 
 // 7. Define a function that takes in a 2D array of numbers
 // and returns the total sum of all elements in the array
