@@ -64,11 +64,12 @@ function isPrime (number) {
 
 // console.log(isPrime(11));
 
-function onlyPrimes(arr) {
+let onlyPrimes = function (array) {
 	let primes = [];
-	for(let i = 0; i < arr.length; i++) {
-		if (isPrime(arr[i])) {
-			primes.push(arr[i]);
+	for(let i = 0; i < array.length; i++) {
+		let num = array[i];
+        if (isPrime(num) {
+			primes.push(num);
 		}
 	}
 	return primes;
