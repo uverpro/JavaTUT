@@ -68,14 +68,14 @@ let onlyPrimes = function (array) {
 	let primes = [];
 	for(let i = 0; i < array.length; i++) {
 		let num = array[i];
-        if (isPrime(num) {
+        if (isPrime(num)) {
 			primes.push(num);
 		}
 	}
 	return primes;
 };
 
-console.log(onlyPrimes[1, 4, 5, 10, 11, 21, 23, 31])
+console.log(onlyPrimes([1, 4, 5, 10, 11, 21, 23, 31]));
 
 // 7. Define a function that takes in a 2D array of numbers
 // and returns the total sum of all elements in the array
