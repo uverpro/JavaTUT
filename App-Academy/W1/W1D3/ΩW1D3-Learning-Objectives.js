@@ -114,13 +114,14 @@ console.log(sumArrays(arr1)); // 20
 // and returns the smallest value in the array; if the array is empty return null
 
 let smallestValue = function (array) {
-    let smallestNumber = 0;
+    let smallestNumber = '';
     for (let i = 0; i < array.length; i++) {
         let num = array[i];
         if (num > smallestNumber) {
             smallestNumber = num;
         }
     }
+    return smallestNumber.split();
 };
 
 console.log(smallestValue([20, 100, 8, 5000, 316]));
