@@ -8,6 +8,11 @@
 // and returns a boolean that returns true if that string is located inside of the array,
 //  or false if it does not.
 
+/*
+    function wordWithinArray(array, word) {
+      return array.includes(word)
+    };
+*/
 
 function wordWithinArray (array, word) {
     if (array.indexOf(word) >  - 1) {
