@@ -112,3 +112,9 @@ console.log(sumArrays(arr1)); // 20
 
 // 9. Define a function that takes in an array of numbers as an argument
 // and returns the smallest value in the array; if the array is empty return null
+
+let smallestValue = function (numbers) {
+
+};
+
+console.log(smallestValue([20, 100, 8, 5000, 316]));
