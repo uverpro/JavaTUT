@@ -22,4 +22,4 @@ let onlyPrimes = function (array) {
 	return primes;
 };
 
-console.log(onlyPrimes[1, 4, 5, 10, 11, 21, 23, 31])
+console.log(onlyPrimes([1, 4, 5, 10, 11, 21, 23, 31]));
