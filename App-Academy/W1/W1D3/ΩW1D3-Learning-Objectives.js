@@ -109,5 +109,6 @@ console.log(sumArrays(arr1)); // 20
 // and returns a 2d array where the subarrays represent unique pairs of elements
 
 
+
 // 9. Define a function that takes in an array of numbers as an argument
 // and returns the smallest value in the array; if the array is empty return null
