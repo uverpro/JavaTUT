@@ -94,7 +94,7 @@ let sumArrays = function (arrays) {
 let arra = [5];
 let arrb = [5, 5, 5]
 let arrc = [0]
-let arrd = [[arra], [arrb], [arrc]]
+let arrd = [arra, arrb, arrc]
 console.log(sumArrays(arrd));
 let arr1 = [
             [2, 3],
