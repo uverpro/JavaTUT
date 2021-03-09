@@ -4,7 +4,15 @@
 let uniquePairs = function (array) {
     let finalArray = [];
     let subArray = [];
-
+    for (let i = 0; i < array.length; i++)
+        for (let j = i + 1; array.length; j++) {
+            let el1 = array[i];
+            let el2 = array[j];
+            if (el1.includes(el2)) {
+                subArray.push(el1)
+            }
+            return subArray;
+        }
 };
 
 console.log(uniquePairs(["blue", "velvet", "eraserhead", "blue", "mulholland", "eraserhead"]));
