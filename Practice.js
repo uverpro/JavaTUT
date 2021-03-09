@@ -1,16 +1,11 @@
-let smallestValue = function (array) {
-    if (array.length === 0) {
-        return null;
-    }
-    let smallestNumber = array[0];
-    for (let i = 1; i < array.length; i++) {
-        let num = array[i];
-        if (num < smallestNumber) {
-            smallestNumber = num;
-        }
-    }
-    return smallestNumber;
+// 8. Define a function that takes in an array of elements
+// and returns a 2d array where the subarrays represent unique pairs of elements
+
+let uniquePairs = function (array) {
+    let finalArray = [];
+    let subArray = [];
+
 };
 
-console.log(smallestValue([20, 100, 8, 5000, 316]));
-console.log(smallestValue([]));
+console.log(uniquePairs(["blue", "velvet", "eraserhead", "blue", "mulholland", "eraserhead"]));
+console.log(uniquePairs([1, 2, 3, 10, 1, 2, 10, 15, 20, 20]));
