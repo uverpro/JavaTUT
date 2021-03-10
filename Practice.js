@@ -1,4 +1,13 @@
+let halfLength = function (str) {
+    for (let i = 0; i < str.length / 2; i++) {
+        console.log(i);
+    }
+    // return str.length / 2
+};
 
+let string = "eeeeeeeeeeeeeeeeeeeeeeeeeeewwwwwwwwwwwwwwwwwwwwwwwyyyyyyyyyyyeeeeeeeeeeeeeeaaaaaaaaaaaaa"
+
+console.log(halfLength(string));
 
 // // 8. Define a function that takes in an array of elements
 // // and returns a 2d array where the subarrays represent unique pairs of elements
