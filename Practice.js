@@ -1,4 +1,23 @@
+function longestName(names) {
 
+    let currentLongest = names[0];
+
+    for (let i = 1 ; i <= names.Length ; i++) {
+
+        if (names[i].Length > currentLongest.Length) {
+            currentLongest = names[i];
+        }
+
+    }
+
+    return currentLongest;
+}
+
+testNames = ["James", "Patricia", "Michael", "Elizabeth", "Christopher",
+             "Sarah", "Margaret", "Kenneth", "Stephanie", "Jonathan",
+             "Jeremy", "Samantha", "Alexander", "Catherine", "Benjamin"]
+
+console.log(longestName(testNames)); // "Christopher"
 
 
 
