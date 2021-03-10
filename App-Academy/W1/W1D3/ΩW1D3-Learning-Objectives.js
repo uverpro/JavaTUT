@@ -124,7 +124,7 @@ let pairPrint = function (array) {
         let a = array[i];
         for (let j = i + 1; j < array.length; j++) {
             let b = array[j];
-            pairedArray.push(a, b);
+            pairedArray.push([a, b]);
         }
     }
     return pairedArray;
