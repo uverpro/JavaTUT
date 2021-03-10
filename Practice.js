@@ -3,7 +3,7 @@ let countVowels = function(word) {
     let vowels = ["a", "e", "i", "o" ,"u"]
     for (let i = 0; i < word.length; i++) {
         let letter = word[i];
-        if (letter === vowels) {
+        if (vowels.includes(letter)) {
             counter += 1;
         }
     }
