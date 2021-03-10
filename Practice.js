@@ -1,24 +1,3 @@
-let longestName = function (array) {
-    let longestName = array[0];
-    for (let i = 0; i < array.length; i++) {
-        let currentName = array[i];
-        if (currentName.length > longestName.length) {
-            longestName = currentName;
-        }
-    }
-    return longestName;
-};
-
-testNames = ["James", "Patricia", "Michael", "Elizabeth", "Christopher",
-             "Sarah", "Margaret", "Kenneth", "Stephanie", "Jonathan",
-             "Jeremy", "Samantha", "Alexander", "Catherine", "Benjamin"]
-
-console.log(longestName(testNames)); // "Christopher"
-
-
-
-
-
 
 
 
