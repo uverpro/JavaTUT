@@ -8,12 +8,12 @@ let uniquePairs = function (array) {
         for (let j = i + 1; array.length; j++) {
             let el1 = array[i];
             let el2 = array[j];
-            if (el1.includes(el2)) {
-                subArray.push(el1)
+            if (el1 === el2) {
+                subArray.push(el2)
             }
             return subArray;
         }
 };
 
-console.log(uniquePairs(["blue", "velvet", "eraserhead", "blue", "mulholland", "eraserhead"]));
+// console.log(uniquePairs(["blue", "velvet", "eraserhead", "blue", "mulholland", "eraserhead"]));
 console.log(uniquePairs([1, 2, 3, 10, 1, 2, 10, 15, 20, 20]));
