@@ -119,15 +119,15 @@ console.log(sumArrays(arr1)); // 20
 // and returns a 2d array where the subarrays represent unique pairs of elements
 
 let pairPrint = function (array) {
-    let pairedArray = [];
+    let pairedArrays = [];
     for (let i = 0; i < array.length; i++) {
         let a = array[i];
         for (let j = i + 1; j < array.length; j++) {
             let b = array[j];
-            pairedArray.push([a, b]);
+            pairedArrays.push([a, b]);
         }
     }
-    return pairedArray;
+    return pairedArrays;
 };
 
 console.log(pairPrint(["artichoke", "broccoli", "carrot", "daikon"]));
