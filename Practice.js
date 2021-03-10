@@ -5,6 +5,7 @@ let myIndexOf = function(arr, target) {
             return i;
         }
     }
+    return -1;
 };
 
 console.log(myIndexOf(['a', 'b', 'c', 'e'], 'c')); // 2
