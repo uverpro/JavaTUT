@@ -6,8 +6,10 @@
 // 1. Identify that strings are immutable and arrays are mutable
 
 
+
 // 2. Define a function using both function declaration and function expression syntax
 // let score = function (num); function score (num)
+
 
 
 // 3. Utilize Array.push, .pop, .shift, .unshift to mutate an array
@@ -20,6 +22,7 @@ array1.pop();
 console.log(array1); // [ 'unshift' ]
 array1.push("push");
 console.log(array1); // [ 'unshift', 'push' ]
+
 
 
 // 4. List the arguments that can be used with Array.splice
@@ -36,6 +39,7 @@ array2.splice(2, 3, "Holiday");
 console.log(array2); // [ 'True', 'Blue', 'Holiday', 'Borderline' ]
 
 
+
 // 5. Write a function that sums up elements of an array, given an array of numbers as an argument
 let array = [1, 2, 3, 4, 5];
 
@@ -48,6 +52,8 @@ function sumsOfArray (nums) {
 };
 
 console.log(sumsOfArray(array));
+
+
 
 // 6. Define a function that takes in an array of numbers
 // and returns a new array containing only the primes
@@ -77,6 +83,8 @@ let onlyPrimes = function (array) {
 
 console.log(onlyPrimes([1, 4, 5, 10, 11, 21, 23, 31]));
 
+
+
 // 7. Define a function that takes in a 2D array of numbers
 // and returns the total sum of all elements in the array
 // NOTE: JUST USE A NESTED LOOP NOT A HELPER FUNCTION!!!
@@ -105,8 +113,37 @@ let arr1 = [
 
 console.log(sumArrays(arr1)); // 20
 
+
+
 // 8. Define a function that takes in an array of elements
 // and returns a 2d array where the subarrays represent unique pairs of elements
+
+let pairPrint = function (array) {
+    let pairedArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let a = array[i];
+        for (let j = i + 1; j < array.length; j++) {
+            let b = array[j];
+            pairedArray.push(a, b);
+        }
+    }
+    return pairedArray;
+};
+
+console.log(pairPrint(["artichoke", "broccoli", "carrot", "daikon"]));
+// prints
+//  artichoke - broccoli
+//  artichoke - carrot
+//  artichoke - daikon
+//  broccoli - carrot
+//  broccoli - daikon
+//  carrot - daikon
+
+console.log(pairPrint(["apple", "banana", "clementine"]));
+// prints
+//  apple - banana
+//  apple - clementine
+//  banana - clementine
 
 
 
