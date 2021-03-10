@@ -1,6 +1,18 @@
 let countVowels = function(word) {
-
+    let counter = 0;
+    let vowels = "a,e,i,o,u"
+    for (let i = 0; i < word.length; i++) {
+        let letter = word[i];
+        if (letter === vowels) {
+            counter += 1;
+        }
+    }
+    return counter;
 };
+
+console.log(countVowels("bootcamp")); // => 3
+console.log(countVowels("apple")); // => 2
+console.log(countVowels("pizza")); // => 2
 
 // // 8. Define a function that takes in an array of elements
 // // and returns a 2d array where the subarrays represent unique pairs of elements
