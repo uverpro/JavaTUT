@@ -1,15 +1,3 @@
-let reverseString = function (str) {
-	let mutant = str.split(" ");
-    console.log(mutant);
-  	let reverse = mutant.reverse();
-    console.log(reverse);
-  	return reverse.toString(" ");
-};
-
-
-
-console.log(reverseString('fish')); // 'hsif'
-console.log(reverseString('marathon')); // 'nohtaram'
 
 
 // // 8. Define a function that takes in an array of elements
