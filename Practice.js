@@ -1,4 +1,6 @@
+let countVowels = function(word) {
 
+};
 
 // // 8. Define a function that takes in an array of elements
 // // and returns a 2d array where the subarrays represent unique pairs of elements
