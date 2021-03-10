@@ -1,9 +1,8 @@
 let factorsOf = function (num) {
 	let factors = [];
   	for (let i = 1; i <= num; i++) {
-      let number = num[i];
-      if (num % number === 0) {
-        factors.push(number);
+      if (num % i === 0) {
+        factors.push(i);
       }
     }
   return factors;
