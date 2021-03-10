@@ -1,19 +1,29 @@
 // 8. Define a function that takes in an array of elements
 // and returns a 2d array where the subarrays represent unique pairs of elements
 
-let uniquePairs = function (array) {
-    let finalArray = [];
-    let subArray = [];
-    for (let i = 0; i < array.length; i++)
-        for (let j = i + 1; array.length; j++) {
-            let el1 = array[i];
-            let el2 = array[j];
-            if (el1 === el2) {
-                subArray.push(el2)
-            }
-            return subArray;
+let pairPrint = function (array) {
+    let pairedArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let a = array[i];
+        for (let j = i + 1; j < array.length; j++) {
+            let b = array[j];
+            pairedArray.push(a, b);
         }
+    }
+    return pairedArray;
 };
 
-// console.log(uniquePairs(["blue", "velvet", "eraserhead", "blue", "mulholland", "eraserhead"]));
-console.log(uniquePairs([1, 2, 3, 10, 1, 2, 10, 15, 20, 20]));
+console.log(pairPrint(["artichoke", "broccoli", "carrot", "daikon"]));
+// prints
+//  artichoke - broccoli
+//  artichoke - carrot
+//  artichoke - daikon
+//  broccoli - carrot
+//  broccoli - daikon
+//  carrot - daikon
+
+console.log(pairPrint(["apple", "banana", "clementine"]));
+// prints
+//  apple - banana
+//  apple - clementine
+//  banana - clementine
