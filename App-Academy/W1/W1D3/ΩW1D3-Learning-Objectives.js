@@ -131,19 +131,21 @@ let pairPrint = function (array) {
 };
 
 console.log(pairPrint(["artichoke", "broccoli", "carrot", "daikon"]));
-// prints
-//  artichoke - broccoli
-//  artichoke - carrot
-//  artichoke - daikon
-//  broccoli - carrot
-//  broccoli - daikon
-//  carrot - daikon
+// [
+//     [ 'artichoke', 'broccoli' ],
+//     [ 'artichoke', 'carrot' ],
+//     [ 'artichoke', 'daikon' ],
+//     [ 'broccoli', 'carrot' ],
+//     [ 'broccoli', 'daikon' ],
+//     [ 'carrot', 'daikon' ]
+// ]
 
 console.log(pairPrint(["apple", "banana", "clementine"]));
-// prints
-//  apple - banana
-//  apple - clementine
-//  banana - clementine
+// [
+//     [ 'apple', 'banana' ],
+//     [ 'apple', 'clementine' ],
+//     [ 'banana', 'clementine' ]
+// ]
 
 
 
