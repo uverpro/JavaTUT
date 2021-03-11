@@ -1,0 +1,3 @@
+let isPrime = function (number) {
+
+};
