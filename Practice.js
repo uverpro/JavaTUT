@@ -1,3 +1,7 @@
+let findEvens = function (nums) {
+    return (nums % 2 === 0)
+};
+
 let evenNumbers = function (max) {
 
 };
