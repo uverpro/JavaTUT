@@ -20,3 +20,9 @@ let extractEvens = function (numbers) {
 
 console.log(extractEvens([3, 5, 4, 7, 8])); // [4, 8]
 console.log(extractEvens([42, 12, 11, 50])); // [42, 12, 50]
+
+
+
+let a =
+
+let b =
