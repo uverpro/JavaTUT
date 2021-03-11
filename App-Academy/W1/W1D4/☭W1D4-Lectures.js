@@ -70,3 +70,43 @@ let pickPrimes = function (numbers) {
 
 console.log(pickPrimes([4, 7, 5, 12])); // [7, 5]
 console.log(pickPrimes([31, 25, 9, 16])); // [31]
+
+
+/* Write a helper function which returns a boolean
+determining whether a word is less than 5 characters
+
+Use the helper function in a function which
+removes all characters in a string less than 5 characters in length and
+returns
+
+    function removeSmallWords (str) {
+    let results = [];
+    let split = str.split(" ");
+    console.log(split, `<--- this is the split string`);
+    for (let i = 0; )
+        let joined = split.join(" ");
+        console.log(joined, `<-- this is the joined string`);
+};
+
+removeSmallWords(`the cat is sooooooo awesome`);
+[ 'the', 'cat', 'is', 'sooooooo', 'awesome' ] <--- this is the split string
+the cat is sooooooo awesome <-- this is the joined string */
+
+function isLessThanFive (word) {
+    return word.length < 5;
+};
+
+
+function removeSmallWords (str) {
+    let results = [];
+    let split = str.split(" ");
+    for (let i = 0; i < split.length; i++) {
+        let word = split[i];
+        if (!isLessThanFive(word)) {
+            results.push(word);
+        }
+    }
+    return results.join(" ");
+};
+
+console.log(removeSmallWords(`the cat is sooooooo awesome`));
