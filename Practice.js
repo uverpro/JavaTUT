@@ -1,10 +1,31 @@
-function removeSmallWords (str) {
-    // let results = [];
+/* function removeSmallWords (str) {
+    let results = [];
     let split = str.split(" ");
     console.log(split, `<--- this is the split string`);
-    // for (let i = 0; )
+    for (let i = 0; )
         let joined = split.join(" ");
         console.log(joined, `<-- this is the joined string`);
 };
 
 removeSmallWords(`the cat is sooooooo awesome`);
+[ 'the', 'cat', 'is', 'sooooooo', 'awesome' ] <--- this is the split string
+the cat is sooooooo awesome <-- this is the joined string */
+
+function isLessThanFive (word) {
+    return word.length < 5;
+};
+
+
+function removeSmallWords (str) {
+    let results = [];
+    let split = str.split(" ");
+    for (let i = 0; i < split.length; i++) {
+        let word = split[i];
+        if (!isLessThanFive(word)) {
+            results.push(word);
+        }
+    }
+    return results.join(" ");
+};
+
+console.log(removeSmallWords(`the cat is sooooooo awesome`));
