@@ -1,31 +1,7 @@
-/* function removeSmallWords (str) {
-    let results = [];
-    let split = str.split(" ");
-    console.log(split, `<--- this is the split string`);
-    for (let i = 0; )
-        let joined = split.join(" ");
-        console.log(joined, `<-- this is the joined string`);
+let evenNumbers = function (max) {
+
 };
 
-removeSmallWords(`the cat is sooooooo awesome`);
-[ 'the', 'cat', 'is', 'sooooooo', 'awesome' ] <--- this is the split string
-the cat is sooooooo awesome <-- this is the joined string */
-
-function isLessThanFive (word) {
-    return word.length < 5;
-};
-
-
-function removeSmallWords (str) {
-    let results = [];
-    let split = str.split(" ");
-    for (let i = 0; i < split.length; i++) {
-        let word = split[i];
-        if (!isLessThanFive(word)) {
-            results.push(word);
-        }
-    }
-    return results.join(" ");
-};
-
-console.log(removeSmallWords(`the cat is sooooooo awesome`));
+console.log(evenNumbers(7)); // [ 2, 4, 6 ]
+console.log(evenNumbers(12)); // [ 2, 4, 6, 8, 10 ]
+console.log(evenNumbers(15)); // [ 2, 4, 6, 8, 10, 12, 14 ]
