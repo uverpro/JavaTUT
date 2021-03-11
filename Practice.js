@@ -1,3 +1,0 @@
-let evenNumbers = function (max) {
-
-};
