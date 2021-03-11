@@ -23,6 +23,15 @@ console.log(extractEvens([42, 12, 11, 50])); // [42, 12, 50]
 
 
 
-let a =
+let a = function() {
+    console.log("starting a"); // 1
+    b();
+    console.log("ending a") // 4
+};
 
-let b =
+let b = function() {
+    console.log("starting b"); // 2
+    console.log("ending b"); // 3
+};
+
+a();
