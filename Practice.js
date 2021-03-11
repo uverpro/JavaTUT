@@ -1,10 +1,12 @@
 let lastVowel = function (string) {
-    let vowel = "";
-    let vowels = "aeiou"
-    for (let i = 0; i < string.length; i++) {
+    let vowels = "aeiouAEIOU";
+    for (let i = string.length - 1; i >= 0; i--) {
         let letter = string[i];
-
+        if (vowels.includes(letter)) {
+            return letter;
+         }
     }
+    return null;
 };
 
 console.log(lastVowel('battery')); // 'e'
