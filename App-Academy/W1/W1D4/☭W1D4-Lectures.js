@@ -42,7 +42,31 @@ a();
 and returns a new array containing only the prime numbers
 A prime number is a number that is only divisble by 1 and itself */
 
-let isPrime = function (num) {};
+let isPrime = function (num) {
+    if (num < 2) {
+        return false;
+    }
+    for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
+};
+
+console.log(isPrime(5)); // true
+console.log(isPrime(12)); // false
+
+let pickPrimes = function (numbers) {
+        let primesArray = [];
+        for (let i = 0; i < numbers; i++) {
+            let num = numbers[i];
+            if (isPrime(num)) {
+                primesArray.push(num);
+        }
+    }
+    return primesArray;
+};
 
 pickPrimes([4, 7, 5, 12]); // [7, 5]
 pickPrimes([31, 25, 9, 16]); // [31]
