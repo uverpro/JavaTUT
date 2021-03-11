@@ -59,7 +59,7 @@ console.log(isPrime(12)); // false
 
 let pickPrimes = function (numbers) {
         let primesArray = [];
-        for (let i = 0; i < numbers; i++) {
+        for (let i = 0; i < numbers.length; i++) {
             let num = numbers[i];
             if (isPrime(num)) {
                 primesArray.push(num);
@@ -68,5 +68,5 @@ let pickPrimes = function (numbers) {
     return primesArray;
 };
 
-pickPrimes([4, 7, 5, 12]); // [7, 5]
-pickPrimes([31, 25, 9, 16]); // [31]
+console.log(pickPrimes([4, 7, 5, 12])); // [7, 5]
+console.log(pickPrimes([31, 25, 9, 16])); // [31]
