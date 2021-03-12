@@ -1,9 +1,8 @@
 let print2d = function (array) {
     for (let i = 0; i < array.length; i++) {
         let subArray = array[i];
-        // console.log(a);
-        for (let j = 0; j < a.length; j++) {
-            let char = array[j];
+            for (let j = 0; j < subArray.length; j++) {
+            let char = j;
             console.log(subArray[char])
         }
     }
