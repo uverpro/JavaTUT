@@ -1,4 +1,6 @@
+let twoSum = function (arr, target) {
 
+};
 
 console.log(twoSum([1, 7, 3, 0, 2], 5)); // true
 console.log(twoSum([1, 7, 3, 0, 2], 6)); // false
