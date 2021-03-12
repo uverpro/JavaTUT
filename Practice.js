@@ -1,3 +1,7 @@
+let pairsMaker = function (array) {
+
+};
+
 console.log(pairsMaker(['a', 'b', 'c', 'd'])); // =>
 // [ [ 'a', 'b' ],
 //   [ 'a', 'c' ],
