@@ -9,12 +9,19 @@ convert a numeric string into the number type.
 For example. Number("4") // => 4 */
 
 let uncompress = function (str) {
-    let uncompressedStr = 0;
-    for (let i = 0; i < str.length; i+=2) {
-        for (let j = i + 1; j < str.length; j+=2) {
-        let char = str[i];
-        let num = str[j];
+    let uncompressedStr = "";
+    for (let i = 0; i < str.length; i++) {
+        let currentEl = str[i];
+        let is_NaN = Number(currentEl);
+        if (is_NaN !== NaN) {
+            let number = Number(currentEl)
+            for (let j = 0; j < number; j++) {
+                let letter = str[i-1];
+                uncompressedStr += letter;
+            }
+        }
     }
+    return uncompressedStr;
 };
 
 console.log(uncompress('x3y4z2')); // 'xxxyyyyzz'
