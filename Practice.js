@@ -1,6 +1,8 @@
 let pairsMaker = function (array) {
     let pairs = [];
+    for (let i = 0; i < array.length; i++) {
 
+    }
 };
 
 console.log(pairsMaker(['a', 'b', 'c', 'd'])); // =>
