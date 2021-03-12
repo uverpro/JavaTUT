@@ -1,4 +1,5 @@
 let pairsMaker = function (array) {
+    let pairs = [];
 
 };
 
