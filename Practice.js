@@ -3,7 +3,11 @@
 // of height `m` and width `n` that contains the `value` as every element.
 
 let makeMatrix = function (m, n, value) {
-
+    let matrix = [];
+    for (let i = 0; i < m; i++) {
+    matrix.push(value);
+    }
+    return matrix;
 };
 
 console.log(makeMatrix(3, 5, null));
