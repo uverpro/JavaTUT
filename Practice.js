@@ -2,7 +2,9 @@
 // The function should return a 2-dimensional array
 // of height `m` and width `n` that contains the `value` as every element.
 
+let makeMatrix = function (m, n, value) {
 
+};
 
 console.log(makeMatrix(3, 5, null));
 // [
