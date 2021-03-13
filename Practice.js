@@ -5,7 +5,11 @@
 let makeMatrix = function (m, n, value) {
     let matrix = [];
     for (let i = 0; i < m; i++) {
-    matrix.push(value);
+        let subArray = [];
+        for (let j = 0; j < n; j++) {
+            subArray.push(value);
+        }
+        matrix.push(subArray);
     }
     return matrix;
 };
