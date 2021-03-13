@@ -4,7 +4,9 @@
 The function should return a boolean
 indicating whether or not the string contains at least three different vowels. */
 
+let hasThreeVowels = function (str) {
 
+};
 
 console.log(hasThreeVowels('delicious'));       //  true
 console.log(hasThreeVowels('bootcamp prep'));   //  true
