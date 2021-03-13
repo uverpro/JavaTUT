@@ -8,8 +8,16 @@ let hasThreeVowels = function (str) {
     let vowels = "aeiouAEIOU"
     let vowelCounter = 0;
     for (let i = 0; i < str.length; i++) {
-
+        let letter = str[i];
+        if (vowels.includes(letter) && !(vowels.includes(letter))) {
+            vowelCounter += 1; {
+                if (vowelCounter > 2) {
+                    return true;
+                }
+            }
+        }
     }
+    return false;
 };
 
 console.log(hasThreeVowels('delicious'));       //  true
