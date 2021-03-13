@@ -6,12 +6,12 @@ indicating whether or not the string contains at least three different vowels. *
 
 let hasThreeVowels = function (str) {
     let vowels = "aeiouAEIOU"
-    let vowelCounter = 0;
+    let vowelCounter = [];
     for (let i = 0; i < str.length; i++) {
         let letter = str[i];
         if (vowels.includes(letter) && !(vowels.includes(letter))) {
-            vowelCounter += 1; {
-                if (vowelCounter > 2) {
+            vowelCounter.push(letter); {
+                if (vowelCounter.length > 2) {
                     return true;
                 }
             }
