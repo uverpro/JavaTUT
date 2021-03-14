@@ -7,7 +7,9 @@
 let rotateRight = function (array, number) {
     let nuArray = array.slice();
     for (let i = 0; i < number; i++) {
-        nuArray.unshift(nuArray.pop())
+        let element = nuArray.pop()
+        nuArray.unshift(element);
+        // nuArray.unshift(nuArray.pop());
     }
     return nuArray;
 };
