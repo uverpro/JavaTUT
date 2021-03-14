@@ -5,10 +5,11 @@
 // The function should not mutate the original array and instead return a new array.
 
 let rotateRight = function (array, number) {
-    let nuArray = array.splice();
-    for (let i = 0; i < array.length; i++) {
-
+    let nuArray = array.slice();
+    for (let i = 0; i < number; i++) {
+        nuArray.unshift(nuArray.pop())
     }
+    return nuArray;
 };
 
 let arr = ['a', 'b', 'c', 'd', 'e'];
