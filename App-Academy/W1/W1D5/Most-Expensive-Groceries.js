@@ -31,36 +31,36 @@ function costOfGroceries(groceries) {
       return maxIndex
   };
 
-// const groceriesA = ['cheese', 'butter', 'eggs']; // 8
-// const groceriesB = ['eggs', 'milk', 'bread', 'bread']; // 13
-// const groceriesC = ['cheese', 'bread']; // 9
-// const groceriesD = ['eggs', 'butter']; // 3
-// console.log(mostExpensiveGroceries([groceriesA, groceriesB, groceriesC, groceriesD]));
+const groceriesA = ['cheese', 'butter', 'eggs']; // 8
+const groceriesB = ['eggs', 'milk', 'bread', 'bread']; // 13
+const groceriesC = ['cheese', 'bread']; // 9
+const groceriesD = ['eggs', 'butter']; // 3
+console.log(mostExpensiveGroceries([groceriesA, groceriesB, groceriesC, groceriesD]));
 
 // TESTS
 // DO NOT MODIFY ANYTHING BELOW THIS LINE
 
-const groceriesA = ['cheese', 'butter', 'eggs'];
-const groceriesB = ['eggs', 'milk', 'bread', 'bread'];
-const groceriesC = ['cheese', 'bread'];
-const groceriesD = ['eggs', 'butter'];
+// const groceriesA = ['cheese', 'butter', 'eggs'];
+// const groceriesB = ['eggs', 'milk', 'bread', 'bread'];
+// const groceriesC = ['cheese', 'bread'];
+// const groceriesD = ['eggs', 'butter'];
 
-costOfGroceries(groceriesA);  // 8
-costOfGroceries(groceriesB);  // 13
-costOfGroceries(groceriesC);  // 9
-costOfGroceries(groceriesD);  // 3
+// costOfGroceries(groceriesA);  // 8
+// costOfGroceries(groceriesB);  // 13
+// costOfGroceries(groceriesC);  // 9
+// costOfGroceries(groceriesD);  // 3
 
-mostExpensiveGroceries([groceriesA, groceriesB, groceriesC, groceriesD]);
+// mostExpensiveGroceries([groceriesA, groceriesB, groceriesC, groceriesD]);
 
-let score = 0;
+// let score = 0;
 
-if (costOfGroceries(groceriesA) === 8) score++;
-if (costOfGroceries(groceriesB) === 13) score++;
-if (costOfGroceries(groceriesC) === 9) score++;
-if (costOfGroceries(groceriesD) === 3) score++;
+// if (costOfGroceries(groceriesA) === 8) score++;
+// if (costOfGroceries(groceriesB) === 13) score++;
+// if (costOfGroceries(groceriesC) === 9) score++;
+// if (costOfGroceries(groceriesD) === 3) score++;
 
-if (mostExpensiveGroceries([groceriesA, groceriesB, groceriesC, groceriesD]) === 1) score++;
-if (mostExpensiveGroceries([groceriesA, groceriesD]) === 0) score++;
-if (mostExpensiveGroceries([groceriesA, groceriesD, groceriesC]) === 2) score++;
+// if (mostExpensiveGroceries([groceriesA, groceriesB, groceriesC, groceriesD]) === 1) score++;
+// if (mostExpensiveGroceries([groceriesA, groceriesD]) === 0) score++;
+// if (mostExpensiveGroceries([groceriesA, groceriesD, groceriesC]) === 2) score++;
 
-console.log("You have scored " + score + "/7 points.");
+// console.log("You have scored " + score + "/7 points.");
