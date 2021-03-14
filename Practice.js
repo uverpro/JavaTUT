@@ -4,7 +4,12 @@
 // where the elements of the array are rotated to the right num times.
 // The function should not mutate the original array and instead return a new array.
 
+let rotateRight = function (array, number) {
+    let nuArray = array.splice();
+    for (let i = 0; i < array.length; i++) {
 
+    }
+};
 
 let arr = ['a', 'b', 'c', 'd', 'e'];
 console.log(rotateRight(arr, 2)); // [ 'd', 'e', 'a', 'b', 'c' ]
