@@ -1,5 +1,11 @@
 let twoDimensionalSum = function (array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        let subArray = array[i];
+        for (let j = 0; j < subArray.length; j++) {
 
+        }
+    }
 };
 
 
