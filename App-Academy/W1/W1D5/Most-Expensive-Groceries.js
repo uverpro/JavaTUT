@@ -28,7 +28,7 @@ function costOfGroceries(groceries) {
                 maxIndex = i;
         }
       }
-      return maxIndex
+    return highestCost;  // return maxIndex
   };
 
 const groceriesA = ['cheese', 'butter', 'eggs']; // 8
