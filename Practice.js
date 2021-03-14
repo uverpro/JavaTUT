@@ -1,4 +1,6 @@
+let twoDimensionalSum = function (array) {
 
+};
 
 
 let arr1 = [
