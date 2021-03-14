@@ -4,6 +4,10 @@
 // if two distinct numbers of the array add up to the target value.
 // You can assume that input array contains only unique numbers.
 
+let twoSum = function (array, target) {
+
+};
+
 
 console.log(twoSum([1, 7, 3, 0, 2], 5)); // true
 console.log(twoSum([1, 7, 3, 0, 2], 6)); // false
