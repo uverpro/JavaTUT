@@ -5,7 +5,10 @@
 // You can assume that input array contains only unique numbers.
 
 let twoSum = function (array, target) {
-
+    for (let i = 0; i < array.length; i++)
+        for (let j = i + 1; array.length; j++) {
+            if (array[i])
+        }
 };
 
 
