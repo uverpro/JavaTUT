@@ -4,7 +4,10 @@
 // The functions should return the smallest number that is divisible by both num1 and num2.
 
 let leastCommonMultiple = function (num1, num2) {
-
+    let common = num2;
+    if (common % num1 === 0 && common % num2 === 0) {
+        return common;
+    }
 };
 
 console.log(leastCommonMultiple(4, 6)); // 12
