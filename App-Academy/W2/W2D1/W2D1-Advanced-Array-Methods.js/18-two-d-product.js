@@ -9,7 +9,18 @@ methods.
 
 */
 
-
+let twoDimensionalProduct = function (array) {
+  let totalProduct = 1;
+  array.forEach(function(subArray) {
+    // subArray.forEach(function(num){
+      // totalProduct *= num;
+    // })
+    totalProduct *= subArray.reduce(function(accum, element){
+      return accum * element;
+    })
+  })
+  return totalProduct;
+};
 
 let arr1 = [
   [6, 4],
