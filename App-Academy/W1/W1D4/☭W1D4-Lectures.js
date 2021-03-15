@@ -110,3 +110,41 @@ function removeSmallWords (str) {
 };
 
 console.log(removeSmallWords(`the cat is sooooooo awesome`));
+
+
+
+// 2D Array
+
+let twoDimensional = [["a", "b", "c"], ["d", "e"], ["f", "g", "h"]];
+
+console.log(twoDimensional[1]); // [ 'd', 'e' ]
+console.log(twoDimensional[1][0]); // 'd'
+
+let subArr = twoDimensional[1];
+console.log(subArr[0]); // 'd'
+
+// If we style our 2D arrays nicely so that each subarray is on a new line,
+// we can interpret the double indices as [row][column]:
+
+let twoDimensional = [
+	["a", "b", "c"],
+	["d", "e"],
+	["f", "g", "h"]];
+
+// get the element in the 0th row, 2nd col:
+console.log(twoDimensional[0][2]); // 'c'
+
+
+
+// Iterating through 2D Arrays:
+
+let array = [["a", "b", "c"], ["d", "e"], ["f", "g", "h"]];
+
+for (let i = 0; i < array.length; i++) {
+  let subArray = array[i];
+  console.log(subArray);
+
+  for (let j = 0; j < subArray.length; j++) {
+    console.log(subArray[j]);
+  }
+}
