@@ -204,4 +204,28 @@ function laligatSum(n) {
       }
     }
     return sum;
-  };
+};
+
+  // Nice and Decomposed:
+function isPrime(n) {
+    for (let i = 2; i  < n; i += 1) {
+      if (n % i === 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function laligatSum(n) {
+    let sum = 0;
+
+    for (let i = 2; i <= n; i += 1) {
+      if (isPrime(i)) { // if i is a prime,
+        sum += i;       // then add it to sum.
+      }
+    }
+
+    return sum;
+};
+
+console.log(laligatSum(10));
