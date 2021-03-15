@@ -4,10 +4,12 @@
 // If the array is empty, the function should return null.
 
 let maxValue = function (nums) {
+    let largestNum = 0;
     if (nums.length === 0) {
         return null;
     }
     for (let i = 0; i < nums.length; i++) {
+        let num = nums[i];
 
     }
 };
