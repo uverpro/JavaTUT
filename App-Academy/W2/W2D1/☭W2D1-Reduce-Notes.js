@@ -30,3 +30,11 @@ console.log(sumAt100);
     returns a string of "Names: "
     with all of the names attached after. Must use the .reduce()
 */
+
+let returnNames = function (names) {
+    return names.reduce(function (accum, name) {
+        return accum + ' ' + name;
+    }, 'Names:');
+};
+
+console.log(returnNames(['Cory']));
