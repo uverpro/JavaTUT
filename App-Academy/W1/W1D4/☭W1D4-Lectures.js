@@ -148,3 +148,6 @@ for (let i = 0; i < array.length; i++) {
     console.log(subArray[j]);
   }
 };
+
+// In the nested loops above, the i index refers to the current "row"
+// and the j index refers to the current "column".
