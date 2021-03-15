@@ -7,6 +7,9 @@ let maxValue = function (nums) {
     if (nums.length === 0) {
         return null;
     }
+    for (let i = 0; i < nums.length; i++) {
+
+    }
 };
 
 
