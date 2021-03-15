@@ -231,3 +231,12 @@ function isPrime(n) {
 
 console.log(laligatSum(10));
 console.log(laligatSum(11));
+
+
+
+// Splice
+
+let colors = ["red", "yellow", "blue", "green", "black", "beige"];
+let removed = colors.splice(2, 3, "Gainsboro", "Ivory", "Khaki");
+console.log(colors); // [ 'red', 'yellow', 'Gainsboro', 'Ivory', 'Khaki', 'beige' ]
+console.log(removed); // [ 'blue', 'green', 'black' ]
