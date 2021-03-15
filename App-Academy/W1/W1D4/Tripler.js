@@ -4,7 +4,10 @@
 // containing three times every number of the original array.
 
 let tripler = function (nums) {
+    let tripled = [];
+    for (let i = 0; i < nums.length; i++) {
 
+    }
 };
 
 console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
