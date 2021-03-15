@@ -8,7 +8,7 @@ let removeEWords = function (sentence) {
     let filtered = [];
     for (let i = 0; i < words.length; i++) {
         let word = words[i];
-        if (!word.includes('e')) {
+        if (!word.toLowerCase().includes('e')) {
             filtered.push(word);
         }
     }
@@ -18,3 +18,4 @@ let removeEWords = function (sentence) {
 
 console.log(removeEWords('What time is it everyone?')); // 'What is it'
 console.log(removeEWords('Enter the building')); // 'building'
+console.log(removeEWords('EEEEEEHHHHH THERES NO WORDS')); // 'NO WORDS'
