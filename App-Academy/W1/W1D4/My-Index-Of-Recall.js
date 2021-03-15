@@ -4,7 +4,9 @@
 // If the target is not found, it should return -1. Solve this without using Array.indexOf.
 
 let myIndexOf = function (arr, target) {
+    for (let i = 0; i < arr.length; i++) {
 
+    }
 };
 
 
