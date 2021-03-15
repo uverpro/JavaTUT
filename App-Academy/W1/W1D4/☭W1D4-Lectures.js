@@ -185,3 +185,23 @@ console.log(yelledStrings(['hello', 'how', 'are', 'you?']));
 // laligatSum of that number.
 // A number's laligat sum is the the sum of all the prime numbers less than or
 // equal to that number.
+
+// Not decomposed and thus complex:
+function laligatSum(n) {
+    let sum = 0;
+    for (let i = 2; i <= n; i += 1) {
+      let prime = true;
+
+      for (let factor = 2; factor < i; factor += 1) {
+        if (i % factor === 0) {
+          prime = false;
+          break;
+        }
+      }
+
+      if (prime) {
+        sum += i;
+      }
+    }
+    return sum;
+  };
