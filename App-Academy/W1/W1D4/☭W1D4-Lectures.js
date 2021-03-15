@@ -240,3 +240,30 @@ let colors = ["red", "yellow", "blue", "green", "black", "beige"];
 let removed = colors.splice(2, 3, "Gainsboro", "Ivory", "Khaki");
 console.log(colors); // [ 'red', 'yellow', 'Gainsboro', 'Ivory', 'Khaki', 'beige' ]
 console.log(removed); // [ 'blue', 'green', 'black' ]
+
+// Splice && Join
+
+let str = "I don't know what I want to eat";
+let newStr = str.split("I").join("we");
+console.log(newStr); // 'we don't know what we want to eat'
+
+
+
+let sentence = "follow the yellow brick road";
+let words = sentence.split(" ");
+console.log(words); // [ 'follow', 'the', 'yellow', 'brick', 'road' ]
+console.log(sentence); // 'follow the yellow brick road'
+
+let sentence = "follow the yellow brick road";
+console.log(sentence.split(" ")); // [ 'follow', 'the', 'yellow', 'brick', 'road' ]
+console.log(sentence.split("the")); // [ 'follow ', ' yellow brick road' ]
+console.log(sentence.split("o")); // [ 'f', 'll', 'w the yell', 'w brick r', 'ad' ]
+
+
+let words = ["run", "around", "the", "block"];
+let sentence = words.join(" ");
+console.log(sentence); // 'run around the block'
+console.log(words); // [ 'run', 'around', 'the', 'block' ]
+
+console.log(words.join("_")); // 'run_around_the_block'
+console.log(words.join("HI")); // 'runHIaroundHItheHIblock'
