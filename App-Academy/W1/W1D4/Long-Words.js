@@ -4,7 +4,9 @@
 // containing only the words that are longer than 5 characters.
 
 let longWords = function (words) {
+    for (let i = 0; i < words.length; i++) {
 
+    }
 };
 
 console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
