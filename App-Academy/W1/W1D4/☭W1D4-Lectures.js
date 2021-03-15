@@ -229,3 +229,4 @@ function isPrime(n) {
 };
 
 console.log(laligatSum(10));
+console.log(laligatSum(11));
