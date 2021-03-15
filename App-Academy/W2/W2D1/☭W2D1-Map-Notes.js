@@ -12,4 +12,10 @@ console.log(result);
 
 // Array#map
 
-let parks = ['Zion', ]
+let parks = ['Zion', 'Yellowstone', 'Acadia', 'Yosemite'];
+
+let newParks = [];
+    for (let i = 0; i < parks.length; i++) {
+        let park = parks[i];
+        newParks.push(park.toUpperCase);
+    }
