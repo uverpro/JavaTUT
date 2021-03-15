@@ -6,8 +6,10 @@
 let tripler = function (nums) {
     let tripled = [];
     for (let i = 0; i < nums.length; i++) {
-
+        let num = nums[i];
+        tripled.push(num * 3);
     }
+    return tripled;
 };
 
 console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
