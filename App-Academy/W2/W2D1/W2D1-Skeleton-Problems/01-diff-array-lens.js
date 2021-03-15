@@ -17,5 +17,5 @@ function diffArrayLen(arr1, arr2) {
 
 }
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-module.exports = diffArrayLen;
+console.log(diffArrayLen(a1, a2)); // => false
+console.log(diffArrayLen(a1, a3)); // => true
