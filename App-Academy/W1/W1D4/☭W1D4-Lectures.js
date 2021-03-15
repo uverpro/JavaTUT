@@ -160,22 +160,23 @@ for (let i = 0; i < array.length; i++) {
 // Write a function that takes in an array of strings as an argument.
 // It should return array where every string is "yelled", see the example below:
 
-let yelled = yellStrings(['hello', 'how', 'are', 'you?']);
-yelled; //=> ['HELLO!', 'HOW!', 'ARE!', 'YOU?!'];
 
-function yellStr(str) {
+let yellStr = function (str) {
     let upperString = str.toUpperCase();
     return upperString + '!';
-  }
+}
 
-  function yelledStrings(strings) {
+let yelledStrings = function (strings) {
     let yelled = [];
 
     for (let i = 0; i < strings.length; i++) {
-      let string = strings[i];
-      let newString = yellStr(string);
-      yelled.push(newString);
+        let string = strings[i];
+        let newString = yellStr(string);
+        yelled.push(newString);
     }
 
     return yelled;
-  };
+};
+
+let yelled = yellStrings(['hello', 'how', 'are', 'you?']);
+console.log(yelled); //=> ['HELLO!', 'HOW!', 'ARE!', 'YOU?!'];
