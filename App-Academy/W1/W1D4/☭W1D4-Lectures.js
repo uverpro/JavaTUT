@@ -151,3 +151,14 @@ for (let i = 0; i < array.length; i++) {
 
 // In the nested loops above, the i index refers to the current "row"
 // and the j index refers to the current "column".
+
+
+
+// More Helper Functions
+
+// yellStrings(strings)
+// Write a function that takes in an array of strings as an argument.
+// It should return array where every string is "yelled", see the example below:
+
+let yelled = yellStrings(['hello', 'how', 'are', 'you?']);
+yelled; //=> ['HELLO!', 'HOW!', 'ARE!', 'YOU?!'];
