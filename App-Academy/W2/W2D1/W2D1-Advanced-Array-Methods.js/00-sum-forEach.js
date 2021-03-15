@@ -5,7 +5,7 @@ The function should return the total sum of all values in the array.
 Solve this using Array's `forEach()` method.
 */
 
-function sumForEach (array)
+function sumForEach (array) {};
 
 console.log(sumForEach([4, 3, -1, 10])); // 16
 console.log(sumForEach([6, 7, 2])); // 15
