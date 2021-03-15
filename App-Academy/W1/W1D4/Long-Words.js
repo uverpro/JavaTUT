@@ -8,9 +8,10 @@ let longWords = function (words) {
     for (let i = 0; i < words.length; i++) {
         let word = words[i];
         if (word.length > 5) {
-
+            nuArray.push(word);
         }
     }
+    return nuArray;
 };
 
 console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
