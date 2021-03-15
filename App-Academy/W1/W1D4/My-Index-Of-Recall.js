@@ -5,8 +5,12 @@
 
 let myIndexOf = function (arr, target) {
     for (let i = 0; i < arr.length; i++) {
-
+        let char = arr[i];
+        if (target.includes(char)) {
+            return i;
+        }
     }
+    return -1;
 };
 
 
