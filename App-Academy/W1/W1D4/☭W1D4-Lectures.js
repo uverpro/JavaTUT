@@ -92,6 +92,7 @@ removeSmallWords(`the cat is sooooooo awesome`);
 [ 'the', 'cat', 'is', 'sooooooo', 'awesome' ] <--- this is the split string
 the cat is sooooooo awesome <-- this is the joined string */
 
+
 function isLessThanFive (word) {
     return word.length < 5;
 };
