@@ -11,8 +11,10 @@ let highestAverage = function (numsList) {
     let counter = 0;
     let massIndex = 0;
     for (let i = 0; i < numsList.length; i++) {
-        let array = numsList[i];
-        for (let j = 0; j < array.length; j++) {}
+        let subArray = numsList[i];
+        for (let j = 0; j < subArray.length; j++) {
+            let num = subArray[j];
+        }
     }
 }
 
