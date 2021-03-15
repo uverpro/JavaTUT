@@ -1,9 +1,9 @@
 // Least Common Multiple
-// Write a function leastCommonMultiple(num, num2)
+// Write a function leastCommonMultiple(num1, num2)
 // that accepts two numbers as arguments.
 // The functions should return the smallest number that is divisible by both num1 and num2.
 
-let leastCommonMultiple = function (num, max) {
+let leastCommonMultiple = function (num1, num2) {
 
 };
 
