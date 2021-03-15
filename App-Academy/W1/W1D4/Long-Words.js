@@ -4,8 +4,12 @@
 // containing only the words that are longer than 5 characters.
 
 let longWords = function (words) {
+    let nuArray = [];
     for (let i = 0; i < words.length; i++) {
         let word = words[i];
+        if (word.length > 5) {
+
+        }
     }
 };
 
