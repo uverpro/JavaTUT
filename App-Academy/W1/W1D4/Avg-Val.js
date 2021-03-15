@@ -3,6 +3,9 @@
 // The function should return the average of all values in the array.
 // If the array is empty, it should return null.
 
+let avgVal = function (array) {
+
+};
 
 
 console.log(avgVal([5, 10])); // 7.5
