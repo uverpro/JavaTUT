@@ -7,7 +7,8 @@ numbers multiplied together.
 Solve this using Array's `forEach()`, `map()`, `filter()` **OR** `reduce()`
 methods.
 
-Examples:
+*/
+
 
 
 let arr1 = [
@@ -22,17 +23,3 @@ let arr2 = [
   [2]
 ];
 console.log(twoDimensionalProduct(arr2)); // 88
-
-*/
-
-
-// your code here
-
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-    module.exports = twoDimensionalProduct;
-} catch (e) {
-    module.exports = null;
-}
