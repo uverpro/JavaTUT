@@ -162,3 +162,20 @@ for (let i = 0; i < array.length; i++) {
 
 let yelled = yellStrings(['hello', 'how', 'are', 'you?']);
 yelled; //=> ['HELLO!', 'HOW!', 'ARE!', 'YOU?!'];
+
+function yellStr(str) {
+    let upperString = str.toUpperCase();
+    return upperString + '!';
+  }
+
+  function yelledStrings(strings) {
+    let yelled = [];
+
+    for (let i = 0; i < strings.length; i++) {
+      let string = strings[i];
+      let newString = yellStr(string);
+      yelled.push(newString);
+    }
+
+    return yelled;
+  };
