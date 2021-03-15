@@ -147,4 +147,4 @@ for (let i = 0; i < array.length; i++) {
   for (let j = 0; j < subArray.length; j++) {
     console.log(subArray[j]);
   }
-}
+};
