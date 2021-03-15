@@ -5,8 +5,8 @@
 
 let leastCommonMultiple = function (num1, num2) {
     let common = num2;
-    if (common % num1 === 0 && common % num2 === 0) {
-        return common;
+    for (let i = num2; i <= common % num1 === 0 && common % num2 === 0; i++) {
+    return i;
     }
 };
 
