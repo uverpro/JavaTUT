@@ -178,5 +178,5 @@ let yelledStrings = function (strings) {
     return yelled;
 };
 
-console.log(yellStrings(['hello', 'how', 'are', 'you?']));
+console.log(yelledStrings(['hello', 'how', 'are', 'you?']));
 // console.log(yell); //=> ['HELLO!', 'HOW!', 'ARE!', 'YOU?!'];
