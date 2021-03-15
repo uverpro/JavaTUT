@@ -4,7 +4,9 @@
 // If the array is empty, the function should return null.
 
 let maxValue = function (nums) {
-
+    if (nums.length === 0) {
+        return null;
+    }
 };
 
 
