@@ -4,7 +4,15 @@
 // If the array is empty, it should return null.
 
 let avgVal = function (array) {
-
+    if (array.length === 0) {
+        return null;
+    }
+        let sum = 0;
+        for (let i =0; i < array.length; i++) {
+            let num = array[i];
+            sum += num;
+    }
+    return sum / array.length;
 };
 
 
