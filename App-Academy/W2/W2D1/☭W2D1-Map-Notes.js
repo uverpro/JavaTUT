@@ -8,3 +8,8 @@ let result = a.map(function(el, i, arr) {
 });
 
 console.log(result);
+
+
+// Array#map
+
+let parks = ['Zion', ]
