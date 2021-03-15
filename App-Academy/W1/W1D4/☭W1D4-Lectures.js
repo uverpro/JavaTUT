@@ -180,3 +180,8 @@ let yelledStrings = function (strings) {
 
 console.log(yelledStrings(['hello', 'how', 'are', 'you?']));
 // console.log(yell); //=> ['HELLO!', 'HOW!', 'ARE!', 'YOU?!'];
+
+// Write a function laligatSum(n) that takes in a number and returns the
+// laligatSum of that number.
+// A number's laligat sum is the the sum of all the prime numbers less than or
+// equal to that number.
