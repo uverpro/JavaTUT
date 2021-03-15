@@ -5,7 +5,7 @@
 
 let removeEWords = function (sentence) {
     for (let i = 0; i <sentence.length; i++) {
-
+        let word = sentence[i];
     }
 };
 
