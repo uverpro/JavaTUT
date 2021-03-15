@@ -4,7 +4,9 @@
 // containing only the words that don't have the letter "e" in them.
 
 let removeEWords = function (sentence) {
+    for (let i = 0; i <sentence.length; i++) {
 
+    }
 };
 
 
