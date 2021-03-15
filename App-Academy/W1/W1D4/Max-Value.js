@@ -10,8 +10,11 @@ let maxValue = function (nums) {
     }
     for (let i = 0; i < nums.length; i++) {
         let num = nums[i];
-
+        if (num > largestNum) {
+            largestNum = num;
+        }
     }
+    return largestNum;
 };
 
 
