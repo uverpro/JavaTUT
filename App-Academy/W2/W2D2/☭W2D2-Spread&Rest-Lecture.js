@@ -57,8 +57,8 @@ console.log(obj3);
 
 
 function colorPicker(color1, color2) {
-        return `${color1}, ${color2}`;
+        return `It don't matter if you're ${color1} or ${color2}!`;
 };
 
 let colorArray = ['white', 'black'];
-console.log(colorPicker(...colorArray));
+console.log(colorPicker(...colorArray)); // It don't matter if you're white or black!
