@@ -52,3 +52,5 @@ console.log(array4); // [ 'zebra', 'bird', 'parrot', 'lion', 'bison', 'panther' 
 
 let obj1 = { car: "Nissan", color: "white" };
 let obj2 = { wheels: 4, radio: "loud" };
+let obj3 = { ...obj1, ...obj2};
+console.log(obj3);
