@@ -43,9 +43,12 @@ console.log(colorPicker("red", "blue", "yellow", "orange", "green"));
 let array1 = ['zebra', 'bird', 'parrot'];
 let array2 = ['lion', 'bison', 'panther'];
 
+// Without Spread:
 let array3 = array1.concat(array2);
-console.log(array3);
-
+console.log(array3); // [ 'zebra', 'bird', 'parrot', 'lion', 'bison', 'panther' ]
+// With Spread:
+let array4 = [...array1, ...array2];
+console.log(array3); // [ 'zebra', 'bird', 'parrot', 'lion', 'bison', 'panther' ]
 
 let obj1 = { car: "Nissan", color: "white" };
 let obj2 = { wheels: 4, radio: "loud" };
