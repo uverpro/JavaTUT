@@ -54,3 +54,11 @@ let obj1 = { car: "Nissan", color: "white" };
 let obj2 = { wheels: 4, radio: "loud" };
 let obj3 = { ...obj1, ...obj2};
 console.log(obj3);
+
+
+function colorPicker(color1, color2) {
+        return `${color1}, ${color2}`;
+};
+
+let colorArray = ['white', 'black'];
+console.log(colorPicker(...colorArray));
