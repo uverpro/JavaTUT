@@ -6,23 +6,6 @@ empty array. Solve this using Array's `filter()` method.
 
 HINT: There are built in JavaScript functions that will help with determining if
 a strings ends a certain way. Go see if you can find it on MDN!
-
-Examples:
-
-console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'ly'));
-// [ 'family', 'fly', 'timidly' ]
-
-console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'nd'));
-// [ 'hound', 'bond' ]
-
-console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'icity'));
-// [ 'simplicity', 'felicity' ]
-
-console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'ily'));
-// [ ]
-
-console.log(chooseyEndings(17, 'ily'));
-// [ ]
 */
 
 
