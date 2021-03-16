@@ -50,3 +50,6 @@ console.log(obj.age); // 7000
 let location = "Middle Earth"
 obj[location] = true;
 console.log(obj); // { name: 'Gandolf', age: 7000, 'Middle Earth': true }
+let newKey = "location";
+obj["location"] = "Middle Earth";
+console.log(obj); // { name: 'Gandolf', age: 7000, 'Middle Earth': true, location: 'Middle Earth'}
