@@ -27,3 +27,9 @@ keyInObjectArray(objArray, 'planet'); // => true
 keyInObjectArray(objArray, 'age'); // => true
 keyInObjectArray(objArray, 'food'); // => false
 keyInObjectArray(objArray, 'animal'); // => false
+
+// Find the string as a key in the object
+
+// a create a boolean variable initialized to false
+// iterate through the array
+// look at the objects individually
