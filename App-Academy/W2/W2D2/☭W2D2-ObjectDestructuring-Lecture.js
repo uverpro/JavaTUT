@@ -14,11 +14,31 @@ let array = ["blue", "red", "yellow", "green", "pink"];
 let [firstColor, secondColor, thirdColor] = array;
 console.log(firstColor); // blue
 console.log(secondColor); // red
+console.log(thirdColor); // yellow
 
+
+
+// Destructuring Objects:
+// 1. Destructuring Keys
+// 2. Aliased Destructuring
+// 3. Nested Destructuring
+
+let obj = { name: "Sandy", instruments: ["guitar", "bass"] };
+
+let {name, instruments } = obj;
+console.log(name);
+console.log(instruments);
+
+
+
+
+// 3. Nested Destructuring
 
 
 // Examples:
 let { person, animal } = { person: 'Claude', animal: 'elephant' };
 console.log(person, animal);
 
-let [game, player] = ["State o' Decay", "Cory"];
+let music = { tempo: 120, genre: 'March'};
+let { tempo, genre } = music;
+console.log(tempo, genre); // 120 March
