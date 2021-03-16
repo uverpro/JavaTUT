@@ -35,3 +35,17 @@ function colorPicker(color, ...otherColors) {
 };
 
 console.log(colorPicker("red", "blue", "yellow", "orange", "green"));
+
+
+
+// Object
+
+let array1 = ['zebra', 'bird', 'parrot'];
+let array2 = ['lion', 'bison', 'panther'];
+
+let array3 = array1.concat(array2);
+console.log(array3);
+
+
+let obj1 = { car: "Nissan", color: "white" };
+let obj2 = { wheels: 4, radio: "loud" };
