@@ -76,6 +76,7 @@ sayHelloName(parrot);
 sayHowManyToys(parrot);
 
 
+
 // Examples:
 let { person, animal } = { person: 'Claude', animal: 'elephant' };
 console.log(person, animal);
