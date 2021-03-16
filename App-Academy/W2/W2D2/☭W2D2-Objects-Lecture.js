@@ -14,13 +14,13 @@
     2. ORDER IS NOT GUARANTEED    */
 
 
-// let testObject = {}; <== bracket notation
-// testObject["num"] = 10;
+    // let testObject = {};
+    // testObject["num"] = 10; <== Bracket Notation
+    // testObject.num2 = 20; <== Dot Notation
 
-
-//        |         testObject    |
-//        |"num"|   10            |
-//        |     |                 |
+//        |           testObject    |
+//        |  "num" |   10           |
+//        | "num2" |   20           |
 //        -------------------------
 
 // let obj = {};  <== Dot Notation
