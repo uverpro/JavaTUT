@@ -49,7 +49,8 @@ let zooAnimals = {
 // trying to get Sophia:
 let { fullName: {fname} } = zooAnimals;
 console.log(fname);
-
+let { fullName: {lname} } = zooAnimals;
+console.log(lname);
 
 // Examples:
 let { person, animal } = { person: 'Claude', animal: 'elephant' };
