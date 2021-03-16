@@ -59,11 +59,16 @@ console.log(lname);
 
 let parrot = { name: "Layla", likes: "pets", toys: 1000 };
 
-function sayHelloName(name) {
-    console.log("Hello to " + name);
-};
+// function sayHelloName(name) {
+//     console.log("Hello to " + parrotname);
+// };
+// sayHelloName(parrot); // Hello to Layla
 
-sayHelloName(parret);
+function sayHelloName({ name }) {
+    console.log("Hello to " + name)
+}
+
+sayHelloName(parrot);
 
 
 
