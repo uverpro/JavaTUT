@@ -46,3 +46,7 @@ console.log(obj); // { name: 'Gandalf', age: 7000 }
 console.log(obj.name); // Gandalf
 console.log(obj.location); // undefined
 console.log(obj.age); // 7000
+
+let location = "Middle Earth"
+obj[location] = true;
+console.log(obj); // { name: 'Gandolf', age: 7000, 'Middle Earth': true }
