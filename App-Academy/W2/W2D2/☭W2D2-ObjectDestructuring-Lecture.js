@@ -63,7 +63,7 @@ function sayHelloName(name) {
     console.log("Hello to " + name);
 };
 
-
+sayHelloName(parret);
 
 
 
