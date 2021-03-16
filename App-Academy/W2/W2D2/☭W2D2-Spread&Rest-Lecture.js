@@ -62,3 +62,4 @@ function colorPicker(color1, color2) {
 
 let colorArray = ['white', 'black'];
 console.log(colorPicker(...colorArray)); // It don't matter if you're white or black!
+console.log(colorPicker(colorArray)); // It don't matter if you're white,black or undefined!
