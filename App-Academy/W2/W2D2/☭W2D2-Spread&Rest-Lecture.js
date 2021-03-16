@@ -24,7 +24,7 @@ function colorPicker(color, secondColor) {
 console.log(colorPicker("red", "blue")); // I picked the following colors: red, blue
 */
 
-function colorPicker(color, secondColor, ...otherColors) {
+function colorPicker(color, ...otherColors) {
     let string = `I picked the following colors: ${color}`;
     // console.log(secondColor); // [ 'blue' ]
     // console.log(otherColors); // [ 'yellow', 'orange', 'green' ];
