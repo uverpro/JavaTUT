@@ -12,3 +12,16 @@
         + values can be anything (string, other objects, etc.)
 
     2. ORDER IS NOT GUARANTEED    */
+
+
+// let testObject = {}; <== bracket notation
+// testObject["num"] = 10;
+
+
+//        |         testObject    |
+//        |"num"|   10            |
+//        |     |                 |
+//        -------------------------
+
+// let obj = {};  <== Dot Notation
+// obj["apple"] = "yay!"
