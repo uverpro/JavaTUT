@@ -22,6 +22,7 @@ console.log(thirdColor); // yellow
 // 1. Destructuring Keys
 // 2. Aliased Destructuring
 // 3. Nested Destructuring
+// 4. Destructuring Objects in Parameters
 
 let obj = { name: "Sandy", instruments: ["guitar", "bass"] };
 
@@ -51,6 +52,17 @@ let { fullName: {fname} } = zooAnimals;
 console.log(fname);
 let { fullName: {lname} } = zooAnimals;
 console.log(lname);
+
+
+
+// 4. Destructuring Objects in Parameters
+
+let parrot = { name: "Layla", likes: "pets", toys: 1000 };
+
+function sayHelloName(name) {
+    console.log("Hello to " + name);
+};
+
 
 
 
