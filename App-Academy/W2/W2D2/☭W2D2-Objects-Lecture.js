@@ -26,3 +26,4 @@
 
 // KEYS WITHOUT ASSIGNED VALUE === undefined
 // testObject[0] !== undefined <== FALSE
+// Key [0] doesn't exist
