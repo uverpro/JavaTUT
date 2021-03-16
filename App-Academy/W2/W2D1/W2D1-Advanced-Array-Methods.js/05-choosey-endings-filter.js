@@ -9,12 +9,12 @@ a strings ends a certain way. Go see if you can find it on MDN!
 */
 
 
-let chooseyEndings = function (array, suf) {
+let chooseyEndings = function (array, suffix) {
   if (!Array.isArray(array)) {
     return [];
   }
-  let words = array.filter(function(el) {
-  return el.endsWith(suf);
+  let words = array.filter(function(element) {
+  return element.endsWith(suffix);
 });
 return words;
 };
