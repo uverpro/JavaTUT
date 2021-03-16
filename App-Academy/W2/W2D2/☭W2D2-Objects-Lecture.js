@@ -38,7 +38,7 @@
 
 // Examples
 let obj = {};
-obj.name = "Mylo";
+obj.name = "Cory";
 obj['age'] = 7000
 obj.name = "Gandolf";
 
@@ -53,3 +53,47 @@ console.log(obj); // { name: 'Gandolf', age: 7000, 'Middle Earth': true }
 let newKey = "location";
 obj["location"] = "Middle Earth";
 console.log(obj); // { name: 'Gandolf', age: 7000, 'Middle Earth': true, location: 'Middle Earth'}
+
+
+
+let story = {
+    beginning: 'Once upon a time...',
+    end: 'And they lived happily ever after'
+};
+
+let makeAStory = function() {
+    if (story.middle === undefined) {
+        story.middle = "drama";
+        console.log('added middle');
+    } else {
+        console.log('story complete');
+    }
+};
+
+makeAStory();
+makeAStory();
+
+
+
+let arrUser = ['Cory', 35, 'Coder', 'CT'];
+
+let user = {
+    name: 'Cory',
+    age: 35,
+    job: 'Coder',
+    address: 'CT'
+}
+
+console.log(user.age);
+
+
+
+let Biff = {
+    type: 'dog',
+    age: 10,
+};
+
+let Buster = Biff;
+Buster.age = 0;
+
+console.log(Biff, Buster);
