@@ -18,6 +18,7 @@
     // testObject["num"] = 10; <== Bracket Notation
     // testObject.num2 = 20; <== Dot Notation
 
+//           KEY         VALUE
 //        |           testObject    |
 //        |  "num" |   10           |
 //        | "num2" |   20           |
