@@ -13,7 +13,7 @@ function keyInObjectArray(objArray, keyString) {
   objArray.forEach(function(obj) {
     //set conditional for boolean
     if (obj[keyString] !== undefined) {
-      found = true; // return true
+      found = true;
     }
   });
   return found;
