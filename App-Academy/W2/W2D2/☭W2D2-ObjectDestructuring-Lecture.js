@@ -34,7 +34,21 @@ console.log(name); // Sandy
 console.log(music); // [ 'guitar', 'bass' ]
 
 
+
 // 3. Nested Destructuring
+let zooAnimals = {
+    animalId: 12,
+    species: "Hippo",
+    favoriteFood: "Pizza",
+    fullName: {
+        fname: "Sophia",
+        lname: "theCuteHippo"
+    }
+};
+// console.log(fname); // <== ERROR, can't reference before initialization;
+// trying to get Sophia:
+let { fullName: {fname} } = zooAnimals;
+console.log(fname);
 
 
 // Examples:
