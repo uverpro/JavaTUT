@@ -6,7 +6,11 @@ Solve this using Array's `forEach()` method.
 */
 
 let sumForEach = function (array) {
-
+    let sum = 0;
+    array.forEach(function(num){
+        sum += num;
+    })
+    return sum;
 };
 
 
