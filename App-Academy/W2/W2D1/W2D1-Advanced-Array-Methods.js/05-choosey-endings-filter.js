@@ -34,12 +34,19 @@ let chooseyEndings = function (array, suf) {
   return el.endsWith(suf);
 });
 return words;
-}
+};
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
+console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'ly'));
+// [ 'family', 'fly', 'timidly' ]
 
-try {
-  module.exports = chooseyEndings;
-} catch (e) {
-  module.exports = null;
-}
+console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'nd'));
+// [ 'hound', 'bond' ]
+
+console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'icity'));
+// [ 'simplicity', 'felicity' ]
+
+console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'ily'));
+// [ ]
+
+console.log(chooseyEndings(17, 'ily'));
+// [ ]
