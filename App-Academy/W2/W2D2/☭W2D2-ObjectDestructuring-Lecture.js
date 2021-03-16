@@ -52,6 +52,9 @@ console.log(fname);
 let { fullName: {lname} } = zooAnimals;
 console.log(lname);
 
+
+
+
 // Examples:
 let { person, animal } = { person: 'Claude', animal: 'elephant' };
 console.log(person, animal);
