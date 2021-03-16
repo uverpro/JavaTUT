@@ -11,13 +11,13 @@ methods.
 
 let twoDimensionalProduct = function (array) {
   let totalProduct = 1;
-  array.forEach(function(subArray) {
-    // subArray.forEach(function(num){
-      // totalProduct *= num;
-    // })
-    totalProduct *= subArray.reduce(function(accum, element){
-      return accum * element;
+  array.forEach(function(subArray) { // <= for loop "i", indexing the array
+    subArray.forEach(function(num){ // <= for loop "j", indexing the subarry
+      totalProduct *= num;
     })
+    // totalProduct *= subArray.reduce(function(accum, element){
+      // return accum * element;
+    // })
   })
   return totalProduct;
 };
