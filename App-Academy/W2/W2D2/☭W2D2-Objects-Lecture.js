@@ -14,6 +14,7 @@
     2. ORDER IS NOT GUARANTEED    */
 
 
+
     // let testObject = {};
     // testObject["num"] = 10; <== Bracket Notation
     // testObject.num2 = 20; <== Dot Notation
@@ -25,5 +26,10 @@
 //        |        |   undefined    |
 
 // KEYS WITHOUT ASSIGNED VALUE === undefined
-// testObject[0] !== undefined <== FALSE
+// testObject[0] !== undefined <== FALSE. Will check to see if there is value in a key
 // Key [0] doesn't exist
+
+// Bracket notation allows use to use variables as keys!
+// let obj = {};
+// let string = "apple";
+// obj[string] = "yay!";
