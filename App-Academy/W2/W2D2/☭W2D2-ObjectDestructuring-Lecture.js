@@ -65,11 +65,15 @@ let parrot = { name: "Layla", likes: "pets", toys: 1000 };
 // sayHelloName(parrot); // Hello to Layla
 
 function sayHelloName({ name }) {
-    console.log("Hello to " + name)
+    console.log("Hello to " + name);
+}
+
+function sayHowManyToys ({ toys }) {
+    console.log("We've got " + toys + " toys");
 }
 
 sayHelloName(parrot);
-
+sayHowManyToys(parrot);
 
 
 // Examples:
