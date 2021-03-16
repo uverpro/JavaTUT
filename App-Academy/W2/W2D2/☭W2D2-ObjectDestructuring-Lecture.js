@@ -25,11 +25,13 @@ console.log(thirdColor); // yellow
 
 let obj = { name: "Sandy", instruments: ["guitar", "bass"] };
 
-let {name, instruments } = obj;
-console.log(name);
-console.log(instruments);
+// let { name, instruments } = obj;
+// console.log(name); // Sandy
+// console.log(instruments); // [ 'guitar', 'bass' ]
 
-
+let { name, instruments: music } = obj;
+console.log(name); // Sandy
+console.log(music); // [ 'guitar', 'bass' ]
 
 
 // 3. Nested Destructuring
