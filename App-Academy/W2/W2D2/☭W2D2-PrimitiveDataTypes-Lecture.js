@@ -14,7 +14,7 @@
 //    *An Array is also ad type of object!
 
 
-// Primitive Data Types are Immutable
+// Primitive Data Types are Immutable!
 // They can't be changed directly
 let word = "dog";
 let newWord = word.toUpperCase();
@@ -26,6 +26,12 @@ console.log(newWord); // DOG
 // 5 is retrieved from the computer
 // let num1 = 5
 // let num2 = num1;
-// console.log(num1, num2) // 5
+// console.log(num1, num2) // 5 // num1 && num2 ==== > comp memory
 // let num1 = num1 + 3;
 // doesn't change anything, just references 8 now
+
+
+// Reference Data Types are Mutable!
+// cat1.name = "Lucy"
+// { name: "Lucy," breed: "tabby" }
+// cat1 && cat2 ===> { name: "Lucy," breed: "tabby" } ===> comp memory
