@@ -8,18 +8,27 @@
 
 // Without Rest:
 /* function colorPicker(color) {
-     let string = `I picked the following colors: ${color}`;
-     return string;
- };
+    let string = `I picked the following colors: ${color}`;
+    return string;
+};
 
- console.log(colorPicker("red", "blue")); // I picked the following colors: red
-                                              will ignore blue
-                                              or any arguments not included in parameters
+console.log(colorPicker("red", "blue")); // I picked the following colors: red
+                                            will ignore blue
+                                            or any arguments not included in parameters
 
- function colorPicker(color, secondColor) {
-     let string = `I picked the following colors: ${color}, ${secondColor}`;
-     return string;
- };
+function colorPicker(color, secondColor) {
+    let string = `I picked the following colors: ${color}, ${secondColor}`;
+    return string;
+};
 
- console.log(colorPicker("red", "blue")); // I picked the following colors: red, blue
+console.log(colorPicker("red", "blue")); // I picked the following colors: red, blue
 */
+
+function colorPicker(color, secondColor, ...otherColors) {
+    let string = `I picked the following colors: ${color}`;
+    // console.log(secondColor); // [ 'blue' ]
+    // console.log(otherColors); // [ 'yellow', 'orange', 'green' ];
+    return string;
+};
+
+console.log(colorPicker("red", "blue", "yellow", "orange", "green"));
