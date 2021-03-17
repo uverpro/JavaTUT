@@ -64,7 +64,3 @@ let superAdd = function (num1, num2, cb) {
 };
 
 console.log(superAdd(80, 1)) // 81
-
-
-
-// Using Callback Function - Video 3
