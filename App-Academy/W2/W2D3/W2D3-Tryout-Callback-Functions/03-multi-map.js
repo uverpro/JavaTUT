@@ -21,12 +21,32 @@ let result3 = multiMap("hi", 5, function(s) {
 console.log(result3); // hi!!!!!
 *******************************************************************************/
 
-let multiMap = function() {
+let multiply = function (val, n) {
+  return val * n;
+}
 
+let multiMap = function (val, n, cb) {
+  for (let i = 0; i < n; i++) {
+    val = cb(val);
+  }
+  return val;
 };
 
+let result1 = multiMap(10, 8, function(n) {
+  return n * 10;
+});
+console.log(result1);
 
+let multiply = function (val) {
+  return val * 10;
+}
 
+let multiMap = function (val, n, cb) {
+  for (let i = 0; i < n; i++) {
+    val = cb(val);
+  }
+  return val;
+};
 
-/*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
-module.exports = multiMap;
+let result1 = multiMap(10, 8, multiply)
+console.log(result1);
