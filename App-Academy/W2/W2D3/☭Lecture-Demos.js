@@ -211,3 +211,19 @@ let intoAFunctionPart2 = function () {
 
 higherOrderFunction(intoAFunction);
 higherOrderFunction(intoAFunctionPart2);
+
+
+
+function HOF() {
+    return function () {
+        console.log("Im here");
+    }
+}
+
+console.log(HOF()); // this will be the inner function
+
+HOF()(); // this will invoke the inner function
+
+let returnFromFunc = HOF();
+console.log(returnFromFunc)
+returnFromFunc();
