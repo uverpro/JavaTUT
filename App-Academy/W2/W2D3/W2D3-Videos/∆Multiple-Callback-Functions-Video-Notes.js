@@ -7,7 +7,13 @@
 // return the result of the callback which is larger
 
 let greaterResult = function (num, cb1, cb2) {
-
+    let res1 = cb1(num); // doubler (1 || 5)
+    let res2 = cb2(num); // squarer (1 || 5)
+    if (res1 > res2) {
+        return res1;
+    } else {
+        return res2;
+    }
 };
 
 let doubler = function (n) {
