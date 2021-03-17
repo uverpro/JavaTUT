@@ -32,6 +32,8 @@ console.log(superAdd(3, 2, doubler)); // 10
 console.log(superAdd(3, 2, negate)); // -5
 console.log(result); // 10
 
+
+
 // Using Callback Function - Video 2
 
 console.log(Math.sqrt); // [Function: sqrt]
