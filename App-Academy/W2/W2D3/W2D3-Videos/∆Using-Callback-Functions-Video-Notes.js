@@ -53,14 +53,14 @@ foo ('alpha', 'bravo', 'charlie')
 foo ('alpha', 'bravo',) // will return undefined, missing an argument
 foo ('alpha', 'bravo', 'charlie', 'tango')
 
-// This will safeguard against that:
-// let superAdd = function (num1, num2, cb) {
-//     if (cb === undefined) {
-//         return num1 + num2
-//     } else {
-//     let sum = num1 + num2;
-//     return cb(sum);
-//     }
-// };
+// This makes a cb optional, safeguarding against getting "undefined":
+let superAdd = function (num1, num2, cb) {
+    if (cb === undefined) {
+        return num1 + num2
+    } else {
+    let sum = num1 + num2;
+    return cb(sum);
+    }
+};
 
-// console.log(superAdd(80, 1)) // 81
+console.log(superAdd(80, 1)) // 81
