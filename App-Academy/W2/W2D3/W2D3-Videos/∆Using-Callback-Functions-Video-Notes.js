@@ -7,7 +7,7 @@ let superAdd = function (num1, num2) {
 };
 */
 
-// Now let's add a third paramete to be our callback function:
+// Now let's add a third parameter to be our callback function:
 
 let superAdd = function (num1, num2, cb) {
     console.log(cb)
