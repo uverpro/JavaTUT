@@ -47,6 +47,3 @@ let mySome = function(array, cb) {
 
 console.log(mySome(nums, compare))
 console.log(mySome(nums2, compare))
-
-/*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
-module.exports = mySome;
