@@ -168,3 +168,28 @@ let result = myEvery(veggies, function(el, i, array){
 })
 
 console.log(result);
+
+
+
+let arr = [
+    function () {
+        console.log("I'm the function at zero")
+    },
+    function () {
+        console.log("Hi, you hit one!")
+    }
+]
+
+arr[0]();
+arr[1]();
+
+
+
+let obj = {
+    func: function () {
+        console.log("I'm in object")
+    },
+};
+
+obj.func();
+obj['func']();
