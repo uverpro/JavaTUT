@@ -170,6 +170,7 @@ let result = myEvery(veggies, function(el, i, array){
 console.log(result);
 
 
+// First Class Object: Stored in variable, object, or array
 
 let arr = [
     function () {
