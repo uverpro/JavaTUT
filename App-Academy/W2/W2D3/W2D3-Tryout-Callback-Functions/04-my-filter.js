@@ -19,14 +19,26 @@ let result2 = myFilter(['choose', 'big', 'words', 'only'], function (s) {
 console.log(result2);      // ['choose', 'words', 'only']
 *******************************************************************************/
 
-let myFilter = function() {
-
+let nums = [-10, 16, 49, 36, -2, -9]
+let isPositive = function (n) {
+    return n > 0;
 };
-
-
-
-
-
+let square = function (n) {
+    return n * n;
+};
+let selectiveMap = function (array, cb1, cb2) {
+    let nuArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        if (cb1(el)) {
+            nuArray.push(cb2(el));
+        } else {
+            nuArray.push(el);
+        }
+    }
+    return nuArray;
+};
+console.log(selectiveMap(nums, isPositive, square))
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 module.exports = myFilter;
