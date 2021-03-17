@@ -36,7 +36,3 @@ let reject = function(array, cb) {
 };
 
 console.log(reject([7, 8, 5, 6, 12, 11], isEven)); // [ 7, 5, 11 ]
-
-
-/*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
-module.exports = reject;
