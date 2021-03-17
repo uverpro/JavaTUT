@@ -194,3 +194,20 @@ let obj = {
 
 obj.func();
 obj['func']();
+
+// Returns from a function
+
+let higherOrderFunction = function (callback) {
+    callback();
+};
+
+let intoAFunction = function () {
+    console.log("Im being passed into a function")
+};
+
+let intoAFunctionPart2 = function () {
+    console.log("Me too")
+};
+
+higherOrderFunction(intoAFunction);
+higherOrderFunction(intoAFunctionPart2);
