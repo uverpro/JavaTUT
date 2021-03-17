@@ -38,13 +38,13 @@ let myFilter = function (array, cb) {
     let selectedItems = [];
     array.forEach(function(el, index) {
     if (cb(el, index, array) === true) {
-            selectedItems.push(array[i]);
+            selectedItems.push(el);
         }
     });
     return selectedItems;
 };
 
-let result2 = myFilter(veggies, function (element) {
+let result3 = myFilter(veggies, function (element) {
     return element.includes('a');
 });
-console.log(result2); // [ 'cabbage', 'carrot' ]
+console.log(result3); // [ 'cabbage', 'carrot' ]
