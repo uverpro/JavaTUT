@@ -30,3 +30,14 @@ let obj3 = {
   bigapple: "NYC"
 };
 appleCounter(obj3); // => 3
+
+// Acceptsd an object
+// count how many keys an object has that include the string of apple
+// return a count
+
+// intialize a counter
+// make an array of the keys in the object
+// iterate over the keysArr
+  // check if the key contains "apple"
+    // increase the counter
+  // return the counter
