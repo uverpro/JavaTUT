@@ -15,10 +15,10 @@ doesKeyExist(obj1, 'name'); // => false
 
 let obj1 = {bootcamp: 'App Academy', course: 'Bootcamp Prep'}
 
-let doesKeyExist = function (obj) {
-  for (let i = 0; i < obj.length; i++) {
-  console.log(i)
-  }
+let doesKeyExist = function (obj, key) {
+  for (let i = 0; i < obj.length; i++)
+  let el = obj[i];
+  console.log(el);
 };
 
 doesKeyExist(obj1, 'course'); // => true
