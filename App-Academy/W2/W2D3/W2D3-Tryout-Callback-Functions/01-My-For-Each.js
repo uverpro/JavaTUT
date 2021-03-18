@@ -24,8 +24,7 @@ console.log(test); // ['LAIKA', 'BELKA']
 let letters = ['a', 'b', 'c']
 
 let myForEach = function(arr, cb) {
-
-    for ( let i = 0; i < arr.length; i++ ) {
+    for (let i = 0; i < arr.length; i++) {
         let el = arr[i]
         cb(el, i)
     }
@@ -33,4 +32,17 @@ let myForEach = function(arr, cb) {
 
 myForEach(letters, function(el, i) {
     console.log(`${el} is at index ${i}`)
-} )
+})
+// a is at index 0
+// b is at index 1
+// c is at index 2
+
+
+// let arr = [1, 2, 3]
+
+// arr.forEach(function(el, i) {
+//     console.log(`${el} is at index ${i}`)
+// })
+// 1 is at index 0
+// 2 is at index 1
+// 3 is at index 2
