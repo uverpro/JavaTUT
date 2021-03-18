@@ -38,7 +38,5 @@ let selectiveMap = function (array, cb1, cb2) {
     }
     return nuArray;
 };
-console.log(selectiveMap(nums, isPositive, square))
 
-/*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
-module.exports = myFilter;
+console.log(selectiveMap(nums, isPositive, square))
