@@ -7,8 +7,8 @@ Do this once using using a `for...in` loop and once using `Object.keys`.
 ***********************************************************************/
 
 function keysInObject(obj) {
-    for (let i = 0; i < obj.length; i++) {
-        console.log(i)
+    for (let value in obj) {
+        console.log(value);
     }
 }
 
