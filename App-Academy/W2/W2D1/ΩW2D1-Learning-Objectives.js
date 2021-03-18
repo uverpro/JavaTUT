@@ -9,7 +9,11 @@
 
 // 2. Identify when to use . vs [] when accessing values of an object
 
+const object = { a: 1, b: 2, c: 3 };
 
+for (const property in object) {
+  console.log(`${property}: ${object[property]}`);
+}
 
 // 3. Use the obj[key] !== undefined pattern
 // to check if a given variable that contains a key exists in an object
