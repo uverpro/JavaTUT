@@ -24,6 +24,15 @@ for (const value in object) {
 
 // 5. Iterate through an object using a for...in loop
 
+function keysInObject(obj) {
+    for (let key in obj) {
+        console.log(key);
+    }
+}
+
+let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
+keysInObject(animals);
+
 // 6. Define a function that utilizes ...rest syntax to accept an arbitrary number of arguments
 
 // 7. Use ...spread syntax for Object literals and Array literals
