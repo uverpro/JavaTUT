@@ -20,24 +20,6 @@ let hasA = function(s) {
 };
 console.log(reject(['breadth', 'GRAPH', 'depth', 'height'], hasA)); // [ 'depth', 'height' ]
 *******************************************************************************/
-let isEven = function(n) {
-    return n % 2 === 0;
-};
-
-let reject = function(array, cb) {
-    let negatives = [];
-    for (let i = 0; i < array.length; i++) {
-        let el = array[i];
-        if (cb(el) !== true) {
-            negatives.push(el);
-        }
-    }
-    return negatives;
-};
-
-console.log(reject([7, 8, 5, 6, 12, 11], isEven)); // [ 7, 5, 11 ]
-
-/*************************************/
 
 let reject = function(array, cb) {
     let negatives = [];
@@ -55,7 +37,18 @@ let isEven = function(n) {
 };
 console.log(reject([7, 8, 5, 6, 12, 11], isEven)); // [ 7, 5, 11 ]
 
-/******************************************/
+/************************************************/
+
+let reject = function(array, cb) {
+    let negatives = [];
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        if (cb(el) !== true) {
+            negatives.push(el);
+        }
+    }
+    return negatives;
+};
 
 let hasA = function(s) {
     return s.toLowerCase().includes('a');
