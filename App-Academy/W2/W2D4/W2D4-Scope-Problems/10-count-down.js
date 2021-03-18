@@ -37,6 +37,42 @@ Will need to make that function first
 I'll need to know when to return that function
 This function will need some information from the original function
 */
+
+let countDownTimer = function (n) {
+  if (n === 0) {
+    console.log(`Happy New Year!`)
+  }
+  return function() {
+    console.log(`Happy`);
+  }
+};
+
+oneDay = countDownTimer (1);
+oneDay()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let variable = "string"
 function countDownTimer(n){
   if (n > 0) {
