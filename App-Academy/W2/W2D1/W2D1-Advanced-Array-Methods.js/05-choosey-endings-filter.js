@@ -5,7 +5,7 @@ that end in the given suffix. If the value passed in is not an array, return an
 empty array. Solve this using Array's `filter()` method.
 
 HINT: There are built in JavaScript functions that will help with determining if
-a strings ends a certain way. Go see if you can find it on MDN!
+a strings ends a certain way. Array.method.
 */
 
 
