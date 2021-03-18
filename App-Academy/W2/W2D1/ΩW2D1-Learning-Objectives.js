@@ -11,8 +11,8 @@
 
 const object = { a: 1, b: 2, c: 3 };
 
-for (const property in object) {
-  console.log(`${property}: ${object[property]}`);
+for (const value in object) {
+  console.log(`${value}: ${object[value]}`);
 }
 
 // 3. Use the obj[key] !== undefined pattern
