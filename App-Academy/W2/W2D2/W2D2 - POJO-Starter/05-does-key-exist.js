@@ -16,10 +16,8 @@ doesKeyExist(obj1, 'name'); // => false
 let obj1 = {bootcamp: 'App Academy', course: 'Bootcamp Prep'}
 
 let doesKeyExist = function (obj, key) {
-  for (let i = 0; i < obj.length; i++)
-  let el = obj[i];
-  console.log(el);
-};
+  obj[key] !== undefined; // console.log(obj[key] !== undefined) to print true or false
+}
 
 doesKeyExist(obj1, 'course'); // => true
 doesKeyExist(obj1, 'name'); // => false
