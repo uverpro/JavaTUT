@@ -11,7 +11,7 @@ function keysInObject(obj) {
     for (let key in obj) {
         array.push(key);
     }
-    return array;
+    return array; // console.log(array)
 }
 
 let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
