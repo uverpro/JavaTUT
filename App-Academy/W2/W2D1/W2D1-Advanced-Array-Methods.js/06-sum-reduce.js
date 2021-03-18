@@ -13,13 +13,5 @@ console.log(sumWithReduce([])); // 0
 */
 
 
-// your code here
-
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-  module.exports = sumWithReduce;
-} catch (e) {
-  module.exports = null;
-}
+console.log(sumWithReduce([10, 3, 5, 2])); // 20
+console.log(sumWithReduce([])); // 0
