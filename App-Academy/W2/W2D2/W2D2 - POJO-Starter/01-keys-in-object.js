@@ -22,7 +22,7 @@ keysInObject(foods); // => ["apple", "lemon", "mango"]
 /**************************************************************/
 
 function keysInObject(obj) {
-    console.log(Object.keys(obj));
+   return Object.keys(obj); // console.log(Object.keys(obj));
 }
 
 let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
