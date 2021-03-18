@@ -37,6 +37,8 @@ let result1 = multiMap(10, 8, function(n) {
 });
 console.log(result1);
 
+/*********************************************/
+
 let multiply = function (val) {
   return val * 10;
 }
