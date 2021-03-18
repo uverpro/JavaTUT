@@ -7,7 +7,9 @@ Do this once using using a `for...in` loop and once using `Object.keys`.
 ***********************************************************************/
 
 function keysInObject(obj) {
-
+    for (let i = 0; i < obj.length; i++) {
+        console.log(i)
+    }
 }
 
 let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
