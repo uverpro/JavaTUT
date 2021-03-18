@@ -10,8 +10,11 @@ doesKeyExist(obj1, 'course'); // => true
 doesKeyExist(obj1, 'name'); // => false
 ***********************************************************************/
 
+// Input ==> obj, key
+// Output ===> boolean determind if key is in object
+
 function doesKeyExist(obj, key) {
-  // your code here
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
