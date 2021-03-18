@@ -7,12 +7,11 @@ Do this once using using a `for...in` loop and once using `Object.keys`.
 ***********************************************************************/
 
 function keysInObject(obj) {
-    let keysArray = [];
-    for (let keys in obj) {
-        console.log(keys);
-        keysArray.push(keys);
+    let array = [];
+    for (let key in obj) {
+        array.push(key);
     }
-    return keysArray;
+    return array;
 }
 
 let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
