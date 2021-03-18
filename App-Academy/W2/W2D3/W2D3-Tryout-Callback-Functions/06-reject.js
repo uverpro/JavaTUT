@@ -55,6 +55,8 @@ let isEven = function(n) {
 };
 console.log(reject([7, 8, 5, 6, 12, 11], isEven)); // [ 7, 5, 11 ]
 
+/******************************************/
+
 let hasA = function(s) {
     return s.toLowerCase().includes('a');
 };
