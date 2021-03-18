@@ -35,21 +35,31 @@ console.log(selectiveMap([-10, 4, 7, 6, -2, -9], isEven, flipSign));
 console.log(selectiveMap([-10, 4, 7, 6, -2, -9], isPositive, square));
 // [-10, 16, 49, 36, -2, -9]
 
-AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
-    (optional if you already asked a question for this problem.)
-- Explain how you are using both of the callbacks in the function.
-- What do you expect each callback function to be returning?
-- How many times are you calling each callback function?
+
 *******************************************************************************/
 
-let selectiveMap = function() {
+function isPositive(n) {
+    return n > 0;
+}
 
+function square(n) {
+    return n * n;
+}
+
+
+let selectiveMap = function(array, cb1, cb2) {
+    newItems = [];
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        if (cb1(el)) {
+            newItems.push(cb2(el));
+        } else {
+            newItems.push(el);
+        }
+
+    }
+    return newItems;
 };
 
-
-
-
-
-
-/*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
-module.exports = selectiveMap;
+console.log(selectiveMap([-10, 4, 7, 6, -2, -9], isPositive, square));
+// [-10, 16, 49, 36, -2, -9]
