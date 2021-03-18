@@ -43,15 +43,21 @@ let countDownTimer = function (n) {
     console.log(`Happy New Year!`)
   }
   return function() {
-    console.log(`Happy`);
+    n--
+    if (n === 0) {
+    console.log(`Happy New Year`);
+    }
   }
 };
 
+noDay = countDownTimer (0);
+noDay(); // Happy New Year!
 oneDay = countDownTimer (1);
-oneDay()
-
-
-
+oneDay(); // Happy
+twoDay = countDownTimer (2);
+twoDay();
+twoDay();
+twoDay();
 
 
 
