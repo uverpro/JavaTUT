@@ -29,13 +29,3 @@ let sandwichMaker = function () {
       return finalResponse;
   }
 };
-
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-  module.exports = sandwichMaker;
-} catch (e) {
-  // catch the ref err
-  module.exports = null;
-}
