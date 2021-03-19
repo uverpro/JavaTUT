@@ -31,7 +31,7 @@ function shoppingList(list) {
     return function (item) {
       list.push(item);
       return list;
-    1}
+    }
 };
 
   const clothesList = []
