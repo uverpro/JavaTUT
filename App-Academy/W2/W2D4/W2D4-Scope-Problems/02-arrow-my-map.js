@@ -7,7 +7,11 @@ element. Assign the below function to a variable using the const keyword.
 Do not use the built in Array#map - use Array#forEach for iteration.
 ***********************************************************************/
 
-arrowMyMap = (array, cb) =>
+arrowMyMap = (array, cb) => {
+  let nuArray = [];
+  array.forEach(ele =>
+    (nuArray.push(cb(ele))));
+}
 
 let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
 console.log(result1);   // [ 10, 5, 9, 8 ]
