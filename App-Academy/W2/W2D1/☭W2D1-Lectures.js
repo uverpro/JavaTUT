@@ -28,6 +28,7 @@ function myIncludes(arr, target) {
     return result;
 }
 
+console.log(myIncludes([1, 2, 3], 3));
 
 // Array#map is an array method that runs a function each time
     // for every element of the array,
