@@ -27,7 +27,10 @@ console.log(applyCoupon(20, wishList)); // => 78.4;
 
 *******************************************************************************/
 
-    // Your code here
+let applyCoupon = (discount, wishlist) => {
+    let totalPrice = 0;
+    for (let i = 0; 1 < wishList)
+}
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS LINE**********************/
 try{
