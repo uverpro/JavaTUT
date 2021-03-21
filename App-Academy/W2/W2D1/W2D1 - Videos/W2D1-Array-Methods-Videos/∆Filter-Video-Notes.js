@@ -12,7 +12,7 @@ let parks = ['Zion', 'Yellowstone', 'Acadia', 'Yosemite'];
 // console.log(yParks); // [ Yellowstone, Yosemite ]
 
 parks.filter(function (park) { // anonymous functions return element (park), index, array
-
+    return park[0]
 });
 
 
