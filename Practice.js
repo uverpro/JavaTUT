@@ -1,23 +1,11 @@
-/***********************************************************************
-Write a function `avgValue(array)` that takes in an array of numbers and
-returns the average number.
-***********************************************************************/
+/*******************************************************************************
+Write a function tripler(array) that takes in an array and returns a new array
+containing 3 times every element of the original array.
+*******************************************************************************/
 
-function avgValue(array) {
-    return array.reduce(function(accum, num){
-        return accum + num / array.length;
-    }, 0);
-}
+function tripler(array) {
+    // your code here...
+  }
 
-console.log(avgValue([10, 20])); // => 15
-console.log(avgValue([2, 3, 7])); // => 4
-console.log(avgValue([100, 60, 64])); // => 74.66666666666667
-
-
-
-var array = [129, 139, 155, 176],
-    average = array.reduce(function (avg, value, _, { length }) {
-        return avg + value / length;
-    }, 0);
-
-console.log(average);
+  tripler([1,2,3]); // => [ 3, 6, 9 ]
+  tripler([4, 1, 7]); // => [ 12, 3, 21 ]
