@@ -41,11 +41,12 @@ console.log(sumAt100); // 124
 let nuNums = [3, 7, 5, 9, 2, 8];
 
 let highestNum = nuNums.reduce(function (accum, num) {
-    let max = accum;
+    // let max = accum;
     if (num > accum) {
-        max = num;
+       return num; // max = num;
+    } else {
+        return accum;
     }
-    return max;
 });
 console.log(highestNum)
 
