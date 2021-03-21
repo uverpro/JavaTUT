@@ -12,5 +12,5 @@ function reverseString(string) {
   // your code here...
 }
 
-reverseString("Go-to-the-store") => "store-the-to-Go"
-reverseString("Jump,-jump-for-joy") => "joy-for-jump-Jump,"
+console.log(reverseString("Go-to-the-store")); // => "store-the-to-Go"
+console.log(reverseString("Jump,-jump-for-joy")); // => "joy-for-jump-Jump,"
