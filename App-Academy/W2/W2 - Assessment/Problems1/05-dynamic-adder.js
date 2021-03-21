@@ -4,15 +4,15 @@ return a new function that will allow us to create new separate custom
 adding functions.
 ***********************************************************************/
 
-// function dynamicAdder(num) {
-//     return el => (el + num)
-// };
-
-let dynamicAdder = function (num) {
-    return function (el) {
-        el + num;
-    }
+function dynamicAdder(num) {
+    return el => (el + num)
 };
+
+// let dynamicAdder = function (num) {
+//     return function (el) {
+//         el + num;
+//     }
+// };
 
 const addTwo = dynamicAdder(2); // returns a function
 console.log(addTwo(5)); // returns 7
