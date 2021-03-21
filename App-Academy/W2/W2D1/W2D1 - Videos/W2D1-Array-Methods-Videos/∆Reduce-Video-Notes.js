@@ -9,6 +9,13 @@ let sum = nums.reduce(function (accum, num, i, array) {
 });
 
 console.log(sum); // 24
+// accum = 3
+// el = 7
+// accum = 10
+// el = 5
+// accum = 15
+// el = 9
+// accum = 24
 
 let sum3 = nums.reduce(function (accum, num, i, array) {
     if (num % 3 === 0) {
