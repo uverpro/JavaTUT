@@ -7,21 +7,11 @@ containing employee names and their salaries and returns an array containing
 the employees that need raises, along with their new salaries.
 
 Hint: It might be useful to create helper functions for this task.
-
-Example:
-
-employees = [{name: "Alice", salary: 80000},
-             {name: "Bob", salary: 40000},
-             {name: "Carol", salary: 60000},
-             {name: "Dan", salary: 70000},
-             {name: "Ellen", salary: 100000}]
-
-console.log(employeeRaises(employees)); // [ { name: 'Bob', salary: 44000 } ]
 *******************************************************************************/
 
 
 function employeeRaises(employees) {
-    // Your code here
+
 }
 
 employees = [{name: "Alice", salary: 80000},
