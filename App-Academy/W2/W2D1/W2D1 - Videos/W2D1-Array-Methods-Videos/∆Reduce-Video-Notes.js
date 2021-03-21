@@ -19,13 +19,13 @@ console.log(sum); // 24
 
 let sum3 = nums.reduce(function (accum, num, i, array) {
     if (num % 3 === 0) {
-    return accum + num;
+        return accum + num;
     } else {
         return accum;
     }
 });
 
-console.log(sum3);
+console.log(sum3); // 12
 
 let sumAt100 = nums.reduce(function (accum, num) {
     return accum + num;
