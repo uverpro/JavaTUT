@@ -1,12 +1,14 @@
 // Array#reduce
 
+// In reduce, the first argument is the "accumulator", not the element.
+
 let nums = [3, 7, 5, 9];
 
 let sum = nums.reduce(function (accum, num, i, array) {
     return accum + num;
 });
 
-console.log(sum);
+console.log(sum); // 24
 
 let sum3 = nums.reduce(function (accum, num, i, array) {
     if (num % 3 === 0) {
