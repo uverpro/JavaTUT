@@ -6,8 +6,8 @@ let nums = [3, 7, 5, 9];
 
 let sum = nums.reduce(function (accum, num, i, array) {
     return accum + num;
-});
-
+}); // }, 100); <= THIS WILL ASSIGN THE DEFAULT VALUE OF ACCUM TO "100" => // 124
+// Otherwise, the default value of ACCUM is the value of the first index
 console.log(sum); // 24
 // accum = 3
 // el = 7
