@@ -20,8 +20,8 @@ function mostFrequentLetter(string) {
 	}
 	for (letter in currentCount) {
 		console.log(letter);
-		console.log("---")
 		console.log(currentCount[letter])
+		console.log("---")
 		if (currentCount[letter] >= highestNum) {
 			highestNum = currentCount[letter];
 			mostFrequentLetter = letter;
