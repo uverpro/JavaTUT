@@ -12,5 +12,5 @@ function reverseString(string) {
   // your code here...
 }
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
-module.exports = reverseString;
+reverseString("Go-to-the-store") => "store-the-to-Go"
+reverseString("Jump,-jump-for-joy") => "joy-for-jump-Jump,"
