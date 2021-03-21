@@ -21,15 +21,17 @@ let yParks = parks.filter(function(park) {
 });
 console.log(yParks); // [ Yellowstone, Yosemite ]
 // That above is much cleaner. No for loop, no conditionals
-
-let firstPark = parks.filter(function (park) { // anonymous functions return element (park), index, array
-    return park[0]
-});
-console.log(firstPark);
+// anonymous functions return element (park), index, array
 
 let selectedParks = parks.filter(function(park) {
     return park.includes("o");
 });
+console.log(selectedParks);
+
+let longParks = parks.filter(function(park) {
+    return park.length > 7;
+});
+console.log(longParks);
 
 
 /*
