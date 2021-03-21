@@ -17,6 +17,9 @@ console.log(sum); // 24
 // el = 9
 // accum = 24
 
+// return accum = 3
+// return num = 9
+
 let sum3 = nums.reduce(function (accum, num, i, array) {
     if (num % 3 === 0) {
         return accum + num;
@@ -35,6 +38,18 @@ console.log(sumAt100); // 124
 
 
 
+let nuNums = [3, 7, 5, 9, 2, 8];
+
+let highestNum = nuNums.reduce(function (accum, num) {
+    let max = accum;
+    if (num > accum) {
+        max = num;
+    }
+    return max;
+});
+console.log(highestNum)
+
+
 /*
     Write a function called returnNames that
     intakes an array of names and
@@ -48,4 +63,4 @@ let returnNames = function (names) {
     }, 'Names:');
 };
 
-console.log(returnNames(['Cory']));
+console.log(returnNames(['Cory', 'Maja', 'Leon', 'Phil']));
