@@ -31,7 +31,7 @@ let sumAt100 = nums.reduce(function (accum, num) {
     return accum + num;
 }, 100);
 
-console.log(sumAt100);
+console.log(sumAt100); // 124
 
 
 
