@@ -48,5 +48,5 @@ function evens(arr) {
     return result;
 };
 
-console.log(evens([1, 2, 3]));
-console.log(evens([10, 25, 31, 2, 400]));
+console.log(evens([1, 2, 3])); // [ 2 ]
+console.log(evens([10, 25, 31, 2, 400])); // [ 10, 2, 400 ]
