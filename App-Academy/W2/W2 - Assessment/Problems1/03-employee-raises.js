@@ -24,6 +24,10 @@ function employeeRaises(employees) {
     // Your code here
 }
 
+employees = [{name: "Alice", salary: 80000},
+             {name: "Bob", salary: 40000},
+             {name: "Carol", salary: 60000},
+             {name: "Dan", salary: 70000},
+             {name: "Ellen", salary: 100000}]
 
-/*****************DO NOT MODIFY ANYTHING UNDER THIS LINE**********************/
-module.exports = employeeRaises;
+console.log(employeeRaises(employees)); // [ { name: 'Bob', salary: 44000 } ]
