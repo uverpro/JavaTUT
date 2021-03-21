@@ -5,11 +5,12 @@ returns a the hyphenated string reversed.
 
 function reverseString(string) {
   let words = string.split("-"); // [ 'Go', 'to', 'the', 'store' ]
-  console.log(words)
-  let reversed = [];
-  for (let i = string.length - 1; i >= 0; i--) {
-
+    let reversed = []; //  [ 'store', 'the', 'to', 'Go' ]
+  for (let i = words.length - 1; i >= 0; i--) {
+    let word = words[i];
+    reversed.push(word);
   }
+  return reversed.join("-");
 }
 
 console.log(reverseString("Go-to-the-store")); // => "store-the-to-Go"
