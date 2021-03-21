@@ -1,3 +1,17 @@
+// Array#Filter
+
+let parks = ['Zion', 'Yellowstone', 'Acadia', 'Yosemite'];
+
+// let yParks = [];
+//     for (let i = 0; i < parks.length; i++) {
+//         let park = parks[i];
+//         if (park[0] === "Y") {
+//             yParks.push(park);
+//         }
+//     }
+// console.log(yParks); // [ Yellowstone, Yosemite ]
+
+
 /*
     Write a function called evens
     take intakes an array of numbers and
