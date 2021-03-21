@@ -1,5 +1,10 @@
 // Array#Filter
 
+/*The filter() method creates a new array with all elements
+that pass the test implemented by the provided function.
+If given a function that returns a new array based on
+an assigned boolean */
+
 let parks = ['Zion', 'Yellowstone', 'Acadia', 'Yosemite'];
 
 // let yParks = [];
@@ -11,8 +16,13 @@ let parks = ['Zion', 'Yellowstone', 'Acadia', 'Yosemite'];
 //     }
 // console.log(yParks); // [ Yellowstone, Yosemite ]
 
-parks.filter(function (park) { // anonymous functions return element (park), index, array
+let firstPark = parks.filter(function (park) { // anonymous functions return element (park), index, array
     return park[0]
+});
+console.log(firstPark);
+
+let selectedParks = parks.filter(function(park) {
+    return park.includes("o");
 });
 
 
