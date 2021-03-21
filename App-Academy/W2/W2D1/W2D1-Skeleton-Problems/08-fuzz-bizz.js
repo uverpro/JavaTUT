@@ -6,7 +6,7 @@ the max. Each number should be either divisible by 2 or 7, BUT NOT BOTH.
 function fuzzBizz(max) {
   buzzed = [];
   for (let i = 0; i < max; i++) {
-    if ((i % 2 === 0 || i % 7 === 0) &&
+    if ((i % 2 === 0 || i % 7 === 0) && // i % 14 !== 0)
       !(i % 2 === 0 && i % 7 === 0)) {
         buzzed.push(i);
       }
