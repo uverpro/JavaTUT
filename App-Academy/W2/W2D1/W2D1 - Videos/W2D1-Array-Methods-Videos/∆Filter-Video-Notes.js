@@ -16,10 +16,11 @@ let parks = ['Zion', 'Yellowstone', 'Acadia', 'Yosemite'];
 //     }
 // console.log(yParks); // [ Yellowstone, Yosemite ]
 
-let yParks = parks.filter(function(park){
+let yParks = parks.filter(function(park) {
     return park.includes("Y");
 });
 console.log(yParks); // [ Yellowstone, Yosemite ]
+// That above is much cleaner. No for loop, no conditionals
 
 let firstPark = parks.filter(function (park) { // anonymous functions return element (park), index, array
     return park[0]
