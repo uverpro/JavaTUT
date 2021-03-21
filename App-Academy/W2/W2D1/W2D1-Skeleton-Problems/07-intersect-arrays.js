@@ -14,5 +14,5 @@ function intersect(arr1, arr2) {
   // your code here...
 }
 
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
-module.exports = intersect;
+intersect(['a', 'b', 'c', 'd'], ['b', 'd', 'e']) // => [ 'b', 'd' ]
+intersect(['a', 'b', 'c'], ['x', 'y', 'z']) // => []
