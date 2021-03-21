@@ -16,7 +16,8 @@ uniqueKeys(guitar, drums); // ['strings']
 
 function uniqueKeys(obj1, obj2) {
     let nuArray = [];
-    for (let key in obj1)
+    for (let key in obj1 && obj2)
+    console.log(key)
     if (obj1 [key] === obj2 [key]) {
 
     nuArray.push(obj1 [key]);
