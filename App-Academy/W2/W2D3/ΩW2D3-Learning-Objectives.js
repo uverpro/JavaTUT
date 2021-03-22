@@ -9,6 +9,17 @@ Stored in a variable, object, or array
 Passed as an argument into a function
 Returns from a function
 `
+let functionVariable = function () {
+    return "I am a function"
+}
+
+function whatever(cb) {
+    return () => {
+        return cb();
+    }
+}
+let returnedFunction = whatever(functionVariable);
+console.log(returnedFunction())
 
 // 2. Given a code snippet containing an anonymous callback, a named callback,
 // and multiple console.logs, predict what will be printed
