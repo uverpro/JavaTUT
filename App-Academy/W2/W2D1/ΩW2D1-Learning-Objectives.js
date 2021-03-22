@@ -147,8 +147,8 @@ let notationPractice = {
 let spreadArray = [1, 2, 3, 4, 5]
 let spreadArray2 = [6, 7, 8, 9, 10]
 let nonSpreadable = 0
-console.log([1, 2, 3, 4, 5]) //
-console.log(spreadArray) //
+console.log([1, 2, 3, 4, 5]) // [ 1, 2, 3, 4, 5 ]
+console.log(spreadArray) // [ 1, 2, 3, 4, 5 ]
 console.log(1, 2, 3, 4, 5) //
 console.log(12345) //
 // console.log(...spreadArray) // ERROR
