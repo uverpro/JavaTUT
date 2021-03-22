@@ -8,15 +8,13 @@ HINT: There are built in JavaScript functions that will help with determining if
 a strings ends a certain way. Array.method.
 */
 
-
-let chooseyEndings = function (array, suffix) {
+chooseyEndings = (array, suffix) => {
   if (!Array.isArray(array)) {
-    return [];
+      return [];
   }
-  let words = array.filter(function(element) {
-  return element.endsWith(suffix);
-});
-return words;
+  return array.filter(function (word) {
+      return word.endsWith(suffix);
+  });
 };
 
 console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'ly'));
@@ -33,3 +31,13 @@ console.log(chooseyEndings(['simplicity', 'computer', 'felicity'], 'ily'));
 
 console.log(chooseyEndings(17, 'ily'));
 // [ ]
+
+// let chooseyEndings = function (array, suffix) {
+//   if (!Array.isArray(array)) {
+//     return [];
+//   }
+//   let words = array.filter(function(element) {
+//   return element.endsWith(suffix);
+// });
+// return words;
+// };
