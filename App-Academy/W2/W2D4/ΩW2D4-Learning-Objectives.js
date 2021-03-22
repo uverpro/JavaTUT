@@ -84,4 +84,10 @@ bar(); // output?
 
 // 4. Define an arrow function
 
+let arrowFunction = () => {
+    /* Just an arrow function returning undefined, nothing to see here */
+};
+console.log(arrowFunction()) // output?
+
+
 // 5. Implement a closure and explain how the closure effects scope
