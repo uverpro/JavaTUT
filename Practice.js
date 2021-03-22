@@ -10,11 +10,26 @@ methods.
 
 longestWord = (sentence) => {
     let words = sentence.split(' ');
-    words.map((word) => {
-
-    })
+    let longestWord = '';
+    words.forEach((word) => {
+        if (word.length > longestWord.length) {
+            longestWord = word;
+        }
+    });
+    return longestWord;
 };
 
 console.log(longestWord('where did everyone go')); // 'everyone'
 console.log(longestWord('prefer simplicity over complexity')); // 'simplicity'
 console.log(longestWord('')); // ''
+
+// let longestWord = function(sentence) {
+//     let words = sentence.split(' ');
+
+//     return words.reduce(function(acc, word) {
+//         if (word.length > acc.length) {
+//             acc = word;
+//         }
+//         return acc;
+//     });
+// };
