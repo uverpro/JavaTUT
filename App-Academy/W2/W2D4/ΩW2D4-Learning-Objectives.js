@@ -107,8 +107,8 @@ let warrenGames = ['The Witcher', 'BOTW', 'Cyberpunk', 'Dark Souls'];
 let miahGames = ['Undertale'];​
 let warrenGamesFunc = faveVideoGames(warrenGames);
 let miahGamesFunc = faveVideoGames(miahGames);​
-console.log(warrenGamesFunc());
-console.log(miahGamesFunc('Bloodborne'))
+// console.log(warrenGamesFunc());
+// console.log(miahGamesFunc('Bloodborne'))
 
 // When we see `"..."` in the code, it is either rest parameters or the spread syntax.
 
