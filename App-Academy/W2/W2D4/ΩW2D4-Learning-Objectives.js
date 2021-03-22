@@ -91,3 +91,37 @@ console.log(arrowFunction()) // output?
 
 
 // 5. Implement a closure and explain how the closure effects scope
+
+let faveVideoGames = (arr) => {
+    let closedOver = arr;
+    let returnFunction = (game) => {
+        if (game) {
+            arr.push(game);
+            return arr;
+        }
+        return arr;
+    }
+    return returnFunction
+}
+let warrenGames = ['The Witcher', 'BOTW', 'Cyberpunk', 'Dark Souls'];
+let miahGames = ['Undertale'];​
+let warrenGamesFunc = faveVideoGames(warrenGames);
+let miahGamesFunc = faveVideoGames(miahGames);​
+console.log(warrenGamesFunc());
+console.log(miahGamesFunc('Bloodborne'))
+
+// When we see `"..."` in the code, it is either rest parameters or the spread syntax.
+
+// There’s an easy way to distinguish between them:
+
+// - When `...` is at the end of function parameters, it’s “rest parameters”
+// and gathers the rest of the list of arguments into an array.
+
+// - When `...` occurs in a function call or alike, it’s called a “spread syntax”
+// and expands an array into a list.
+
+// Use patterns:
+
+// - Rest parameters are used to create functions that accept any number of arguments.
+// - The spread syntax is used to pass an array to functions
+// that normally require a list of many arguments.
