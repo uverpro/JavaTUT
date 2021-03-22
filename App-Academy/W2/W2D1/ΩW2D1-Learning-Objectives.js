@@ -209,3 +209,17 @@ console.log(destructureObj) // =>
 
 // 10. Write a function that accepts an array as an argument
 // and returns an object representing the count of each character in the array
+
+let characterArr = ['a', 'w', 'm', 'm', 'c', 'j', 'z', 'c', 'k'];​
+let arrToObj = (arr) => {
+    let returnObj = {}; // empty object (is out counter)
+    arr.forEach(el => { // loop through each element
+        if (returnObj[el] === undefined) { //check if each element already exists as a key
+            returnObj[el] = 1; // if not, we add it as a key and set the OG value to 1
+        } else {
+            returnObj[el]++; //if it does exist we want to log that we hit the value again
+        }
+    })
+    return returnObj; // return key value pairs represeting the amount of times we hit the key
+}
+console.log(arrToObj(characterArr));
