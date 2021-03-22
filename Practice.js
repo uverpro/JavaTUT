@@ -8,7 +8,11 @@ Solve this using `array.map()`.
 */
 
 snakeToCamel = (string) => {
-    let word = string.split("_");
+    let words = string.split("_");
+    let nuWords = words.map((word) => {
+        return word[0].toUpperCase() + word.slice(1).toLowerCase();
+    });
+    return nuWords.join('');
 };
 
 console.log(snakeToCamel('snakes_go_hiss')); // 'SnakesGoHiss'
