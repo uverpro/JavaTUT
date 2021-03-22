@@ -173,6 +173,30 @@ console.log(fifth); // undefined
 
 // 9. Destructure an object to reference specific values
 
+let destructureObj = {
+  two: 2,
+  three: 'three',
+  four: 'papaya',
+  one: {
+      innerKey: 'nested'
+  }
+}
+let {
+  one: funnyName,
+  three,
+  four,
+  two
+} = destructureObj;
+// console.log(one) // ERROR one is not defined
+console.log(funnyName) // object {innerKey: 'nested'}
+console.log(two) // 2
+console.log(three) // 'three'
+console.log(four) // 'papaya'
+destructureObj.whateverYouWannaNameThisKey = 5
+destructureObj.seven = destructureObj.two
+delete destructureObj.two
+// destructureObj.seven = valueOfKey
+console.log(destructureObj)
 
 
 // 10. Write a function that accepts an array as an argument
