@@ -147,9 +147,11 @@ console.log(phases.map(function (value, index) {
 
 
 // INTRODUCING FILTER
-The other most common use case for a for loop takes one array and pulls out only certain elements. This is called filtering and can be done easily with the Array filter method.
+// The other most common use case for a for loop takes one array
+// and pulls out only certain elements.
+// This is called filtering and can be done easily with the Array filter method.
 
-Consider this filter implemented with a classic for loop.
+// Consider this filter implemented with a classic for loop.
 
 // Array of toys, for example
 const toys = [
