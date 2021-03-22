@@ -6,7 +6,16 @@ it should return `null`.
 Solve this using Array's `forEach()` method.
 */
 
-
+avgVal = (array) => {
+    if (array.length === 0) {
+        return null;
+    }
+    let sum = 0;
+    array.forEach(function(num) {
+        sum += num;
+    });
+    return sum / array.length;
+};
 
 console.log(avgVal([5, 10])); // 7.5
 console.log(avgVal([3, 7, 2, 1, 2])); // 3
