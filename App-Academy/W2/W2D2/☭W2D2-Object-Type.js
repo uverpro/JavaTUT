@@ -19,8 +19,8 @@
 
 // Objects are defined by using curly braces: {}. See below for an example:
 
-let Car = {};
-console.log(Car) // {}
+let car = {};
+console.log(car) // {}
 // here is our new empty object!
 
 // Objects are POGOs aka "plain old javascript objects"
@@ -38,7 +38,16 @@ console.log(Car) // {}
 // and assignment =.
 // Note: the key inside the brackets is represented with a string:
 
-Car["Color"] = "Blue";
-console.log(Car); // { Color: 'Blue' }
-Car["Seats"] = 2;
-console.log(Car); // { Color: 'Blue', Seats: 2 }
+car["color"] = "Blue";
+console.log(car); // { Color: 'Blue' }
+car["seats"] = 2;
+console.log(car); // { Color: 'Blue', Seats: 2 }
+console.log(car["color"]); // Blue
+console.log(car["seats"]); // 2
+
+// When we enter car["color"], we are using "color" as our key.
+// Think of keys and values in an object just like a lock and key in real life.
+// The "color" key "unlocks" the corresponding value to give us our car's color, "Blue"!
+
+
+// KEYS WITHOUT VALUES
