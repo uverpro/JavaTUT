@@ -120,6 +120,18 @@ let restFunc = function (...arr) {
 }
 console.log(restFunc(1, 2, 5, 6, 7, 8, 9)) // 38
 
+let anotherRestFunction = (arg, ...restArgs) => {
+  console.log(arg);
+  console.log(restArgs);
+  if (arg > restArgs.reduce((acc, el) => acc += el)) {
+      return "arg > restArgs"
+  } else {
+      return "restArgs > args"
+  }
+};
+console.log(anotherRestFunction(44, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11)) //
+console.log(anotherRestFunction(12, 67, 67676, 67676)) //
+
 
 // 7. Use ...spread syntax for Object literals and Array literals
 
