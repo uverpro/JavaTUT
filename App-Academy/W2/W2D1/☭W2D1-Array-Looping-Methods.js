@@ -143,3 +143,32 @@ console.log(phases.map(function (value, index) {
 //   'Elder (65)',
 //   'Elder (88)'
 // ]
+
+
+
+// INTRODUCING FILTER
+The other most common use case for a for loop takes one array and pulls out only certain elements. This is called filtering and can be done easily with the Array filter method.
+
+Consider this filter implemented with a classic for loop.
+
+// Array of toys, for example
+const toys = [
+    'Red Ball',
+    'Pink Elephant',
+    'Clown with Red Nose',
+    'Teddy Bear (Brown)',
+    'Firefighter Hat (Red)'
+];
+
+// Loop to get only the red toys
+const redToys = [];
+for (let i=0; i<toys.length; i++) {
+    const toy = toys[i];
+    if (toy.toLowerCase().indexOf('red') > -1)
+        redToys.push(toy);
+}
+
+// Output to console
+console.log(redToys);
+// Expected output:
+//     [ 'Red Ball', 'Clown with Red Nose', 'Firefighter Hat (Red)' ]
