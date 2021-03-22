@@ -6,13 +6,19 @@ The function should return the total sum of all numbers in the array.
 Solve this using Array's `reduce()` method.
 */
 
-let sumWithReduce = function(nums) {
-  let total = nums.reduce(function(sum, num) {
+sumWithReduce = (nums) => {
+  return nums.reduce((sum, num) => {
     return sum + num;
-}, 0);
-  return total;
+  }, 0);
 };
 
 
 console.log(sumWithReduce([10, 3, 5, 2])); // 20
 console.log(sumWithReduce([])); // 0
+
+// let sumWithReduce = function(nums) {
+//   let total = nums.reduce(function(sum, num) {
+//     return sum + num;
+// }, 0);
+//   return total;
+// };
