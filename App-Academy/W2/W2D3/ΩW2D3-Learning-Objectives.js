@@ -29,8 +29,7 @@ let functionWithAnonymousCallback = (num, cb) => cb(num);
 let callBack = (num) => {
     return num * 2;
 }
-// console.log(functionWithAnonymousCallback(7, callBack)) // 14
-
+console.log(functionWithAnonymousCallback(7, callBack)) // 14
 
 
 // 3. Write a function that takes in a value and two callbacks.
