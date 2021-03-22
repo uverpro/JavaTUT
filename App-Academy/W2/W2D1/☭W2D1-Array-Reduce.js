@@ -8,3 +8,47 @@
 // List the arguments that should be used with the Array reduce method
 // Explain the difference between the accumulator and initialValue parameters
 // Use the reduce function to change an array into a single value
+
+// Array's reduce method take two parameters:
+// 1. A callback function
+// 2. An initialValue (optional)
+// Although initialValue is an optional parameter,
+// it is best practice to always include an initialValue
+// since it will ensure you get consistent results.
+
+// TypeError that can happen when calling reduce
+// on an empty array without an initialValue.
+
+
+// Example 1 - Reusable parameter function
+// The parameter function that performs the summation
+// is code separate from the call to Array reduce.
+// This approach is easy to read and allows you to reuse
+// the function in multiple cases.
+
+// Parameter function
+const doSum = function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}
+
+// Array reduce example 1
+const numbers = [0, 1, 2, 3];
+const theSum = numbers.reduce(doSum, 0); // (doSum, 1) === 7
+
+console.log(theSum);
+// Expected output: 6
+
+
+
+Example 2 - In-line parameter function
+It is a common practice among developers to define the function to use for the calculation directly as the parameter on Array reduce. Additionally, it can be helpful for readability to put the initial value into a variable.
+
+// Array reduce example 2
+const numbers = [0, 1, 2, 3];
+const initialValue = 0;
+const theSum = numbers.reduce(function(accumulator, currentValue) {
+  return accumulator + currentValue;
+}, initialValue);
+
+console.log(theSum);
+// Expected output: 6
