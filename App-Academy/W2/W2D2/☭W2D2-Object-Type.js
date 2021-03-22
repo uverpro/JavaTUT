@@ -9,3 +9,9 @@
 
 // In other programming languages similar data structures are
 // referred to as "dictionaries", "maps", or "associative arrays"
+
+// Difference from Arrays:
+// 1. Instead of accessing values within an object through an index with numbers,
+// objects are indexed using KEYS
+// 2. Order is NOT guaranteed within an Object. When you iterate through the values
+// in an object, they may not be in the same order as when they were entered.
