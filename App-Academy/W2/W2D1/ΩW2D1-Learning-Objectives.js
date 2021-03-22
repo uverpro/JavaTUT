@@ -98,14 +98,14 @@ let notationPractice = {
   'chad': 'Adrian'
 };
 for(let key in notationPractice){
-  console.log('Key:', key, 'Value:', notationPractice[key])
+  console.log('Key:', key, 'Value:', notationPractice[key]) // Key: key1 Value: Miah
 }
 let forOfArr = [1, 2, 3]
 for(let element of forOfArr){
-  console.log(element)
+  console.log(element) // 1
 }
 for(let index in forOfArr){
-  console.log(Number(index))
+  console.log(Number(index)) // 0
 }
 
 
@@ -156,6 +156,7 @@ console.log([12345, ...spreadArray2]) // [ 12345, 6, 7, 8, 9, 10 ]
 console.log([...spreadArray, ...spreadArray2]) // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 // console.log(...spreadArray, ...nonSpreadable) // ERROR
 console.log(...Object.keys(notationPractice)) // key1 key2 key3 name chad
+console.log(...Object.keys[keys](notationPractice)) // key1 key2 key3 name chad
 
 
 // 8. Destructure an array to reference specific elements
