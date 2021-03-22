@@ -124,3 +124,10 @@ const theSum = emptyArraySum(numbers);
 // TypeError: Reduce of empty array with no initial value
 //     at array.reduce (<anonymous>)
 //     at emptyArraySum
+
+
+// Array reduce has two parameters: a callback function and an initialValue
+// Set the initialValue when using reduce to avoid possible errors
+// The callback function takes in two mandatory arguments: an accumulator, and a currentValue
+// The callback function performs a cumulative calculation by calling the callback funtion once for every element in the array
+// The callback function returns the overall result when the last array element has been processed
