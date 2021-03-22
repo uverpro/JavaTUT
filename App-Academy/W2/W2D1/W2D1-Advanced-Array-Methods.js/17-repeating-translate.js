@@ -18,24 +18,36 @@ Solve this using Array's `forEach()`, `map()`, `filter()` **OR** `reduce()`
 methods.
 
 Can you reduce the problem into helper functions?
+*/
 
-Examples:
+
+let repeatingTranslate = function(sentence) {
+  let words = sentence.split(' ');
+  let newWords = words.map(function(word) {
+      if (word.length < 3) {
+          return word;
+      } else {
+          return translateWord(word);
+      }
+  });
+  return newWords.join(' ');
+};
+
+
+let translateWord = function(word) {
+  let vowels = 'aeiou';
+  let lastChar = word[word.length - 1];
+  if (vowels.includes(lastChar)) {
+      return word + word;
+  }
+  for (let i = word.length - 1; i >= 0; i--) {
+      if (vowels.includes(word[i])) {
+          return word + word.slice(i);
+      }
+  }
+};
 
 console.log(repeatingTranslate("we like to go running fast"));  // "we likelike to go runninging fastast"
 console.log(repeatingTranslate("he cannot find the trash"));    // "he cannotot findind thethe trashash"
 console.log(repeatingTranslate("pasta is my favorite dish"));   // "pastapasta is my favoritefavorite dishish"
 console.log(repeatingTranslate("her family flew to France"));   // "herer familyily flewew to FranceFrance"
-
-*/
-
-
-// your code here
-
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-    module.exports = repeatingTranslate;
-} catch (e) {
-    module.exports = null;
-}
