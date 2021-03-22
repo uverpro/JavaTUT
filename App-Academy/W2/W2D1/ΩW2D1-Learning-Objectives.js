@@ -149,10 +149,10 @@ let spreadArray2 = [6, 7, 8, 9, 10]
 let nonSpreadable = 0
 console.log([1, 2, 3, 4, 5]) // [ 1, 2, 3, 4, 5 ]
 console.log(spreadArray) // [ 1, 2, 3, 4, 5 ]
-console.log(1, 2, 3, 4, 5) //
-console.log(12345) //
+console.log(1, 2, 3, 4, 5) // 1 2 3 4 5
+console.log(12345) // 12345
 // console.log(...spreadArray) // ERROR
-console.log([12345, ...spreadArray2]) //
+console.log([12345, ...spreadArray2]) // [ 12345, 6, 7, 8, 9, 10 ]
 console.log([...spreadArray, ...spreadArray2]) //
 // console.log(...spreadArray, ...nonSpreadable) // ERROR
 console.log(...Object.keys(notationPractice))
