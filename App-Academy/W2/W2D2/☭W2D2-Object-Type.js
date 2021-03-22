@@ -22,3 +22,8 @@
 let car = {};
 console.log(car) // {}
 // here is our new empty object!
+
+// Objects are POGOs aka "plain old javascript objects"
+
+
+// SETTING KEYS AND VALUES
