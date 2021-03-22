@@ -71,8 +71,36 @@ console.log(myMap(['Anthony', 'Victoria', 'Drew'], (str) => str + ' is Cool!')) 
 // 5. Write a function, myFilter, that takes in an array and a callback as arguments.
 // The function should mimic the behavior of Array.filter.
 
-
+function myFilter(array, cb) {
+    let filtered = [];
+    array.forEach(function (ele, i) {
+        if (cb(ele)) {
+            filtered.push(ele)
+        }
+    });
+    return filtered;
+};
+let messyArray = [1, 'one', 2, 'two']
+let callbackForMessyArray = (element) => {
+    if (typeof element === 'string') {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(myFilter(messyArray, callbackForMessyArray)) // ['one', 'two']
 
 
 // 6. Write a function, myEvery, that takes in an array and a callback as arguments.
 // The function should mimic the behavior of Array.every.
+
+function myEvery(array, cb) {
+    for (let i = 0; i < array.length; i++) {
+        if (cb(array[i]) === false) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(myEvery(messyArray, callbackForMessyArray))// false
+console.log(messyArray.every(callbackForMessyArray)) // false
