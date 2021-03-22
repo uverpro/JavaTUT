@@ -35,6 +35,19 @@ console.log(functionWithAnonymousCallback(7, callBack)) // 14
 // 3. Write a function that takes in a value and two callbacks.
 // The function should return the result of the callback that is greater.
 
+let callbackComparison = (val, cb1, cb2) => {
+    if (cb1(val) > cb2(val)) {
+        return cb1(val)
+    } else {
+        return cb2(val)
+    }
+}
+let addTwo = num => num + 2;
+let doubler = num => num * 2;
+console.log(callbackComparison(1, addTwo, doubler)) // 3
+console.log(callbackComparison(7, addTwo, doubler)) // 14
+
+
 // 4. Write a function, myMap, that takes in an array and a callback as arguments.
 // The function should mimic the behavior of Array.map.
 
