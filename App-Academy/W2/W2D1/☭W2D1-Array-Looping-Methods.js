@@ -162,15 +162,70 @@ const toys = [
     'Firefighter Hat (Red)'
 ];
 
-// Loop to get only the red toys
-const redToys = [];
-for (let i=0; i<toys.length; i++) {
-    const toy = toys[i];
-    if (toy.toLowerCase().indexOf('red') > -1)
-        redToys.push(toy);
-}
+// // Loop to get only the red toys
+// const redToys = [];
+// for (let i=0; i<toys.length; i++) {
+//     const toy = toys[i];
+//     if (toy.toLowerCase().includes('red'))
+//     // if (toy.toLowerCase().indexOf('red') > -1)
+//         redToys.push(toy);
+// }
+
+// const isRedToy = function(toy) {
+//     return toy.toLowerCase().indexOf('red') > -1;
+// }
+
+// All the above syntax can fit in 3 lines:
+const redToys = toys.filter(function (toy) {
+    return toy.toLowerCase().includes('red');
+});
 
 // Output to console
 console.log(redToys);
 // Expected output:
 //     [ 'Red Ball', 'Clown with Red Nose', 'Firefighter Hat (Red)' ]
+
+
+
+// A list of friends stored as an array of objects
+const myFriends = [
+    { firstname: 'Isma', lastname: 'Kirby', age: 27 },
+    { firstname: 'Aaliya', lastname: 'Becker', age: 35 },
+    { firstname: 'Adnaan', lastname: 'Tang', age: 22 },
+    { firstname: 'Rafi', lastname: 'Pearson', age: 29 },
+    { firstname: 'Eshaal', lastname: 'Gould', age: 29 },
+    { firstname: 'Scarlett', lastname: 'Whitehead', age: 45 },
+    { firstname: 'Arslan', lastname: 'Esparza', age: 38 },
+    { firstname: 'Isla-Mae', lastname: 'Hastings', age: 46 },
+    { firstname: 'Eamonn', lastname: 'Vang', age: 21 },
+    { firstname: 'Haya', lastname: 'Mcdougall', age: 31 },
+];
+
+// Loop 1
+let total = 0
+myFriends.forEach(function (person) {
+    const firstInitial = person.firstname.substr(0,1);
+    const lastInitial = person.lastname.substr(0,1);
+    person.initials = firstInitial + lastInitial;
+    total += person.age;
+});
+
+// Loop 2
+const average = total / myFriends.length;
+const myOlderFriends = myFriends.filter(function(person) {
+    return person.age > average;
+});
+
+// Loop 3
+const report = myOlderFriends.map(function(person) {
+    return person.initials + ': ' + person.age;
+});
+
+// Output to log
+console.log(report);
+
+// Loop 1: Adds a property to each friend storing their initials
+// and calculates the sum of all ages to use in calculation of average age
+// Loop 2: Gets an array of all friends older than the average age
+// Loop 3: Gets an array of strings listing the initials and age
+// Expected output: [ 'AB: 35', 'SW: 45', 'AE: 38', 'IH: 46' ]
