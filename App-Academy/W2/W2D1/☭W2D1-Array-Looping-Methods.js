@@ -60,8 +60,10 @@ monthlySales.forEach(addToTotalSales);
 console.log('Total Sales are', totalSales);
 // Expected result: Total Sales are 17280
 
-// monthlySales.forEach(function (value) {
-//     totalSales += value;
-// });
+let totalSales = 0;
+const monthlySales = [1234, 2345, 3456, 4567, 5678];
+monthlySales.forEach(function (value) {
+    totalSales += value;
+});
 
-// console.log('Total Sales are', totalSales);
+console.log('Total Sales are', totalSales); // Total Sales are 17280
