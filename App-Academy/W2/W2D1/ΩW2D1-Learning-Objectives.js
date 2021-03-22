@@ -109,7 +109,17 @@ for(let index in forOfArr){
 }
 
 
+
 // 6. Define a function that utilizes ...rest syntax to accept an arbitrary number of arguments
+
+let restFunc = function (...arr) {
+  // console.log(arr) [ 1, 2, 5, 6, 7, 8, 9 ]
+  return arr.reduce(function (acc, el) {
+      return acc + el;
+  })
+}
+console.log(restFunc(1, 2, 5, 6, 7, 8, 9)) // 38
+
 
 // 7. Use ...spread syntax for Object literals and Array literals
 
