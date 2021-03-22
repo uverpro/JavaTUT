@@ -16,6 +16,26 @@ Incremented the counter variable (i++).
 Use a variable (or constant) to make it easier to reference
 the current element within the code block.
 */
+// Analyze a function
+const myFunction = function(value) {
+    // Do something with 'value'
+}
+// Call a function from a for loop:
+// Function to do stuff with an array element
+const myFunction = function(item, index) {
+    // Do something with 'item'
+    // Use the 'index' as needed - e.g. special thing for first and/or last item
+ }
+
+ // Assume you've populated a variable named 'myArray' with a bunch of stuff
+ const myArray = [1, 2, 3, 4, 5];
+
+ // Now loop through the entire array
+ for (let i=0; i<myArray.length; i++) {
+     myFunction(myArray[i], i);
+ }
+
+
 
 // Introduction forEach
 
