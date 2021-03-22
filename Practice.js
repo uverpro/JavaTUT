@@ -6,7 +6,16 @@ don't have the letter "e" in them.
 Solve this using Array's `filter()` method.
 */
 
-
+removeEWords = (sentence) => {
+    let arrSen = sentence.split(' ');
+    let eLess = [];
+        arrSen.filter(function(word){
+        if (word.toLowerCase().indexOf("e") === -1) {
+            eLess.push(word);
+        }
+    });
+    return eLess.join(' ');
+};
 
 console.log(removeEWords('What time is it everyone?')); // 'What is it'
 console.log(removeEWords('Enter the building')); // 'building'
