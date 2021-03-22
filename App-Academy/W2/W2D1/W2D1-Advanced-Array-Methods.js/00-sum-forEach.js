@@ -17,3 +17,9 @@ let sumForEach = function (array) {
 console.log(sumForEach([4, 3, -1, 10])); // 16
 console.log(sumForEach([6, 7, 2])); // 15
 console.log(sumForEach([])); // 0
+
+// const sumForEach = (arr) => {
+//     return arr.reduce(function(acum, num){
+//         return acum + num;
+//     }, 0);
+// }
