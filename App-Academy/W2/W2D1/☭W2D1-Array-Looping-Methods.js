@@ -37,7 +37,7 @@ const myFunction = function(item, index) {
 
 
 
-// Introduction forEach
+// Introducing forEach
 
 // The initial value for total sales is zero
 let totalSales = 0;
@@ -51,6 +51,7 @@ const addToTotalSales = function (value) {
 const monthlySales = [1234, 2345, 3456, 4567, 5678];
 
 // Loop through all sales numbers to add them to the total
+// replacing the for loop with the forEach method
 monthlySales.forEach(addToTotalSales);
 // for (let i=0; i<monthlySales.length; i++) {
 //     addToTotalSales(monthlySales[i]);
@@ -60,6 +61,10 @@ monthlySales.forEach(addToTotalSales);
 console.log('Total Sales are', totalSales);
 // Expected result: Total Sales are 17280
 
+
+// Often, developers using forEach will NOT declare the function separately;
+// rather, they will put it right inside the call to forEach, as follows:
+// Loop through all sales numbers to add them to the total
 let totalSales = 0;
 const monthlySales = [1234, 2345, 3456, 4567, 5678];
 monthlySales.forEach(function (value) {
