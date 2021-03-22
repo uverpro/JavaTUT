@@ -6,12 +6,19 @@ array.
 Solve this using Array's `map()` method.
 */
 
-function tripler(array) {
-    tripled = array.map(function(num) {
-      return num * 3
-    });
-    return tripled;
-  };
+
+tripler = nums => {
+  return nums.map(function (el) {
+      return el * 3;
+  }, 0);
+};
 
   console.log(tripler([2, 7, 4])); // [ 6, 21, 12 ]
   console.log(tripler([-5, 10, 0, 11])); // [ -15, 30, 0, 33 ]
+
+  // function tripler(array) {
+  //   tripled = array.map(function(num) {
+  //     return num * 3
+  //   });
+  //   return tripled;
+  // };
