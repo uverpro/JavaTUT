@@ -9,23 +9,21 @@ the employees that need raises, along with their new salaries.
 Hint: It might be useful to create helper functions for this task.
 *******************************************************************************/
 
-let bonus = function() {
-    return employee.salary * 1.1;
-}
+function bonus(employee) {
+    employee.salary *= 1.1;
+    return employee;
+};
 
 function employeeRaises(employees) {
     let newArr = [];
-    for (let i = 0; i < employees.lenght; i++) {
-        let employee = employees[i];
-        for (key in employee) {
-            if (employee.salary < 50000) {
-                newArr.push(employee(bonus));
-                // employee.salary += (employee.salary * .1);
-            }
+    for (let i = 0; i < employees.length; i++) {
+        let employee = employees[i]; // { name: 'Alice', salary: 80000 } etc
+        if (employee.salary < 50000) {
+            newArr.push(bonus(employee));
         }
     }
     return newArr;
-}
+};
 
 let employees = [{name: "Alice", salary: 80000},
              {name: "Bob", salary: 40000},
