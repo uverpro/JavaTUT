@@ -173,5 +173,7 @@ console.log(fifth); // undefined
 
 // 9. Destructure an object to reference specific values
 
+
+
 // 10. Write a function that accepts an array as an argument
 // and returns an object representing the count of each character in the array
