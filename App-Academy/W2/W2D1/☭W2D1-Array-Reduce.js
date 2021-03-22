@@ -39,7 +39,6 @@ console.log(theSum);
 // Expected output: 6
 
 
-
 // Example 2 - In-line parameter function
 // It is a common practice among developers to define the function
 // to use for the calculation directly as the parameter on Array reduce.
@@ -56,8 +55,7 @@ console.log(theSum);
 // Expected output: 106
 
 
-
-Example 3 - Wrapper function
+// Example 3 - Wrapper function
 A very useful pattern is to enclose the use of Array reduce (and other array looping functions too) inside an other function. That allows you to simply pass in an array and get the calculated result from many places throughout your application without having to worry about the complexities of using reduce.
 
 Looking ahead: It also means when you're ready you will be able to write tests to ensure the calculation works correctly with a variety of different arrays.
