@@ -10,7 +10,7 @@ removeEWords = (sentence) => {
   let words = sentence.split(' ');
   let filtered = words.filter(function(word) {
       return !word.toLowerCase().includes('e');
-  });
+});
   return filtered.join(' ');
 };
 
