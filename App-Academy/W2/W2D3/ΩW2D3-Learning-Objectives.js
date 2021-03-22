@@ -51,6 +51,24 @@ console.log(callbackComparison(7, addTwo, doubler)) // 14
 // 4. Write a function, myMap, that takes in an array and a callback as arguments.
 // The function should mimic the behavior of Array.map.
 
+function myMap(array, cb) {
+    let mapped = []; //[Warren is cool,rich is cool]
+    console.log(mapped)
+    for (let i = 0; i < array.length; i++) {
+        let ele = array[i]; // warren, rich
+        // console.log( ele)
+        mapped.push(cb(ele)); // warren is cool, rich is cool
+        // console.log( mapped)
+    }
+    return mapped;
+};
+console.log(myMap(['Warren', 'Rich', 'Melonnie'], (str) => str + ' is Cool!')) // Warren is cool rich is cool
+console.log(myMap(['Anthony', 'Victoria', 'Drew'], (str) => str + ' is Cool!')) // Warren is cool rich is cool
+​
+console.log(['Warren', 'Rich', 'Melonnie'].map((str) => str + ' is Cool!'))
+
+
+
 // 5. Write a function, myFilter, that takes in an array and a callback as arguments.
 // The function should mimic the behavior of Array.filter.
 
