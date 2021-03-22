@@ -15,12 +15,3 @@ console.log(unique(['a', 'b', 'c', 'b'])); // ['a', 'b', 'c']
 */
 
 // your code here
-
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-    module.exports = unique;
-} catch (e) {
-    module.exports = null;
-}
