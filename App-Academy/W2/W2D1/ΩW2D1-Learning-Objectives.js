@@ -137,6 +137,27 @@ console.log(anotherRestFunction(100000, 10, 10, 10, 10)); // arg > restArgs
 
 // 7. Use ...spread syntax for Object literals and Array literals
 
+let notationPractice = {
+  'key1': 'Miah',
+  'key2': 'Mylo',
+  'key3': 'Zac',
+  'name': 'Carlos',
+  'chad': 'Adrian'
+};
+let spreadArray = [1, 2, 3, 4, 5]
+let spreadArray2 = [6, 7, 8, 9, 10]
+let nonSpreadable = 0
+console.log([1, 2, 3, 4, 5]) //
+console.log(spreadArray) //
+console.log(1, 2, 3, 4, 5) //
+console.log(12345) //
+// console.log(...spreadArray) // ERROR
+console.log([12345, ...spreadArray2]) //
+console.log([...spreadArray, ...spreadArray2]) //
+// console.log(...spreadArray, ...nonSpreadable) // ERROR
+console.log(...Object.keys(notationPractice))
+
+
 // 8. Destructure an array to reference specific elements
 
 // 9. Destructure an object to reference specific values
