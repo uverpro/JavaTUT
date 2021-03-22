@@ -8,25 +8,21 @@ methods.
 
 let removeLastVowel = function(word) {
     let vowels = 'aeiou';
-
     for(let i = word.length - 1; i >= 0; i--) {
         let char = word[i];
         if (vowels.includes(char)) {
             return word.slice(0, i) + word.slice(i + 1);
         }
     }
-
     return word;
 };
 
 let hipsterfy = function(sentence) {
     let newWords = [];
     let words = sentence.split(' ');
-
     words.forEach(function(word) {
         newWords.push(removeLastVowel(word));
     });
-
     return newWords.join(' ');
 };
 
