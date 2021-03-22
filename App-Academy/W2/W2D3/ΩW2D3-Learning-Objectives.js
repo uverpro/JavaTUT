@@ -3,6 +3,7 @@
 
 // 1. Given multiple plausible reasons, identify why functions are called
 // “First Class Objects” in JavaScript. */
+
 `
 Stored in a variable, object, or array
 Passed as an argument into a function
@@ -23,6 +24,7 @@ console.log(returnedFunction())
 
 // 2. Given a code snippet containing an anonymous callback, a named callback,
 // and multiple console.logs, predict what will be printed
+
 let functionWithAnonymousCallback = (num, cb) => cb(num);
 let callBack = (num) => {
     return num * 2;
