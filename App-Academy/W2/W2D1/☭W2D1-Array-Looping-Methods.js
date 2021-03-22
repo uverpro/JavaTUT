@@ -75,3 +75,42 @@ console.log('Total Sales are', totalSales); // Total Sales are 17280
 
 
 // INTRODUCING MAP
+/*
+Like forEach, thewill map method  do something with every element in an array.
+Difference: map expects a returned value for every element to put into a new array.
+To understand onsider another example implemented with a standard for loop. */
+
+// Function to convert an age to a phase of life
+const getLifePhase = function(age) {
+    if (age < 4)
+        return 'Toddler';
+    if (age < 13)
+        return 'Kid';
+    if (age < 18)
+        return 'Teenager';
+    if (age < 65)
+        return 'Adult';
+    // if no other condition is met
+    return 'Elder';
+}
+
+// Array of ages, for example
+const ages = [2, 7, 15, 29, 45, 44, 59, 65, 88];
+
+// Loop to convert each age to its life phase
+const phases = [];
+for (let i=0; i<ages.length; i++) {
+    const age = ages[i];
+    phases[i] = getLifePhase(age);
+}
+
+// Output to console
+console.log(phases);
+// Expected result:
+// [
+//   'Toddler',  'Kid',
+//   'Teenager', 'Adult',
+//   'Adult',    'Adult',
+//   'Adult',    'Elder',
+//   'Elder'
+// ]
