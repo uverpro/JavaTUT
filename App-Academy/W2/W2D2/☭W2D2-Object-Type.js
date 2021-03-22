@@ -57,3 +57,12 @@ console.log(car["seats"]); // 2
 
 console.log(car["color"] === undefined); // false
 console.log(car["weight"] === undefined); // true
+
+// While this is a common pattern,
+// in modern JS the preferred method to check
+// if an object exists in a key is to use the "in operator":
+console.log("color" in car); // true
+console.log("model" in car); // false
+
+
+// USING VARIABLES AS KEYS
