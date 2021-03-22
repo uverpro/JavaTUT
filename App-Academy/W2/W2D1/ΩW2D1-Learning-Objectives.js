@@ -90,6 +90,25 @@ function keysInObject(obj) {
 let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
 keysInObject(animals);
 
+let notationPractice = {
+  'key1': 'Miah',
+  'key2': 'Mylo',
+  'key3': 'Zac',
+  'name': 'Carlos',
+  'chad': 'Adrian'
+};
+for(let key in notationPractice){
+  console.log('Key:', key, 'Value:', notationPractice[key])
+}
+let forOfArr = [1, 2, 3]
+for(let element of forOfArr){
+  console.log(element)
+}
+for(let index in forOfArr){
+  console.log(Number(index))
+}
+
+
 // 6. Define a function that utilizes ...rest syntax to accept an arbitrary number of arguments
 
 // 7. Use ...spread syntax for Object literals and Array literals
