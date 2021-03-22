@@ -19,6 +19,11 @@ let hasThreeVowels = function(string) {
     return count >= 3;
 };
 
+console.log(hasThreeVowels('delicious'));       //  true
+console.log(hasThreeVowels('bootcamp prep'));   //  true
+console.log(hasThreeVowels('bootcamp'));        //  false
+console.log(hasThreeVowels('dog'));             //  false
+console.log(hasThreeVowels('go home'));         //  false
 
 // using forEach
 // let hasThreeVowels = function(string) {
