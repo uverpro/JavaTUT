@@ -40,15 +40,17 @@ console.log(theSum);
 
 
 
-Example 2 - In-line parameter function
-It is a common practice among developers to define the function to use for the calculation directly as the parameter on Array reduce. Additionally, it can be helpful for readability to put the initial value into a variable.
+// Example 2 - In-line parameter function
+// It is a common practice among developers to define the function
+// to use for the calculation directly as the parameter on Array reduce.
+// It can be helpful for readability to put the initial value into a variable.
 
 // Array reduce example 2
 const numbers = [0, 1, 2, 3];
-const initialValue = 0;
+const initialValue = 100;
 const theSum = numbers.reduce(function(accumulator, currentValue) {
   return accumulator + currentValue;
 }, initialValue);
 
 console.log(theSum);
-// Expected output: 6
+// Expected output: 106
