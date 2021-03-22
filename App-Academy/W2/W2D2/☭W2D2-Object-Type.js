@@ -51,3 +51,9 @@ console.log(car["seats"]); // 2
 
 
 // KEYS WITHOUT VALUES
+// What happens if we try to access a key that hasnt yet assigned within an object?
+
+// console.log(car[weight]); // ReferenceError: weight is not defined
+
+console.log(car["color"] === undefined); // false
+console.log(car["weight"] === undefined); // true
