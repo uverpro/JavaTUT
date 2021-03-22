@@ -1,11 +1,12 @@
 // Plain Old JS Object Lesson Learning Objectives
 
 // 1. Label variables as either Primitive vs. Reference
-"Strings are Primitive";
-5, 4, 3, 2, 1; // so are numbers
-(A || B); // Don't forget the Booleans
-
-[ Arrays, are, reference, type ];
+let num = 8 //  Primitive (Not mutable)
+let string = "test" // Primitive (Not mutable)
+let bool = true // Primitive (Not mutable)
+let nullVal = null // Primitive (Not mutable)
+let nanVal = NaN // Primitive (Not mutable)
+let undefinedVal = undefined // Primitive (Not mutable)
 
 // 2. Identify when to use . vs [] when accessing values of an object
 
