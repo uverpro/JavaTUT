@@ -18,13 +18,13 @@ let parks = ['Zion', 'Yellowstone', 'Acadia', 'Yosemite'];
 //     let park = parks[i];
 //     newParks.push(park.toUpperCase());
 // };
-// console.log(newParks);
+// console.log(newParks); // [ 'ZION', 'YELLOWSTONE', 'ACADIA', 'YOSEMITE' ]
 
 newParks = parks.map(function(park) {
     return park.toUpperCase();
 });
 
-console.log(newParks);
+console.log(newParks); // [ 'ZION', 'YELLOWSTONE', 'ACADIA', 'YOSEMITE' ]
 
 
 /*
