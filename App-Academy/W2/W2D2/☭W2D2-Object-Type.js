@@ -19,11 +19,26 @@
 
 // Objects are defined by using curly braces: {}. See below for an example:
 
-let car = {};
-console.log(car) // {}
+let Car = {};
+console.log(Car) // {}
 // here is our new empty object!
 
 // Objects are POGOs aka "plain old javascript objects"
 
 
 // SETTING KEYS AND VALUES
+
+// Think of an object like a car
+// A car can have a color, a number of wheels, a numbers of seats, a weight, etc.
+// All different properties you wouldn't list in a particular order
+// though all these properties have defining characteristics
+
+// Create a "car" object to represent that collection of properties
+// You can create a new key-value pairs by using bracket [] notation
+// and assignment =.
+// Note: the key inside the brackets is represented with a string:
+
+Car["Color"] = "Blue";
+console.log(Car); // { Color: 'Blue' }
+Car["Seats"] = 2;
+console.log(Car); // { Color: 'Blue', Seats: 2 }
