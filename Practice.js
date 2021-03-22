@@ -7,7 +7,9 @@ is capital, all other chars lowercase.
 Solve this using `array.map()`.
 */
 
-
+snakeToCamel = (string) => {
+    let word = string.split("_");
+};
 
 console.log(snakeToCamel('snakes_go_hiss')); // 'SnakesGoHiss'
 console.log(snakeToCamel('say_hello_world')); // 'SayHelloWorld'
