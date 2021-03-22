@@ -8,12 +8,18 @@ Solve this using Array's `filter()` method.
 
 */
 
-let longWords = function(words) {
-    let newArray = words.filter(function(el) {
-      return el.length > 5;
-    });
-    return newArray;
-  };
+longWords = (words) => {
+  return words.filter(function(word){
+      return word.length > 5;
+  });
+};
 
-  console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
-  console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
+console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
+console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
+
+  // let longWords = function(words) {
+  //   let newArray = words.filter(function(el) {
+  //     return el.length > 5;
+  //   });
+  //   return newArray;
+  // };
