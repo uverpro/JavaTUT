@@ -37,7 +37,7 @@ const myFunction = function(item, index) {
 
 
 
-// Introducing forEach
+// INTRODUCING FOR EACH
 
 // The initial value for total sales is zero
 let totalSales = 0;
@@ -61,7 +61,6 @@ monthlySales.forEach(addToTotalSales);
 console.log('Total Sales are', totalSales);
 // Expected result: Total Sales are 17280
 
-
 // Often, developers using forEach will NOT declare the function separately;
 // rather, they will put it right inside the call to forEach, as follows:
 // Loop through all sales numbers to add them to the total
@@ -72,3 +71,7 @@ monthlySales.forEach(function (value) {
 });
 
 console.log('Total Sales are', totalSales); // Total Sales are 17280
+
+
+
+// INTRODUCING MAP
