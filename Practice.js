@@ -6,7 +6,11 @@ than 5 characters.
 Solve this using Array's `filter()` method.
 */
 
-longWords = (words) =>
+longWords = (words) => {
+    return words.filter(function(word){
+        return word.length > 5;
+    });
+};
 
 console.log(longWords(['bike', 'skateboard','scooter', 'moped'])); // [ 'skateboard', 'scooter' ]
 console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
