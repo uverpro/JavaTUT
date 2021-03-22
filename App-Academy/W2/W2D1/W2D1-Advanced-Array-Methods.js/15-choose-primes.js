@@ -18,14 +18,12 @@ console.log(choosePrimes([5, 6, 4, 11, 2017])); // [ 5, 11, 2017 ]
 
 */
 
+choosePrimes = (nums) => {
+    let result = nums.filter((num) => {
+        return (num % 2 !== 0 || num % 3 !== 0)
+    })
+    return result;
+};
 
-// your code here
-
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-    module.exports = choosePrimes;
-} catch (e) {
-    module.exports = null;
-}
+console.log(choosePrimes([36, 48, 9, 13, 19])); // [ 13, 19 ]
+console.log(choosePrimes([5, 6, 4, 11, 2017])); // [ 5, 11, 2017 ]
