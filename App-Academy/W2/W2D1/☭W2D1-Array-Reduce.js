@@ -103,4 +103,6 @@ console.log(theSum);
 // then the default accumulator is the array's first element
 // and the default currentValue is the array's second element.
 // In other words, reduce tries to get the initialValue from the array.
-// That means if you call reduce on an EMPTY array and with no initialValue, you can end up trying to run a calculation with undefined values. This often causes errors!
+// That means if you call reduce on an EMPTY array and with no initialValue,
+// you can end up trying to run a calculation with undefined values.
+// This often causes errors!
