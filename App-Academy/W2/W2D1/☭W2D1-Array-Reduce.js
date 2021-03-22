@@ -62,7 +62,6 @@ console.log(theSum);
 // and get the calculated result from many places throughout your application
 // without having to worry about the complexities of using reduce.
 
-Looking ahead: It also means when you're ready you will be able to write tests to ensure the calculation works correctly with a variety of different arrays.
 
 // wrapper function
 const arraySum = function(array) {
