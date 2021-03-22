@@ -9,7 +9,12 @@ a strings ends a certain way. Go see if you can find it on MDN!
 */
 
 chooseyEndings = (array, suffix) => {
-
+    if (!Array.isArray(array)) {
+        return [];
+    }
+    return array.filter(function (word) {
+        return word.endsWith(suffix);
+    })
 };
 
 console.log(chooseyEndings(['family', 'hound', 'catalyst', 'fly', 'timidly', 'bond'], 'ly'));
