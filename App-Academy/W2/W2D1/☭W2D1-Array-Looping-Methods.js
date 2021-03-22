@@ -114,3 +114,32 @@ console.log(phases);
 //   'Adult',    'Elder',
 //   'Elder'
 // ]
+
+// Modifying the for loop to use the Array map method would look like this.
+
+// Loop to convert each age to its life phase
+const phases = ages.map(getLifePhase);
+
+// Most of the time, you'll find you don't use the index.
+// Here is use case where index is helpful.
+// Specifically, it allows you to debug both phases and ages in parallel.
+
+// Output to conole
+console.log(phases.map(function (value, index) {
+    // use the index from the phases array to access
+    // the corresponding value in the ages array
+    return value + ' (' + ages[index] + ')';
+}));
+
+// Expected result
+// [
+//   'Toddler (2)',
+//   'Kid (7)',
+//   'Teenager (15)',
+//   'Adult (29)',
+//   'Adult (45)',
+//   'Adult (44)',
+//   'Adult (59)',
+//   'Elder (65)',
+//   'Elder (88)'
+// ]
