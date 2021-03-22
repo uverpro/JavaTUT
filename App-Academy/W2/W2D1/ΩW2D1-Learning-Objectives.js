@@ -155,7 +155,7 @@ console.log(12345) // 12345
 console.log([12345, ...spreadArray2]) // [ 12345, 6, 7, 8, 9, 10 ]
 console.log([...spreadArray, ...spreadArray2]) // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 // console.log(...spreadArray, ...nonSpreadable) // ERROR
-console.log(...Object.keys(notationPractice))
+console.log(...Object.keys(notationPractice)) // key1 key2 key3 name chad
 
 
 // 8. Destructure an array to reference specific elements
