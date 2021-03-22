@@ -9,7 +9,10 @@ methods.
 */
 
 longestWord = (sentence) => {
+    let words = sentence.split(' ');
+    words.map((word) => {
 
+    })
 };
 
 console.log(longestWord('where did everyone go')); // 'everyone'
