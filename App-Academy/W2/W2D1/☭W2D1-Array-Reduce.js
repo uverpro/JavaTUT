@@ -106,3 +106,21 @@ console.log(theSum);
 // That means if you call reduce on an EMPTY array and with no initialValue,
 // you can end up trying to run a calculation with undefined values.
 // This often causes errors!
+
+const numbers = [];
+
+const emptyArraySum = function(array) {
+  let callback = function(accumulator, currentValue) {
+    // accumulator = undefined
+    return accumulator + currentValue;
+  };
+
+  return array.reduce(callback);
+};
+
+const theSum = emptyArraySum(numbers);
+
+// Thrown:
+// TypeError: Reduce of empty array with no initial value
+//     at array.reduce (<anonymous>)
+//     at emptyArraySum
