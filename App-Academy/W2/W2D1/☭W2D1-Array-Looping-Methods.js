@@ -12,9 +12,11 @@ for (let i=0; i<myArray.length; i++) {
 /*
 Declare a counter variable starting at zero (let i = 0)
 Provided a condition (i < my_array.length),
-and finally incremented the counter variable (i++).
-Often, as shown above, you also want to use a variable (or constant) to make it easier to reference the current element within the code block.
+Incremented the counter variable (i++).
+Use a variable (or constant) to make it easier to reference
+the current element within the code block.
 */
+
 // Introduction forEach
 
 // The initial value for total sales is zero
