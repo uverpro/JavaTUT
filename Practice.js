@@ -10,9 +10,10 @@ const addToTotalSales = function (value) {
 const monthlySales = [1234, 2345, 3456, 4567, 5678];
 
 // Loop through all sales numbers to add them to the total
-for (let i=0; i<monthlySales.length; i++) {
-    addToTotalSales(monthlySales[i]);
-}
+monthlySales.forEach(addToTotalSales);
+// for (let i=0; i<monthlySales.length; i++) {
+//     addToTotalSales(monthlySales[i]);
+// }
 
 // Output the total to the console
 console.log('Total Sales are', totalSales);
