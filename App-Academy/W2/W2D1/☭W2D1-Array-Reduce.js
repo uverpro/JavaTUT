@@ -78,3 +78,29 @@ const theSum = arraySum(numbers);
 
 console.log(theSum);
 // Expected output: 6
+
+
+
+// Breaking down the callback function
+// The callback function passed to Array reduce can take up to four arguments:
+
+// accumulator
+// currentValue
+// index (optional)
+// array (optional)
+
+// The first time reduce invokes the callback function,
+// the accumulator will be the initialValue,
+// and currentValue will be the first element.
+// On the next iteration,
+// accumulator will reset to be the calculated value returned from the first iteration,
+// and currentValue will be the second element of the array.
+// This process repeats for every element in the array.
+// Once reduce has completely iterated through the array,
+// the final value of accumulator will be returned.
+
+// Warning: If no initialValue is NOT provided,
+// then the default accumulator is the array's first element
+// and the default currentValue is the array's second element.
+// In other words, reduce tries to get the initialValue from the array.
+// That means if you call reduce on an EMPTY array and with no initialValue, you can end up trying to run a calculation with undefined values. This often causes errors!
