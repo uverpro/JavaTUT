@@ -196,7 +196,15 @@ destructureObj.whateverYouWannaNameThisKey = 5
 destructureObj.seven = destructureObj.two
 delete destructureObj.two
 // destructureObj.seven = valueOfKey
-console.log(destructureObj)
+console.log(destructureObj) // =>
+// {
+//   three: 'three',
+//   four: 'papaya',
+//   one: { innerKey: 'nested' },
+//   whateverYouWannaNameThisKey: 5,
+//   seven: 2
+// }
+
 
 
 // 10. Write a function that accepts an array as an argument
