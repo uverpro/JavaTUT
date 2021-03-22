@@ -162,6 +162,13 @@ console.log(...Object.keys[keys](notationPractice)) // key1 key2 key3 name chad
 
 // 8. Destructure an array to reference specific elements
 
+let destructureArr = ['first', 'third', 'fourth', 'fifth'];
+let [first, second, third, fourth, fifth] = destructureArr;
+console.log(first); // first
+console.log(second); // third
+console.log(third); // fourth
+console.log(fourth); // fifth
+console.log(fifth); // undefined
 
 
 // 9. Destructure an object to reference specific values
