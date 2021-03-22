@@ -159,7 +159,10 @@ console.log(...Object.keys(notationPractice)) // key1 key2 key3 name chad
 console.log(...Object.keys[keys](notationPractice)) // key1 key2 key3 name chad
 
 
+
 // 8. Destructure an array to reference specific elements
+
+
 
 // 9. Destructure an object to reference specific values
 
