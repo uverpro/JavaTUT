@@ -15,3 +15,10 @@
 // objects are indexed using KEYS
 // 2. Order is NOT guaranteed within an Object. When you iterate through the values
 // in an object, they may not be in the same order as when they were entered.
+
+
+// Objects are defined by using curly braces: {}. See below for an example:
+
+let car = {};
+console.log(car) // {}
+// here is our new empty object!
