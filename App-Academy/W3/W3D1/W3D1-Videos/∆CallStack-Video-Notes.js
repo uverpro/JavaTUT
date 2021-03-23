@@ -35,8 +35,11 @@ function baz() {
 }
 
 foo();
-// a   // foo() // push
-// b   // bar() // push
-// c   // baz() // push // POP
-// d   // bar() // POP
-// e   // foo()
+// a   // push foo()             // 22
+// b   // push bar()             // 28
+// c   // push baz()             // 34
+//        pop baz()              // fully completed
+// d   // pop bar()              // 30
+// e   // pop foo()              // 24
+
+// Each function must be fully completed before moving in the stack
