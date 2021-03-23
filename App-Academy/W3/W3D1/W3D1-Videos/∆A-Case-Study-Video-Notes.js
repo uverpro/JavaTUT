@@ -31,6 +31,7 @@ countdown(5);
 // Line 4 is base case
 
 // Recursive case is usually the opposite of the base case
+// The num being greater than 0 is the recursive case
 
 // Recursive step: we don't want an infinite loop. We want something to work us towards
 // our base case. To that, we need a recursive step
