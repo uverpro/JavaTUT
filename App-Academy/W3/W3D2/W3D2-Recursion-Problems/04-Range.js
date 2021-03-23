@@ -4,7 +4,12 @@ an array of all numbers in that range, exclusive. If the end number is less than
 the start, return an empty array.
 ***********************************************************************/
 
-
+function range(start, end) {
+    if (end <= start) {
+        return [];
+    }
+    return [start].concat(range(start + 1, end));
+}
 
 range(1, 5); // [1, 2, 3, 4]
 range(3, 4); // [3]
