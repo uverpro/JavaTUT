@@ -1,9 +1,9 @@
-exercise(bottle) {
-  console.log("Just a few more reps!");)
+function exercise(bottle) {
+  console.log("Just a few more reps!");
   drinkWater(bottle);
 }
 
-drinkWater(bottle) {
+function drinkWater(bottle) {
   if (bottle.water > 0) {
       exercise({ water: bottle.water - 1 });
   } else {
