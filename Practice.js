@@ -1,12 +1,14 @@
-salesTax = (...nums) => {
-    sum = 0;
-    for (let i = 0; i < nums.length; i++) {
-        let num = nums[i];
-        sum += num;
+function createDictionary(words, translate) {
+    const dictionary = {};
+    for (let i = 0; i < words.length; i++) {
+      const word = words[i];
+      dictionary[word] = translate(word);
     }
-    return `$${(sum * .09).toFixed(2)}`
-};
+    return dictionary;
+  }
 
-console.log(salesTax(30, 70)); // '$9.00'
-console.log(salesTax(1.12, 2.23, 3.34, 4.45)); // '$1.00'
-console.log(salesTax(4.99, 9.99, 19.99)); // '$3.15'
+  function questionMark(word) {
+    return word + '?';
+  }
+
+  console.log(createDictionary(['hello', 'world'], questionMark)); // ???
