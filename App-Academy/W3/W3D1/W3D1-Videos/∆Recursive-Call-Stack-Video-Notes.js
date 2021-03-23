@@ -21,7 +21,7 @@ echo("howdy");
 // OWDY    // 7
 // WDY     // 7
 // DY      // 7
-// Y       // 13
+// Y       // 13   <= word.length is less than 1, so running from line 12, the else condtional
 // y       //
 // dy      //
 // wdy     //
