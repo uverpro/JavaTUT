@@ -16,3 +16,27 @@
 // The items placed on the call stack are refered to as STACK FRAMES
 // When a function is called, a new frame is pushed onto the stack
 // When a function returns, the frame on the top of the stack is popped off the stack
+
+
+function foo() {
+    console.log("a");
+    bar();
+    console.log("e");
+}
+
+function bar() {
+    console.log("b");
+    baz();
+    console.log("d");
+}
+
+function baz() {
+    console.log("c");
+}
+
+foo();
+// a   // foo() // push
+// b   // bar() // push
+// c   // baz() // push // POP
+// d   // bar() // POP
+// e   // foo()
