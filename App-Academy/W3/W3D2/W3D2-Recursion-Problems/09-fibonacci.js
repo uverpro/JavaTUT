@@ -11,6 +11,9 @@ We count Fibonacci numbers beginning with the first 1. Take a look at the
 examples below if you're unsure where to start!
 ***********************************************************************/
 
+const fibonacci (num) => {
+
+};
 
 
 fibonacci(1); // 1
