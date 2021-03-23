@@ -16,3 +16,13 @@ function echo(word) {
 };
 
 echo("howdy");
+
+// HOWDY
+// OWDY
+// WDY
+// DY
+// Y
+// y
+// dy
+// wdy
+// owdy
