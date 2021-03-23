@@ -15,11 +15,11 @@ countdown(5);
 // 2 cases:
 // BASE CASE: The situation in which the function stops recursing
 // - num === 0;
-// RECURSIVE CASE:
+// RECURSIVE CASE: Where causes our function to keep recursing
 // -
 
 // 1 step:
-// RECURSIVE STEP:
+// RECURSIVE STEP: what we use to work towards our base case
 // -
 
 // Defintion of recursion: A function calling/causing itself to be reinvoked
@@ -28,6 +28,9 @@ countdown(5);
 // (else there's an infinite loop)
 // To find a base case, ask, "where does the function stop?"
 // Where are we stopping it from recalling?
-// Line 5 is base case
+// Line 4 is base case
 
 // Recursive case is usually the opposite of the base case
+
+// Recursive step: we don't want an infinite loop. We want something to work us towards
+// our base case.
