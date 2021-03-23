@@ -4,7 +4,7 @@
 // Note that you should reverse the order among words, not the order among characters.
 
 reverseSentence = (sentence) => {
-
+    let newSentence = sentence.split(' ');
 };
 
 console.log(reverseSentence('I am pretty hungry')); // 'hungry pretty am I'
