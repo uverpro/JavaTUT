@@ -22,7 +22,10 @@ echo("howdy");
 // WDY     // 7
 // DY      // 7
 // Y       // 13   <= word.length is less than 1, so running from line 12, the else condtional
-// y       //
-// dy      //
+/* Here's where things turn around for stack. We've made all our recursive calls.
+The "else" conditional is base case. We've stopped recursion
+and now we have to clear existing stack frames.*/
+// y       // 14
+// dy      // 11
 // wdy     //
 // owdy    //
