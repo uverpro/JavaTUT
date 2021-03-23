@@ -6,7 +6,7 @@ number below 0.
 
 function sumToN(n) {
     if (n < 0) return null;
-    if (n <= 1) return n; // BASE CASE // n === 0, RECURSIVE CASE
+    if (n <= 1) return n; // BASE CASE // n === 1, RECURSIVE CASE
 
     return n + sumToN(n - 1); // RECURSIVE STEP
   }
