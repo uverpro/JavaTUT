@@ -6,9 +6,9 @@ number below 0.
 
 function sumToN(n) {
     if (n < 0) return null;
-    if (n <= 1) return n;
+    if (n <= 1) return n; // BASE CASE
 
-    return n + sumToN(n - 1);
+    return n + sumToN(n - 1); // RECURSIVE STEP
   }
 
 console.log(sumToN(5)); // returns 15
