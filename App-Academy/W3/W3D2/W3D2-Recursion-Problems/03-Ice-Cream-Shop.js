@@ -8,7 +8,7 @@ offers their favorite flavor.
 iceCreamShop = (flavors, favorite) => {
     // base cases
     if (!flavors.length) return false;
-    if (flavors.pop() === favorite) return true;
+    if (flavors.pop() === favorite) return true; // flavors.shift() works too
 
     // recursive step
     return iceCreamShop(flavors, favorite);
