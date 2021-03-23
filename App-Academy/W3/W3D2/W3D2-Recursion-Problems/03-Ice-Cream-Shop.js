@@ -7,7 +7,7 @@ offers their favorite flavor.
 
 
 
-iceCreamShop(['vanilla', 'strawberry'], 'blue moon'); // false
+console.log(iceCreamShop(['vanilla', 'strawberry'], 'blue moon')); // false
 iceCreamShop(['pistachio', 'green tea', 'chocolate', 'mint chip'], 'green tea'); // true
 iceCreamShop(['cookies n cream', 'blue moon', 'superman', 'honey lavender', 'sea salt caramel'], 'pistachio'); // false
 iceCreamShop(['moose tracks'], 'moose tracks'); // true
