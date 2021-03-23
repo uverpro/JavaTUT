@@ -10,7 +10,7 @@ initials = (name) => {
         let initial = word[0];
         initials.push(initial.toUpperCase());
     }
-    return initials.join();
+    return initials.join('');
 };
 
 console.log(initials('anna paschall')); // 'AP'
