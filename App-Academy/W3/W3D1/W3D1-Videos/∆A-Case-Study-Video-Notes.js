@@ -16,11 +16,11 @@ countdown(5);
 // BASE CASE: The situation in which the function stops recursing
 // - num === 0;
 // RECURSIVE CASE: Where causes our function to keep recursing
-// -
+// - num > 0;
 
 // 1 step:
 // RECURSIVE STEP: what we use to work towards our base case
-// -
+// - num - 1;
 
 // Defintion of recursion: A function calling/causing itself to be reinvoked
 
@@ -33,4 +33,4 @@ countdown(5);
 // Recursive case is usually the opposite of the base case
 
 // Recursive step: we don't want an infinite loop. We want something to work us towards
-// our base case.
+// our base case. To that, we need a recursive step
