@@ -17,12 +17,12 @@ function echo(word) {
 
 echo("howdy");
 
-// HOWDY
-// OWDY
-// WDY
-// DY
-// Y
-// y
-// dy
-// wdy
-// owdy
+// HOWDY   // 5    <= this console.log is UNINTERRUPTIVE
+// OWDY    // 7
+// WDY     // 7
+// DY      // 7
+// Y       // 13
+// y       //
+// dy      //
+// wdy     //
+// owdy    //
