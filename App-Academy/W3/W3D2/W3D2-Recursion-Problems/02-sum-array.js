@@ -4,7 +4,9 @@ and returns the value of all the integers added together. Your array may
 include a mix of positive and negative integers!
 ***********************************************************************/
 
+sumArray = (array) => {
 
+};
 
 console.log(sumArray([1, 2, 3])); //  6
 sumArray([0, 1, -3]); //  -2
