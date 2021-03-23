@@ -63,14 +63,14 @@ console.log(beforePop === dogs); // true
 
 
 // === Array.prototype.shift
-// let cats = ['Paprika', 'Whiskers', 'Garfield'];
-// let beforeShift = cats;
+let cats = ['Paprika', 'Whiskers', 'Garfield'];
+let beforeShift = cats;
 
-// let firstCat = cats.shift();
+let firstCat = cats.shift();
 
-// console.log(firstCat); // 'Paprika'
-// console.log(cats); // ['Whiskers', 'Garfield']
-// console.log(beforeShift === cats);
+console.log(firstCat); // 'Paprika'
+console.log(cats); // ['Whiskers', 'Garfield']
+console.log(beforeShift === cats);
 
 
 
@@ -79,18 +79,18 @@ let beforeUnshift = cats;
 
 cats.unshift('Sennacy');
 
-// console.log(cats); // ['Sennacy', 'Whiskers', 'Garfield']
-// console.log(beforeUnshift === cats);
+console.log(cats); // ['Sennacy', 'Whiskers', 'Garfield']
+console.log(beforeUnshift === cats);
 
 
 
 // Array.prototype.splice
 // The splice() method changes the contents of an array by removing or replacing existing elements
 // and/or adding new elements in place.
-// let drinks = ['coffee', 'oj', 'pumpkin juice'];
-// drinks.splice(1, 2, 'milk');
+let drinks = ['coffee', 'oj', 'pumpkin juice'];
+drinks.splice(1, 2, 'milk');
 
-// console.log(drinks); // [ 'coffee', 'milk' ]
+console.log(drinks); // [ 'coffee', 'milk' ]
 
 
 
@@ -127,38 +127,38 @@ console.log(arrayToUpperCase(foods));
 
 // function declaration syntax
 // function name is built into the declaration of the function
-// function sayHello1() {
-//     console.log('Function Declaration Syntax');
-//   }
-//   sayHello1();
+function sayHello1() {
+console.log('Function Declaration Syntax');
+}
+sayHello1();
 
-//   console.log('--------');
+console.log('--------');
 
-//   // function expression syntax
-//   // setting a variable to an anonymous function
-//   let sayHello2 = function() {
-//     console.log('Function Expression Syntax');
-//   };
-//   sayHello2();
+  // function expression syntax
+  // setting a variable to an anonymous function
+  let sayHello2 = function() {
+    console.log('Function Expression Syntax');
+  };
+  sayHello2();
 
-//   console.log('--------');
+  console.log('--------');
 
 
 
 // first class objects - something you can store in a variable
-// let name = 'Alvin'
-// let age = 1000;
-// let getAvg = function (num1, num2) {
-//    return (num1 + num2) / 2;
-// };
+let name = 'Alvin'
+let age = 1000;
+let getAvg = function (num1, num2) {
+   return (num1 + num2) / 2;
+};
 
-// console.log(getAvg); // will log the function
-// console.log(getAvg(3, 4)) // will log the return of the function
-// console.log(getAvg(age, 500)) // 750
+console.log(getAvg); // will log the function
+console.log(getAvg(3, 4)) // will log the return of the function
+console.log(getAvg(age, 500)) // 750
 
-// // can pass functions around to other variables
-// let anotherVar = getAvg;
-// console.log(anotherVar(5, 6));
+// can pass functions around to other variables
+let anotherVar = getAvg;
+console.log(anotherVar(5, 6));
 
 
 
