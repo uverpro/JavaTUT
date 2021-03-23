@@ -2,7 +2,12 @@
 
 // Given a recursive function, identify what is the base case and the recursive case.
 
+function sumToN(n) {
+    if (n < 0) return null;
+    if (n <= 1) return n; // BASE CASE // n === 0, RECURSIVE CASE
 
+    return n + sumToN(n - 1); // RECURSIVE STEP
+}
 
 // Identify and use default parameters for functions.
 
