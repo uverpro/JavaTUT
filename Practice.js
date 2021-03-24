@@ -12,13 +12,14 @@ console.log(sumToN(1, 5)); // returns 15
 
 
 // index.js
-function eatPizza() {
-  let pizza = 'Pepperoni!';
-  if (true) {
-    let pizza = 'Hawaiian';
-  }
-  debugger;
-  return "Yummy!"
+#element {
+  font-size: 10px;
+  color: green;
+  transition-property: color;
+  transition-duration: 5s;
 }
 
-console.log(eatPizza());
+#element:hover {
+  font-size: 30px;
+  color: red;
+}
