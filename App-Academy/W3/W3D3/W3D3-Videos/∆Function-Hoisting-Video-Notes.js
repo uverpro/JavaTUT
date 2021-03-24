@@ -36,3 +36,10 @@ function hello() {
 
 
 // FUNCTION EXPRESSION HOISTING w/ LET & CONST
+
+hello(); //
+let hello = function() {
+    let hello = function() {
+        console.log("hello!")
+    }
+};
