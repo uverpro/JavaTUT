@@ -24,3 +24,9 @@ hoistLetandConst(); // ReferenceError: cat is not defined
 
 
 // FUNCTION HOISTING
+
+// FUNCTION DECLERATION HOISTING
+hello(); // hello!
+function hello() {
+    console.log("hello!")
+}
