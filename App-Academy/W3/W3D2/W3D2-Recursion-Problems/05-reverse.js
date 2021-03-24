@@ -30,3 +30,13 @@ console.log(reverse("house")); // "esuoh"
 // by removing one letter from end at a time
 // string method - slice
 // turn string into array - pop()
+
+let reverse = function (string, array = string.split(''), newString = array.pop()) {
+    debugger;
+    if (array.length === 0) {
+      debugger;
+      return newString;
+    }
+    newString += array.pop();
+    return reverse(array.join(''), array, newString);
+  };
