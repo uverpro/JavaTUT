@@ -39,7 +39,5 @@ function hello() {
 
 hello(); // ReferenceError: Cannot access 'hello' before initialization
 let hello = function() {
-    let hello = function() {
         console.log("hello!")
-    }
 };
