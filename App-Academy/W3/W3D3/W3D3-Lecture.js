@@ -5,6 +5,7 @@
 })();
 
 // Anonymous functions written above can only be ran once!
+// Doesn't exist outside of this scope
 
 let result = (function () {
     return "Party!";
