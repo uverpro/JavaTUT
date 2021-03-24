@@ -50,3 +50,13 @@ hello(); // TypeError: hello is not a function
 var hello = function() {
     console.log("hello!")
 };
+// When you declare a variable in var it's hoisted to the top of the scope and
+// it's value remains unassigned until it's, well, assigned a value
+
+
+// COMBINING FUNCTION and VARIABLE HOISTING - LET & CONST
+let hello = "hello";
+function hello() { // SyntaxError: Identifier 'hello' has already been declared
+    console.log("hello!");
+}
+console.log(hello);
