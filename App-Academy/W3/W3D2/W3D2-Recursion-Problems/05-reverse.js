@@ -8,7 +8,7 @@ const reverse = str => {
     if (!str.length) {
         return str; // or ""; // BASE CASE
     }
-    let reversed = str.slice(-1) + reverse(str.slice(0, -1));
+    let reversed = str.slice(-1) + reverse(str.slice(0, -1)); // reverse(str.slice(1)) + str[0]
     debugger;
     return reversed;
 };
