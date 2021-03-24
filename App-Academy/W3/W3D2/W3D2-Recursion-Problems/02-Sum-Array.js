@@ -6,7 +6,7 @@ include a mix of positive and negative integers!
 
 sumArray = (array) => {
     debugger;
-    if (array.length === 0) {
+    if (!array.length) {
         return 0;
     }
     let sum = array[0] + sumArray(array.slice(1));
