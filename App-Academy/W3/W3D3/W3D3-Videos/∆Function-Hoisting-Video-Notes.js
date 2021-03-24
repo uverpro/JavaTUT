@@ -33,3 +33,6 @@ function hello() {
 // Will hoist function to the top, allowing it to be used wherever you are
 // can be somehwat sloppy if the evocation is at the top and the decleration is hidden
 // or at the bottom, etc.
+
+
+// FUNCTION EXPRESSION HOISTING w/ LET & CONST
