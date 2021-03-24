@@ -11,14 +11,24 @@ We count Fibonacci numbers beginning with the first 1. Take a look at the
 examples below if you're unsure where to start!
 ***********************************************************************/
 
-const fibonacci = (num) => {
-
+const fibonacci = (n) => {
+    debugger;
+    if (n === 1 || n === 2) {
+        debugger;
+        return 1;
+    }
+    debugger;
+    let previous = fibonacci(n - 1);
+    debugger;
+    let twoPrev = fibonacci(n - 2);
+    debugger;
+    return previous + twoPrevl
 };
 
 
-fibonacci(1); // 1
-fibonacci(2); // 1
-fibonacci(3); // 2
+// fibonacci(1); // 1
+// fibonacci(2); // 1
+// fibonacci(3); // 2
 fibonacci(4); // 3
-fibonacci(5); // 5
-fibonacci(10); // 55
+// fibonacci(5); // 5
+// fibonacci(10); // 55
