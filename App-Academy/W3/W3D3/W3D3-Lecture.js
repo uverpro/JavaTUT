@@ -1,3 +1,5 @@
+// Immediately evoked function syntax
+
 (function () {
     console.log('Run me');
 })();
