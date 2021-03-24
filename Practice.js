@@ -9,3 +9,16 @@ function sumToN(n, end) {
 }
 
 console.log(sumToN(1, 5)); // returns 15
+
+
+// index.js
+function eatPizza() {
+  let pizza = 'Pepperoni!';
+  if (true) {
+    let pizza = 'Hawaiian';
+  }
+  debugger;
+  return "Yummy!"
+}
+
+console.log(eatPizza());
