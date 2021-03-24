@@ -9,3 +9,5 @@ function sumToN(n, end) {
 }
 
 console.log(sumToN(1, 5)); // returns 15
+
+// EDIT
