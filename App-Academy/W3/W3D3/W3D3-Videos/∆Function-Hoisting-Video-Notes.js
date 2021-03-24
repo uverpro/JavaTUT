@@ -60,3 +60,4 @@ function hello() { // SyntaxError: Identifier 'hello' has already been declared
     console.log("hello!");
 }
 console.log(hello);
+// Both variables are hoisted to the top of the same scope.
