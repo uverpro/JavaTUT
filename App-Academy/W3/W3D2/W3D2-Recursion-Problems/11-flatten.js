@@ -20,6 +20,18 @@ function flatten(array) {
   return newArray;
 }
 
-flatten([]); // []
-flatten([1, 2]); // [1, 2]
-flatten([1, [2, [3]]]); // [1, 2, 3]
+// flatten([]); // []
+// flatten([1, 2]); // [1, 2]
+console.log(flatten([1, [2, [3]]])); // [1, 2, 3]
+
+function flatten(array){
+  if (Array.isArray(array[array.length-1])){
+    array =  [...array.slice(0, array.length-1), ...array[array.length-1]];
+    return flatten(array)
+  }
+  return array;
+}
+
+// flatten([]); // []
+// flatten([1, 2]); // [1, 2]
+console.log(flatten([1, [2, [3]]])); // [1, 2, 3]
