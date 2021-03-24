@@ -9,17 +9,3 @@ function sumToN(n, end) {
 }
 
 console.log(sumToN(1, 5)); // returns 15
-
-
-// index.js
-#element {
-  font-size: 10px;
-  color: green;
-  transition-property: color;
-  transition-duration: 5s;
-}
-
-#element:hover {
-  font-size: 30px;
-  color: red;
-}
