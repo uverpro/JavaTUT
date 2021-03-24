@@ -41,3 +41,5 @@ hello(); // ReferenceError: Cannot access 'hello' before initialization
 let hello = function() {
         console.log("hello!")
 };
+// Since the function is stored in a variable & JS is `top down` so it can't be access
+// until it's initialized.
