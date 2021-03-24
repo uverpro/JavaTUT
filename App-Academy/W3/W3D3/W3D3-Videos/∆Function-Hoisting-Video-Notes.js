@@ -37,7 +37,7 @@ function hello() {
 
 // FUNCTION EXPRESSION HOISTING w/ LET & CONST
 
-hello(); //
+hello(); // ReferenceError: Cannot access 'hello' before initialization
 let hello = function() {
     let hello = function() {
         console.log("hello!")
