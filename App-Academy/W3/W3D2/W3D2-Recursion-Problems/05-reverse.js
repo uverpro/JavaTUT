@@ -4,10 +4,12 @@ it reversed.
 ***********************************************************************/
 
 const reverse = str => {
+    debugger;
     if (!str.length) {
-        return str; // or "";
+        return str; // or ""; // BASE CASE
     }
     let reversed = str.slice(-1) + reverse(str.slice(0, -1));
+    debugger;
     return reversed;
 };
 
