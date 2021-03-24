@@ -28,7 +28,7 @@ if (!arr.length) {
 
 
 let obj = { age: 70};
-
+console.log(obj);
 if (!obj.name) {
     console.log("Add name");
 }
