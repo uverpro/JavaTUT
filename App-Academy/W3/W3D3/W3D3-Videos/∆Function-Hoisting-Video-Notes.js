@@ -19,3 +19,5 @@ function hoistLetandConst() {
     const cat = "cat";
 }
 hoistLetandConst(); // ReferenceError: cat is not defined
+// CONST and LET exist in the TEMPORAL DEAD ZONE
+// The TEMPORAL DEAD ZONE means this variable will not be avaliable until it has been assigned a value
