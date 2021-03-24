@@ -4,7 +4,7 @@ return a new function that will allow us to create new separate custom
 adding functions.
 ***********************************************************************/
 
-function dynamicAdder(num) {
+dynamicAdder = (num) => {
     return el => (el + num)
 };
 
