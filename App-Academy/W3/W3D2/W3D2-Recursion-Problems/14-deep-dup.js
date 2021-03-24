@@ -37,10 +37,3 @@ console.log(x[0] === y[0]) // true
 ***********************************************************************/
 
 // your code here
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
-try {
-  module.exports = deepDup;
-} catch (e) {
-  module.exports = null;
-}
