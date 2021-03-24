@@ -45,4 +45,4 @@ let hello = function() {
 // until it's initialized.
 
 
-//
+// FUNCTION EXPRESSION HOISTING w/ VAR
