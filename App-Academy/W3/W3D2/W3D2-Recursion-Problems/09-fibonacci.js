@@ -22,7 +22,7 @@ const fibonacci = (n) => {
     debugger;
     let twoPrev = fibonacci(n - 2);
     debugger;
-    return previous + twoPrevl
+    return previous + twoPrev
 };
 
 
