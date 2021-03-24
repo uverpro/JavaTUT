@@ -14,3 +14,8 @@ function hoistVar() {
 hoistVar(); // undefined
 
 // VARIABLE HOISTING - CONST and LET
+function hoistLetandConst() {
+    console.log(cat);
+    const cat = "cat";
+}
+hoistLetandConst(); // ReferenceError: cat is not defined
