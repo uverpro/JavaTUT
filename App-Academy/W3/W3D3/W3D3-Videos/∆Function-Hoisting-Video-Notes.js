@@ -46,3 +46,7 @@ let hello = function() {
 
 
 // FUNCTION EXPRESSION HOISTING w/ VAR
+hello(); // TypeError: hello is not a function
+var hello = function() {
+    console.log("hello!")
+};
