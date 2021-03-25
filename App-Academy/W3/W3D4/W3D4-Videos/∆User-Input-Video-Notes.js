@@ -9,7 +9,3 @@ const rl = readline.createInterface({
 rl.question('What is your name?', (answer)=> {
     console.log(`Hello, ${answer}`)
 });
-
-rl.question("What do you think of Node?", (answer)=> {
-    console.log(`I couldn't agree more that ${answer}`)
-});
