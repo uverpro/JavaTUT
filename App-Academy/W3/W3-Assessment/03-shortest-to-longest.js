@@ -11,28 +11,6 @@ alphabetically)
 Your function should accept a default argument called `sorted` which
 holds the currently sorted elements. Each recursive step should add
 the shortest string in the `strings` array to the end of `sorted`.
-
-
-// Examples:
-
-// Sorts strings from shortest to longest
-let strings1 = ["abc", "de", "", "f", "ghijk", "lmno"]
-shortestToLongest(strings1);
-// ['', 'f', 'de', 'abc', 'lmno', 'ghijk']
-
-
-// Accepts a pre-sorted default parameter
-let strings2 = ["pomegranate", "persimmon", "peach"];
-let sorted = ["pea", "pear"];
-shortestToLongest(strings2, sorted);
-// ['pea', 'pear', 'peach', 'persimmon', 'pomegranate']
-
-
-// Sorts strings of the same length alphabetically
-let strings3 = shortestToLongest(["dog", "cat", "elephant", "ant", "pig", "emu"]);
-shortestToLongest(strings3);
-// ['ant', 'cat', 'dog', 'emu', 'pig', 'elephant']
-
 ***********************************************************************/
 
 function shortestToLongest(strings, sorted=[]) {
