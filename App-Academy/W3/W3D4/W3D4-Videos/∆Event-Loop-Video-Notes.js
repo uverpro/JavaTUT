@@ -13,3 +13,6 @@
 // What structures comprise the event loop?
   // Call Stack
   // Message Que
+
+// What is the message que?
+  // The message que is the structure used to track the handling of events
