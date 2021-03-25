@@ -28,3 +28,16 @@ setTimeout(function() {
 }, 1000);
 
 nextTask();
+
+
+function blockingTheThread() {
+    while(true) {
+    }
+    console.log("done!");
+}
+
+setTimeout(function () {
+    console.log("time's up!")
+}, 1000);
+
+blockingTheThread();
