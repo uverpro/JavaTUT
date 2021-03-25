@@ -16,3 +16,8 @@
 
 // What is the message que?
   // The message que is the structure used to track the handling of events
+
+// Que Data Structure
+  // Like the line for checkout
+  // new items are added to the back of the line (enqueue)
+  // items are removed from the front of the line (dequeue)
