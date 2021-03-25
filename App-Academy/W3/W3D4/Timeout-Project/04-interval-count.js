@@ -16,12 +16,21 @@ intervalCount(function() {
 }, 500, 3); // prints 'hi' at 500ms intervals a total of 3 times
 ***********************************************************************/
 
-
+intervalCount = (cb, delay, amount) => {
+  const intervalObj = setInterval(function(){
+    cb()
+    if (amount === 1) {
+    clearInterval(intervalObj);
+  }
+  amount--;
+  }, delay);
+}
 
 
 intervalCount(function() {
   console.log('hi');
 }, 500, 3); // prints 'hi' at 500ms intervals a total of 3 times
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = intervalCount;
