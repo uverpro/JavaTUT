@@ -51,10 +51,3 @@ function printNumbersBetween(startNum, endNum) {
     printNumbersBetween(startNum, endNum);
 
 }
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-try {
-  module.exports = printNumbersBetween;
-} catch {
-  module.exports = null;
-}
