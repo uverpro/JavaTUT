@@ -32,3 +32,9 @@ let foo = function() {
     return 42;
 };
 console.log(foo); // [Function: foo]
+
+let foo = function() {
+    console.log("hello");
+    return 42;
+};
+foo;
