@@ -24,3 +24,13 @@ function morseCode(code) {
     // Your code here
 
 }
+
+let code = ['dot', 'dash', 'dot'];
+
+morseCode(code);
+// print 'dot'
+// pause for 100ms
+// print 'dash'
+// pause for 300ms
+// print 'dot'
+// pause for 100ms
