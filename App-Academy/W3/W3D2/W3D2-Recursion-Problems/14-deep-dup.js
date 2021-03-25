@@ -18,14 +18,6 @@ Write a function, deepDup(arr), that deeply duplicates a given array. Your dupli
 when compared to various indexes of the original array, should evaluate to false like below.
 
 
-Examples:
-
-let arr = [[1], [2, [3]]];
-duped = deepDup(arr); // [[1], [2, [3]]]
-arr[0] === duped[0] // false
-arr[1] === duped[1] // false
-arr[1][1] === duped[1][1] // false
-
 Note:
 if you compare a 1 dimensional array of numbers like below,
 you will get 'true' because we are comparing numbers.
@@ -37,3 +29,9 @@ console.log(x[0] === y[0]) // true
 ***********************************************************************/
 
 // your code here
+
+let arr = [[1], [2, [3]]];
+duped = deepDup(arr); // [[1], [2, [3]]]
+arr[0] === duped[0] // false
+arr[1] === duped[1] // false
+arr[1][1] === duped[1][1] // false
