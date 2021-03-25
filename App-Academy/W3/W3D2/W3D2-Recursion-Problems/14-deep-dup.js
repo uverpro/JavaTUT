@@ -17,6 +17,9 @@ array with different memory adresses.
 Write a function, deepDup(arr), that deeply duplicates a given array. Your duplicated array,
 when compared to various indexes of the original array, should evaluate to false like below.
 
+//UNDERSTAND
+//// Duplicate an array. If it has subarrays, those need to be duplicated as well
+//// If those subarrays have subarrays, we will need to duplicate those... etc.
 
 Note:
 if you compare a 1 dimensional array of numbers like below,
