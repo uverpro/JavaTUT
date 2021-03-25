@@ -15,19 +15,19 @@ console.log("Acadia");
 
 
 let foo = function() {
-    console.log("Everglades");
-    console.log("Sequoia");
+    console.log("Everglades"); // 2
+    console.log("Sequoia"); // 3
 };
 
-console.log("Zion");
+console.log("Zion"); // 1
 foo();
-console.log("Acadia");
+console.log("Acadia"); // 4
 // Zion, Everglades, Sequoia, Acadia
 
 
 
 let bar = function(s) {
-    return s.toLowerCase() + "...";
+    return s.toLowerCase() + "..."; // 1
 };
 
 let foo = function(message, cb1, cb2) {
@@ -36,7 +36,7 @@ let foo = function(message, cb1, cb2) {
 };
 
 foo("Hey Programmers", bar, function(s) {
-    return s.toUpperCase() + "!";
+    return s.toUpperCase() + "!"; // 2
 });
 // hey programmers...
 // HEY PROGRAMMERS!
@@ -44,23 +44,24 @@ foo("Hey Programmers", bar, function(s) {
 
 
 function foo() {
-    console.log("fizz");
+    console.log("fizz"); // 4
 }
 
 function bar() {
-    console.log("buzz");
+    console.log("buzz"); // 2
 }
 
 function boom(cb1, cb2) {
-    console.log("zip");
+    console.log("zip"); // 1
     cb1();
-    console.log("zap");
+    console.log("zap"); // 3
     cb2();
-    console.log("zoop");
+    console.log("zoop"); // 5
 }
 
 boom(bar, foo);
 // zip, buzz, zap, fizz, zoop
+
 
 
 let bar = function(mystery) {
