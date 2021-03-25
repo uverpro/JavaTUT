@@ -12,17 +12,21 @@ node with the examples below.
 ***********************************************************************/
 
 dynamicIntervalCount = (cb, delay, count) => {
+  if (count === undefined) {
+    return setInterval(cb, delay);
+  }
   const intervalObj = setInterval(function() {
     cb();
     if (count === 1) {
-      clearInterval();
+      clearInterval(intervalObj);
     }
-  }, delay)
+    count--;
+  }, delay);
 }
 
-dynamicIntervalCount(function() {
-  console.log('hi');
-}, 500, 3); // prints 'hi' at 500ms intervals a total of 3 times
+// dynamicIntervalCount(function() {
+//   console.log('hi');
+// }, 500, 3); // prints 'hi' at 500ms intervals a total of 3 times
 
 
 const timeoutObject = dynamicIntervalCount(function() {
