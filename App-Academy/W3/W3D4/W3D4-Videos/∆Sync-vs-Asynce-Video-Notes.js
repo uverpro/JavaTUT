@@ -36,6 +36,20 @@ setTimeout(function () {
 }, 1500);
 // prints "time's up!" after 1.5 seconds
 
+
+
+console.log("start");
+
 setTimeout(function () {
     console.log("time's up!")
 }, 1500);
+
+console.log("end");
+// start
+// end
+// time's up!
+
+    // The timeout prevent's "time's up!" from being printed before 1.5 seconds,
+// but it doesn't prevent OTHER CODE from running!
+    // Even is the timer was set to "0", "time's up!" would still print lastly,
+// because that is the nature of setTimeOut to be asynchronous
