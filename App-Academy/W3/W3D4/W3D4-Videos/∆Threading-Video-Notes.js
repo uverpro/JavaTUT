@@ -16,4 +16,15 @@
 // Single-Threaded: one chef preparing all dished one after the other
 // Multi-Threaded: multiple chefs preparing different dishes at the same time
 
-// JAVASCRIPT IS A SINGLE-THREADED LANGUAGE
+// JAVASCRIPT IS A SINGLE-THREADED LANGUAGE (common interview question)
+
+
+function nextTask() {
+    console.log("done!")
+}
+
+setTimeout(function() {
+    console.log("times up!")
+}, 1000);
+
+nextTask();
