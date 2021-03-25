@@ -1,16 +1,16 @@
 let bar = function() {
-    console.log("Arches");
+    console.log("Arches"); // 3
 };
 
 let foo = function() {
-    console.log("Everglades");
+    console.log("Everglades"); // 2
     bar();
-    console.log("Sequoia");
+    console.log("Sequoia"); // 4
 };
 
-console.log("Zion");
+console.log("Zion"); // 1
 foo();
-console.log("Acadia");
+console.log("Acadia"); // 5
 // Zion, Everglades, Arches, Sequoia, Acadia
 
 
@@ -31,8 +31,8 @@ let bar = function(s) {
 };
 
 let foo = function(message, cb1, cb2) {
-    console.log(cb1(message));
-    console.log(cb2(message));
+    console.log(cb1(message)); // 1
+    console.log(cb2(message)); // 2
 };
 
 foo("Hey Programmers", bar, function(s) {
