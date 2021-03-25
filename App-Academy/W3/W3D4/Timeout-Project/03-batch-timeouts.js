@@ -46,10 +46,3 @@ const timeoutObjs = batchTimeouts(tasks, delays);
 //  'hi' after 500 ms
 //  'WHAT?' after 900 ms
 console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-try {
-  module.exports = batchTimeouts;
-} catch {
-  module.exports = null;
-}
