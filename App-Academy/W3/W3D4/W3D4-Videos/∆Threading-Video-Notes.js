@@ -10,3 +10,8 @@
 // SINGLE-THREADED EXECUTION: only ONE command can be processed at a time
 
 // MULTI-THREADED EXECUTION: multiple commands can be processed at the same time
+
+
+// Kitchen Analogy:
+// Single-Threaded: one chef preparing all dished one after the other
+// Multi-Threaded: multiple chefs preparing different dishes at the same time
