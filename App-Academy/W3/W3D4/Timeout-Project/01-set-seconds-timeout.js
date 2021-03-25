@@ -11,16 +11,6 @@ in your implementation.
 In addition to Mocha, we recommend that you test your code manually using
 node with the examples below. Use the command
 `node problems/01-set-seconds-timeout.js`
-
-Examples:
-
-setSecondsTimeout(function () {
-    console.log('hello');
-}, 1); // should print 'hello' after 1000 milliseconds
-
-setSecondsTimeout(function () {
-    console.log('world');
-}, 1.4); // should print 'world' after 1400 milliseconds
 ***********************************************************************/
 
 function setSecondsTimeout (cb, delay) {
