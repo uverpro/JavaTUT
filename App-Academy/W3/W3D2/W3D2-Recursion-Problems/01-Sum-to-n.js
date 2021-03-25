@@ -5,13 +5,14 @@ number below 0.
 ***********************************************************************/
 
 function sumToN(n) {
+debugger;
     if (n < 0) return null;
     if (n <= 1) return n; // BASE CASE // n === 1, RECURSIVE CASE
-
+debugger;
     return n + sumToN(n - 1); // RECURSIVE STEP
   }
 
 console.log(sumToN(5)); // returns 15
-console.log(sumToN(1));  // returns 1
-console.log(sumToN(9));  // returns 45
-console.log(sumToN(-8));  // returns null
+// console.log(sumToN(1));  // returns 1
+// console.log(sumToN(9));  // returns 45
+// console.log(sumToN(-8));  // returns null
