@@ -29,3 +29,5 @@ foo();
 console.log("three");
 // Although this is predictable, the code "jumps around".
 // It is NOT read in a strictly "top down" fashion
+
+// A built-in asynchronous function in Javascript is: setTimeOut
