@@ -9,20 +9,8 @@ return the Timeout object for the interval.
 
 In addition to Mocha, we recommend that you test your code manually using
 node with the examples below.
-
-Examples:
-
-dynamicIntervalCount(function() {
-    console.log('hi');
-}, 500, 3); // prints 'hi' at 500ms intervals a total of 3 times
-
-
-const timeoutObject = dynamicIntervalCount(function() {
-    console.log('hi');
-}, 500); // prints 'hi' at 500ms intervals indefinitely
-
-console.log(timeoutObject); // Timeout { ... }
 ***********************************************************************/
+
 
 
 dynamicIntervalCount(function() {
