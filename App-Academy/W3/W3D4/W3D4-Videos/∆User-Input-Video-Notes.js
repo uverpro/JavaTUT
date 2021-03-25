@@ -8,4 +8,5 @@ const rl = readline.createInterface({
 
 rl.question('What is your name?', (answer)=> {
     console.log(`Hello, ${answer}`)
+    rl.close();
 });
