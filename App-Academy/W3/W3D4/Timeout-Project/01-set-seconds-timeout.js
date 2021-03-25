@@ -24,10 +24,3 @@ setSecondsTimeout(function () {
 setSecondsTimeout(function () {
   console.log('world');
 }, 1.4); // should print 'world' after 1400 milliseconds
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-try {
-  module.exports = setSecondsTimeout;
-} catch {
-  module.exports = null;
-}
