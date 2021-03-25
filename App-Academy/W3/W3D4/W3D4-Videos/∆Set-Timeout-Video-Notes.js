@@ -34,3 +34,18 @@ const result = setTimeout(foo, 1000, 'potato', 'tomato');
 console.log(result);
 console.log('end');
 // prints a "Timeout" object!
+// which just explains the sequence of your Timeout function:
+/* Timeout {
+  _idleTimeout: 1000,
+  _idlePrev: [TimersList],
+  _idleNext: [TimersList],
+  _idleStart: 20,
+  _onTimeout: [Function: foo],
+  _timerArgs: [Array], // example: console.log(res_timerArgs); => [ 'potato', 'tomato' ]
+  _repeat: null,
+  _destroyed: false,
+  [Symbol(refed)]: true,
+  [Symbol(kHasPrimitive)]: false,
+  [Symbol(asyncId)]: 2,
+  [Symbol(triggerId)]: 1
+} */
