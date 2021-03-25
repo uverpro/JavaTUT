@@ -8,20 +8,6 @@ The function returned by `dynamicRotate` will accept an array to
 be rotated by the amount provided when the `dynamicRotate` was
 first invoked. It will return the original array mutated by
 the given rotation.
-
-Examples:
-
-```js
-let arr = ['a', 'b', 'c', 'd', 'e'];
-rotateRightTwo = dynamicRotate(2);
-rotateRightTwo(arr);
-console.log(arr); // [ 'd', 'e', 'a', 'b', 'c' ]
-
-let animals = ['wombat', 'koala', 'opossum', 'kangaroo'];
-rotateLeftOne = dynamicRotate(-1);
-rotateLeftOne(animals)
-console.log(animals); // [ 'koala', 'opossum', 'kangaroo', 'wombat' ]
-```
 ***********************************************************************/
 
 function dynamicRotate(num) {
