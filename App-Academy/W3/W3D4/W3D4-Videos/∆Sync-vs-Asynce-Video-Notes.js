@@ -31,3 +31,11 @@ console.log("three");
 // It is NOT read in a strictly "top down" fashion
 
 // A built-in asynchronous function in Javascript is: setTimeOut
+setTimeout(function () {
+    console.log("time's up!")
+}, 1500);
+// prints "time's up!" after 1.5 seconds
+
+setTimeout(function () {
+    console.log("time's up!")
+}, 1500);
