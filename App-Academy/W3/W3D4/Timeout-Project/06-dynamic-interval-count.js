@@ -11,7 +11,14 @@ In addition to Mocha, we recommend that you test your code manually using
 node with the examples below.
 ***********************************************************************/
 
-
+dynamicIntervalCount = (cb, delay, count) => {
+  const intervalObj = setInterval(function() {
+    cb();
+    if (count === 1) {
+      clearInterval();
+    }
+  }, delay)
+}
 
 dynamicIntervalCount(function() {
   console.log('hi');
