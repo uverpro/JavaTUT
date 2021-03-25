@@ -27,3 +27,33 @@
     // when a new event occurs, but the runtime is busy processing another command,
 // a message for that event is enqueued
     // when the runtime finishes its current command, the next message is dequeued and processed
+
+
+
+function somethingSlow() {
+    // some terrible slow implementation
+    // assume that this function take 4000 milliseconds to return
+}
+
+function foo() {
+    console.log("food");
+}
+
+function bar() {
+    console.log("bark");
+    baz();
+}
+
+function baz() {
+    console.log("bazaar");
+}
+
+setTimeout(foo, 1500);
+setTimeout(bar, 1000);
+somethingSlow;
+
+// Manipulating the message queue
+    // the items stored on the message queue are called "messages"
+    // when a new event occurs, but the runtime is busy processing another command,
+// a message for that event is enqueued
+    // when the runtime finishes its current command, the next message is dequeued and processed
