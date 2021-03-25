@@ -47,3 +47,21 @@ function shortestToLongest(strings, sorted=[]) {
     // 4. Recurse until the `strings` array is empty (base case)
 
 }
+
+// Sorts strings from shortest to longest
+let strings1 = ["abc", "de", "", "f", "ghijk", "lmno"]
+shortestToLongest(strings1);
+// ['', 'f', 'de', 'abc', 'lmno', 'ghijk']
+
+
+// Accepts a pre-sorted default parameter
+let strings2 = ["pomegranate", "persimmon", "peach"];
+let sorted = ["pea", "pear"];
+shortestToLongest(strings2, sorted);
+// ['pea', 'pear', 'peach', 'persimmon', 'pomegranate']
+
+
+// Sorts strings of the same length alphabetically
+let strings3 = shortestToLongest(["dog", "cat", "elephant", "ant", "pig", "emu"]);
+shortestToLongest(strings3);
+// ['ant', 'cat', 'dog', 'emu', 'pig', 'elephant']
