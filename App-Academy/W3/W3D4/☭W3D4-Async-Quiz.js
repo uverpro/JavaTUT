@@ -27,3 +27,15 @@ function boo() {
 console.log('fizz');
 setTimeout(boo, 1000);
 console.log('buzz');
+// fizz, buzz, boop!, farm!
+
+
+
+function boo() {
+    console.log('boop!');
+}
+
+console.log('fizz');
+setTimeout(boo, 1000);
+console.log('buzz');
+// fizz, buzz, boop!
