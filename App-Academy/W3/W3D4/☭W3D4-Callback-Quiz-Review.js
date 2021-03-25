@@ -43,6 +43,26 @@ foo("Hey Programmers", bar, function(s) {
 
 
 
+function foo() {
+    console.log("fizz");
+}
+
+function bar() {
+    console.log("buzz");
+}
+
+function boom(cb1, cb2) {
+    console.log("zip");
+    cb1();
+    console.log("zap");
+    cb2();
+    console.log("zoop");
+}
+
+boom(bar, foo);
+// zip, buzz, zap, fizz, zoop
+
+
 let bar = function(mystery) {
     mystery("sneaky");
 };
