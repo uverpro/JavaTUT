@@ -15,3 +15,5 @@
 // Kitchen Analogy:
 // Single-Threaded: one chef preparing all dished one after the other
 // Multi-Threaded: multiple chefs preparing different dishes at the same time
+
+// JAVASCRIPT IS A SINGLE-THREADED LANGUAGE
