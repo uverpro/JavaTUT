@@ -47,11 +47,3 @@ function shortestToLongest(strings, sorted=[]) {
     // 4. Recurse until the `strings` array is empty (base case)
 
 }
-
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-try {
-    module.exports = shortestToLongest;
-} catch {
-    module.exports = null;
-}
