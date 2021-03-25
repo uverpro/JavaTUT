@@ -31,11 +31,41 @@ console.log('buzz');
 
 
 
+// 3.
 function boo() {
     console.log('boop!');
 }
 
 console.log('fizz');
 setTimeout(boo, 1000);
+console.log('buzz');
+// fizz, buzz, boop!
+
+
+
+// 4.
+function far() {
+    console.log('farm!')
+}
+
+function boo() {
+    console.log('boop!');
+    setTimeout(far, 1000);
+    console.log('boop!');
+}
+
+setTimeout(boo, 1000);
+console.log('buzz');
+// buzz, boop!, boop!, farm!
+
+
+
+// 5.
+function boo() {
+    console.log('boop!');
+}
+
+console.log('fizz');
+setTimeout(boo, 0);
 console.log('buzz');
 // fizz, buzz, boop!
