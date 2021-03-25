@@ -54,3 +54,6 @@ const fourthQuestion = (answer) => {
 }
 
 rl.question("What is your name?", firstQuestion);
+
+// Research number inputs.
+// On these questions "8" !== 8;
