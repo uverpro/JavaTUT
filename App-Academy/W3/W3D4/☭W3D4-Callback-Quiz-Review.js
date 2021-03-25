@@ -1,3 +1,31 @@
+let bar = function() {
+    console.log("Arches");
+};
+
+let foo = function() {
+    console.log("Everglades");
+    bar();
+    console.log("Sequoia");
+};
+
+console.log("Zion");
+foo();
+console.log("Acadia");
+// Zion, Everglades, Arches, Sequoia, Acadia
+
+
+let foo = function() {
+    console.log("Everglades");
+    console.log("Sequoia");
+};
+
+console.log("Zion");
+foo();
+console.log("Acadia");
+// Zion, Everglades, Sequoia, Acadia
+
+
+
 let bar = function(s) {
     return s.toLowerCase() + "...";
 };
