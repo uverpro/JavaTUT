@@ -1,3 +1,5 @@
+// SYNCHRONOUS vs ASYNCHRONOUS CODE
+
 // WHAT DOES IT MEAN TO ASYNCHRONOUS?
 
     // In asynchronous programming, we can continue to execute another command,
