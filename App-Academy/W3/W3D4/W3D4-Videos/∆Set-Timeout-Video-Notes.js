@@ -49,3 +49,12 @@ console.log('end');
   [Symbol(asyncId)]: 2,
   [Symbol(triggerId)]: 1
 } */
+
+// This just really illustrates when you need to get rid of your Timeout function!
+// You can do this with another built in function "clearTimeout"
+function foo(a, b) {
+    console.log("time is up")
+    console.log(a + " " + b);
+}
+const result = setTimeout(foo, 1000, 'potato', 'tomato');
+clearTimeout(result);
