@@ -73,7 +73,7 @@ let foo = function(secret) {
 };
 
 bar(foo);
-
+// foo is the function acting as the callback
 
 
 let foo = function() {
@@ -86,4 +86,4 @@ let foo = function() {
     console.log("hello");
     return 42;
 };
-foo;
+foo; // prints nothing
