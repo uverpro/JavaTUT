@@ -29,7 +29,3 @@ foo();
 console.log("three");
 // Although this is predictable, the code "jumps around".
 // It is NOT read in a strictly "top down" fashion
-
-// What does it mean to be asynchronous?
-    // In asynchronous programming, we can cotinue to execute another command,
-// even if the current command has not yet been completed
