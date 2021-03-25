@@ -28,7 +28,11 @@ const timeoutObjs = batchTimeouts(tasks, delays);
 console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]
 ***********************************************************************/
 
-batchTimeouts function()
+function batchTimeouts(tasks, delays) {
+  return tasks.map(function (tasks, i) {
+  return setTimeout(tasks, delays[i])
+  });
+}
 
 const sayHello = () => console.log('hi');
 const sayGoodbye = () => console.log('bye');
