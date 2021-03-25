@@ -24,5 +24,6 @@
 
 // Manipulating the message queue
     // the items stored on the message queue are called "messages"
-    // when a new event occurs, but the runtime is busy processing another command
-//
+    // when a new event occurs, but the runtime is busy processing another command,
+// a message for that event is enqueued
+    // when the runtime finishes its current command, the next message is dequeued and processed
