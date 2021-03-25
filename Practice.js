@@ -1,17 +1,11 @@
-function foo() {
-  console.log("fizz");
-}
+let foo = function(n, cb) {
+  console.log("vroom");
+  for (let i = 0; i < n; i++) {
+    cb();
+  }
+  console.log("skrrt");
+};
 
-function bar() {
-  console.log("buzz");
-}
-
-function boom(cb1, cb2) {
-  console.log("zip");
-  cb1();
-  console.log("zap");
-  cb2();
-  console.log("zoop");
-}
-
-boom(bar, foo);
+foo(2, function() {
+  console.log("swoosh");
+});
