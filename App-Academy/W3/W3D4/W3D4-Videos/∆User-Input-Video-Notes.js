@@ -44,7 +44,7 @@ const secondAnswer = (answer) => {
 }
 
 const thirdQuestion = (answer) => {
-    console.log(`${answer}? I can tell...`)
+    console.log(`I can tell...`)
     rl.question("How did you get here?", fourthQuestion)
 }
 
