@@ -5,7 +5,9 @@ the start, return an empty array.
 ***********************************************************************/
 
 function range(start, end) {
+    debugger;
     if (end <= start) {
+        debugger;
         return [];
     }
     return [start].concat(range(start + 1, end));
