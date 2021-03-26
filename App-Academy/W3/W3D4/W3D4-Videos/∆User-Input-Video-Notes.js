@@ -6,6 +6,31 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+const firstQuestion = (answer) => {
+    console.log(`Hello, ${answer}`);
+    rl.question("Where are you from?", secondAnswer);
+}
+
+const secondAnswer = (answer) => {
+    console.log(`${answer} is a beautiful place.`)
+    rl.question("How are you today?", thirdQuestion);
+}
+
+const thirdQuestion = (answer) => {
+    console.log(`I can tell...`)
+    rl.question("How did you get here?", fourthQuestion)
+}
+
+const fourthQuestion = (answer) => {
+    console.log(`${answer}? Well, glad you found me.`)
+    rl.close();
+}
+
+rl.question("What is your name?", firstQuestion);
+
+// Research number inputs.
+// On these questions "8" !== 8;
+
 // rl.question('What is your name?', (answer)=> {
 //     console.log(`Hello, ${answer}`)
 //     // rl.close();
@@ -31,29 +56,3 @@ const rl = readline.createInterface({
 // });
     // This will not be asked in order b/c it's the same interface
     // You need to include this question in the same callback
-
-
-const firstQuestion = (answer) => {
-    console.log(`Hello, ${answer}`);
-    rl.question("Where are you from?", secondAnswer);
-}
-
-const secondAnswer = (answer) => {
-    console.log(`${answer} is a beautiful place.`)
-    rl.question("How are you today?", thirdQuestion);
-}
-
-const thirdQuestion = (answer) => {
-    console.log(`I can tell...`)
-    rl.question("How did you get here?", fourthQuestion)
-}
-
-const fourthQuestion = (answer) => {
-    console.log(`${answer}? Well, glad you found me.`)
-    rl.close();
-}
-
-rl.question("What is your name?", firstQuestion);
-
-// Research number inputs.
-// On these questions "8" !== 8;
