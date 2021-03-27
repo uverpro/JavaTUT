@@ -16,8 +16,8 @@ function dynamicRotate(num) {
         for (let i = 0; i < Math.abs(num); i++) {
         num > 0 ? arr.unshift(arr.pop()) : arr.push(arr.shift());
         }
-    };
-}
+    }
+};
 
 let arr = ['a', 'b', 'c', 'd', 'e'];
 rotateRightTwo = dynamicRotate(2);
