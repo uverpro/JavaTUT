@@ -18,3 +18,7 @@ console.log("a:" + a + ", b:" + b);
 // the increment operator increments and returns the value before incrementing.
 // If used prefix, with operator before operand (for example, ++x),
 // the increment operator increments and returns the value after incrementing.
+
+// count++ is post increment where ++count is pre increment.
+// suppose you write count++ means value increase after execute this statement.
+// but in case ++count value will increase while executing this line.
