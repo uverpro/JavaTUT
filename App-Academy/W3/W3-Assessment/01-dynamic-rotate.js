@@ -11,7 +11,12 @@ the given rotation.
 ***********************************************************************/
 
 function dynamicRotate(num) {
-    // Your code here
+    return (arr) => {
+        if (!num) return arr;
+        for (let i = 0; i < Math.abs(num); i++) {
+        num > 0 ? arr.unshift(arr.pop()) : arr.push(arr.shift());
+        }
+    };
 }
 
 let arr = ['a', 'b', 'c', 'd', 'e'];
