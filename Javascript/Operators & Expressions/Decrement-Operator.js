@@ -17,3 +17,7 @@ console.log(`a:${a}, b:${b}`);
 
 // If used prefix, with operator before operand (for example, --x), the decrement operator decrements
 // and returns the value after decrementing.
+
+// count-- is post increment where --count is pre increment.
+// suppose you write count-- means value increase after execute this statement.
+// but in case ++count value will increase while executing this line.
