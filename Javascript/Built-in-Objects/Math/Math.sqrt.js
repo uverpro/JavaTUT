@@ -1,6 +1,5 @@
 // Math.sqrt()
 
-
 // The Math.sqrt() function returns the square root of a number
 
 function calcHypotenuse(a, b) {
