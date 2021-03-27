@@ -112,4 +112,4 @@ const mostFrequentVowel = function (words, counter = {}) {
 };
 
 console.log(mostFrequentVowel(['dog', 'cow', 'pig', 'chicken', 'horse'])); // 'o'
-mostFrequentVowel(['dog', 'cow', 'pig', 'chicken']); // 'i' or 'o'
+console.log(mostFrequentVowel(['dog', 'cow', 'pig', 'chicken'])); // 'i' or 'o'
