@@ -48,6 +48,23 @@ function printOuterNumsFirst(nums) {
     console.log(num);
 
     // Make a recursive call with the modified nums array.
-    console.log(printOuterNumsFirst(nums));
+    printOuterNumsFirst(nums);
 
 }
+
+printOuterNumsFirst([1, 2, 3, 4, 5, 6, 7, 8]);
+// 1
+// 8
+// 2
+// 7
+// 3
+// 6
+// 4
+// 5
+
+printOuterNumsFirst([21, 4, 6, 93, 78]);
+// 78
+// 21
+// 93
+// 4
+// 6
