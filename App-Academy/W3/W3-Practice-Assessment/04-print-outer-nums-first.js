@@ -48,13 +48,6 @@ function printOuterNumsFirst(nums) {
     console.log(num);
 
     // Make a recursive call with the modified nums array.
-    printOuterNumsFirst(nums);
+    console.log(printOuterNumsFirst(nums));
 
-}
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-try {
-  module.exports = printOuterNumsFirst;
-} catch {
-  module.exports = null;
 }
