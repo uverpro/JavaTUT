@@ -17,3 +17,11 @@ function dynamicRotate(num) {
   rotateLeftOne = dynamicRotate(-1);
   rotateLeftOne(animals);
   console.log(animals); // [ 'koala', 'opossum', 'kangaroo', 'wombat' ]
+
+  rotateLeftOne = dynamicRotate(1);
+  rotateLeftOne(animals);
+  console.log(animals); // [ 'wombat', 'koala', 'opossum', 'kangaroo' ]
+
+  rotateLeftOne = dynamicRotate(2);
+  rotateLeftOne(animals);
+  console.log(animals); // [ 'opossum', 'kangaroo', 'wombat', 'koala' ]
