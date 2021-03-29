@@ -20,4 +20,5 @@ On the the browser side, it parcels all the HTML and CSS and JS sent back
     to trouble shoot problems.
     We can view these network requests and responses by using
     DEVELOPERS TOOLS. ===> NETWORK TAB
+    We can see status codes such as "200" which means a successful request.
 */
