@@ -32,39 +32,43 @@ on the command line.
 
 ***********************************************************************/
 
-function printOuterNumsFirst(nums) {
-    if (nums.length === 1) return;
+function printNumbersBetween(startNum, endNum) {
 
-    // extract the number from the beginning if the length of the array is even
-    // else, extract from the end
-    let num;
-    if (nums.length % 2 === 0) {
-      num = nums.pop();
-    } else {
-      num = nums.shift();
-    }
+  // Your code here
 
-    // print the extracted number
-    console.log(num);
+  // Print the number
+  console.log(startNum);
 
-    // Make a recursive call with the modified nums array.
-    printOuterNumsFirst(nums);
+  // Base Case: Stop the program when startNum equals endNum
+  if (startNum === endNum) {
+    return;
+  }
+
+  // If the starting number is greater than the ending
+  // number, decrease it by one. Otherwise, increase
+  // it by one.
+  if (startNum > endNum) {
+    startNum -= 1;
+  } else {
+    startNum += 1;
+  }
+
+  // Make a recursive call with the modified number.
+  printNumbersBetween(startNum, endNum);
 
 }
 
-printOuterNumsFirst([1, 2, 3, 4, 5, 6, 7, 8]);
-// 1
-// 8
-// 2
-// 7
-// 3
-// 6
-// 4
+printNumbersBetween(5, 10);
 // 5
-
-printOuterNumsFirst([21, 4, 6, 93, 78]);
-// 78
-// 21
-// 93
-// 4
 // 6
+// 7
+// 8
+// 9
+// 10
+
+printNumbersBetween(2, -2);
+// 2
+// 1
+// 0
+// -1
+// -2
