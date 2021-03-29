@@ -14,8 +14,8 @@ USER INTERFACE: The browser interface, which includes the address bar, back and 
     bookmars menu, etc. Includes everything except for the requested page content.
 
      User Interface =====\
-        |                |    Data
-     Browser Engine|=====|===Persistence
+        |                |
+     Browser Engine|=====|====Data Persistence
             |            |
     Rendering Engine     |
        |    |    |       |
