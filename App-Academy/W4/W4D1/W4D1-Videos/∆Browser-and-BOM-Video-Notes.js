@@ -12,4 +12,13 @@ The DOM is contained within the BOM.
 
 USER INTERFACE: The browser interface, which includes the address bar, back and forward buttons,
     bookmars menu, etc. Includes everything except for the requested page content.
+
+    | User Interface     |
+        |                |    Data
+    | Browser Engine |===|===Persistence
+    |Rendering Engine|   |
+       |    |    |       |
+Networking  |   UI Backend
+        Javascript
+        Interpretor
 */
