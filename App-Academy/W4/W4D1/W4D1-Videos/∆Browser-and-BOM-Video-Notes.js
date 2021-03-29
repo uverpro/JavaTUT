@@ -25,6 +25,9 @@ Networking  |   UI Backend
 
 BROWSER ENGINE: Manages the interactions between the UI and the rendering engine.
 
+RENDERING ENGINE: Displays or renders the requested page content. if the requested
+    content is HTML, it will parse HTML and CSS and render the parsed content.
 
+NETWORKING: Handles network calls, such as HTTP requests.
 
 */
