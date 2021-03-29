@@ -1,10 +1,7 @@
-function siren(message, volume) {
-  if (volume === 10) {
-      return;
-  }
-
-  console.log(message);
-  siren(message, recursiveStep); // recursiveStep = ?
+function boo() {
+  console.log('boop!');
 }
 
-siren("WEE-OOO", 7); // should print "WEE-OOO", "WEE-OOO", "WEE-OOO"
+console.log('fizz');
+setTimeout(boo, 0);
+console.log('buzz');
