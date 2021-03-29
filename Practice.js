@@ -1,27 +1,10 @@
-function dynamicRotate(num) {
-  return (arr) => {
-  if (!num) return arr;
-
-  for (let i = 0; i < Math.abs(num); i++) {
-  num > 0 ? arr.unshift(arr.pop()) : arr.push(arr.shift());
-  }
-  };
+function siren(message, volume) {
+  if (volume === 10) {
+      return;
   }
 
-  let arr = ["a", "b", "c", "d", "e"];
-  rotateRightTwo = dynamicRotate(2);
-  rotateRightTwo(arr);
-  console.log(arr); // [ 'd', 'e', 'a', 'b', 'c' ]
+  console.log(message);
+  siren(message, recursiveStep); // recursiveStep = ?
+}
 
-  let animals = ["wombat", "koala", "opossum", "kangaroo"];
-  rotateLeftOne = dynamicRotate(-1);
-  rotateLeftOne(animals);
-  console.log(animals); // [ 'koala', 'opossum', 'kangaroo', 'wombat' ]
-
-  rotateLeftOne = dynamicRotate(1);
-  rotateLeftOne(animals);
-  console.log(animals); // [ 'wombat', 'koala', 'opossum', 'kangaroo' ]
-
-  rotateLeftOne = dynamicRotate(2);
-  rotateLeftOne(animals);
-  console.log(animals); // [ 'opossum', 'kangaroo', 'wombat', 'koala' ]
+siren("WEE-OOO", 7); // should print "WEE-OOO", "WEE-OOO", "WEE-OOO"
