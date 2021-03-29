@@ -14,17 +14,48 @@ the shortest string in the `strings` array to the end of `sorted`.
 ***********************************************************************/
 
 function shortestToLongest(strings, sorted=[]) {
-    // Your code here
+    function shortestToLongest(strings, sorted = []) {
+        if (!strings.length) {
+        return sorted;
+        }
 
-    // 1. Find the shortest string in the `strings` array
+        let smallestString = strings[0];
+        let pos;
 
-    // 2. Remove the shortest string from the `strings` array
+        for (let i = 0; i < strings.length; i++) {
+        let currentString = strings[i];
+        if (
+        currentString.length < smallestString.length ||
+        (currentString.length === smallestString.length &&
+        currentString < smallestString)
+        ) {
+        pos = i;
+        smallestString = currentString;
+        }
+        }
 
-    // 3. Push the shortest string to the back of the `sorted` array
+        sorted.push(smallestString);
+        strings.splice(pos, 1);
 
-    // 4. Recurse until the `strings` array is empty (base case)
-
+        return shortestToLongest(strings, sorted);
+        }
 }
+
+        // Sorts strings from shortest to longest
+        let strings1 = ["abc", "de", "", "f", "ghijk", "lmno"];
+        console.log(shortestToLongest(strings1));
+        // ['', 'f', 'de', 'abc', 'lmno', 'ghijk']
+
+        // Accepts a pre-sorted default parameter
+        let strings2 = ["pomegranate", "persimmon", "peach"];
+        let sorted = ["pea", "pear"];
+        console.log(shortestToLongest(strings2, sorted));
+        // ['pea', 'pear', 'peach', 'persimmon', 'pomegranate']
+
+        // Sorts strings of the same length alphabetically
+let strings3 = shortestToLongest(["dog", "cat", "elephant", "ant", "pig", "emu"]);
+shortestToLongest(strings3);
+// ['ant', 'cat', 'dog', 'emu', 'pig', 'elephant']
 
 // Sorts strings from shortest to longest
 let strings1 = ["abc", "de", "", "f", "ghijk", "lmno"]
