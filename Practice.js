@@ -1,9 +1,9 @@
 if ("banana") {
-  // 1
+  console.log(1)
 } else if ([]) {
-  // 2
+  console.log(2)
 } else if ("") {
-  // 3
+  console.log(3)
 } else {
-  // 4
+  console.log(4)
 }
