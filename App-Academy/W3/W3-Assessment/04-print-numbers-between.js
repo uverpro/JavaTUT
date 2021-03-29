@@ -24,9 +24,9 @@ function printNumbersBetween(startNum, endNum) {
     // number, decrease it by one. Otherwise, increase
     // it by one.
     if (startNum < endNum) {
-        startNum - 1;
+        startNum -= 1;
     } else {
-        startNum + 1;
+        startNum += 1;
     }
 
     // Make a recursive call with the modified number.
