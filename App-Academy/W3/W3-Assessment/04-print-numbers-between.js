@@ -16,14 +16,14 @@ function printNumbersBetween(startNum, endNum) {
     console.log(startNum);
 
     // Base Case: Stop the program when startNum equals endNum
-    if (startNum = endNum) {
+    if (startNum === endNum) {
         return;
     }
 
     // If the starting number is greater than the ending
     // number, decrease it by one. Otherwise, increase
     // it by one.
-    if (startNum < endNum) {
+    if (startNum > endNum) {
         startNum -= 1;
     } else {
         startNum += 1;
