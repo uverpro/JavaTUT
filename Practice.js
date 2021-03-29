@@ -1,7 +1,9 @@
-function boo() {
-  console.log('boop!');
+if ("banana") {
+  // 1
+} else if ([]) {
+  // 2
+} else if ("") {
+  // 3
+} else {
+  // 4
 }
-
-console.log('fizz');
-setTimeout(boo, 0);
-console.log('buzz');
