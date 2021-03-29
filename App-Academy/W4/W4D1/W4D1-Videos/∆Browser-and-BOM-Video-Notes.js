@@ -14,7 +14,7 @@ USER INTERFACE: The browser interface, which includes the address bar, back and 
     bookmars menu, etc. Includes everything except for the requested page content.
 
      User Interface =====\
-        |                |
+            |            |
      Browser Engine|=====|====Data Persistence
             |            |
     Rendering Engine     |
@@ -29,5 +29,10 @@ RENDERING ENGINE: Displays or renders the requested page content. if the request
     content is HTML, it will parse HTML and CSS and render the parsed content.
 
 NETWORKING: Handles network calls, such as HTTP requests.
+
+UI BACKEND: Used for drawing basic widgets like combo boxes and windows;
+    uses operating system uder interface methods.
+
+DATA STORAGE: The persistence of data stored in the browser such as cookies.
 
 */
