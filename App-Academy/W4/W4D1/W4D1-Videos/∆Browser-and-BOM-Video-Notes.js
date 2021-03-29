@@ -23,6 +23,8 @@ Networking  |   UI Backend
         Javascript
         Interpretor
 
-BROWSER ENGINE:
+BROWSER ENGINE: Manages the interactions between the UI and the rendering engine.
+
+
 
 */
