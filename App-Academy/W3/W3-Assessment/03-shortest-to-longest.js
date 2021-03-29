@@ -13,7 +13,6 @@ holds the currently sorted elements. Each recursive step should add
 the shortest string in the `strings` array to the end of `sorted`.
 ***********************************************************************/
 
-function shortestToLongest(strings, sorted=[]) {
     function shortestToLongest(strings, sorted = []) {
         if (!strings.length) {
         return sorted;
@@ -39,7 +38,6 @@ function shortestToLongest(strings, sorted=[]) {
 
         return shortestToLongest(strings, sorted);
         }
-}
 
         // Sorts strings from shortest to longest
         let strings1 = ["abc", "de", "", "f", "ghijk", "lmno"];
