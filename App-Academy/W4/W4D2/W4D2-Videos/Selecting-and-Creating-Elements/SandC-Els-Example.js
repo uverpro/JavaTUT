@@ -5,7 +5,7 @@
 // window.onload = printDiv;
 
 const printSpans = () => {
-    const spansOfInterest = document.querySelectorAll;
-    console.log(divOfInterest);
+    const spansOfInterest = document.querySelectorAll('span.cloudy');
+    console.log(spansOfInterest);
 };
-window.onload = printDiv;
+window.onload = printSpans;
