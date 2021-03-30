@@ -4,8 +4,8 @@
 // };
 // window.onload = printDiv;
 
-const printSpans = () => {
-    const spansOfInterest = document.querySelectorAll('span.cloudy');
-    console.log(spansOfInterest);
-};
-window.onload = printSpans;
+// const printSpans = () => {
+//     const spansOfInterest = document.querySelectorAll('span.cloudy');
+//     console.log(spansOfInterest);
+// };
+// window.onload = printSpans;
