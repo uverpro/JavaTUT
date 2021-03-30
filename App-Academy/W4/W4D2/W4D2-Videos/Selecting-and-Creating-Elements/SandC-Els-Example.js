@@ -9,3 +9,7 @@
 //     console.log(spansOfInterest);
 // };
 // window.onload = printSpans;
+
+
+
+// create addElement function
