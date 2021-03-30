@@ -3,9 +3,20 @@
 // as an argument. The function should return the total product of all numbers
 // multiplied together.
 
-twoDimensionalProduct = (array) => {
+let twoDimensionalProduct = function(arr) {
+    let product = 1;
 
+    for (let i = 0; i < arr.length; i++) {
+        let subArr = arr[i];
+        for (let j = 0; j < subArr.length; j++) {
+            let num = subArr[j];
+            product *= num;
+        }
+    }
+
+    return product;
 };
+
 
 let arr1 = [
     [6, 4],
