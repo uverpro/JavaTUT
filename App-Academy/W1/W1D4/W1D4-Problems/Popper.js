@@ -3,7 +3,9 @@
 // The function should remove the last num elements from the array, mutating the original array.
 // The function should return a new array containing the elements that were removed.
 
-
+popper = (arr, num) => {
+    return arr.pop(2);
+};
 
 let arr1 = ['a', 'b', 'c', 'd', 'e'];
 console.log(popper(arr1, 2)); // [ 'e', 'd' ]
