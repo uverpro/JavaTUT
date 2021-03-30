@@ -4,7 +4,13 @@
 // The function should return a new array containing the elements that were removed.
 
 popper = (arr, num) => {
-    return arr.pop(2);
+    let popped = [];
+    for (let i = 0; i < num; i++) {
+        // let el = arr.pop();
+        // popped.push(el)
+        popped.push(arr.pop());
+    }
+    return popped;
 };
 
 let arr1 = ['a', 'b', 'c', 'd', 'e'];
