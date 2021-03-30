@@ -3,7 +3,9 @@
 // as an argument. The function should return the total product of all numbers
 // multiplied together.
 
+twoDimensionalProduct = (array) => {
 
+};
 
 let arr1 = [
     [6, 4],
