@@ -19,4 +19,10 @@ const addElement = () => {
     // set new element's id to 'sleeping-giant'
 
     // create text node 'jell-o, burled!'
-}
+
+    // append content to element
+
+    // append element to document body
+};
+
+// run script when page loads
