@@ -4,8 +4,8 @@
 // };
 // window.onload = printDiv;
 
-const printDiv = () => {
-    const divOfInterest = document.getElementById('catch-me-if-you-can');
+const printSpans = () => {
+    const spansOfInterest = document.querySelectorAll;
     console.log(divOfInterest);
 };
 window.onload = printDiv;
