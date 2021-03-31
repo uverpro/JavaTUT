@@ -27,12 +27,15 @@
 // as UTC lies along the meridian that includes London—and nearby Greenwich—in the United Kingdom.)
 // The user's device provides the local time.
 
-In addition to methods to read and alter individual components of the local date and time (such as getDay() and setHours()), there are also versions of the same methods that read and manipulate the date and time using UTC (such as getUTCDay() and setUTCHours()).
+// In addition to methods to read and alter individual components of the local date and time (such as getDay() and setHours()),
+// there are also versions of the same methods that read and manipulate the date and time using UTC
+// (such as getUTCDay() and setUTCHours()).
 
-Constructor
-Date()
-When called as a function, returns a string representation of the current date and time, exactly as new Date().toString() does.
-new Date()
+// Constructor
+  Date()
+// When called as a function, returns a string representation of the current date and time,
+// exactly as new Date().toString() does.
+  new Date()
 When called as a constructor, returns a new Date object.
 Static methods
 Date.now()
