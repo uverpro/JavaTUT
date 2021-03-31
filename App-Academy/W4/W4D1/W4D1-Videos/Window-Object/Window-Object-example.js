@@ -16,3 +16,6 @@ window.onload = () => { // this will run after the window has loaded!
 window.addEventListener('DOMContentLoaded', () => { // this line will print BEFORE the window.onload!
     console.log("This script loaded when the DOM was ready.");
 });
+
+// How to run a script after the DOM has loaded:
+// Above we waited for DOM content to load
