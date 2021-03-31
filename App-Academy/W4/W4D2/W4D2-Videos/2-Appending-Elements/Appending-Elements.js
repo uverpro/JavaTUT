@@ -15,8 +15,8 @@ const addElements = () => {
     // set the div's id to "lickable-frog"
     lastElement.setAttribute('id', 'lickable-frog');
     // append element to document.body
-
+    document.body/appendChild(lastElement);
 }
 
 // run script when page loads
-window.onload = addElement;
+window.onload = addElements;
