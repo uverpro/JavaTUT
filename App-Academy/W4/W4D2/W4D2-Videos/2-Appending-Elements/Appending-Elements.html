@@ -15,7 +15,13 @@
         listElement.appendChild(listItem);
         document.body.appendChild(listElement);
     }
-    window.onload = addElement; -->
+    window.onload = addElement; // this actually runs after everything on the page is loaded
+                                // not just the DOM
+    // add event listener:
+    window.addEventListener('DOMContentLoaded', (event) => {
+
+    });
+     -->
 </head>
 <body>
 
