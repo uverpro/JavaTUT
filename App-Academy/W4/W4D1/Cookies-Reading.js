@@ -26,3 +26,18 @@ document.cookie = aNewCookieHere;
 const firstCookie = "favoriteCat=million";
 document.cookie = firstCookie;
 document.cookie; // Returns "favoriteCat=million"
+
+    // Formatting your string like we do in the firstCookie variable above sets the cookie value
+    // with a defined key, known as the cookie's name, instead of an empty name
+
+
+// Deleting a cookie:
+    // Delete cookies in JS by setting a cookie's expiration date to a date in the past:
+    const firstCookie = "favoriteCat=million";
+    document.cookie = firstCookie;
+    document.cookie; // Returns "favoriteCat=million"
+
+    // specify the cookies "name" (the key) with an "=" and set the  expiration
+    // date to the past
+    document.cookie = "favoriteCat=; expires = Thu, 01 Jan 1970 00:00:00 GMT";
+    document.cookie; // ""
