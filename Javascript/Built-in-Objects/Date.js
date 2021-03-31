@@ -49,8 +49,10 @@ Date.parse()
 // Note: Parsing of strings with Date.parse is strongly discouraged due to browser differences and inconsistencies.
 
 Date.UTC()
-Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7) and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC, with leap seconds ignored.
-Instance methods
+// Accepts the same parameters as the longest form of the constructor (i.e. 2 to 7)
+// and returns the number of milliseconds since January 1, 1970, 00:00:00 UTC, with leap seconds ignored.
+
+// Instance methods
 Date.prototype.getDate()
 Returns the day of the month (1–31) for the specified date according to local time.
 Date.prototype.getDay()
