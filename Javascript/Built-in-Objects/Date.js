@@ -1,8 +1,7 @@
-Date
-JavaScript Date objects represent a single moment in time in a platform-independent format. Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.
+// Date
+// JavaScript Date objects represent a single moment in time in a platform-independent format.
+// Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.
 
-TC39 is working on Temporal, a new Date/Time API.
-Read more about it on the Igalia blog and fill out the survey. It needs real-world feedback from web developers, but is not yet ready for production use!
 
 Description
 The ECMAScript epoch and timestamps
