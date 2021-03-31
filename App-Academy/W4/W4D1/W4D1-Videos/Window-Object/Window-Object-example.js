@@ -7,6 +7,8 @@ newWindow.resizeTo(500, 500);
  console.log(this) // console.logs the window object which means the context of the function is the windows object
 })();
 
+
+// How to run scripts in the appropriate time
 window.onload = () => {
     console.log("This script loaded when all the resources and the DOM were ready.");
 };
