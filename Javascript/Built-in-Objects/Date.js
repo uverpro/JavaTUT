@@ -3,9 +3,12 @@
 // Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.
 
 
-Description
-The ECMAScript epoch and timestamps
-A JavaScript date is fundamentally specified as the number of milliseconds that have elapsed since midnight on January 1, 1970, UTC. This date and time are not the same as the UNIX epoch (the number of seconds that have elapsed since midnight on January 1, 1970, UTC), which is the predominant base value for computer-recorded date and time values.
+// Description
+// The ECMAScript epoch and timestamps
+// A JavaScript date is fundamentally specified as the number of milliseconds that have elapsed
+// since midnight on January 1, 1970, UTC. This date and time are not the same as the UNIX epoch
+// (the number of seconds that have elapsed since midnight on January 1, 1970, UTC),
+// which is the predominant base value for computer-recorded date and time values.
 
 Note: It's important to keep in mind that while the time value at the heart of a Date object is UTC, the basic methods to fetch the date and time or its components all work in the local (i.e. host system) time zone and offset.
 
