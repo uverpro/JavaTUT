@@ -12,8 +12,8 @@ const addElements = () => {
     document.body.appendChild(newElement);
     // append a seceond element, a div, to the DOM
     const lastElement = document.createElement('div');
-    // set the div's id to "lickable frog"
-
+    // set the div's id to "lickable-frog"
+    lastElement.setAttribute('id', 'lickable-frog');
     // append element to document.body
 
 }
