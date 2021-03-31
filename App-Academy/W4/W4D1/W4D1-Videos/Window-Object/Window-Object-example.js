@@ -9,7 +9,7 @@ newWindow.resizeTo(500, 500);
 
 
 // How to run scripts in the appropriate time
-window.onload = () => {
+window.onload = () => { // this will run after the window has loaded!
     console.log("This script loaded when all the resources and the DOM were ready.");
 };
 
