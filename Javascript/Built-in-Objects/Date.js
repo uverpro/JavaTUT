@@ -20,8 +20,12 @@
 // relative to January 1, 1970 UTC (that is, April 20, 271821 BCE ~ September 13, 275760 CE)
 // can be represented by the standard Date object (equivalent to ±8,640,000,000,000,000 milliseconds).
 
-Date format and time zone conversions
-There are several methods available to obtain a date in various formats, as well as to perform time zone conversions. Particularly useful are the functions that output the date and time in Coordinated Universal Time (UTC), the global standard time defined by the World Time Standard. (This time is historically known as Greenwich Mean Time, as UTC lies along the meridian that includes London—and nearby Greenwich—in the United Kingdom.) The user's device provides the local time.
+// Date format and time zone conversions
+// There are several methods available to obtain a date in various formats, as well as to perform time zone conversions.
+// Particularly useful are the functions that output the date and time in Coordinated Universal Time (UTC),
+// the global standard time defined by the World Time Standard. (This time is historically known as Greenwich Mean Time,
+// as UTC lies along the meridian that includes London—and nearby Greenwich—in the United Kingdom.)
+// The user's device provides the local time.
 
 In addition to methods to read and alter individual components of the local date and time (such as getDay() and setHours()), there are also versions of the same methods that read and manipulate the date and time using UTC (such as getUTCDay() and setUTCHours()).
 
