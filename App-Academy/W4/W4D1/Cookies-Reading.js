@@ -18,3 +18,11 @@ document.cookie = firstCookie;
 const secondCookie = "favoriteDog=bambi";
 document.cookie = secondCookie;
 document.cookie; // Returns "favoriteCat=million; favoriteDog=bambi"
+
+    // the following syntax will create a new cookies:
+document.cookie = aNewCookieHere;
+
+// to set a second cookie, you would assign a new key value pair, using the same syntax
+const firstCookie = "favoriteCat=million";
+document.cookie = firstCookie;
+document.cookie; // Returns "favoriteCat=million"
