@@ -32,10 +32,10 @@
 // (such as getUTCDay() and setUTCHours()).
 
 // Constructor
-  Date()
+Date()
 // When called as a function, returns a string representation of the current date and time,
 // exactly as new Date().toString() does.
-  new Date()
+new Date()
 // When called as a constructor, returns a new Date object.
 
 // Static methods
