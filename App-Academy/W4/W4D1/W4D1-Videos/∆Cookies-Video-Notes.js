@@ -8,4 +8,6 @@
     // For example: in a shopping cart
 
 // Shopping Cart:
-    
+    // session-id cookie is the item in the shopping cart, if you delete it,
+    // you remove the item from the cart.
+    // Experiment.
