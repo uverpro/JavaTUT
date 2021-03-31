@@ -1,9 +1,9 @@
-// Date
+  // Date
 // JavaScript Date objects represent a single moment in time in a platform-independent format.
 // Date objects contain a Number that represents milliseconds since 1 January 1970 UTC.
 
 
-// Description
+  // Description
 // The ECMAScript epoch and timestamps
 // A JavaScript date is fundamentally specified as the number of milliseconds that have elapsed
 // since midnight on January 1, 1970, UTC. This date and time are not the same as the UNIX epoch
@@ -31,14 +31,14 @@
 // there are also versions of the same methods that read and manipulate the date and time using UTC
 // (such as getUTCDay() and setUTCHours()).
 
-// Constructor
+  // Constructor
 Date()
 // When called as a function, returns a string representation of the current date and time,
 // exactly as new Date().toString() does.
 new Date()
 // When called as a constructor, returns a new Date object.
 
-// Static methods
+  // Static methods
 Date.now()
 // Returns the numeric value corresponding to the current time—the number of milliseconds elapsed
 // since January 1, 1970 00:00:00 UTC, with leap seconds ignored.
@@ -150,11 +150,12 @@ Date.prototype.toUTCString()
 Date.prototype.valueOf()
 // Returns the primitive value of a Date object. Overrides the Object.prototype.valueOf() method.
 
-// Examples
+  // Examples
 // Several ways to create a Date object
 // The following examples show several ways to create JavaScript dates:
 
-Note: Parsing of date strings with the Date constructor (and Date.parse, they are equivalent) is strongly discouraged due to browser differences and inconsistencies.
+// Note: Parsing of date strings with the Date constructor (and Date.parse, they are equivalent)
+// is strongly discouraged due to browser differences and inconsistencies.
 
 let today = new Date()
 let birthday = new Date('December 17, 1995 03:24:00')
@@ -162,7 +163,8 @@ let birthday = new Date('1995-12-17T03:24:00')
 let birthday = new Date(1995, 11, 17)            // the month is 0-indexed
 let birthday = new Date(1995, 11, 17, 3, 24, 0)
 let birthday = new Date(628021800000)            // passing epoch timestamp
- To get Date, Month and Year or Time
+
+  // To get Date, Month and Year or Time
 let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/")
 let [hour, minute, second] = new Date().toLocaleTimeString("en-US").split(/:| /)
 Two digit years map to 1900 – 1999
