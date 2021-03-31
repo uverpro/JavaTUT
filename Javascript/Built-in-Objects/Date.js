@@ -14,7 +14,11 @@
 // the basic methods to fetch the date and time or its components all work in the local
 // (i.e. host system) time zone and offset.
 
-It should be noted that the maximum Date is not of the same value as the maximum safe integer (Number.MAX_SAFE_INTEGER is 9,007,199,254,740,991). Instead, it is defined in ECMA-262 that a maximum of ±100,000,000 (one hundred million) days relative to January 1, 1970 UTC (that is, April 20, 271821 BCE ~ September 13, 275760 CE) can be represented by the standard Date object (equivalent to ±8,640,000,000,000,000 milliseconds).
+// It should be noted that the maximum Date is not of the same value as the maximum safe integer
+// (Number.MAX_SAFE_INTEGER is 9,007,199,254,740,991).
+// Instead, it is defined in ECMA-262 that a maximum of ±100,000,000 (one hundred million) days
+// relative to January 1, 1970 UTC (that is, April 20, 271821 BCE ~ September 13, 275760 CE)
+// can be represented by the standard Date object (equivalent to ±8,640,000,000,000,000 milliseconds).
 
 Date format and time zone conversions
 There are several methods available to obtain a date in various formats, as well as to perform time zone conversions. Particularly useful are the functions that output the date and time in Coordinated Universal Time (UTC), the global standard time defined by the World Time Standard. (This time is historically known as Greenwich Mean Time, as UTC lies along the meridian that includes London—and nearby Greenwich—in the United Kingdom.) The user's device provides the local time.
