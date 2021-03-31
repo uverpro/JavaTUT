@@ -13,19 +13,19 @@
     // document interface represents the web page loaded in a user's browser
     // cookies are stored on a user's browser, so document object allows
     // to get/set cookies on users broswer:
-const firstCookie = "favoriteCat=million";
-document.cookie = firstCookie;
-const secondCookie = "favoriteDog=bambi";
-document.cookie = secondCookie;
-document.cookie; // Returns "favoriteCat=million; favoriteDog=bambi"
+    const firstCookie = "favoriteCat=million";
+    document.cookie = firstCookie;
+    const secondCookie = "favoriteDog=bambi";
+    document.cookie = secondCookie;
+    document.cookie; // Returns "favoriteCat=million; favoriteDog=bambi"
 
     // the following syntax will create a new cookies:
-document.cookie = aNewCookieHere;
+    document.cookie = aNewCookieHere;
 
     // to set a second cookie, you would assign a new key value pair, using the same syntax
-const firstCookie = "favoriteCat=million";
-document.cookie = firstCookie;
-document.cookie; // Returns "favoriteCat=million"
+    const firstCookie = "favoriteCat=million";
+    document.cookie = firstCookie;
+    document.cookie; // Returns "favoriteCat=million"
 
     // Formatting your string like we do in the firstCookie variable above sets the cookie value
     // with a defined key, known as the cookie's name, instead of an empty name
