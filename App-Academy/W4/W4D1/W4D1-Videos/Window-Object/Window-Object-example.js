@@ -13,6 +13,6 @@ window.onload = () => { // this will run after the window has loaded!
     console.log("This script loaded when all the resources and the DOM were ready.");
 };
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', () => { // this line will print BEFORE the window.onload!
     console.log("This script loaded when the DOM was ready.");
 });
