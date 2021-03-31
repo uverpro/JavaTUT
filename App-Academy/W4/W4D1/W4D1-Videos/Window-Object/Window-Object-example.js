@@ -3,7 +3,7 @@ const newWindow = window.open("https://www.wikipedia.org", "Wikipedia", "width=1
 // Resize the new window
 newWindow.resizeTo(500, 500);
 
-(function() {
+(function() { // the context of a function is actually the object that contains that function. In the case of an anonymous function, that context is the window.
  console.log(this) // console.logs the window object which means the context of the function is the windows object
 })();
 
