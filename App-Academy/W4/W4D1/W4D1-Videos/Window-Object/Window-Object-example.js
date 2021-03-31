@@ -4,13 +4,13 @@ const newWindow = window.open("https://www.wikipedia.org", "Wikipedia", "width=1
 newWindow.resizeTo(500, 500);
 
 (function() {
- console.log(this)
-})
+ console.log(this) // console.logs the window object which means the context of the function is the windows object
+})();
 
-// window.onload = () => {
-    // console.log("This script loaded when all the resources and the DOM were ready.");
-// };
+window.onload = () => {
+    console.log("This script loaded when all the resources and the DOM were ready.");
+};
 
-// window.addEventListener('DOMContentLoaded', () => {
-    // console.log("This script loaded when the DOM was ready.");
-// });
+window.addEventListener('DOMContentLoaded', () => {
+    console.log("This script loaded when the DOM was ready.");
+});
