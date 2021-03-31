@@ -3,9 +3,9 @@ const newWindow = window.open("https://www.wikipedia.org", "Wikipedia", "width=1
 // Resize the new window
 newWindow.resizeTo(500, 500);
 
-// (function() {
-//  console.log(this)
-// })
+(function() {
+ console.log(this)
+})
 
 // window.onload = () => {
     // console.log("This script loaded when all the resources and the DOM were ready.");
