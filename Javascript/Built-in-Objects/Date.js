@@ -167,10 +167,12 @@ let birthday = new Date(628021800000)            // passing epoch timestamp
   // To get Date, Month and Year or Time
 let [month, date, year]    = new Date().toLocaleDateString("en-US").split("/")
 let [hour, minute, second] = new Date().toLocaleTimeString("en-US").split(/:| /)
-Two digit years map to 1900 – 1999
-Values from 0 to 99 map to the years 1900 to 1999. All other values are the actual year .
 
-In order to create and get dates between the years 0 and 99 the Date.prototype.setFullYear() and Date.prototype.getFullYear() methods should be used.
+// Two digit years map to 1900 – 1999
+// Values from 0 to 99 map to the years 1900 to 1999. All other values are the actual year .
+
+// In order to create and get dates between the years 0 and 99 the Date.prototype.setFullYear()
+// and Date.prototype.getFullYear() methods should be used.
 
 let date = new Date(98, 1)  // Sun Feb 01 1998 00:00:00 GMT+0000 (GMT)
 
@@ -178,10 +180,13 @@ let date = new Date(98, 1)  // Sun Feb 01 1998 00:00:00 GMT+0000 (GMT)
 date.setYear(98)            // Sun Feb 01 1998 00:00:00 GMT+0000 (GMT)
 
 date.setFullYear(98)        // Sat Feb 01 0098 00:00:00 GMT+0000 (BST)
-Calculating elapsed time
-The following examples show how to determine the elapsed time between two JavaScript dates in milliseconds.
 
-Due to the differing lengths of days (due to daylight saving changeover), months, and years, expressing elapsed time in units greater than hours, minutes, and seconds requires addressing a number of issues, and should be thoroughly researched before being attempted.
+  // Calculating elapsed time
+// The following examples show how to determine the elapsed time between two JavaScript dates in milliseconds.
+
+// Due to the differing lengths of days (due to daylight saving changeover), months, and years, expressing elapsed time
+// in units greater than hours, minutes, and seconds requires addressing a number of issues,
+// and should be thoroughly researched before being attempted.
 
 // Using Date objects
 let start = Date.now()
@@ -208,8 +213,12 @@ function printElapsedTime(fTest) {
 }
 
 let yourFunctionReturn = printElapsedTime(yourFunction)
-Note: In browsers that support the Web Performance API's high-resolution time feature, Performance.now() can provide more reliable and precise measurements of elapsed time than Date.now().
 
-Get the number of seconds since the ECMAScript Epoch
+// Note: In browsers that support the Web Performance API's high-resolution time feature,
+// Performance.now() can provide more reliable and precise measurements of elapsed time than Date.now().
+
+  // Get the number of seconds since the ECMAScript Epoch
 let seconds = Math.floor(Date.now() / 1000)
-In this case, it's important to return only an integer—so a simple division won't do. It's also important to only return actually elapsed seconds. (That's why this code uses Math.floor(), and not Math.round().)
+// In this case, it's important to return only an integer—so a simple division won't do.
+// It's also important to only return actually elapsed seconds. (That's why this code uses Math.floor(),
+// and not Math.round().)
