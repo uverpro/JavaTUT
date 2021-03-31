@@ -6,3 +6,6 @@
     // basically anything we wouldn't want to store in a database but
     // would be helpful to use on the front-end.
     // For example: in a shopping cart
+
+// Shopping Cart:
+    
