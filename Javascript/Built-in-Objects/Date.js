@@ -36,8 +36,9 @@
 // When called as a function, returns a string representation of the current date and time,
 // exactly as new Date().toString() does.
   new Date()
-When called as a constructor, returns a new Date object.
-Static methods
+// When called as a constructor, returns a new Date object.
+
+// Static methods
 Date.now()
 Returns the numeric value corresponding to the current time—the number of milliseconds elapsed since January 1, 1970 00:00:00 UTC, with leap seconds ignored.
 Date.parse()
