@@ -32,11 +32,33 @@
 
 // D2 - Element Selection Lesson Learning Objectives
 
-Write a JavaScript statement that selects one or more elements by their attributes or tags.
-Compare and contrast NodeList with HTMLCollection.
-Create and append a child HTML element with specified attributes to a parent HTML element using JavaScript.
-Use a string to construct HTML elements with .innerHTML.
-Compare and contrast .innerHTML and .innerText methods on an HTML element.
-Write JavaScript to add a CSS class to an HTML element.
-Construct JavaScript to write the content of the child HTML elements of a given element to the console.
-Write JavaScript to update the title of the document.
+// 1. Write a JavaScript statement that selects one or more elements by their attributes or tags.
+
+
+
+// 2. Compare and contrast NodeList with HTMLCollection.
+
+
+
+// 3. Create and append a child HTML element with specified attributes
+// to a parent HTML element using JavaScript.
+
+
+
+// 4. Use a string to construct HTML elements with .innerHTML.
+
+
+
+// 5. Compare and contrast .innerHTML and .innerText methods on an HTML element.
+
+
+
+// 6. Write JavaScript to add a CSS class to an HTML element.
+
+
+
+// 7. Construct JavaScript to write the content of the child HTML elements of a given element to the console.
+
+
+
+// 8. Write JavaScript to update the title of the document.
