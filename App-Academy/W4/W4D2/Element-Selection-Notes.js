@@ -183,3 +183,12 @@ window.addEventListener("DOMContentLoaded", event => {
 // inspecting the page on the browser, notice: the 'body' element has class of "i-got-loaded"
 
 /********************************************************************************************/
+
+// What the DOM is and how we can access it
+// How to access DOM elements using document.getElementById() and document.querySelectorAll()
+// How to create new elements with document.createElement() and document.createTextNode,
+// and append them to existing DOM elements with Element.appendChild()
+// The difference between window.onload and DOMContentLoaded
+// How to access children nodes with NodeList.childNodes
+// Updating DOM elements with Element.innerHTML
+// The Javascript Date object
