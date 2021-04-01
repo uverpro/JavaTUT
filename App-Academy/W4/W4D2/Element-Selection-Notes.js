@@ -241,6 +241,18 @@ window.addEventListener("DOMContentLoaded", event => {
 // Create a 'ul' element with the id "your-worst-enemy" w/ no children
 // Add JS to construct a string that contains six 'li' tags, each containing a random number
 // Set the inner HTML property of 'ul#your-worst-enemy' to that string
+// HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="example.js"></script>
+  </head>
+  <body>
+    <ul id="your-worst-enemy"></ul>
+  </body>
+</html>
+// Javascript
+
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
