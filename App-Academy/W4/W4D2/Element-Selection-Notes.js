@@ -28,4 +28,5 @@
         // All 7 elements referenced and stored in a single variable
 
 // .getElementById() references single element
-// .querySelectorAll("span.cloudy") (object.property?) references all elements 
+// .querySelectorAll("span.cloudy") object.property? refs all elements w/ class name "cloudy"
+    // A static NodeList. Can iterate over NodeList with .forEach()
