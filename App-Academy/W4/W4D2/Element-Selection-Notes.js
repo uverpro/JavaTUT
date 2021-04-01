@@ -128,8 +128,13 @@ const addElements = () => {
 <html>
   <head>
     <script type="text/javascript">
-      //Javascript goes here!
+      {/* Javascript goes here! */}
     </script>
   </head>
   <body></body>
 </html>
+// Inside the block:
+  // create 'ul' element with no id
+  // create an 'li' element with the id 'dreamy-eyes'
+  // add the 'li' as a child to the 'ul' element
+  // add the 'ul' element as the first child of the 'body' element
