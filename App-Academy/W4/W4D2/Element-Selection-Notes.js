@@ -196,6 +196,11 @@ window.addEventListener("DOMContentLoaded", event => {
     // console.log can to print element values.
     // Element.innerHTML fills in the HTML of a DOM element.
 
+
+// Console Logging Element Values
+
+
+
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
 // How to create new elements with document.createElement() and document.createTextNode,
