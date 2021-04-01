@@ -238,6 +238,10 @@ window.addEventListener("DOMContentLoaded", event => {
 // the inner HTML property can be used to get or set the HTML or XML markup contained
     // within an element
 
+// Create a 'ul' element with the id "your-worst-enemy" w/ no children
+// Add JS to construct a string that contains six 'li' tags, each containing a random number
+// Set the inner HTML property of 'ul#your-worst-enemy' to that string
+
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
 // How to create new elements with document.createElement() and document.createTextNode,
