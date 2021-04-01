@@ -276,6 +276,8 @@ const getRandomInt = max => {
 
 // Inserting a Date Object into the DOM
 
+//
+
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
 // How to create new elements with document.createElement() and document.createTextNode,
