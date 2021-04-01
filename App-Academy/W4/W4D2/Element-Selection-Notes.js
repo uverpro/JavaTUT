@@ -270,7 +270,7 @@ const getRandomInt = max => {
     const listElement = document.getElementById("your-worst-enemy");
     listElement.innerHTML = liString;
   });
-
+// Browser Page: six net list items on the page, each containing a random number
 
 
 // What the DOM is and how we can access it
