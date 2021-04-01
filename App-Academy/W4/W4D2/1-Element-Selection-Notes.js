@@ -5,7 +5,7 @@
 // Update and create new DOM elements via Javascript
 // Change CSS based on a DOM event
 
-
+/********************************/
 
 // What is DOM?
     // The Document Object Model, DOM, an object-oriented representation of HTML doc/web page
@@ -81,3 +81,11 @@ const addElement = () => {
 // Use the browser tools to inspect the page:
 // (right-click on the page and select “inspect”, or hotkeys fn + f12)
 // Notice the new h1 with the id we gave it.
+
+/*********************************************************************/
+
+// Inserting Element in JS File and Script Block
+
+// Create a second element, div with an id "lickable-frog"
+// append it to the BODY
+// Update the JS function to append a second element to the page
