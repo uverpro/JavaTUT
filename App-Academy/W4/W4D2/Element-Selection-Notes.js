@@ -193,8 +193,8 @@ window.addEventListener("DOMContentLoaded", event => {
 
 
 // Console.log, Element.innerHTML, and the Date Object
-    // console.log to print element values.
-
+    // console.log can to print element values.
+    // Element.innerHTML fills in the HTML of a DOM element.
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
