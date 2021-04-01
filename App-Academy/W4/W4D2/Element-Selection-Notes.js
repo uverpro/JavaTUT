@@ -252,7 +252,24 @@ window.addEventListener("DOMContentLoaded", event => {
   </body>
 </html>
 // Javascript
+// generate a random number for each list item
+const getRandomInt = max => {
+    return Math.floor(Math.random() * Math.floor(max));
+  };
 
+  // listen for DOM ready event
+  window.addEventListener("DOMContentLoaded", event => {
+    // push 6 LI elements into an array and join
+    const liArr = [];
+    for (let i = 0; i < 6; i++) {
+      liArr.push("<li>" + getRandomInt(10) + "</li>");
+    }
+    const liString = liArr.join(" ");
+
+    // insert string into the DOM using innerHTML
+    const listElement = document.getElementById("your-worst-enemy");
+    listElement.innerHTML = liString;
+  });
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
