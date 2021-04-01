@@ -9,3 +9,6 @@
     // How to reference a DOM element in JS:
         // Assume the HTML file includes the following div:
         <div id="”catch-me-if-you-can”">HI!</div> // HTML (avaliable in the DOM)
+        // With JS, reference the element by scanning the DOCUMENT and finding the ID
+        // via document.getElementById(). Then, assign the reference to a variable:
+        const divOfInterest = document.getElementById(“catch-me-if-you-can”) // JS
