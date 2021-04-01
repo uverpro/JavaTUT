@@ -232,6 +232,8 @@ window.addEventListener("DOMContentLoaded", event => {
 // In browser: dev tools, open console, see the values of each 'li' have been printed
 
 
+// Using Element.innerHTML
+
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
