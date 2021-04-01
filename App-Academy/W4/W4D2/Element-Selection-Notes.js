@@ -232,6 +232,7 @@ window.addEventListener("DOMContentLoaded", event => {
 // In browser: dev tools, open console, see the values of each 'li' have been printed
 
 
+
 // Using Element.innerHTML
 // In addition to referencing DOM elements via id or class name and
     // appending new element to existing DOM elements
@@ -272,6 +273,8 @@ const getRandomInt = max => {
   });
 // Browser Page: six net list items on the page, each containing a random number
 
+
+// Inserting a Date Object into the DOM
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
