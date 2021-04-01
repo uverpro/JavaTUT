@@ -193,7 +193,7 @@ window.addEventListener("DOMContentLoaded", event => {
 
 
 // Console.log, Element.innerHTML, and the Date Object
-
+    // console.log to print element values.
 
 
 // What the DOM is and how we can access it
