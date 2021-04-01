@@ -283,6 +283,7 @@ const getRandomInt = max => {
 <title id="title"></title>
 // JS file w/ Date constructor to initiate a new Date object.
 const date = new Date();
+// Javascript
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
