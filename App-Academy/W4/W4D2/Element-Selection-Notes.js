@@ -119,4 +119,17 @@ const addElements = () => {
 // in the body, the h1, and the div
 
 
-// Referencing a JS File vs. Using a Script Block
+
+// Referencing a JS File vs. Using a Script Block -
+// JS doesn't have to have a seperate file
+// You can write a script block directly in the HTML file
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      //Javascript goes here!
+    </script>
+  </head>
+  <body></body>
+</html>
