@@ -198,7 +198,23 @@ window.addEventListener("DOMContentLoaded", event => {
 
 
 // Console Logging Element Values
+    // Console.log is a useful debugging tool
 
+// HTML:
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <ul id="your-best-friend">
+      <li>Has your back</li>
+      <li>Gives you support</li>
+      <li>Actively listens to you</li>
+      <li>Lends a helping hand</li>
+      <li>Cheers you up when you're down</li>
+      <li>Celebrates important moments with you</li>
+    </ul>
+  </body>
+</html>
 
 
 // What the DOM is and how we can access it
