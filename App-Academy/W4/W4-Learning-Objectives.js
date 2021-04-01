@@ -1,4 +1,6 @@
+/************************************************************************/
 // D1 - Browser Basics Lesson Learning Objectives
+/************************************************************************/
 
 // 1. Explain the difference between the BOM (browser object model)
     // and the DOM(document object model).
@@ -30,7 +32,10 @@
 
 
 
+/************************************************************************/
 // D2 - Element Selection Lesson Learning Objectives
+/************************************************************************/
+
 
 // 1. Write a JavaScript statement that selects one or more elements by their attributes or tags.
 
@@ -62,3 +67,19 @@
 
 
 // 8. Write JavaScript to update the title of the document.
+
+
+
+/************************************************************************/
+// Event Handling Lesson Learning Objectives
+/************************************************************************/
+
+
+Update HTML as a response to a click event.
+Add and remove CSS classes to manipulate HTML elements based on the status of a user input.
+Use setTimeout() or setInterval() to trigger a delayed action after an event has been triggered.
+Prevent the default behavior of a form submission event when a user submits a form.
+Compare and contrast event.target and event.currentTarget.
+Capture the id and value of an HTML element with event.target.
+Capture click events on the children of an HTML element using the bubbling principle.
+Stop the propagation of bubbling.
