@@ -216,6 +216,20 @@ window.addEventListener("DOMContentLoaded", event => {
   </body>
 </html>
 
+// Above: an id references the 'ul' element
+    // PREVIOUSLY document.querySelectorAll() stored multiple elements w/ same class name
+        // in a single variable, as a NodeList
+    // Above: there's only on id for the parent element.
+        // Can refence the parent element via its id to get access to the content of its children
+// JS:
+window.addEventListener("DOMContentLoaded", event => {
+    const parent = document.getElementById("your-best-friend");
+    const childNodes = parent.childNodes;
+    for (let value of childNodes.values()) {
+      console.log(value);
+    }
+});
+// In browser: dev tools, open console, see the values of each 'li' have been printed
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
