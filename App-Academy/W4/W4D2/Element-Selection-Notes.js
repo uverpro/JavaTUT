@@ -279,11 +279,24 @@ const getRandomInt = max => {
 // Start with HTML doc containing an empty title element
 // Create new element and append to title? Or use innerHTML to set the HTML of the title element?
     // Since no need to create new element, no care if it appears last, use latter
-//HTML
+//HTML:
 <title id="title"></title>
 // JS file w/ Date constructor to initiate a new Date object.
 const date = new Date();
-// Javascript
+// Javascript:
+window.addEventListener("DOMContentLoaded", event => {
+    const title = document.getElementById("title");
+    const time = () => {
+      const date = new Date();
+      const seconds = date.getSeconds();
+      const minutes = date.getMinutes();
+      const hours = date.getHours();
+
+      title.innerHTML = hours + ":" + minutes + ":" + seconds;
+    };
+    setInterval(time, 1000);
+  });
+
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
