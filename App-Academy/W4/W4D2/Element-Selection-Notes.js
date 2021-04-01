@@ -12,3 +12,20 @@
         // With JS, reference the element by scanning the DOCUMENT and finding the ID
         // via document.getElementById(). Then, assign the reference to a variable:
         const divOfInterest = document.getElementById(“catch-me-if-you-can”) // JS
+
+        // Referencing multiple objects
+        // HTML:
+        <span class="“cloudy”"></span>
+        <span class="“cloudy”"></span>
+        <span class="“cloudy”"></span>
+        <span class="“cloudy”"></span>
+        <span class="“cloudy”"></span>
+        <span class="“cloudy”"></span>
+        <span class="“cloudy”"></span>
+
+        // JS:
+        const cloudySpans = document.querySelectorAll("span.cloudy");
+        // All 7 elements referenced and stored in a single variable
+
+// .getElementById() references single element
+// .querySelectorAll("span.cloudy") (object.property?) references all elements 
