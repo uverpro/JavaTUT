@@ -67,3 +67,8 @@ const addElement = () => {
   };
   // run script when page is loaded
   window.onload = addElement;
+
+// Open HTML file in a browser, "Jell-O Burled!" on page.
+// Use the browser tools to inspect the page:
+// (right-click on the page and select “inspect”, or hotkeys fn + f12)
+// Notice the new h1 with the id we gave it.
