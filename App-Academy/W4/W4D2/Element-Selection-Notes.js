@@ -175,3 +175,9 @@ const addElements = () => {
 // DOMContentLoaded used to add CSS classes to page elements immediately after they are loaded.
 // add "i-got-loaded" to the 'body' element when the window fires the DOMContentLoaded event
 // can be done in the script block or in an external JS file
+
+// JS:
+window.addEventListener("DOMContentLoaded", event => {
+    document.body.className = "i-got-loaded";
+  });
+// inspecting the page on the browser, notice: the 'body' element has class of "i-got-loaded"
