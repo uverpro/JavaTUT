@@ -114,4 +114,9 @@ const addElements = () => {
   };
   // run script when page is loaded
   window.onload = addElements;
-  // function now "addElements", plural, b/c we're appending two elements to the body
+// function now "addElements", plural, b/c we're appending two elements to the body
+// the HTML file in the browser, inspect the page, there's two elements
+// in the body, the h1, and the div
+
+
+// Referencing a JS File vs. Using a Script Block
