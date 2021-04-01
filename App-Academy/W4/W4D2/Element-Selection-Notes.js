@@ -89,3 +89,28 @@ const addElement = () => {
 // Create a second element, div with an id "lickable-frog"
 // append it to the BODY
 // Update the JS function to append a second element to the page
+
+// JAVASCRIPT:
+const addElements = () => {
+    // create a new div element
+    const newElement = document.createElement("h1");
+
+    // set the h1's id
+    newElement.setAttribute("id", "sleeping-giant");
+
+    // and give it some content
+    const newContent = document.createTextNode("Jell-O, Burled!");
+
+    // add the text node to the newly created div
+    newElement.appendChild(newContent);
+
+    // add the newly created element and its content into the DOM
+    document.body.appendChild(newElement);
+
+    // append a second element to the DOM after the first one
+    const lastElement = document.createElement("div");
+    lastElement.setAttribute("id", "lickable-frog");
+    document.body.appendChild(lastElement);
+  };
+  // run script when page is loaded
+  window.onload = addElements;
