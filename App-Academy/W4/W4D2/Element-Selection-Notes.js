@@ -296,7 +296,7 @@ window.addEventListener("DOMContentLoaded", event => {
     };
     setInterval(time, 1000);
   });
-
+// Browser page: clock dynamically keeping the current time in document title!
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
