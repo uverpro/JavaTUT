@@ -181,3 +181,5 @@ window.addEventListener("DOMContentLoaded", event => {
     document.body.className = "i-got-loaded";
   });
 // inspecting the page on the browser, notice: the 'body' element has class of "i-got-loaded"
+
+/********************************************************************************************/
