@@ -166,3 +166,8 @@ const addElements = () => {
 // JS isn't dependent on them and can be ran before them
 // an object like a large image, anything that takes a long time to load before
 // the JS is ran, may make the user experience feel clunky and slow
+// DOMContentLoaded is the method to prevent this
+
+// The DOMContentLoaded event fires when the initial HTML document
+// has been completely loaded and parsed, without waiting for stylesheets,
+// images, and subframes to finish loading.
