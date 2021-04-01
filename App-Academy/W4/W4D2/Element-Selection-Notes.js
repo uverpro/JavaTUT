@@ -138,3 +138,23 @@ const addElements = () => {
   // create an 'li' element with the id 'dreamy-eyes'
   // add the 'li' as a child to the 'ul' element
   // add the 'ul' element as the first child of the 'body' element
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>My Cool Website</title>
+      <script type="text/javascript">
+        const addListElement = () => {
+          const listElement = document.createElement("ul");
+          const listItem = document.createElement("li");
+          listItem.setAttribute("id", "dreamy-eyes");
+          listElement.appendChild(listItem);
+          document.body.prepend(listElement);
+        };
+        window.onload = addListElement;
+      </script>
+    </head>
+    <body></body>
+</html>
+// open HTML in browser, inspect the page, & notice the 'ul' & 'li' elements
+
+/*****************************************************************************/
