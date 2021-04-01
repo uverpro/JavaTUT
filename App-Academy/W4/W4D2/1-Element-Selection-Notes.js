@@ -1,3 +1,12 @@
+// Hello, World DOMination: Element Selection And Placement
+    // the usage and inner workings of the DOM API.
+
+// Reference and manipulate the DOM via Javascript
+// Update and create new DOM elements via Javascript
+// Change CSS based on a DOM event
+
+
+
 // What is DOM?
     // The Document Object Model, DOM, an object-oriented representation of HTML doc/web page
     // represented by objects or nodes
