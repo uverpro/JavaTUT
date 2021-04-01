@@ -75,11 +75,33 @@
 /************************************************************************/
 
 
-Update HTML as a response to a click event.
-Add and remove CSS classes to manipulate HTML elements based on the status of a user input.
-Use setTimeout() or setInterval() to trigger a delayed action after an event has been triggered.
-Prevent the default behavior of a form submission event when a user submits a form.
-Compare and contrast event.target and event.currentTarget.
-Capture the id and value of an HTML element with event.target.
-Capture click events on the children of an HTML element using the bubbling principle.
-Stop the propagation of bubbling.
+// 1. Update HTML as a response to a click event.
+
+
+
+// 2. Add and remove CSS classes to manipulate HTML elements based on the status of a user input.
+
+
+
+// 3. Use setTimeout() or setInterval() to trigger a delayed action
+// after an event has been triggered.
+
+
+
+// 4. Prevent the default behavior of a form submission event when a user submits a form.
+
+
+
+// 5. Compare and contrast event.target and event.currentTarget.
+
+
+
+// 6. Capture the id and value of an HTML element with event.target.
+
+
+
+// 7. Capture click events on the children of an HTML element using the bubbling principle.
+
+
+
+// 8. Stop the propagation of bubbling.
