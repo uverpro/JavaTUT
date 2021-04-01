@@ -114,3 +114,4 @@ const addElements = () => {
   };
   // run script when page is loaded
   window.onload = addElements;
+  // function now "addElements", plural, b/c we're appending two elements to the body
