@@ -164,3 +164,5 @@ const addElements = () => {
 // window.onload was used to run a function after the window page loaded
 // with this you have to wait for stylesheets, images, and subframes.
 // JS isn't dependent on them and can be ran before them
+// an object like a large image, anything that takes a long time to load before
+// the JS is ran, may make the user experience feel clunky and slow
