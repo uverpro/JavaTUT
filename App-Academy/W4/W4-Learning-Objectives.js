@@ -105,3 +105,8 @@
 
 
 // 8. Stop the propagation of bubbling.
+`   The Bubbling Principle represents an upward-moving chain of events through the DOM.
+    When an event happens on an element, that element’s event handlers will run,
+    and then its parent’s event handlers will run,
+    and so on upwards through the DOM, until either no event handlers are found
+    or we use stopPropagation() to stop the bubbling.`
