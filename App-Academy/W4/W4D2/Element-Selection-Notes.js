@@ -276,7 +276,13 @@ const getRandomInt = max => {
 
 // Inserting a Date Object into the DOM
 
-//
+// Start with HTML doc containing an empty title element
+// Create new element and append to title? Or use innerHTML to set the HTML of the title element?
+    // Since no need to create new element, no care if it appears last, use latter
+//HTML
+<title id="title"></title>
+// JS file w/ Date constructor to initiate a new Date object.
+const date = new Date();
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
