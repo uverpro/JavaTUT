@@ -233,7 +233,10 @@ window.addEventListener("DOMContentLoaded", event => {
 
 
 // Using Element.innerHTML
-
+// In addition to referencing DOM elements via id or class name and
+    // appending new element to existing DOM elements
+// the inner HTML property can be used to get or set the HTML or XML markup contained
+    // within an element
 
 // What the DOM is and how we can access it
 // How to access DOM elements using document.getElementById() and document.querySelectorAll()
