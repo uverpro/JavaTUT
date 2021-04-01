@@ -158,3 +158,9 @@ const addElements = () => {
 // open HTML in browser, inspect the page, & notice the 'ul' & 'li' elements
 
 /*****************************************************************************/
+
+// Adding a CSS Class After DOM Load Event
+
+// window.onload was used to run a function after the window page loaded
+// with this you have to wait for stylesheets, images, and subframes.
+// JS isn't dependent on them and can be ran before them
