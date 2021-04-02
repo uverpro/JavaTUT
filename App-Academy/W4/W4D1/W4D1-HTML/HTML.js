@@ -174,3 +174,14 @@
     //         "                                                &quot;
     //         '                                                &apos;
     //         &                                                &amp;
+
+
+
+// Applying CSS and Javascript to HTML
+    // The <link> element should always go inside the head of your document.
+    // This takes two attributes, rel="stylesheet",
+    // which indicates that it is the document's stylesheet, and href,
+    // which contains the path to the stylesheet file:
+        // <link rel="stylesheet" href="my-css-file.css">
+
+// <script src="my-js-file.js" defer></script>
