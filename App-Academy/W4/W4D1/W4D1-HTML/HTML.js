@@ -108,3 +108,13 @@
             // You use this to disable the form input elements so the user can't make entries.
             // The disabled elements typically have a grayed-out appearance.
             <input type="text" disabled="disabled"></input>
+
+// <!-- using the disabled attribute prevents the end user from entering text into the input box -->
+    // <input type="text" disabled>
+
+// <!-- text input is allowed, as it doesn't contain the disabled attribute -->
+    {/* <input type="text"> */}
+
+
+
+// Anatomy of an HTML document
