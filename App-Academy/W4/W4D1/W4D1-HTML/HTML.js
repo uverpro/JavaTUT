@@ -104,4 +104,7 @@
 // Boolean Attributes
     // Attributes w/o written values are called Boolean Attributes.
     // Boolean values only have one value which is usually the same as attribute name
-        // Example: the disabled attribute
+        // Example: the disabled attribute, which you can assign to form input elements.
+            // You use this to disable the form input elements so the user can't make entries.
+            // The disabled elements typically have a grayed-out appearance.
+            <input type="text" disabled="disabled"></input>
