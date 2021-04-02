@@ -85,6 +85,7 @@
 // Adding attributes to an element:
     // <a> is an ANCHOR TAG.
         // An anchor makes the text it encloses in a hyperlinke.
+
 // Several attributes an anchor can take:
 
     // href: This attribute's value specifies the web address for the link.
