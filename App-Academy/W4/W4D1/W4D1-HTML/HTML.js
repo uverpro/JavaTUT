@@ -46,5 +46,12 @@
 
 {/* <em>first</em><em>second</em><em>third</em> */}
 // <em> is an inline element. All sit on the same line, no space between
+// firstsecondthird
+
 {/* <p>fourth</p><p>fifth</p><p>sixth</p> */}
 // <p> is a block level. Each p element on a new line, with space above/below
+// fourth
+
+// fifth
+
+// sixth
