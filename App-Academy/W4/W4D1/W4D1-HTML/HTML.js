@@ -57,4 +57,9 @@
 // sixth
 
 
-//
+// Empty Elements
+// Not all elements follow the pattern of an opening tag, content, and a closing tag.
+    // Some elements consist of a single tag, which is typically used to insert/embed
+    // something in the document.
+    // For example, the <img> element embeds an image file onto a page:
+<img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"></img>
