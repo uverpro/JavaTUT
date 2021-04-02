@@ -188,11 +188,10 @@
 
 // The <script> element should also go into the head, and should include a src attribute
     // containing the path to the JavaScript you want to load, and defer,
-    //which basically instructs the browser to load the JavaScript at the same time
+    // which basically instructs the browser to load the JavaScript at the same time
     // as the page's HTML. This is useful as it makes sure that the HTML is all loaded
     // before the JavaScript runs, so that you don't get errors resulting from JavaScript
     // trying to access an HTML element that doesn't exist on the page yet.
     // There are actually a number of ways to handle loading JavaScript on your page,
     // but this is the most foolproof one to use for modern browsers
-    // (for others, read Script loading strategies).
         // <script src="my-js-file.js" defer></script>
