@@ -132,4 +132,12 @@
 </html>
 
 // 1. !DOCTYPE html is the shortest string of chars for a valid doctype. Use it.
-// 2. <html></html>:
+// 2. <html></html>: The <html> element.
+    // This element wraps all the content on the page.
+    // It is sometimes known as the root element.
+// 3. <head></head>: The <head> element.
+    // Holds META DATA
+    // This element acts as a container for everything you want to include on the HTML page,
+    // that isn't the content the page will show to viewers.
+    // This includes keywords and a page description that would appear in search results,
+    // CSS to style content, character set declarations, and more.
