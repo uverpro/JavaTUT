@@ -141,3 +141,10 @@
     // that isn't the content the page will show to viewers.
     // This includes keywords and a page description that would appear in search results,
     // CSS to style content, character set declarations, and more.
+// 4. <meta charset="utf-8">: This element specifies the character set for your document to UTF-8,
+    // which includes most characters from the vast majority of human written languages.
+    // With this setting, the page can now handle any textual content it might contain.
+    // There is no reason not to set this, and it can help avoid some problems later.
+// 5. {/* <title></title>: The <title> element. This sets the title of the page,
+    // which is the title that appears in the browser tab the page is loaded in.
+    // The page title is also used to describe the page when it is bookmarked. */}
