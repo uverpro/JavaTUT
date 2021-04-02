@@ -80,3 +80,21 @@
         //  the attributes should be separated by spaces too.)
     // The attribute name, followed by an equal sign.
     // An attribute value, wrapped with opening and closing quote marks.
+
+
+// Adding attributes to an element:
+    // <a> is an ANCHOR TAG.
+        // An anchor makes the text it encloses in a hyperlinke.
+// Several attributes an anchor can take:
+
+    // href: This attribute's value specifies the web address for the link.
+        // For example: href="https://www.mozilla.org/".
+
+    // title: The title attribute specifies extra information about the link,
+    // such as a description of the page that is being linked to.
+        // For example, title="The Mozilla homepage".
+        //  This appears as a tooltip when a cursor hovers over the element.
+
+    // target: The target attribute specifies the browsing context used to display the link.
+        //  For example, target="_blank" will display the link in a new tab.
+        //  If you want to display the linked content in the current tab, just omit this attribute.
