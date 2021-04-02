@@ -27,8 +27,8 @@
 // Nesting Elements:
 {/* <p>My cat is <strong>very</strong> grumpy.</p> */}
 
-// Block verses Inline Elements
 
+// Block verses Inline Elements
 // Block-level elements form a visible block on a page.
     // A block-level element appears on a new line following the content that precedes it.
     // Any content that follows a block-level element also appears on a new line.
@@ -55,3 +55,6 @@
 // fifth
 
 // sixth
+
+
+//
