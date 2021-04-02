@@ -178,10 +178,21 @@
 
 
 // Applying CSS and Javascript to HTML
-    // The <link> element should always go inside the head of your document.
+
+// The <link> element should always go inside the head of your document.
     // This takes two attributes, rel="stylesheet",
     // which indicates that it is the document's stylesheet, and href,
     // which contains the path to the stylesheet file:
         // <link rel="stylesheet" href="my-css-file.css">
 
-// <script src="my-js-file.js" defer></script>
+
+// The <script> element should also go into the head, and should include a src attribute
+    // containing the path to the JavaScript you want to load, and defer,
+    //which basically instructs the browser to load the JavaScript at the same time
+    // as the page's HTML. This is useful as it makes sure that the HTML is all loaded
+    // before the JavaScript runs, so that you don't get errors resulting from JavaScript
+    // trying to access an HTML element that doesn't exist on the page yet.
+    // There are actually a number of ways to handle loading JavaScript on your page,
+    // but this is the most foolproof one to use for modern browsers
+    // (for others, read Script loading strategies).
+        // <script src="my-js-file.js" defer></script>
