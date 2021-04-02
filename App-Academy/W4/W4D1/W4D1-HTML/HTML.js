@@ -165,3 +165,12 @@
 
 
 // Entity references: Including special characters in HTML
+    // In HTML, the characters <, >,",' and & are special characters.
+    // They are parts of the HTML syntax itself.
+    // If you want to use these chars an not be intepretted as code:
+    // Literal character                            Character reference equivalent
+    //         <                                                &lt;
+    //         >                                                &gt;
+    //         "                                                &quot;
+    //         '                                                &apos;
+    //         &                                                &amp;
