@@ -195,3 +195,11 @@
     // There are actually a number of ways to handle loading JavaScript on your page,
     // but this is the most foolproof one to use for modern browsers
         // <script src="my-js-file.js" defer></script>
+
+
+
+// Setting primary language of the document:
+    // This can be done by adding the lang attribute to the opening HTML tag
+        // <html lang="en-US">
+    // You can also set subsections of your document to be recognized as different languages:
+        // <p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
