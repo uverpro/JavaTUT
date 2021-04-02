@@ -65,3 +65,12 @@
 {/* <img src="https://raw.githubusercontent.com/mdn/beginner-
     html-site/gh-pages/images/firefox-icon.png"></img> */}
 // Note: Empty elements are sometimes called "void elements"
+
+
+// Attributes
+// Elements can also have attributes. Attributes look like this:
+// <p class="editor-note">My cat is very grump</p>
+//    \    ATTRIBUTE    /
+// Attributes contain extra information about the element that won't appear in the content.
+// In this example, the class attribute is an identifying name used to
+// target the element with style information.
