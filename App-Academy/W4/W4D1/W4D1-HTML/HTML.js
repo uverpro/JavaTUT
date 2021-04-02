@@ -102,3 +102,5 @@
 
 
 // Boolean Attributes
+    // Attributes w/o written values are called Boolean Attributes.
+    // Boolean values only have one value which is usually the same as attribute name
