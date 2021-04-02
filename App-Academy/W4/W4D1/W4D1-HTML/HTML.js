@@ -151,3 +151,17 @@
 // 6. {/* <body></body>: The <body> element. This contains all the content that displays
     // on the page, including text, images, videos, games, playable audio tracks,
     // or whatever else. */}
+
+// Whitespace:
+/*
+<p>Dogs are silly.</p>
+
+<p>Dogs        are
+         silly.</p>
+*/
+// When rendering the code, the sequence will be single spaced
+    // but "white space" can be useful for readibility
+
+
+
+// Entity references: Including special characters in HTML
