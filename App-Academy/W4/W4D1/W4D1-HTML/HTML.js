@@ -148,3 +148,6 @@
 // 5. {/* <title></title>: The <title> element. This sets the title of the page,
     // which is the title that appears in the browser tab the page is loaded in.
     // The page title is also used to describe the page when it is bookmarked. */}
+// 6. {/* <body></body>: The <body> element. This contains all the content that displays
+    // on the page, including text, images, videos, games, playable audio tracks,
+    // or whatever else. */}
