@@ -64,3 +64,4 @@
     // For example, the <img> element embeds an image file onto a page:
 {/* <img src="https://raw.githubusercontent.com/mdn/beginner-
     html-site/gh-pages/images/firefox-icon.png"></img> */}
+// Note: Empty elements are sometimes called "void elements"
