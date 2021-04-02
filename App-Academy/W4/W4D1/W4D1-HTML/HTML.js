@@ -99,3 +99,6 @@
     // target: The target attribute specifies the browsing context used to display the link.
         //  For example, target="_blank" will display the link in a new tab.
         //  If you want to display the linked content in the current tab, just omit this attribute.
+
+
+// Boolean Attributes
