@@ -7,3 +7,4 @@
         My cat is very grumpy
         // to make the text stand alone, enclose with paragraph <p> element:
             <p>My cat is very grumpy</p>
+// Note: Tags are case insensitive
