@@ -30,7 +30,7 @@ console.log(obj.result);
     // before being returned.
 
 // Return value
-The Object, Array, string, number, boolean, or null value corresponding to the given JSON text.
+// The Object, Array, string, number, boolean, or null value corresponding to the given JSON text.
 
 Exceptions
 Throws a SyntaxError exception if the string to parse is not valid JSON.
