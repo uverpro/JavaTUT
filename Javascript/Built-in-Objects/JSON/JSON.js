@@ -16,9 +16,13 @@
     // Leading zeros are prohibited. A decimal point must be followed by at least one digit.
     // NaN and Infinity are unsupported.
 
-    Any JSON text is a valid JavaScript expression...
-    ...But only in JavaScript engines that have implemented the proposal to make all JSON text valid ECMA-262. In engines that haven't implemented the proposal, U+2028 LINE SEPARATOR and U+2029 PARAGRAPH SEPARATOR are allowed in string literals and property keys in JSON; but their use in these features in JavaScript string literals is a SyntaxError.
-    Consider this example where JSON.parse() parses the string as JSON and eval executes the string as JavaScript:
+// Any JSON text is a valid JavaScript expression...
+    /* ...But only in JavaScript engines that have implemented the proposal to make all JSON text
+    valid ECMA-262. In engines that haven't implemented the proposal, U+2028 LINE SEPARATOR
+    and U+2029 PARAGRAPH SEPARATOR are allowed in string literals and property keys in JSON;
+    but their use in these features in JavaScript string literals is a SyntaxError. */
+
+// Consider this example where JSON.parse() parses the string as JSON and eval executes the string as JavaScript:
 
     let code = '"\u2028\u2029"'
     JSON.parse(code)  // evaluates to "\u2028\u2029" in all engines
