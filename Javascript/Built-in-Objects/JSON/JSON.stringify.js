@@ -150,16 +150,25 @@ JSON.stringify({x: 2n});
 
 // The replacer parameter can be either a function or an array.
 
-// As a function, it takes two parameters: the key and the value being stringified.
-    // The object in which the key was found is provided as the replacer's this parameter.
+/* As a function, it takes two parameters: the key and the value being stringified.
+    The object in which the key was found is provided as the replacer's this parameter.
 
-Initially, the replacer function is called with an empty string as key representing the object being stringified. It is then called for each property on the object or array being stringified.
+Initially, the replacer function is called with an empty string as key representing
+    the object being stringified. It is then called for each property on the object
+    or array being stringified.
 
 It should return the value that should be added to the JSON string, as follows:
 
-If you return a Number, String, Boolean, or null, the stringified version of that value is used as the property's value.
+If you return a Number, String, Boolean, or null, the stringified version of that value
+is used as the property's value.
 If you return a Function, Symbol, or undefined, the property is not included in the output.
-If you return any other object, the object is recursively stringified, calling the replacer function on each property.
-Note: You cannot use the replacer function to remove values from an array. If you return undefined or a function then null is used instead.
+If you return any other object, the object is recursively stringified, calling the replacer
+function on each property.
 
-Note: If you wish the replacer to distinguish an initial object from a key with an empty string property (since both would give the empty string as key and potentially an object as value), you will have to keep track of the iteration count (if it is beyond the first iteration, it is a genuine empty string key).
+Note: You cannot use the replacer function to remove values from an array.
+If you return undefined or a function then null is used instead.
+
+Note: If you wish the replacer to distinguish an initial object from a key with an empty
+string property (since both would give the empty string as key and potentially an object as value),
+you will have to keep track of the iteration count
+(if it is beyond the first iteration, it is a genuine empty string key). */
