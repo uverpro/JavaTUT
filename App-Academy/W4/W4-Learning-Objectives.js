@@ -151,7 +151,6 @@ const newWindow = window.open(
     // <!-- <script type="text/javascript" src="./index.js"></script> -->
     // </html>
 
-
     // JS
     // Method 2:  Run script after the DOM has loaded
 document.addEventListener('DOMContentLoaded', () => {
