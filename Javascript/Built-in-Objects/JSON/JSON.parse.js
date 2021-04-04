@@ -26,8 +26,10 @@ console.log(obj.result);
     // The string to parse as JSON. See the JSON object for a description of JSON syntax.
 
 // reviver Optional
-If a function, this prescribes how the value originally produced by parsing is transformed, before being returned.
-Return value
+    // If a function, this prescribes how the value originally produced by parsing is transformed,
+    // before being returned.
+
+// Return value
 The Object, Array, string, number, boolean, or null value corresponding to the given JSON text.
 
 Exceptions
