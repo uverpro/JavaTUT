@@ -232,4 +232,22 @@ when called will be serialized. JSON.stringify() calls toJSON with one parameter
 
 // For example:
 
+var obj = {
+    data: 'data',
 
+    toJSON (key) {
+        if (key)
+            return `Now I am a nested object under key '${key}'`;
+        else
+            return this;
+    }
+};
+
+JSON.stringify(obj);
+// '{"data":"data"}'
+
+JSON.stringify({ obj }); // Shorthand property names (ES2015).
+// '{"obj":"Now I am a nested object under key 'obj'"}'
+
+JSON.stringify([ obj ]);
+// '["Now I am a nested object under key '0'"]'
