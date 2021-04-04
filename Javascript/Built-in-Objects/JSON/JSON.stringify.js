@@ -40,13 +40,16 @@ JSON.stringify(value[, replacer[, space]])
     for readability purposes.
     If this is a Number, it indicates the number of space characters to use as white space;
     this number is capped at 10 (if it is greater, the value is just 10).
-    Values less than 1 indicate that no space should be used. */
+    Values less than 1 indicate that no space should be used.
 
-If this is a String, the string (or the first 10 characters of the string, if it's longer than that) is used as white space. If this parameter is not provided (or is null), no white space is used.
+    If this is a String, the string (or the first 10 characters of the string,
+    if it's longer than that) is used as white space. If this parameter is not
+    provided (or is null), no white space is used. */
 
-Return value
-A JSON string representing the given value.
+// Return value
+// A JSON string representing the given value.
 
-Exceptions
-Throws a TypeError ("cyclic object value") exception when a circular reference is found.
-Throws a TypeError ("BigInt value can't be serialized in JSON") when trying to stringify a BigInt value.
+// Exceptions
+// Throws a TypeError ("cyclic object value") exception when a circular reference is found.
+// Throws a TypeError ("BigInt value can't be serialized in JSON")
+// when trying to stringify a BigInt value.
