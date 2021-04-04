@@ -32,10 +32,10 @@ console.log(obj.result);
 // Return value
 // The Object, Array, string, number, boolean, or null value corresponding to the given JSON text.
 
-Exceptions
-Throws a SyntaxError exception if the string to parse is not valid JSON.
+// Exceptions
+// Throws a SyntaxError exception if the string to parse is not valid JSON.
 
-Polyfill
+// Polyfill
 // From https://github.com/douglascrockford/JSON-js/blob/master/json2.js
 if (typeof JSON.parse !== "function") {
     var rx_one = /^[\],:{}\s]*$/;
@@ -132,7 +132,8 @@ if (typeof JSON.parse !== "function") {
         throw new SyntaxError("JSON.parse");
     };
 }
-Examples
+
+// Examples
 Using JSON.parse()
 JSON.parse('{}');              // {}
 JSON.parse('true');            // true
