@@ -53,3 +53,28 @@ JSON.stringify(value[, replacer[, space]])
 // Throws a TypeError ("cyclic object value") exception when a circular reference is found.
 // Throws a TypeError ("BigInt value can't be serialized in JSON")
 // when trying to stringify a BigInt value.
+
+
+// Description
+// JSON.stringify() converts a value to JSON notation representing it:
+
+/*If the value has a toJSON() method, it's responsible to define what data will be serialized.
+
+Boolean, Number, and String objects are converted to the corresponding primitive
+values during stringification, in accord with the traditional conversion semantics.
+
+undefined, Functions, and Symbols are not valid JSON values.
+If any such values are encountered during conversion they are either omitted
+(when found in an object) or changed to null (when found in an array). JSON.stringify()
+can return undefined when passing in "pure" values like JSON.stringify(function(){})
+or JSON.stringify(undefined).
+
+All Symbol-keyed properties will be completely ignored, even when using the replacer function.
+
+The instances of Date implement the toJSON() function by returning a string
+(the same as date.toISOString()). Thus, they are treated as strings.
+
+The numbers Infinity and NaN, as well as the value null, are all considered null.
+
+All the other Object instances (including Map, Set, WeakMap, and WeakSet) will
+have only their enumerable properties serialized.
