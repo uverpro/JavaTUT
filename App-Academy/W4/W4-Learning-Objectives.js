@@ -71,29 +71,32 @@ Networking  |   UI Backend
 // v. JavaScript Interpreter
     // Parses and executes JS code
         // Chrome(V8), Safari(JavaScriptCore)
-UI Backend
-Used for drawing basic widgets like checkboxes, inputs, etc..
-Uses the UI methods of the underlying OS
-Data Storage
-The persistence of data in the browser via:
-Cookies
-Can be read client-side as well as server-side
-Can only be 4kb in size
-Purposes:
-Session management - Logins, shopping carts, game scores
-Personalization - User preferences, themes, and settings
-Tracking - Recording and analyzing human behavior
-Web Storage:
-Session Storage:
-Maintains a separate storage area for each web address that is available for user for the duration their session, including reloads and restores
-Data never transferred to the server
-Storage limit larger than a cookie (5MB max)
-Local Storage
-Does the same thing as Session Storage, excepts persists even when the browser is closed and reopened
-No expiration date and only gets cleared through JS, or clearing the browser cache / locally stored data
-Maximum storage of all options
 
-*/
+// vi. UI Backend
+    // Used for drawing basic widgets like checkboxes, inputs, etc..
+    // Uses the UI methods of the underlying OS
+
+// vii. Data Storage
+    // The persistence of data in the browser via:
+        // A. Cookies
+            // Can be read client-side as well as server-side
+            // Can only be 4kb in size
+            // Purposes:
+                // Session management - Logins, shopping carts, game scores
+                // Personalization - User preferences, themes, and settings
+                // Tracking - Recording and analyzing human behavior
+        // B. Web Storage:
+            // Session Storage:
+                // Maintains a separate storage area for each web address that is available
+                    // for user for the duration their session, including reloads and restores
+                // Data never transferred to the server
+                // Storage limit larger than a cookie (5MB max)
+            // Local Storage
+                // Does the same thing as Session Storage, excepts persists even when the browser
+                    //  is closed and reopened
+                // No expiration date and only gets cleared through JS, or clearing the browser
+                    //  cache / locally stored data
+                // Maximum storage of all options
 
 // 3. Use the Window API to change the innerHeight of a user's window.
 
