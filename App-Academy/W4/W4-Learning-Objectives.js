@@ -13,9 +13,16 @@
         |    |__(Element: <title>)
         |        |__(Text: "My title")
         |__(Element: <body>)
-            |__(Element: <h1>)
-                |__(Text: "A heading")
+        |    |__(Element: <h1>)
+        |        |__(Text: "A heading")
+        |__(Element: <a>)---(Attribute: href)
+            |__(Text: "Link text")
     */
+
+    // Interface that allows us to dynamically access and update the content, structure
+        //and style of a website
+    // JS is the client-side scripting language that connects to the DOM in a browser
+    // Defines HTML elements as objects and gives them properties, methods, and events
 
     `The BOM is a larger representation of everything provided by the browser,
      including the current document`
