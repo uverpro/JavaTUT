@@ -20,7 +20,7 @@
     */
 
     // Interface that allows us to dynamically access and update the content, structure
-        //and style of a website
+        // and style of a website
     // JS is the client-side scripting language that connects to the DOM in a browser
     // Defines HTML elements as objects and gives them properties, methods, and events
 
