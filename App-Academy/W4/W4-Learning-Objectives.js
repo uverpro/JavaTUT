@@ -13,6 +13,8 @@
         |    |__(Element: <title>)
         |        |__(Text: "My title")
         |__(Element: <body>)
+            |__(Element: <h1>)
+                |__(Text: "A heading")
     */
 
     `The BOM is a larger representation of everything provided by the browser,
