@@ -124,6 +124,50 @@ const newWindow = window.open(
 // 5. Given a JS file and an HTML file, use a script tag to import the JS file
     // and execute the code therein when all the elements on the page load.
 
+    // HTML:
+    // <!DOCTYPE html>
+    // <html lang="en">
+    // <head>
+    //     <meta charset="UTF-8">
+    //     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    //     <!-- What Not To Do - Script loads before rest of page exist -->
+    //     <!-- <script type="text/javascript" src="./index.js"></script> -->
+
+    //     <!-- Method 1: Use async and defer to delay execution of script -->
+    //     <!-- - defer is compatible with more browsers
+    //          - async is in newer browsers
+    //          - You can combine them for best results                    -->
+    //     <script defer type="text/javascript" src="./index.js"></script>
+    //     <script async defer type="text/javascript" src="./index.js"></script>
+    //     <title>Document</title>
+    // </head>
+    // <body>
+
+    // </body>
+
+    // <!-- Method 4: Place script below html it is dependent on -->
+    // <!-- <script type="text/javascript" src="./index.js"></script> -->
+    // </html>
+
+
+    // JS
+    // Method 2:  Run script after the DOM has loaded
+document.addEventListener('DOMContentLoaded', () => {
+  console.log(`DOMContentLoaded fired`);
+  console.log(document.getElementById('my-body')).id;
+});
+
+// Method 3: Handler function invoked after the page is loaded with all resources
+window.onload = () => {
+  console.log(`window.onload has fired. Everything ready!`);
+  console.log(document.getElementById('my-body').id);
+};
+
+// What Not To Do:
+let bodyId = window.document.getElementById('my-body').id; // my-body
+console.log(bodyId);
 
 
 // 6. Explain the browser's main role in the request/response cycle.
