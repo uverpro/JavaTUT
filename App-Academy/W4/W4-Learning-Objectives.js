@@ -5,7 +5,10 @@
 // 1. Explain the difference between the BOM (browser object model)
     // and the DOM(document object model).
 
+    `The DOM is the API used to access the elements inside the document`
 
+    `The BOM is a larger representation of everything provided by the browser,
+     including the current document`
 
 // 2. Given a diagram of all the different parts of the browser, identify each part.
 
