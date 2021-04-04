@@ -172,3 +172,25 @@ Note: If you wish the replacer to distinguish an initial object from a key with 
 string property (since both would give the empty string as key and potentially an object as value),
 you will have to keep track of the iteration count
 (if it is beyond the first iteration, it is a genuine empty string key). */
+
+
+// Example replacer, as a function
+function replacer(key, value) {
+  // Filtering out properties
+  if (typeof value === 'string') {
+    return undefined;
+  }
+  return value;
+}
+
+var foo = {foundation: 'Mozilla', model: 'box', week: 45, transport: 'car', month: 7};
+JSON.stringify(foo, replacer);
+// '{"week":45,"month":7}'
+
+
+// Example replacer, as an array
+// If replacer is an array, the array's values indicate the names of the properties
+    // in the object that should be included in the resulting JSON string.
+
+JSON.stringify(foo, ['week', 'month']);
+// '{"week":45,"month":7}', only keep "week" and "month" properties
