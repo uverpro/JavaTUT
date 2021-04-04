@@ -49,12 +49,15 @@ Networking  |   UI Backend
         Javascript
         Interpretor`
 
-The User Interface
-Everything the user interacts with, such as the address bar, back/forward buttons, bookmarks, etc..
-Everything except page content
-Browser Engine
-Manages interactions between the User Interface and the rendering engine
-Render Engine
+//  i. The User Interface
+    // Everything the user interacts with, such as the address bar, back/forward buttons,
+        //bookmarks, etc..
+    // Everything except page content
+
+//  ii. Browser Engine
+    // Manages interactions between the User Interface and the rendering engine
+
+//  iii. Render Engine
 Displays the requested page content
 Parses HTML and uses CSS to build render tree and display content
 Constructs the DOM(Document Object Model)
