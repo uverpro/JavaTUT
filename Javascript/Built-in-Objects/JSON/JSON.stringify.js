@@ -77,4 +77,4 @@ The instances of Date implement the toJSON() function by returning a string
 The numbers Infinity and NaN, as well as the value null, are all considered null.
 
 All the other Object instances (including Map, Set, WeakMap, and WeakSet) will
-have only their enumerable properties serialized.
+have only their enumerable properties serialized. */
