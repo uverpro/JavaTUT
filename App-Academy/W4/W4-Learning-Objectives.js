@@ -171,7 +171,18 @@ console.log(bodyId);
 
 // 6. Explain the browser's main role in the request/response cycle.
 
+`The browser's main role is client-side interaction with the web through a series of requests
+ and responses to servers.
 
+    -Request:
+        -Going to a file path in the browser makes a GET request for file
+        -Navigating to a webpage in the browser makes a GET request for webpage
+
+    -Response:
+        -What we expect to receive back from a request
+
+Parses HTML, CSS, and JS
+Constructs and renders a DOM tree for the user(client)`
 
 // 7. Identify, examine, and delete cookies for a given website using the Chrome Developer Tools.
 
