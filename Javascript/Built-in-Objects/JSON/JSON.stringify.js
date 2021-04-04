@@ -194,3 +194,42 @@ JSON.stringify(foo, replacer);
 
 JSON.stringify(foo, ['week', 'month']);
 // '{"week":45,"month":7}', only keep "week" and "month" properties
+
+
+// The space argument
+// The space argument may be used to control spacing in the final string.
+
+// If it is a number, successive levels in the stringification will each be indented by this
+    // many space characters (up to 10).
+// If it is a string, successive levels will be indented by this string
+    // (or the first ten characters of it).
+
+JSON.stringify({ a: 2 }, null, ' ');
+// '{
+//  "a": 2
+// }'
+
+// Using a tab character mimics standard pretty-print appearance:
+
+JSON.stringify({ uno: 1, dos: 2 }, null, '\t');
+// returns the string:
+// '{
+//     "uno": 1,
+//     "dos": 2
+// }'
+
+
+
+// toJSON() behavior
+/* If an object being stringified has a property named toJSON whose value is a function,
+then the toJSON() method customizes JSON stringification behavior:
+instead of the object being serialized, the value returned by the toJSON() method
+when called will be serialized. JSON.stringify() calls toJSON with one parameter:
+
+    if this object is a property value, the property name
+    if it is in an array, the index in the array, as a string
+    an empty string if JSON.stringify() was directly called on this object */
+
+// For example:
+
+
