@@ -36,6 +36,7 @@
         // document, location, history, frame, and any other functionality the browser
         // may expose to JS.
 
+
 // 2. Given a diagram of all the different parts of the browser, identify each part.
 
 `
@@ -98,9 +99,18 @@ Networking  |   UI Backend
                     //  cache / locally stored data
                 // Maximum storage of all options
 
+
 // 3. Use the Window API to change the innerHeight of a user's window.
 
+// Open New Window
+const newWindow = window.open(
+    'https://github.com',
+    'GitHub',
+    'width=100, height=100'
+  );
 
+  // Resize Window
+  newWindow.resizeTo(500, 500);
 
 // 4. Identify the context of anonymous functions running in the browser (the window).
 
