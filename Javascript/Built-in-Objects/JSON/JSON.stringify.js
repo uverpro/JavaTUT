@@ -24,13 +24,23 @@ console.log(JSON.stringify(new Date(2006, 0, 2, 15, 4, 5)));
 JSON.stringify(value[, replacer[, space]])
 
 // Parameters
+
 // value
-// The value to convert to a JSON string.
-// replacer Optional
-A function that alters the behavior of the stringification process, or an array of String and Number that serve as an allowlist for selecting/filtering the properties of the value object to be included in the JSON string. If this value is null or not provided, all properties of the object are included in the resulting JSON string.
-space Optional
-A String or Number object that's used to insert white space into the output JSON string for readability purposes.
-If this is a Number, it indicates the number of space characters to use as white space; this number is capped at 10 (if it is greater, the value is just 10). Values less than 1 indicate that no space should be used.
+    // The value to convert to a JSON string.
+
+// replacer (Optional)
+/*  A function that alters the behavior of the stringification process, or an array of String
+    and Number that serve as an allowlist for selecting/filtering the properties
+    of the value object to be included in the JSON string.
+    If this value is null or not provided, all properties of the object are included
+    in the resulting JSON string. */
+
+// space (Optional)
+/*  A String or Number object that's used to insert white space into the output JSON string
+    for readability purposes.
+    If this is a Number, it indicates the number of space characters to use as white space;
+    this number is capped at 10 (if it is greater, the value is just 10).
+    Values less than 1 indicate that no space should be used. */
 
 If this is a String, the string (or the first 10 characters of the string, if it's longer than that) is used as white space. If this parameter is not provided (or is null), no white space is used.
 
