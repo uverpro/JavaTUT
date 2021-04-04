@@ -27,6 +27,15 @@
     `The BOM is a larger representation of everything provided by the browser,
      including the current document`
 
+    /*                                  (window)
+            ________________________________|_____________________________________
+            |             |                 |                   |                 |
+        (document)    (history)         (screen)            (navigator)        (location)
+    */
+    // Larger representation of everything provided by the browser, including the current
+        // document, location, history, frame, and any other functionality the browser
+        // may expose to JS.
+
 // 2. Given a diagram of all the different parts of the browser, identify each part.
 
 
