@@ -186,7 +186,19 @@ Constructs and renders a DOM tree for the user(client)`
 
 // 7. Identify, examine, and delete cookies for a given website using the Chrome Developer Tools.
 
+` 1. Opens Chromes DevTools:
+    -macOS shortcuts:
+        -Option + ⌘ + J
+        -Possibly F12
 
+    -Windows shortcuts:
+        -Shift + CTRL + J
+        -Shift + CTRL + I
+        -F12
+
+    2. Navigate to Application tab
+    3. Click Cookies
+        -Creating, Modifying, and Deleting Cookies in JavaScript`
 
 /************************************************************************/
 // D2 - Element Selection Lesson Learning Objectives
