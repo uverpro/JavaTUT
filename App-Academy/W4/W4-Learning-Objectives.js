@@ -7,6 +7,14 @@
 
     `The DOM is the API used to access the elements inside the document`
 
+/*(document)
+    |__(Root element: <html>)
+        |__(Element: <head>)
+        |    |__(Element: <title>)
+        |        |__(Text: "My title")
+        |__(Element: <body>)
+    */
+
     `The BOM is a larger representation of everything provided by the browser,
      including the current document`
 
