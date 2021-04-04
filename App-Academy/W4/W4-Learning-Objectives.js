@@ -112,9 +112,14 @@ const newWindow = window.open(
   // Resize Window
   newWindow.resizeTo(500, 500);
 
+
 // 4. Identify the context of anonymous functions running in the browser (the window).
 
-
+`The Window Object:
+    Represents an open window in a browser
+    The global object in the browser
+    The root of the DOM (contains document property used to reference DOM)
+    Show in Browser`
 
 // 5. Given a JS file and an HTML file, use a script tag to import the JS file
     // and execute the code therein when all the elements on the page load.
