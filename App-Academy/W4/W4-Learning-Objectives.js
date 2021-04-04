@@ -38,7 +38,17 @@
 
 // 2. Given a diagram of all the different parts of the browser, identify each part.
 
-
+/*
+User Interface =====\
+|            |
+Browser Engine|=====|====Data Persistence
+|            |
+Rendering Engine     |
+|    |    |       |
+Networking  |   UI Backend
+Javascript
+Interpretor
+*/
 
 // 3. Use the Window API to change the innerHeight of a user's window.
 
