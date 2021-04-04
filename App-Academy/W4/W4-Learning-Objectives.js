@@ -58,17 +58,19 @@ Networking  |   UI Backend
     // Manages interactions between the User Interface and the rendering engine
 
 //  iii. Render Engine
-Displays the requested page content
-Parses HTML and uses CSS to build render tree and display content
-Constructs the DOM(Document Object Model)
-Not all browsers use the same rendering engine
-Chrome(Blink), Safari(Webkit)
-Networking
-Sends network calls like http requests to a server
-Asks for images, docs, and other resources that compose the page
-JavaScript Interpreter
-Parses and executes JS code
-Chrome(V8), Safari(JavaScriptCore)
+    // Displays the requested page content
+    // Parses HTML and uses CSS to build render tree and display content
+    // Constructs the DOM(Document Object Model)
+    // Not all browsers use the same rendering engine
+        // Chrome(Blink), Safari(Webkit)
+
+// iv. Networking
+    // Sends network calls like http requests to a server
+    // Asks for images, docs, and other resources that compose the page
+
+// v. JavaScript Interpreter
+    // Parses and executes JS code
+        // Chrome(V8), Safari(JavaScriptCore)
 UI Backend
 Used for drawing basic widgets like checkboxes, inputs, etc..
 Uses the UI methods of the underlying OS
