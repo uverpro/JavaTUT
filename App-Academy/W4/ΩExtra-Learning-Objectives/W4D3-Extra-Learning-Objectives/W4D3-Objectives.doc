@@ -49,11 +49,11 @@ print the id of the element clicked on to the console.
 
                                         (WINDOW)
                                            |
-                CAPTURE PHASE (1)      (Document)
-                        \/                 |
-                        ||               <html>
-                        ||                 |
-                        \/               <body>
+                CAPTURE PHASE (1)      (Document)           /\
+                        \/                 |                ||
+                        ||               <html>             ||
+                        ||                 |                /\
+                        \/               <body>       BUBBLING PHASE (3)
                                            |
                                          <table>
                                            |
