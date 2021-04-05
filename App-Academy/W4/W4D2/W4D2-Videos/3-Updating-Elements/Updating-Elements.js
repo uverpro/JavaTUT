@@ -3,5 +3,5 @@
 // Listen for the DOM loaded
 window.addEventListener('DOMContentLoaded', (event) => {
     // get id of parent element
-
+    const parent = document.getElementById('your-best-friend');
 });
