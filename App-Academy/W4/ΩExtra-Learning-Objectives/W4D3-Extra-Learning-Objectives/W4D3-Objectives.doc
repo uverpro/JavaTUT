@@ -46,3 +46,24 @@ print the id of the element clicked on to the console.
 8. Identify the definition of the bubbling principle.
     When an event happens on an element, it first runs the handlers on it, then on it's parent,
     then all the way up on the other ancestors
+
+                                        (WINDOW)
+                                           |
+                CAPTURE PHASE (1)      (Document)
+                        \/                 |
+                        ||               <html>
+                        ||                 |
+                        \/               <body>
+                                           |
+                                         <table>
+                                           |
+                                         <tbody>
+                    _______________________|_______________________
+                   |                                               |
+                  <tr>                                            <tr>
+            _______|_______                                 _______|_______
+           |               |                               |               |
+          <td>            <td>      TARGET PHASE (2)===> <td>             <td>
+           |               |                               |               |
+      (Shady Grove)     (Aeolian)                   (Over the River,     (Dorian)
+                                                        Charlies)
