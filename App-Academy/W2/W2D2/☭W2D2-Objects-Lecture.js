@@ -84,7 +84,7 @@ let user = {
     address: 'CT'
 }
 
-console.log(user.age);
+console.log(user.age); // 35
 
 
 
@@ -96,4 +96,4 @@ let Biff = {
 let Buster = Biff;
 Buster.age = 0;
 
-console.log(Biff, Buster);
+console.log(Biff, Buster); // { type: 'dog', age: 0 } { type: 'dog', age: 0 }
