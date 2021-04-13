@@ -70,8 +70,8 @@ let makeAStory = function() {
     }
 };
 
-makeAStory();
-makeAStory();
+makeAStory(); // "added middle" - if conditional is true, now object is changed
+makeAStory(); // "story complete"
 
 
 
