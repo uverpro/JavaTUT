@@ -2,38 +2,34 @@
 
 // 1. Label variables as either Primitive vs. Reference
 
-// * Number
-// Yes) Primitive
-// No) Reference
+// Number
 let num = 8 //  Primitive (Not mutable)
 
-// * String
-// Yes) Primitive
-// No) Reference
+// String
 let string = "test" // Primitive (Not mutable)
 
-// * Boolean
-// Yes) Primitive
-// No) Reference
+// Boolean
 let bool = true // Primitive (Not mutable)
 
-// * Null
-// Yes) Primitive
-// No) Reference
+// Null
 let nullVal = null // Primitive (Not mutable)
 
-
+// NaN
 let nanVal = NaN // Primitive (Not mutable)
 
-// * Undefined
-// Yes) Primitive
-// No) Reference
+// Undefined
 let undefinedVal = undefined // Primitive (Not mutable)
+
+// Array
 let arr = ['sup', 'why tho', 1, ['What about me?']] // Reference (Mutable)
+
+// Object
 let obj = {
     'key': "value",
     'otherKey': 2
 } // Reference (Mutable)
+
+
 
 // 2. Identify when to use . vs [] when accessing values of an object
 
