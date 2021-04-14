@@ -223,3 +223,39 @@ let arrToObj = (arr) => {
     return returnObj; // return key value pairs represeting the amount of times we hit the key
 }
 console.log(arrToObj(characterArr));
+
+
+function charCount(inputArr) {
+  let res = {};
+  inputArr.forEach(function(el) {
+      if (res[el] === undefined) {
+          res[el] = 1;
+      } else {
+          res[el] += 1;
+      }
+  });
+  return res;
+}
+
+console.log(charCount([
+  'p', 'n', 'e', 'u', 'm', 'o', 'n', 'o',
+  'u', 'l', 't', 'r', 'a', 'm', 'i', 'c',
+  'r', 'o', 's', 'c', 'o', 'p', 'i', 'c',
+  's', 'i', 'l', 'i', 'c', 'o', 'v', 'o',
+  'l', 'c', 'a', 'n', 'o', 'c', 'o', 'n',
+  'i', 'o', 's', 'i', 's'
+]));
+
+function charCountReduce(inputArr) {
+
+  let res = inputArr.reduce(function(accum, el) {
+      if (!(el in accum)) {
+          accum[el] = 1;
+      } else {
+          accum[el] = accum[el] + 1;
+      }
+      return accum;
+  }, {})
+  return res;
+
+}
