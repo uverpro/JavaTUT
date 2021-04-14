@@ -16,6 +16,10 @@ let string = "test" // Primitive (Not mutable)
 // Yes) Primitive
 // No) Reference
 let bool = true // Primitive (Not mutable)
+
+// * Null
+// Yes) Primitive
+// No) Reference
 let nullVal = null // Primitive (Not mutable)
 let nanVal = NaN // Primitive (Not mutable)
 let undefinedVal = undefined // Primitive (Not mutable)
