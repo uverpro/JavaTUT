@@ -12,7 +12,9 @@ let num = 8 //  Primitive (Not mutable)
 // No) Reference
 let string = "test" // Primitive (Not mutable)
 
-
+// * Boolean
+// Yes) Primitive
+// No) Reference
 let bool = true // Primitive (Not mutable)
 let nullVal = null // Primitive (Not mutable)
 let nanVal = NaN // Primitive (Not mutable)
