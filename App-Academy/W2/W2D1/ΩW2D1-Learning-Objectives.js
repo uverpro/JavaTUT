@@ -21,7 +21,13 @@ let bool = true // Primitive (Not mutable)
 // Yes) Primitive
 // No) Reference
 let nullVal = null // Primitive (Not mutable)
+
+
 let nanVal = NaN // Primitive (Not mutable)
+
+// * Undefined
+// Yes) Primitive
+// No) Reference
 let undefinedVal = undefined // Primitive (Not mutable)
 let arr = ['sup', 'why tho', 1, ['What about me?']] // Reference (Mutable)
 let obj = {
