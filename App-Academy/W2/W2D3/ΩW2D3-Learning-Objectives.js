@@ -80,7 +80,7 @@ function myFilter(array, cb) {
     });
     return filtered;
 };
-let messyArray = [1, 'one', 2, 'two']
+
 let callbackForMessyArray = (element) => {
     if (typeof element === 'string') {
         return true;
@@ -88,11 +88,16 @@ let callbackForMessyArray = (element) => {
         return false;
     }
 }
+
+let messyArray = [1, 'one', 2, 'two']
+
 console.log(myFilter(messyArray, callbackForMessyArray)) // ['one', 'two']
 
 
 // 6. Write a function, myEvery, that takes in an array and a callback as arguments.
 // The function should mimic the behavior of Array.every.
+
+
 
 function myEvery(array, cb) {
     for (let i = 0; i < array.length; i++) {
