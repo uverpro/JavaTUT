@@ -8,8 +8,8 @@
 let num = 8 //  Primitive (Not mutable)
 
 // * Null
-// yes) Primitive
-// no) Reference
+// Yes) Primitive
+// No) Reference
 let string = "test" // Primitive (Not mutable)
 let bool = true // Primitive (Not mutable)
 let nullVal = null // Primitive (Not mutable)
