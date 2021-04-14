@@ -2,15 +2,17 @@
 
 // 1. Label variables as either Primitive vs. Reference
 
-// * Boolean
+// * Number
 // Yes) Primitive
 // No) Reference
 let num = 8 //  Primitive (Not mutable)
 
-// * Null
+// * String
 // Yes) Primitive
 // No) Reference
 let string = "test" // Primitive (Not mutable)
+
+
 let bool = true // Primitive (Not mutable)
 let nullVal = null // Primitive (Not mutable)
 let nanVal = NaN // Primitive (Not mutable)
