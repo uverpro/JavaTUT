@@ -1,7 +1,15 @@
 // Plain Old JS Object Lesson Learning Objectives
 
 // 1. Label variables as either Primitive vs. Reference
+
+// * Boolean
+// Yes) Primitive
+// No) Reference
 let num = 8 //  Primitive (Not mutable)
+
+// * Null
+// yes) Primitive
+// no) Reference
 let string = "test" // Primitive (Not mutable)
 let bool = true // Primitive (Not mutable)
 let nullVal = null // Primitive (Not mutable)
