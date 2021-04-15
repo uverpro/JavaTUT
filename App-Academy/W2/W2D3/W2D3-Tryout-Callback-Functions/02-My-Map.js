@@ -30,4 +30,4 @@ myMap(nums, function (el){
     nuArray.push(el * el)
 })
 
-console.log(nuArray);
+console.log(nuArray); // [ 100, 25, 81, 64 ]
