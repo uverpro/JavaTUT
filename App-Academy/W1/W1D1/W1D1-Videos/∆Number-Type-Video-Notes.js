@@ -41,7 +41,7 @@ console.log(7 % 21); // 7
 // Modulo can be used to return a boolean value
 
 booleanOfFive = (num) => {
-    return num % 5;
+    return num % 5 === 0;
 };
 
 console.log(booleanOfFive(31)); // false
