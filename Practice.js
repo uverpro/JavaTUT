@@ -1,6 +1,2 @@
-var zoo = "panda";
-
-if (true) {
-  console.log(zoo);
-  let zoo = "lion";
-}
+console.log(party);
+var party = "Party!";
