@@ -25,3 +25,4 @@ age = 35;
 //    expect them to be when they get printed?
 
 console.log(firstName, lastName, age); // Cory Pedigo 35
+console.log(`My name is ${firstName} ${lastName} and I am ${age} years old.`);
