@@ -1,2 +1,6 @@
-console.log(parrot);
-let parrot = "Hello!";
+var zoo = "panda";
+
+if (true) {
+  console.log(zoo);
+  let zoo = "lion";
+}
