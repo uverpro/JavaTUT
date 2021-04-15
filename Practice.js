@@ -8,4 +8,4 @@ function dogParty() {
     return dog;
   }
 
-  dogParty(); // ???
+  console.log(dogParty()); // ???
