@@ -7,7 +7,9 @@ plus 5. Write this function on a single line, and utilize a fat arrow function's
 ability to implicitly return by leaving out your own return statement.
 ***********************************************************************/
 
-let addFive = num => num + 5;
+let addFive = num => {
+    return num + 5;
+};
 
 let result1 = addFive(0); // returns 5
 let result2 = addFive(10); // returns 15
