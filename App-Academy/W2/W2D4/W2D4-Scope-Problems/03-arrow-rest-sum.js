@@ -10,14 +10,14 @@ arrowRestSum(1, 2, 3, 4, 5, 6, 7, 8, 9); // => 14
 arrowRestSum(0); // => 0
 ***********************************************************************/
 
-const arrowRestSum = (...num) => {
-  let sum = num.reduce(function (accum, num) {
-    sum += accum + num;
-  });
-  return sum;
-};
+// const arrowRestSum = (...num) => {
+//   let sum = num.reduce(function (accum, num) {
+//     sum += accum + num;
+//   });
+//   return sum;
+// };
 
-const arrowRestSum = (...otherNums) => {
+const arrowRestSum = (...Nums) => {
   let sum = otherNums.reduce((acc, el) => (acc += el));
   return sum;
 };
