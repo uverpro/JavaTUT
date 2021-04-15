@@ -38,11 +38,11 @@ myForEach(letters, function(el, i) {
 // c is at index 2
 
 
-// let arr = [1, 2, 3]
+let arr = [1, 2, 3]
 
-// arr.forEach(function(el, i) {
-//     console.log(`${el} is at index ${i}`)
-// })
+arr.forEach(function(el, i) {
+    console.log(`${el} is at index ${i}`)
+})
 // 1 is at index 0
 // 2 is at index 1
 // 3 is at index 2
