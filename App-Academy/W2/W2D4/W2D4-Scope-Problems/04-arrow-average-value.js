@@ -10,12 +10,3 @@ arrowAvgValue([2, 3, 7]); // => 4
 arrowAvgValue([100, 60, 64]); // => 74.66666666666667
 ***********************************************************************/
 
-// your code here!
-
-/**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
-
-try {
-  module.exports = arrowAvgValue;
-} catch (e) {
-  return undefined;
-}
