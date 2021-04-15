@@ -1,1 +1,2 @@
-console.log(''.length);
+console.log(parrot);
+let parrot = "Hello!";
