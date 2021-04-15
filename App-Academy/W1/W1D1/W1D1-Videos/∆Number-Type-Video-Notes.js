@@ -13,7 +13,10 @@ console.log(99 / 9); // 11
 
 console.log(3 + 2 * 4); // 11
 // REMEMBER: Order of operation. Multiplication takes precedent over addition
-console.log((3 + 2) * 4) // 20
+console.log((3 + 2) * 4); // 20
 
 
-// Modulo Operation
+
+// Modulo Operation (%)
+
+console.log(22 % 5); //
