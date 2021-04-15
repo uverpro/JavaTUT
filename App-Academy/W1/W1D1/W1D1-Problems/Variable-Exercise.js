@@ -26,3 +26,4 @@ age = 35;
 
 console.log(firstName, lastName, age); // Cory Pedigo 35
 console.log(`My name is ${firstName} ${lastName} and I am ${age} years old.`);
+// My name is Cory Pedigo and I am 35 years old.
