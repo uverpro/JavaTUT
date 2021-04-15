@@ -26,3 +26,23 @@ console.log(23 % 5); // 3
 console.log(24 % 5); // 4
 console.log(25 % 5); // 0
 console.log(26 % 5); // 1
+
+// Modulo finds the remainder
+console.log(21 % 5); // 1
+console.log(25 % 5); // 0
+
+
+// If a smaller number is getting modulo by a larger number, it will return the "smaller number"
+    // AKA the first number or number getting moduloed
+console.log(7 % 21); // 7
+
+
+
+// Modulo can be used to return a boolean value
+
+booleanOfFive = (num) => {
+    return num % 5;
+};
+
+console.log(booleanOfFive(31)); // false
+console.log(booleanOfFive(35)); // true
