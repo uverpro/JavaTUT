@@ -14,17 +14,18 @@ catchZs("Zzzzzz"); // 2
 
 function catchZs(...words) {
     count = 0;
-    for (const element of words) {
-        if (words.startsWith("z")) {
+    for (let i = 0; i < arguments.length; i++) {
+        let word = arguments[i];
+        if (word.startsWith("z")) {
         count++;
     }
-    if (words.startsWith("Z")) {
+    if (word.startsWith("Z")) {
         count++;
     }
-    if (words.endsWith("z")) {
+    if (word.endsWith("z")) {
         count++;
     }
-    if (words.endsWith("Z")) {
+    if (word.endsWith("Z")) {
         count++;
         }
     }
