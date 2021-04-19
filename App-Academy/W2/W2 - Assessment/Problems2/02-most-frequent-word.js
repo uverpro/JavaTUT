@@ -12,24 +12,27 @@ mostFrequentWord("How much wood could a wood chuck chuck") // "wood" OR "chuck"
 ***********************************************************************/
 
 function mostFrequentWord(string) {
-	// let countWord = {};
-	// for (let i = 0; i < string.length; i++) {
-	// let chars = string[i];
-	// if (countWord[chars]) {
-	// 		countWord[chars]++
-	// 	} else {
-	// 		countWord[chars] = 1
-	// 	}
-	// }
-	// let result = " ";
-	// for (const key in countWord) {
-	// 	let value = countWord[key];
-	// 	if (value) {
-	// 		result += key;
-	// 	}
-	// }
-	// return result;
-};
+	let words = string.split(" ");
+	// console.log(words);
+	let occurences = {};
+		for (let word of words) {
+			if (occurences[word]) {
+				occurences[word]++;
+			} else {
+				occurences[word] = 1;
+			}
+		}
+		// console.log(occurences);
+	let max = 0;
+	let mostRepeatedWord = "";
+		for (let word of words) {
+			if (occurences[word] > max) {
+			max = occurences[word];
+			mostRepeatedWord = word;
+		}
+	}
+	return mostRepeatedWord;
+}
 
 
 console.log(mostFrequentWord("I would like a venti coffee and a scone")) // "a"
