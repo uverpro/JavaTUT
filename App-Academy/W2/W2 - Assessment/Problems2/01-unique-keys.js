@@ -4,15 +4,11 @@ keys that are present in the first object but not in both objects.
 ***********************************************************************/
 
 function uniqueKeys(obj1, obj2) {
-    let nuArray = [];
-    for (let key in obj1 && obj2)
-    console.log(key)
-    if (obj1 [key] === obj2 [key]) {
-
-    nuArray.push(obj1 [key]);
-}
-    return nuArray;
-}
+    let k1 = Object.keys(obj1);
+    return k1.filter(function(x) {
+        return obj2[x] === undefined;
+    });
+};
 
 const cat = { legs: 4, favoriteFood: 'catnip', cuteness: 100, sound: 'meow'};
 const human = { legs: 4, favoriteFood: 'sushi', money: 0};
